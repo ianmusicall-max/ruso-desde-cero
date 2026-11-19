@@ -45,6 +45,25 @@ fonética y el primer muro de los casos. Los dos últimos quedan justos.
 Quien quiera ir más rápido hace dos lecciones al día: B2 en dos años. Las
 lecciones van numeradas y no tienen fecha.
 
+### El ritmo lo elige el alumno (decidido el 2026-11-19)
+
+El usuario preguntó si el curso podía ser «de un año». Llegar a B2 en un año
+con 30 minutos diarios no sale (son unas 180 horas al año contra unas
+700–800), y con una hora diaria sí sale **un año de cero a A2**. La respuesta
+no fue cambiar el curso sino el ritmo: la lección sigue siendo de 30
+minutos, y una hora al día son dos lecciones, mejor repartidas (mañana y
+tarde) que seguidas.
+
+| Ritmo | Horas al año | A1 | A2 | B1 | B2 |
+|---|---|---|---|---|---|
+| 30 min (1 lección) | ~180 | 1 año | 2 años | 3 años | 4 años |
+| 1 hora (2 lecciones) | ~365 | 6 meses | 1 año | 1 año y medio | 2 años |
+| 2 horas (4 lecciones) | ~730 | 3 meses | 6 meses | 9 meses | 1 año |
+
+En la web, **«Ruso en un año» es el plan de una hora diaria hasta A2**. Las
+cuentas salen del propio curso (365 lecciones por nivel), no de una
+estimación: lo único estimado son las horas que pide cada examen.
+
 ## La forma de cada nivel
 
 La misma del proyecto hermano, que ya está probada:
