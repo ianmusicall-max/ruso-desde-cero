@@ -77,6 +77,19 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 #marcar[aria-pressed="true"]{background:var(--bien)}
 .vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
 .nota{color:var(--tenue);font-size:.88rem}
+.test-vivo .pregunta{margin:0 0 1.2rem}
+.test-vivo .enunciado{margin:.2rem 0 .5rem;font-weight:600}
+.test-vivo .opciones{display:grid;gap:.4rem}
+.test-vivo .opcion{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:10px;padding:.6rem .85rem;cursor:pointer}
+.test-vivo .opcion:hover:not(:disabled){border-color:var(--acento)}
+.test-vivo .opcion:disabled{cursor:default}
+.test-vivo .opcion.bien{border-color:var(--bien);box-shadow:inset 5px 0 0 var(--bien)}
+.test-vivo .opcion.bien::after{content:" ✓";color:var(--bien);font-weight:700}
+.test-vivo .opcion.mal{border-color:var(--aviso);box-shadow:inset 5px 0 0 var(--aviso)}
+.test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
+.test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
+.test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -144,9 +157,9 @@ seguida:</strong></p>
 Э́то ко́мната. — Э́то ко́мната?</p>
 </blockquote>
 <h2 id="parte-3" class="parte"><span class="num">3</span><span class="nombre">Mini-test</span><span class="franja">8–23 min</span></h2>
-<p>Sin mirar los días anteriores. Elige una respuesta en cada pregunta y anota
-tu letra; la clave está al final.</p>
-<h3>1. Leer</h3>
+<p>Sin mirar los días anteriores. Elige una respuesta en cada pregunta: en la
+web, pulsándola; en papel, anotando la letra. La clave está al final.</p>
+<div class="test-papel"><h3>1. Leer</h3>
 <p><em>¿Cómo se lee?</em></p>
 <ol>
 <li>сок → а) [kok] · б) [sok] · в) [sak]</li>
@@ -176,6 +189,9 @@ tu letra; la clave está al final.</p>
 <p><strong>Cuenta tus aciertos.</strong> Con 13 o más, la semana está hecha. Con 10 a 12,
 vuelve a los días que te señala la clave en cada fallo. Con menos de 10,
 relee los días 2 y 3 antes de seguir: son la base de todo lo demás.</p>
+</div>
+<div class="test-vivo" hidden data-textos="{&quot;resultado&quot;: &quot;Has acertado {bien} de {total}.&quot;, &quot;repasa&quot;: &quot;Para repasar lo que fallaste:&quot;, &quot;otra_vez&quot;: &quot;Otra vez&quot;, &quot;ver_clave&quot;: &quot;Ver la clave y las trampas&quot;}"></div>
+<script type="application/json" class="test-datos">{"preguntas": [{"n": 1, "bloque": "1. Leer", "pregunta": "сок", "opciones": [["а", "[kok]"], ["б", "[sok]"], ["в", "[sak]"]], "correcta": "б", "url": "../../../es/a1/semana-01/dia-2.html", "tema": "С, Р, У, Х — letras que engañan"}, {"n": 2, "bloque": "1. Leer", "pregunta": "рука́", "opciones": [["а", "[pu-ká]"], ["б", "[ru-ká]"], ["в", "[rú-ka]"]], "correcta": "б", "url": "../../../es/a1/semana-01/dia-2.html", "tema": "С, Р, У, Х — letras que engañan"}, {"n": 3, "bloque": "1. Leer", "pregunta": "нет", "opciones": [["а", "[et]"], ["б", "[jet]"], ["в", "[niet]"]], "correcta": "в", "url": "../../../es/a1/semana-01/dia-3.html", "tema": "В, Е, Н — más letras que engañan"}, {"n": 4, "bloque": "1. Leer", "pregunta": "вот", "opciones": [["а", "[bot]"], ["б", "[vot]"], ["в", "[vat]"]], "correcta": "б", "url": "../../../es/a1/semana-01/dia-3.html", "tema": "В, Е, Н — más letras que engañan"}, {"n": 5, "bloque": "1. Leer", "pregunta": "Москва́", "opciones": [["а", "[mos-kvá]"], ["б", "[más-kva]"], ["в", "[mas-kvá]"]], "correcta": "в", "url": "../../../es/a1/semana-01/dia-3.html", "tema": "В, Е, Н — más letras que engañan"}, {"n": 6, "bloque": "2. Palabras", "pregunta": "у́тро", "opciones": [["а", "mañana"], ["б", "oreja"], ["в", "mano"]], "correcta": "а", "url": "../../../es/a1/semana-01/dia-2.html", "tema": "С, Р, У, Х — letras que engañan"}, {"n": 7, "bloque": "2. Palabras", "pregunta": "окно́", "opciones": [["а", "ventana"], ["б", "habitación"], ["в", "cine"]], "correcta": "а", "url": "../../../es/a1/semana-01/dia-3.html", "tema": "В, Е, Н — más letras que engañan"}, {"n": 8, "bloque": "2. Palabras", "pregunta": "дива́н", "opciones": [["а", "casa"], ["б", "sofá"], ["в", "agua"]], "correcta": "б", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}, {"n": 9, "bloque": "2. Palabras", "pregunta": "ка́рта", "opciones": [["а", "tarta"], ["б", "mapa"], ["в", "máscara"]], "correcta": "б", "url": "../../../es/a1/semana-01/dia-2.html", "tema": "С, Р, У, Х — letras que engañan"}, {"n": 10, "bloque": "2. Palabras", "pregunta": "вода́", "opciones": [["а", "zumo"], ["б", "sofá"], ["в", "agua"]], "correcta": "в", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}, {"n": 11, "bloque": "3. Diálogos y entonación", "pregunta": "— Как тебя́ зову́т? — …", "opciones": [["а", "О́чень прия́тно."], ["б", "Да, э́то Ни́на."], ["в", "Меня́ зову́т Ни́на."]], "correcta": "в", "url": "../../../es/a1/semana-01/dia-4.html", "tema": "¿Cómo te llamas?"}, {"n": 12, "bloque": "3. Diálogos y entonación", "pregunta": "— Меня́ зову́т Анто́н. А тебя́? — …", "opciones": [["а", "Мари́на."], ["б", "Нет, э́то кот."], ["в", "Как тебя́ зову́т?"]], "correcta": "а", "url": "../../../es/a1/semana-01/dia-4.html", "tema": "¿Cómo te llamas?"}, {"n": 13, "bloque": "3. Diálogos y entonación", "pregunta": "— Кто э́то? — …", "opciones": [["а", "Э́то вода́."], ["б", "Э́то дом."], ["в", "Э́то А́нна."]], "correcta": "в", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}, {"n": 14, "bloque": "3. Diálogos y entonación", "pregunta": "— Что э́то? — …", "opciones": [["а", "Э́то дива́н."], ["б", "Э́то Анто́н."], ["в", "Да, э́то Анто́н."]], "correcta": "а", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}, {"n": 15, "bloque": "3. Diálogos y entonación", "pregunta": "Quieres preguntar «¿es una habitación?». ¿Dónde sube la voz en **Э́то ко́мната?**", "opciones": [["а", "en «ко́», y baja en el resto de la palabra"], ["б", "en «та», al final"], ["в", "en «Э́»"]], "correcta": "а", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}]}</script>
 <h2 id="parte-4" class="parte"><span class="num">4</span><span class="nombre">Tu turno</span><span class="franja">23–29 min</span></h2>
 <p><strong>Tu primera ficha.</strong> Escribe a mano, en cirílico, un diálogo de cuatro
 réplicas: alguien te saluda y te pregunta el nombre, tú contestas y le
@@ -200,6 +216,7 @@ puedas escribir con las 15 letras: <strong>А́нна</strong>, <strong>Анто
 En la 5, la о sin acento suena [a] y el acento va al final. En la 15, si la
 voz sube en «Э́» preguntas otra cosa: «¿es <strong>esta</strong> la habitación?».</p></details>
 
+<script src="../../../test.js" defer></script>
 </article>
 <div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
  data-marcar="Marcar como hecha" data-hecha="Hecha ✓">Marcar como hecha</button>

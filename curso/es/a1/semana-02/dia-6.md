@@ -14,7 +14,7 @@ revisado: false
 
 Quince preguntas en tres bloques, con cuatro respuestas cada una y una sola
 buena. **Sin mirar las lecciones** y sin diccionario: lo que no sepas, déjalo
-y sigue. Anota la letra de cada respuesta en un papel. Tienes 23 minutos,
+y sigue. En la web, pulsa la respuesta; en papel, anota la letra. Tienes 23 minutos,
 más que de sobra; si terminas antes, repasa el bloque 1 en voz alta.
 
 ## 2. Prueba (2–25 min)

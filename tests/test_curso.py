@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import html.parser
+import json
 import pathlib
 import re
 import shutil
@@ -17,6 +18,7 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 
 import construir_sitio  # noqa: E402
 import plan  # noqa: E402
+import pruebas  # noqa: E402
 import validar  # noqa: E402
 
 
@@ -180,6 +182,51 @@ class TestLasDosPistas(unittest.TestCase):
             self.assertEqual(rusas_es, rusas_en, es.name)
 
 
+class TestLasPruebasSeContestan(unittest.TestCase):
+    """pruebas.py lee las preguntas y su clave del propio Markdown. Lo que no
+    puede pasar es que diga «correcta» de una opción que la clave no marca."""
+
+    def _tests(self):
+        return [r for r in validar.lecciones() if validar.leer(r)[0].get("tipo") in pruebas.TIPOS]
+
+    def test_todas_las_pruebas_y_minitests_se_leen(self):
+        for ruta in self._tests():
+            test = pruebas.leer(ruta)
+            self.assertIsNotNone(test, ruta)
+            self.assertEqual(len(test["preguntas"]), 15, ruta)
+
+    def test_la_correcta_es_la_de_la_clave(self):
+        """Se vuelve a leer la clave con una expresión propia y se compara:
+        es la relación lo que importa, no una secuencia copiada aquí."""
+        for ruta in self._tests():
+            _, cuerpo = validar.leer(ruta)
+            clave = cuerpo.split(validar.RESPUESTAS[validar.pista_de(ruta)], 1)[1]
+            letras = dict(re.findall(r"(\d+) ([абвгд]) \(", re.sub(r"\s+", " ", clave)))
+            for p in pruebas.leer(ruta)["preguntas"]:
+                self.assertEqual(p["correcta"], letras[str(p["n"])], f"{ruta.name} {p['n']}")
+
+    def test_cada_respuesta_manda_a_un_dia_del_calendario(self):
+        dias = plan.por_ruta()
+        for ruta in self._tests():
+            for p in pruebas.leer(ruta)["preguntas"]:
+                self.assertIn(p["leccion"], dias, f"{ruta} pregunta {p['n']}")
+
+    def test_una_clave_que_no_cuadra_deja_la_pagina_en_papel(self):
+        ruta = RAIZ / "curso" / "es" / "a1" / "semana-02" / "dia-6.md"
+        meta, cuerpo = validar.leer(ruta)
+        self.assertIsNotNone(pruebas.de_texto(meta, cuerpo, "es"))
+        texto, clave = cuerpo.split("## Respuestas", 1)
+        # Falta una respuesta: la última de la clave, sacada del propio archivo.
+        ultima = re.findall(r"\d+ [абвг] \([^)]*\)", re.sub(r"\s+", " ", clave))[-1]
+        roto = texto + "## Respuestas" + re.sub(r"\s+", " ", clave).replace(ultima, "")
+        self.assertNotEqual(roto, cuerpo)
+        self.assertIsNone(pruebas.de_texto(meta, roto, "es"))
+        # Una letra que no está entre las opciones.
+        primera = re.findall(r"\d+ [абвг] \(", re.sub(r"\s+", " ", clave))[0]
+        mal = re.sub(r"\s+", " ", clave).replace(primera, primera[:-3] + "д (", 1)
+        self.assertIsNone(pruebas.de_texto(meta, texto + "## Respuestas" + mal, "es"))
+
+
 class _Enlaces(html.parser.HTMLParser):
     def __init__(self):
         super().__init__()
@@ -266,6 +313,27 @@ class TestElSitio(unittest.TestCase):
     def test_sin_dominio_no_hay_cname_ni_sitemap(self):
         self.assertFalse((self.tmp / "CNAME").exists())
         self.assertFalse((self.tmp / "sitemap.xml").exists())
+
+    def test_la_prueba_se_contesta_y_el_papel_sigue_ahi(self):
+        texto = (self.tmp / "es" / "a1" / "semana-02" / "dia-6.html").read_text(encoding="utf-8")
+        self.assertIn('<div class="test-papel">', texto)
+        self.assertIn('<div class="test-vivo" hidden', texto)
+        self.assertIn('test.js" defer', texto)
+        self.assertTrue((self.tmp / "test.js").exists())
+        m = re.search(r'<script type="application/json" class="test-datos">(.*?)</script>', texto, re.S)
+        datos = json.loads(m.group(1))
+        self.assertEqual(len(datos["preguntas"]), 15)
+        # Los enlaces «para repasar» viven en el JSON: el revisor de enlaces
+        # no los ve, así que se comprueban aquí uno a uno.
+        base = self.tmp / "es" / "a1" / "semana-02"
+        for p in datos["preguntas"]:
+            if "url" in p:
+                self.assertTrue((base / p["url"]).resolve().exists(), p["url"])
+
+    def test_una_leccion_normal_no_carga_el_test(self):
+        texto = (self.tmp / "es" / "a1" / "semana-01" / "dia-1.html").read_text(encoding="utf-8")
+        self.assertNotIn("test.js", texto)
+        self.assertNotIn('class="test-datos"', texto)
 
     def test_el_tachado_se_ve_tachado(self):
         self.assertIn("<del>mal</del>", construir_sitio.md("esto está ~~mal~~"))

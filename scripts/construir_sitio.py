@@ -33,6 +33,7 @@ import yaml
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import plan  # noqa: E402
+import pruebas  # noqa: E402
 import validar  # noqa: E402
 
 RAIZ = plan.RAIZ
@@ -148,6 +149,19 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 #marcar[aria-pressed="true"]{background:var(--bien)}
 .vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
 .nota{color:var(--tenue);font-size:.88rem}
+.test-vivo .pregunta{margin:0 0 1.2rem}
+.test-vivo .enunciado{margin:.2rem 0 .5rem;font-weight:600}
+.test-vivo .opciones{display:grid;gap:.4rem}
+.test-vivo .opcion{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:10px;padding:.6rem .85rem;cursor:pointer}
+.test-vivo .opcion:hover:not(:disabled){border-color:var(--acento)}
+.test-vivo .opcion:disabled{cursor:default}
+.test-vivo .opcion.bien{border-color:var(--bien);box-shadow:inset 5px 0 0 var(--bien)}
+.test-vivo .opcion.bien::after{content:" ✓";color:var(--bien);font-weight:700}
+.test-vivo .opcion.mal{border-color:var(--aviso);box-shadow:inset 5px 0 0 var(--aviso)}
+.test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
+.test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
+.test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -201,6 +215,61 @@ if(c){var u=leer('rdc.ultima.'+c.getAttribute('data-pista'),null);
 
 
 # ── Datos ───────────────────────────────────────────────────────────────
+
+TEST_JS = r"""(function(){
+// Las pruebas y los mini-tests, contestables. Sin JavaScript queda la
+// versión en papel (div.test-papel) con su clave plegada: el guion la
+// esconde solo cuando puede ofrecer algo mejor.
+function el(tag,cls,txt){var x=document.createElement(tag);if(cls)x.className=cls;if(txt!=null)x.textContent=txt;return x}
+document.querySelectorAll('.test-vivo').forEach(function(caja){
+  var datos,t;
+  try{datos=JSON.parse(caja.nextElementSibling.textContent);t=JSON.parse(caja.getAttribute('data-textos'))}catch(e){return}
+  var papel=caja.previousElementSibling;
+  function montar(){
+    caja.textContent='';
+    var bien=0,hechas=0,fallos=[],bloque=null,total=datos.preguntas.length;
+    var res=el('div','resultado');res.hidden=true;
+    datos.preguntas.forEach(function(p){
+      if(p.bloque&&p.bloque!==bloque){bloque=p.bloque;caja.appendChild(el('h3',null,bloque))}
+      var item=el('div','pregunta');
+      item.appendChild(el('p','enunciado',p.n+'. '+p.pregunta));
+      var ops=el('div','opciones');
+      p.opciones.forEach(function(o){
+        var b=el('button','opcion',o[0]+') '+o[1]);b.type='button';
+        b.addEventListener('click',function(){
+          if(item.getAttribute('data-hecha'))return;
+          item.setAttribute('data-hecha','1');hechas++;
+          var bs=ops.querySelectorAll('button');
+          for(var i=0;i<bs.length;i++){bs[i].disabled=true;if(p.opciones[i][0]===p.correcta)bs[i].classList.add('bien')}
+          if(o[0]===p.correcta){bien++}else{b.classList.add('mal');fallos.push(p)}
+          if(hechas===total)resultado();
+        });
+        ops.appendChild(b);
+      });
+      item.appendChild(ops);caja.appendChild(item);
+    });
+    caja.appendChild(res);
+    function resultado(){
+      res.hidden=false;res.textContent='';
+      res.appendChild(el('p','nota-final',t.resultado.replace('{bien}',bien).replace('{total}',total)));
+      var vistos={},lista=el('ul');
+      fallos.forEach(function(p){if(p.url&&!vistos[p.url]){vistos[p.url]=1;var li=el('li'),a=el('a',null,p.tema);a.href=p.url;li.appendChild(a);lista.appendChild(li)}});
+      if(lista.children.length){res.appendChild(el('p',null,t.repasa));res.appendChild(lista)}
+      var acc=el('p','botones');
+      var otra=el('button','boton',t.otra_vez);otra.type='button';
+      otra.addEventListener('click',function(){montar();caja.scrollIntoView({behavior:'smooth'})});
+      var clave=el('button','boton secundario',t.ver_clave);clave.type='button';
+      clave.addEventListener('click',function(){var d=document.getElementById('respuestas');if(d){d.open=true;d.scrollIntoView({behavior:'smooth'})}});
+      acc.appendChild(otra);acc.appendChild(clave);res.appendChild(acc);
+    }
+  }
+  montar();
+  if(papel&&papel.classList.contains('test-papel'))papel.hidden=true;
+  caja.hidden=false;
+});
+})();
+"""
+
 
 def cargar_config(ruta: pathlib.Path = WEB / "sitio.yaml") -> dict:
     return yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
@@ -335,6 +404,34 @@ def html_de_leccion(cuerpo_md: str, pista: str, textos: dict) -> str:
     return h
 
 
+def envolver_test(h: str, test: dict, pista: str, textos: dict, raiz: str,
+                  publicadas: set[str], dias: dict) -> str:
+    """La versión en papel del test va dentro de div.test-papel y, detrás, el
+    hueco que llena test.js con las preguntas pulsables. Desde el primer
+    título de bloque hasta el siguiente apartado (<h2>). Si no se encuentra
+    ese título, la página se queda como estaba."""
+    primero = next((p["bloque"] for p in test["preguntas"] if p["bloque"]), "")
+    marca = f"<h3>{e(primero)}</h3>" if primero else ""
+    ini = h.find(marca) if marca else -1
+    if ini < 0:
+        return h
+    fin = h.find("<h2", ini)
+    clave = h.find('<details class="clave"', ini)
+    fin = min(x for x in (fin, clave, len(h)) if x >= 0)
+    datos = []
+    for p in test["preguntas"]:
+        q = {k: p[k] for k in ("n", "bloque", "pregunta", "opciones", "correcta")}
+        if p.get("leccion") and p["leccion"] in publicadas:
+            q["url"] = f"{raiz}/{pista}/{p['leccion']}.html"
+            q["tema"] = dias[p["leccion"]].tema(pista)
+        datos.append(q)
+    letrero = json.dumps(textos[pista]["test"], ensure_ascii=False)
+    carga = json.dumps({"preguntas": datos}, ensure_ascii=False).replace("</", "<\\/")
+    vivo = (f'<div class="test-vivo" hidden data-textos="{e(letrero)}"></div>\n'
+            f'<script type="application/json" class="test-datos">{carga}</script>\n')
+    return h[:ini] + '<div class="test-papel">' + h[ini:fin] + "</div>\n" + vivo + h[fin:]
+
+
 def ruta_leccion(pista: str, dia: plan.Dia) -> str:
     return f"{pista}/{dia.ruta}.html"
 
@@ -342,6 +439,7 @@ def ruta_leccion(pista: str, dia: plan.Dia) -> str:
 def construir_lecciones(cfg, textos, cal, destino, publicadas) -> list[str]:
     rutas = []
     hay = {p: {d.ruta for d, _, _ in publicadas[p]} for p in PISTAS}
+    dias = plan.por_ruta(cal)
     for pista in PISTAS:
         t = textos[pista]
         lista = publicadas[pista]
@@ -358,12 +456,18 @@ def construir_lecciones(cfg, textos, cal, destino, publicadas) -> list[str]:
             siguiente = (f'<a href="{raiz}/{ruta_leccion(pista, lista[i + 1][0])}">{e(t["botones"]["siguiente"])} →</a>'
                          if i + 1 < len(lista) else "<span></span>")
             indice = f'<a href="{raiz}/{pista}/{t["paginas"]["curso"]}">{e(t["botones"]["indice"])}</a>'
+            articulo = html_de_leccion(cuerpo, pista, textos)
+            test = pruebas.de_texto(meta, cuerpo, pista) if dia.tipo in pruebas.TIPOS else None
+            if test:
+                nuevo = envolver_test(articulo, test, pista, textos, raiz, hay[pista], dias)
+                if nuevo != articulo:
+                    articulo = nuevo + f'\n<script src="{raiz}/test.js" defer></script>'
             cuerpo_html = f"""<p class="migas">{e(migas)}</p>
 <h1>{e(dia.tema(pista))}</h1>
 <p class="ru-tema" lang="ru">{e(dia.ru)}</p>
 {aviso}
 <article>
-{html_de_leccion(cuerpo, pista, textos)}
+{articulo}
 </article>
 <div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
  data-marcar="{e(t["botones"]["marcar"])}" data-hecha="{e(t["botones"]["hecha"])}">{e(t["botones"]["marcar"])}</button>
@@ -485,6 +589,7 @@ def construir_extras(cfg, destino, rutas) -> None:
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
     escribir(destino / "progreso.js", PROGRESO_JS)
+    escribir(destino / "test.js", TEST_JS)
     dominio = (cfg.get("dominio") or "").rstrip("/")
     robots = "User-agent: *\nAllow: /\n"
     if dominio:

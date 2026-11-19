@@ -14,8 +14,8 @@ revisado: false
 
 Fifteen questions in three blocks, each with four answers and only one
 right. **Don't look at the lessons** and don't use a dictionary: if you don't
-know something, skip it and move on. Note down the letter of each answer on
-a piece of paper. You have 23 minutes, more than enough; if you finish
+know something, skip it and move on. On the website, tap your answer; on
+paper, note down the letter. You have 23 minutes, more than enough; if you finish
 early, read block 1 aloud again.
 
 ## 2. Test (2–25 min)

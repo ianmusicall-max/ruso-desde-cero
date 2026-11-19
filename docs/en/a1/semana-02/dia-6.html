@@ -77,6 +77,19 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 #marcar[aria-pressed="true"]{background:var(--bien)}
 .vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
 .nota{color:var(--tenue);font-size:.88rem}
+.test-vivo .pregunta{margin:0 0 1.2rem}
+.test-vivo .enunciado{margin:.2rem 0 .5rem;font-weight:600}
+.test-vivo .opciones{display:grid;gap:.4rem}
+.test-vivo .opcion{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:10px;padding:.6rem .85rem;cursor:pointer}
+.test-vivo .opcion:hover:not(:disabled){border-color:var(--acento)}
+.test-vivo .opcion:disabled{cursor:default}
+.test-vivo .opcion.bien{border-color:var(--bien);box-shadow:inset 5px 0 0 var(--bien)}
+.test-vivo .opcion.bien::after{content:" ✓";color:var(--bien);font-weight:700}
+.test-vivo .opcion.mal{border-color:var(--aviso);box-shadow:inset 5px 0 0 var(--aviso)}
+.test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
+.test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
+.test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -113,11 +126,11 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <h2 id="parte-1" class="parte"><span class="num">1</span><span class="nombre">Instructions</span><span class="franja">0–2 min</span></h2>
 <p>Fifteen questions in three blocks, each with four answers and only one
 right. <strong>Don't look at the lessons</strong> and don't use a dictionary: if you don't
-know something, skip it and move on. Note down the letter of each answer on
-a piece of paper. You have 23 minutes, more than enough; if you finish
+know something, skip it and move on. On the website, tap your answer; on
+paper, note down the letter. You have 23 minutes, more than enough; if you finish
 early, read block 1 aloud again.</p>
 <h2 id="parte-2" class="parte"><span class="num">2</span><span class="nombre">Test</span><span class="franja">2–25 min</span></h2>
-<h3>1. Чте́ние</h3>
+<div class="test-papel"><h3>1. Чте́ние</h3>
 <p><em>How is it said?</em></p>
 <ol>
 <li>хорошо́ → а) [kha-ra-SHO] · б) [kho-ro-SHO] · в) [kha-RO-sho] · г) [kho-ro-MO]</li>
@@ -144,6 +157,9 @@ early, read block 1 aloud again.</p>
 <li>You're saying goodbye to Vera Ivanovna, whom you call вы. → а) Пока́! · б) Приве́т! · в) Как дела́? · г) До свида́ния!</li>
 <li>Which one is said with the voice jumping up on the stressed syllable (ИК-3)? → а) Кто там? · б) Там метро́. · в) Там метро́? · г) Что э́то?</li>
 </ol>
+</div>
+<div class="test-vivo" hidden data-textos="{&quot;resultado&quot;: &quot;You got {bien} out of {total} right.&quot;, &quot;repasa&quot;: &quot;To review what you missed:&quot;, &quot;otra_vez&quot;: &quot;Try again&quot;, &quot;ver_clave&quot;: &quot;See the key and the traps&quot;}"></div>
+<script type="application/json" class="test-datos">{"preguntas": [{"n": 1, "bloque": "1. Чте́ние", "pregunta": "хорошо́", "opciones": [["а", "[kha-ra-SHO]"], ["б", "[kho-ro-SHO]"], ["в", "[kha-RO-sho]"], ["г", "[kho-ro-MO]"]], "correcta": "а", "url": "../../../en/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. How are you?"}, {"n": 2, "bloque": "1. Чте́ние", "pregunta": "спаси́бо", "opciones": [["а", "[SPA-si-boh]"], ["б", "[spa-SEE-ba]"], ["в", "[spa-SEE-boh]"], ["г", "[spa-si-BOH]"]], "correcta": "б", "url": "../../../en/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. How are you?"}, {"n": 3, "bloque": "1. Чте́ние", "pregunta": "что", "opciones": [["а", "[chto]"], ["б", "[kto]"], ["в", "[sto]"], ["г", "[shto]"]], "correcta": "г", "url": "../../../en/a1/semana-01/dia-5.html", "tema": "Is it a cat? Yes, it's a cat"}, {"n": 4, "bloque": "1. Чте́ние", "pregunta": "подъе́зд", "opciones": [["а", "[pod-YEZD]"], ["б", "[pad-YEST]"], ["в", "[po-DEZD]"], ["г", "[PA-dyest]"]], "correcta": "б", "url": "../../../en/a1/semana-02/dia-5.html", "tema": "Ь and Ъ. Bye!"}, {"n": 5, "bloque": "1. Чте́ние", "pregunta": "пожа́луйста", "opciones": [["а", "[pa-ZHAL-sta]"], ["б", "[po-zha-LOO-ee-sta]"], ["в", "[pa-zha-LOOY-sta]"], ["г", "[PO-zhal-sta]"]], "correcta": "а", "url": "../../../en/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 6, "bloque": "2. Ле́ксика", "pregunta": "газе́та", "opciones": [["а", "magazine"], ["б", "film"], ["в", "newspaper"], ["г", "photo"]], "correcta": "в", "url": "../../../en/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 7, "bloque": "2. Ле́ксика", "pregunta": "пло́хо", "opciones": [["а", "well"], ["б", "too"], ["в", "badly"], ["г", "fine"]], "correcta": "в", "url": "../../../en/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. How are you?"}, {"n": 8, "bloque": "2. Ле́ксика", "pregunta": "извини́те", "opciones": [["а", "thank you"], ["б", "excuse me"], ["в", "you're welcome"], ["г", "goodbye"]], "correcta": "б", "url": "../../../en/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 9, "bloque": "2. Ле́ксика", "pregunta": "ёлка", "opciones": [["а", "cheese"], ["б", "yacht"], ["в", "humour"], ["г", "New Year tree"]], "correcta": "г", "url": "../../../en/a1/semana-02/dia-4.html", "tema": "Я, Ю, Ё and Ы"}, {"n": 10, "bloque": "2. Ле́ксика", "pregunta": "то́же", "opciones": [["а", "or"], ["б", "and"], ["в", "no"], ["г", "too"]], "correcta": "г", "url": "../../../en/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. How are you?"}, {"n": 11, "bloque": "3. Диало́ги", "pregunta": "— Как дела́? — …", "opciones": [["а", "Меня́ зову́т Ки́ра."], ["б", "Пожа́луйста."], ["в", "Норма́льно, спаси́бо. А у тебя́?"], ["г", "До свида́ния."]], "correcta": "в", "url": "../../../en/a1/semana-02/dia-5.html", "tema": "Ь and Ъ. Bye!"}, {"n": 12, "bloque": "3. Диало́ги", "pregunta": "— Спаси́бо! — …", "opciones": [["а", "Пожа́луйста."], ["б", "Хорошо́."], ["в", "Пока́!"], ["г", "Извини́те!"]], "correcta": "а", "url": "../../../en/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 13, "bloque": "3. Диало́ги", "pregunta": "— Ко́фе и́ли чай? — …", "opciones": [["а", "Да."], ["б", "Чай, пожа́луйста."], ["в", "Нет."], ["г", "Э́то чай?"]], "correcta": "б", "url": "../../../en/a1/semana-02/dia-3.html", "tema": "Ж, Ш, Ч, Щ, Ц. Coffee or tea?"}, {"n": 14, "bloque": "3. Диало́ги", "pregunta": "You're saying goodbye to Vera Ivanovna, whom you call вы.", "opciones": [["а", "Пока́!"], ["б", "Приве́т!"], ["в", "Как дела́?"], ["г", "До свида́ния!"]], "correcta": "г", "url": "../../../en/a1/semana-02/dia-5.html", "tema": "Ь and Ъ. Bye!"}, {"n": 15, "bloque": "3. Диало́ги", "pregunta": "Which one is said with the voice jumping up on the stressed syllable (ИК-3)?", "opciones": [["а", "Кто там?"], ["б", "Там метро́."], ["в", "Там метро́?"], ["г", "Что э́то?"]], "correcta": "в", "url": "../../../en/a1/semana-01/dia-5.html", "tema": "Is it a cat? Yes, it's a cat"}]}</script>
 <h2 id="parte-3" class="parte"><span class="num">3</span><span class="nombre">Key and score</span><span class="franja">25–29 min</span></h2>
 <p>Now open the answers at the bottom of the page and mark your test. One point
 per right answer.</p>
@@ -192,6 +208,7 @@ sound [a]. In 2, the final о of <strong>спаси́бо</strong> is unstressed
 with "да". In 15, ИК-3 is the yes/no question tune; with <strong>кто</strong> or <strong>что</strong>
 the voice doesn't jump like that.</p></details>
 
+<script src="../../../test.js" defer></script>
 </article>
 <div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
  data-marcar="Mark as done" data-hecha="Done ✓">Mark as done</button>

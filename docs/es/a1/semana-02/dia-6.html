@@ -77,6 +77,19 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 #marcar[aria-pressed="true"]{background:var(--bien)}
 .vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
 .nota{color:var(--tenue);font-size:.88rem}
+.test-vivo .pregunta{margin:0 0 1.2rem}
+.test-vivo .enunciado{margin:.2rem 0 .5rem;font-weight:600}
+.test-vivo .opciones{display:grid;gap:.4rem}
+.test-vivo .opcion{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:10px;padding:.6rem .85rem;cursor:pointer}
+.test-vivo .opcion:hover:not(:disabled){border-color:var(--acento)}
+.test-vivo .opcion:disabled{cursor:default}
+.test-vivo .opcion.bien{border-color:var(--bien);box-shadow:inset 5px 0 0 var(--bien)}
+.test-vivo .opcion.bien::after{content:" ✓";color:var(--bien);font-weight:700}
+.test-vivo .opcion.mal{border-color:var(--aviso);box-shadow:inset 5px 0 0 var(--aviso)}
+.test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
+.test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
+.test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -113,10 +126,10 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <h2 id="parte-1" class="parte"><span class="num">1</span><span class="nombre">Instrucciones</span><span class="franja">0–2 min</span></h2>
 <p>Quince preguntas en tres bloques, con cuatro respuestas cada una y una sola
 buena. <strong>Sin mirar las lecciones</strong> y sin diccionario: lo que no sepas, déjalo
-y sigue. Anota la letra de cada respuesta en un papel. Tienes 23 minutos,
+y sigue. En la web, pulsa la respuesta; en papel, anota la letra. Tienes 23 minutos,
 más que de sobra; si terminas antes, repasa el bloque 1 en voz alta.</p>
 <h2 id="parte-2" class="parte"><span class="num">2</span><span class="nombre">Prueba</span><span class="franja">2–25 min</span></h2>
-<h3>1. Чте́ние</h3>
+<div class="test-papel"><h3>1. Чте́ние</h3>
 <p><em>¿Cómo se lee?</em></p>
 <ol>
 <li>хорошо́ → а) [ja-ra-shó] · б) [jo-ro-shó] · в) [ja-ró-sho] · г) [jo-ro-mó]</li>
@@ -143,6 +156,9 @@ más que de sobra; si terminas antes, repasa el bloque 1 en voz alta.</p>
 <li>Te despides de Vera Ivánovna, a la que tratas de вы. → а) Пока́! · б) Приве́т! · в) Как дела́? · г) До свида́ния!</li>
 <li>¿Cuál se dice con la voz que sube en la sílaba con acento (ИК-3)? → а) Кто там? · б) Там метро́. · в) Там метро́? · г) Что э́то?</li>
 </ol>
+</div>
+<div class="test-vivo" hidden data-textos="{&quot;resultado&quot;: &quot;Has acertado {bien} de {total}.&quot;, &quot;repasa&quot;: &quot;Para repasar lo que fallaste:&quot;, &quot;otra_vez&quot;: &quot;Otra vez&quot;, &quot;ver_clave&quot;: &quot;Ver la clave y las trampas&quot;}"></div>
+<script type="application/json" class="test-datos">{"preguntas": [{"n": 1, "bloque": "1. Чте́ние", "pregunta": "хорошо́", "opciones": [["а", "[ja-ra-shó]"], ["б", "[jo-ro-shó]"], ["в", "[ja-ró-sho]"], ["г", "[jo-ro-mó]"]], "correcta": "а", "url": "../../../es/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. ¿Qué tal?"}, {"n": 2, "bloque": "1. Чте́ние", "pregunta": "спаси́бо", "opciones": [["а", "[es-pa-sí-bo]"], ["б", "[spa-sí-ba]"], ["в", "[spá-si-ba]"], ["г", "[spa-sí-bo]"]], "correcta": "б", "url": "../../../es/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. ¿Qué tal?"}, {"n": 3, "bloque": "1. Чте́ние", "pregunta": "что", "opciones": [["а", "[chto]"], ["б", "[kto]"], ["в", "[sto]"], ["г", "[shto]"]], "correcta": "г", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}, {"n": 4, "bloque": "1. Чте́ние", "pregunta": "подъе́зд", "opciones": [["а", "[pod-yézd]"], ["б", "[pad-yést]"], ["в", "[po-dézd]"], ["г", "[pá-diest]"]], "correcta": "б", "url": "../../../es/a1/semana-02/dia-5.html", "tema": "Ь y Ъ. ¡Chao!"}, {"n": 5, "bloque": "1. Чте́ние", "pregunta": "пожа́луйста", "opciones": [["а", "[pa-zhál-sta]"], ["б", "[po-zha-lúis-ta]"], ["в", "[pa-zha-lúi-sta]"], ["г", "[pó-zhal-sta]"]], "correcta": "а", "url": "../../../es/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 6, "bloque": "2. Ле́ксика", "pregunta": "газе́та", "opciones": [["а", "revista"], ["б", "película"], ["в", "periódico"], ["г", "foto"]], "correcta": "в", "url": "../../../es/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 7, "bloque": "2. Ле́ксика", "pregunta": "пло́хо", "opciones": [["а", "bien"], ["б", "también"], ["в", "mal"], ["г", "normal"]], "correcta": "в", "url": "../../../es/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. ¿Qué tal?"}, {"n": 8, "bloque": "2. Ле́ксика", "pregunta": "извини́те", "opciones": [["а", "gracias"], ["б", "perdone"], ["в", "de nada"], ["г", "adiós"]], "correcta": "б", "url": "../../../es/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 9, "bloque": "2. Ле́ксика", "pregunta": "ёлка", "opciones": [["а", "queso"], ["б", "yate"], ["в", "humor"], ["г", "árbol de Año Nuevo"]], "correcta": "г", "url": "../../../es/a1/semana-02/dia-4.html", "tema": "Я, Ю, Ё y la Ы"}, {"n": 10, "bloque": "2. Ле́ксика", "pregunta": "то́же", "opciones": [["а", "o"], ["б", "y"], ["в", "no"], ["г", "también"]], "correcta": "г", "url": "../../../es/a1/semana-02/dia-1.html", "tema": "Б, П, Г, Л. ¿Qué tal?"}, {"n": 11, "bloque": "3. Диало́ги", "pregunta": "— Как дела́? — …", "opciones": [["а", "Меня́ зову́т Ки́ра."], ["б", "Пожа́луйста."], ["в", "Норма́льно, спаси́бо. А у тебя́?"], ["г", "До свида́ния."]], "correcta": "в", "url": "../../../es/a1/semana-02/dia-5.html", "tema": "Ь y Ъ. ¡Chao!"}, {"n": 12, "bloque": "3. Диало́ги", "pregunta": "— Спаси́бо! — …", "opciones": [["а", "Пожа́луйста."], ["б", "Хорошо́."], ["в", "Пока́!"], ["г", "Извини́те!"]], "correcta": "а", "url": "../../../es/a1/semana-02/dia-2.html", "tema": "Ф, З, Й"}, {"n": 13, "bloque": "3. Диало́ги", "pregunta": "— Ко́фе и́ли чай? — …", "opciones": [["а", "Да."], ["б", "Чай, пожа́луйста."], ["в", "Нет."], ["г", "Э́то чай?"]], "correcta": "б", "url": "../../../es/a1/semana-02/dia-3.html", "tema": "Ж, Ш, Ч, Щ, Ц. ¿Café o té?"}, {"n": 14, "bloque": "3. Диало́ги", "pregunta": "Te despides de Vera Ivánovna, a la que tratas de вы.", "opciones": [["а", "Пока́!"], ["б", "Приве́т!"], ["в", "Как дела́?"], ["г", "До свида́ния!"]], "correcta": "г", "url": "../../../es/a1/semana-02/dia-5.html", "tema": "Ь y Ъ. ¡Chao!"}, {"n": 15, "bloque": "3. Диало́ги", "pregunta": "¿Cuál se dice con la voz que sube en la sílaba con acento (ИК-3)?", "opciones": [["а", "Кто там?"], ["б", "Там метро́."], ["в", "Там метро́?"], ["г", "Что э́то?"]], "correcta": "в", "url": "../../../es/a1/semana-01/dia-5.html", "tema": "¿Es un gato? Sí, es un gato"}]}</script>
 <h2 id="parte-3" class="parte"><span class="num">3</span><span class="nombre">Clave y puntuación</span><span class="franja">25–29 min</span></h2>
 <p>Ahora sí: abre las respuestas, al final de la página, y corrige. Un punto
 por acierto.</p>
@@ -191,6 +207,7 @@ casi t. En la 5, la у y la й de <strong>пожа́луйста</strong> casi n
 una pregunta con <strong>и́ли</strong> no se contesta con «да». En la 15, la ИК-3 es la de
 la pregunta de sí o no; con <strong>кто</strong> o <strong>что</strong> la voz no sube así.</p></details>
 
+<script src="../../../test.js" defer></script>
 </article>
 <div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
  data-marcar="Marcar como hecha" data-hecha="Hecha ✓">Marcar como hecha</button>

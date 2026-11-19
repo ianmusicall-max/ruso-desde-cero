@@ -47,8 +47,8 @@ right after:**
 
 ## 3. Mini-test (8–23 min)
 
-Don't look back at the earlier days. Choose one answer for each question and
-note your letter; the key is at the end.
+Don't look back at the earlier days. Choose one answer for each question: on
+the website, tap it; on paper, note the letter. The key is at the end.
 
 ### 1. Reading
 

@@ -12,6 +12,11 @@ es:
     cometer, explicados antes.
   paginas: {curso: curso.html, sobre: sobre.html, contacto: contacto.html, privacidad: privacidad.html}
   menu: {curso: Curso, sobre: Sobre el curso, contacto: Contacto, privacidad: Privacidad}
+  test:
+    resultado: "Has acertado {bien} de {total}."
+    repasa: "Para repasar lo que fallaste:"
+    otra_vez: Otra vez
+    ver_clave: Ver la clave y las trampas
   botones:
     empezar: Empezar por el día 1
     continuar: Seguir donde lo dejé
@@ -135,6 +140,11 @@ en:
     beforehand.
   paginas: {curso: course.html, sobre: about.html, contacto: contact.html, privacidad: privacy.html}
   menu: {curso: Course, sobre: About, contacto: Contact, privacidad: Privacy}
+  test:
+    resultado: "You got {bien} out of {total} right."
+    repasa: "To review what you missed:"
+    otra_vez: Try again
+    ver_clave: See the key and the traps
   botones:
     empezar: Start with day 1
     continuar: Pick up where I left off

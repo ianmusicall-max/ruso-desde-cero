@@ -47,8 +47,8 @@ seguida:**
 
 ## 3. Mini-test (8–23 min)
 
-Sin mirar los días anteriores. Elige una respuesta en cada pregunta y anota
-tu letra; la clave está al final.
+Sin mirar los días anteriores. Elige una respuesta en cada pregunta: en la
+web, pulsándola; en papel, anotando la letra. La clave está al final.
 
 ### 1. Leer
 

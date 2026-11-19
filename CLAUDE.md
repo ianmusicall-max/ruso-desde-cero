@@ -62,7 +62,7 @@ las decisiones y su porqué.
   siguientes). Su secuencia está en `referencias/tochka-ru.md`.
 - Hechos: `programa/plan.md`, calendario A1–B2, metodología, las dos listas
   de contraste, el motor (`plan.py`, `validar.py`, `construir_sitio.py`) y
-  32 pruebas.
+  38 pruebas.
 - **Escrita la unidad 1 del A1 entera en las dos pistas** (28 lecciones,
   semanas 1 y 2): las 33 letras en diez tandas, la о átona, presentarse,
   la entonación de la pregunta, Как дела́, спаси́бо / пожа́луйста, ты / вы,
@@ -73,9 +73,16 @@ las decisiones y su porqué.
   episodios del A1 viven en el calendario (campo `episodio`).
 - Siguiente: la unidad 2 (leer en ruso: reducción, consonantes blandas,
   ensordecimiento, ИК-1 a ИК-4). Antes de escribirla hay que detallar sus 14
-  días en el calendario. Y queda por hacer: que las pruebas y los
-  mini-tests se puedan contestar pulsando, como en el proyecto hermano; hoy
-  son texto con la clave plegada.
+  días en el calendario.
+- **Las pruebas y los mini-tests se contestan pulsando** (`scripts/pruebas.py`
+  + `test.js`): el lector saca preguntas y clave del propio Markdown y, ante
+  cualquier duda, devuelve None y la página se queda en papel. Al terminar,
+  el resultado manda a la lección de cada fallo. Probado en Chromium:
+  acertando todo, fallando todo y sin JavaScript.
+- **Los libros se están leyendo enteros**: los cinco escaneos pasaron por
+  Tesseract (el texto, solo en `libros-ruso-temp/ocr`), y cada tramo lo
+  ficha un lector en `referencias/lecciones/`. Hechas: Tochka Ru A1,
+  lecciones 1.1–4.4.
 - Pendiente del usuario: **nombre y dominio** de la web, y crear el
   repositorio de GitHub vacío (desde esta sesión no se puede).
 - Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
