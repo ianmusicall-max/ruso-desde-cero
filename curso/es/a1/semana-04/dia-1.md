@@ -12,7 +12,7 @@ revisado: false
 >
 > - decir cómo estás con siete respuestas distintas;
 > - reaccionar a cada una: **Здо́рово!** o **Что случи́лось?**;
-> - preguntar de usted: **Как вы?** · **А у вас?**
+> - saludar y preguntar de usted: **Здра́вствуйте! Как вы?** · **А у вас?**
 
 ## 1. Calentamiento (0–3 min)
 
@@ -72,6 +72,7 @@ Y las palabras nuevas:
 | Как вы? | kak **VY** | ¿Qué tal está (usted)? |
 | А вы? | a **VY** | ¿Y usted? |
 | А у вас? | a u **VAS** | ¿Y a usted? (¿qué tal?) |
+| Здра́вствуйте! | **ZDRAST**-vui-ti | ¡Hola!, ¡buenos días! (de usted) |
 
 Cada respuesta pide algo. A una buena se reacciona con alegría; a una mala,
 con una pregunta:
@@ -85,7 +86,7 @@ con una pregunta:
 > — Что случи́лось?
 > *¿Qué ha pasado?*
 
-Y de usted, con alguien a quien tratas de **вы**:
+Y de usted, con alguien a quien tratas de **вы**. Para saludarlo, **Здра́вствуйте**: es el **приве́т** de **вы**, y sirve a cualquier hora. Se escribe con dos в y se dice con una; el día 12 verás por qué.
 
 > — Здра́вствуйте! Как вы?
 > *Buenos días. ¿Qué tal está?*
@@ -156,7 +157,7 @@ un tirón?
 ## 6. Cierre (29–30 min)
 
 > **Ya puedo decir:**
-> Отли́чно! · О́чень хорошо́. · Так себе́. · О́чень пло́хо. · Здо́рово! · Что случи́лось? · Как вы? · А у вас?
+> Отли́чно! · О́чень хорошо́. · Так себе́. · О́чень пло́хо. · Здо́рово! · Что случи́лось? · Здра́вствуйте! · Как вы? · А у вас?
 >
 > **Ya sé:** Как дела́? espera una respuesta de verdad, y con **вы** se sigue de **вы** hasta el final.
 
@@ -174,6 +175,7 @@ Mañana: ofrecer, dar y pedir. **Вот, пожа́луйста.**
 | Как вы? | ¿Qué tal está? (usted) | Здра́вствуйте! Как вы? |
 | А вы? | ¿Y usted? | Спаси́бо, хорошо́. А вы? |
 | А у вас? | ¿Y a usted? (¿qué tal?) | Хорошо́. А у вас? |
+| Здра́вствуйте! | ¡Hola!, ¡buenos días! (de usted) | Здра́вствуйте! Как вы? |
 
 ## Respuestas
 

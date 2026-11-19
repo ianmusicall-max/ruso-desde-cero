@@ -12,7 +12,7 @@ revisado: false
 >
 > - say how you are in seven different ways;
 > - react to each answer: **Здо́рово!** or **Что случи́лось?**;
-> - ask someone you call **вы**: **Как вы?** · **А у вас?**
+> - greet and ask someone you call **вы**: **Здра́вствуйте! Как вы?** · **А у вас?**
 
 ## 1. Warm-up (0–3 min)
 
@@ -72,6 +72,7 @@ And the new words:
 | Как вы? | kak **VY** | How are you? (polite) |
 | А вы? | a **VY** | And you? (polite) |
 | А у вас? | a oo **VAS** | And you? (polite, after Как дела́?) |
+| Здра́вствуйте! | **ZDRAST**-vooy-tye | Hello! (polite) |
 
 Every answer asks for something. A good one gets a happy reaction; a bad one,
 a question:
@@ -85,7 +86,7 @@ a question:
 > — Что случи́лось?
 > *What's happened?*
 
-And politely, with someone you call **вы**:
+And politely, with someone you call **вы**. To greet them, **Здра́вствуйте**: it's the **приве́т** of **вы**, and it works at any time of day. It's written with two в's and said with one; on day 12 you'll see why.
 
 > — Здра́вствуйте! Как вы?
 > *Hello. How are you?*
@@ -155,7 +156,7 @@ Listen: does **о́чень** sound [O-chin'], with the е faded? Do you say **�
 ## 6. Wrap-up (29–30 min)
 
 > **I can now say:**
-> Отли́чно! · О́чень хорошо́. · Так себе́. · О́чень пло́хо. · Здо́рово! · Что случи́лось? · Как вы? · А у вас?
+> Отли́чно! · О́чень хорошо́. · Так себе́. · О́чень пло́хо. · Здо́рово! · Что случи́лось? · Здра́вствуйте! · Как вы? · А у вас?
 >
 > **I know:** Как дела́? expects a real answer, and once you're on **вы**, you stay on **вы**.
 
@@ -173,6 +174,7 @@ Tomorrow: offering, giving and asking. **Вот, пожа́луйста.**
 | Как вы? | How are you? (polite) | Здра́вствуйте! Как вы? |
 | А вы? | And you? (polite) | Спаси́бо, хорошо́. А вы? |
 | А у вас? | And you? (polite) | Хорошо́. А у вас? |
+| Здра́вствуйте! | Hello! (polite) | Здра́вствуйте! Как вы? |
 
 ## Answers
 
