@@ -71,18 +71,30 @@ las decisiones y su porqué.
 - **La historia está escrita** (`programa/historia.md`): Camila (Lima) y Tom
   (Toronto), su vecina Kira, médica, su hijo Misha y el gato Bársik. Los 24
   episodios del A1 viven en el calendario (campo `episodio`).
-- Siguiente: la unidad 2 (leer en ruso: reducción, consonantes blandas,
-  ensordecimiento, ИК-1 a ИК-4). Antes de escribirla hay que detallar sus 14
-  días en el calendario.
+- **Escrita la unidad 2 entera en las dos pistas** (28 lecciones más,
+  semanas 3 y 4): no…, sino… (не…, а…), las reglas de lectura (la е y la я
+  átonas, duras y blandas, el final que se apaga, las palabras con trampa),
+  ИК-2 e ИК-4, la escala de Как дела́?, pedir en un café, las palabras
+  internacionales y su acento, las respuestas cortas, el repaso, el día de
+  los préstamos y los falsos amigos, la prueba y el **episodio 2**. Probadas
+  en Chromium la prueba y el mini-test: 15/15, 0/15, enlaces vivos y sin
+  JavaScript en papel.
+- Siguiente: la unidad 3 (Отку́да вы?). Antes, detallar sus 14 días en el
+  calendario con las fichas de Tochka Ru A1 1.2 y de Русский язык сегодня.
 - **Las pruebas y los mini-tests se contestan pulsando** (`scripts/pruebas.py`
   + `test.js`): el lector saca preguntas y clave del propio Markdown y, ante
   cualquier duda, devuelve None y la página se queda en papel. Al terminar,
   el resultado manda a la lección de cada fallo. Probado en Chromium:
   acertando todo, fallando todo y sin JavaScript.
-- **Los libros se están leyendo enteros**: los cinco escaneos pasaron por
-  Tesseract (el texto, solo en `libros-ruso-temp/ocr`), y cada tramo lo
-  ficha un lector en `referencias/lecciones/`. Hechas: Tochka Ru A1,
-  lecciones 1.1–4.4.
+- **Los libros están leídos enteros** (2026-11-19): los cinco escaneos
+  pasaron por Tesseract (el texto, solo en `libros-ruso-temp/ocr`), y cada
+  tramo lo fichó un lector en `referencias/lecciones/`: Tochka Ru A1, A2
+  (libro y cuaderno) y B1.1, Русский язык сегодня, Я пишу по-русски,
+  Дорога в Россию 2 y Russian in Exercises. Las fichas señalan desajustes
+  del calendario A2–B1 que hay que corregir antes de detallar esas unidades.
+- **El ritmo lo elige el alumno** (`programa/plan.md`): la lección es de 30
+  minutos y una hora al día son dos lecciones. Con una hora, de cero a A2 en
+  un año y a B2 en dos; «Ruso en un año» es ese plan.
 - Pendiente del usuario: **nombre y dominio** de la web, y crear el
   repositorio de GitHub vacío (desde esta sesión no se puede).
 - Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
@@ -116,6 +128,32 @@ las decisiones y su porqué.
 - **Transcripciones comprobadas**: Москва́ es [масква́] (la в no se
   ensordece delante de vocal); el calendario y la lista de contraste decían
   [маскфа́] y se corrigió.
+
+## Lo aprendido en la unidad 2
+
+- **Antes de usar una palabra en un diálogo, comprobar que se enseñó.**
+  **Здра́вствуйте** se dio por sabida en los días 8 y 9 y no estaba en la
+  unidad 1: ahora entra en el día 8. El vocabulario enseñado hasta una
+  semana se lista leyendo las tablas «Vocabulario del día» y «3. Palabras»
+  de las lecciones anteriores; hay que mirarlo antes de escribir.
+- **Hasta el acusativo (unidad 8), nada de complementos que cambien.** Al
+  pedir, **Мне вода́** está mal (es **Мне во́ду**): el día 9 pide solo
+  bebidas que no cambian y enseña a señalar (**Мне э́то**). Lo mismo con
+  cualquier frase con complemento directo.
+- **Las terminaciones y los trozos de palabra, entre comillas invertidas**
+  (`-ого`): fuera de ellas el validador los lee como palabras rusas sin
+  acento, y tiene razón en avisar.
+- **Las letras latinas se siguen colando**: «пожа́luйста», «пробле́ma» y
+  «пра́вda» en esta unidad. Se valida cada lección al salir, sin
+  excepción.
+- **El episodio**: el error de cada personaje sale de un bloque de contraste
+  ya enseñado (Camila, **Нет зна́ю**; Tom, **вы** a un niño), y lo corrige
+  Misha con la construcción de la propia unidad: «Не «нет зна́ю», а «не
+  зна́ю»!».
+- **Una palabra del calendario se cambia si la lección no puede enseñarla
+  bien**, y se cambia primero en el YAML: salieron **минера́льная вода́**
+  (pide acusativo) y **ноутбу́к** (su pronunciación depende de la
+  asimilación de la unidad 4).
 
 ## El A1 sigue a Tochka Ru A1, lección por lección
 

@@ -47,3 +47,8 @@ como todo `programa/`; lo que lee el alumno está en inglés en la lección.
 | 19 | «want someone to»: ~~Я хочу́ тебя́ прочита́ть~~ → **Я хочу́, что́бы ты прочита́л** | el ruso usa что́бы + pasado | A2 U9 | inferido |
 | 20 | el acento: leer las palabras con el acento del inglés en la primera sílaba | en ruso la tónica puede estar en cualquier sílaba y cambia de una forma a otra | A1 U1 | inferido |
 | 21 | «my name is» calcado: ~~Я зову́т А́нна~~ (o el libresco Моё и́мя А́нна) → **Меня́ зову́т А́нна** | la frase de todos los días es «me llaman», y зову́т no cambia (como *people call me Annie*) | A1 U1 | inferido |
+| 22 | pedir con «I»: ~~Я чай~~ / ~~Я ко́фе~~ → **Мне чай** | el inglés pide con un verbo y con «I» (*I'll have a tea*); el ruso, sin verbo y con мне | A1 U2 | inferido |
+| 23 | un solo «you» para todos: tratar de вы a un niño, o mezclar: Здра́вствуйте… ~~А у тебя́?~~ → **А у вас?** | el inglés tiene un solo *you*; el ruso elige ты o вы y no lo cambia a mitad de conversación | A1 U2 | inferido |
+| 24 | sonorizar el final: ~~[sad]~~ → **сад** [sat], ~~[khlyeb]~~ → **хлеб** [khlyep] | el inglés distingue *bad* y *bat*, y conserva la voz final | A1 U2, U4 | РЯС + inferido |
+| 25 | **наве́рное** como «surely»: es «probably»; lo seguro es **коне́чно** o **то́чно** | suena más seguro de lo que es | A1 U2 | inferido |
+| 26 | los falsos amigos: **фами́лия** (surname), **магази́н** (shop), **аккура́тный** (neat), y **лимона́д**, que es la *lemonade* británica | se parecen a una palabra inglesa y quieren decir otra | A1 U2 | inferido |

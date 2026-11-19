@@ -62,3 +62,9 @@ Una nota que vale oro para el Río de la Plata: quien dice «yo» y «calle» co
 | 20 | el verbo con dos temas: ~~рисова́ю~~ → **рису́ю** | рисова́ть / рису́ю: el presente se forma sobre otro tema | A1 U9 | RiE |
 | 21 | presentarse con «yo»: ~~Я зову́т А́на~~ → **Меня́ зову́т А́на** | «me llamo» lleva el verbo en la persona; en ruso es «me llaman» y зову́т no cambia (como «me llaman Pepe») | A1 U1 | inferido |
 | 22 | una e delante de s + consonante: ~~[es-pa-sí-ba]~~ → **спаси́бо** [spa-sí-ba], ~~[es-port]~~ → **спорт** | el español no empieza palabra con s + consonante y mete una e («escuela», «España») | A1 U1 | inferido |
+| 23 | negar con нет donde va не: ~~Нет зна́ю~~ → **Не зна́ю**, ~~Э́то нет кни́га~~ → **Э́то не кни́га** | el español tiene un solo «no»; el ruso contesta con нет y niega la palabra de detrás con не | A1 U2 | inferido |
+| 24 | pedir con «yo»: ~~Я чай~~ → **Мне чай** | el ruso pide sin verbo, como «para mí, un té», y no como «yo quiero un té» | A1 U2 | inferido |
+| 25 | mezclar tú y usted en la misma conversación: Здра́вствуйте… ~~А у тебя́?~~ → **А у вас?** | quien empieza de вы sigue de вы hasta el final | A1 U2 | inferido |
+| 26 | el acento del cognado español: ~~[af-ta-bús]~~ → **авто́бус** [af-tó-bus], ~~[tram-ví-a]~~ → **трамва́й** | la palabra se parece y la boca pone el acento español; con el acento cambian las vocales que se debilitan | A1 U2 | inferido |
+| 27 | leer letra por letra las palabras con trampa: ~~[si-gód-nia]~~ → **сего́дня** [si-vód-nia], ~~[sól-ntse]~~ → **со́лнце** [són-tse], ~~[ka-niéch-na]~~ → **коне́чно** | el español se lee casi siempre como se escribe | A1 U2, U8 | inferido |
+| 28 | los falsos amigos: **фами́лия** (apellido), **магази́н** (tienda), **аккура́тный** (ordenado), **лимона́д** (refresco con gas) | se parecen a una palabra española y quieren decir otra | A1 U2 | inferido |
