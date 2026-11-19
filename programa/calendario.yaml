@@ -41,6 +41,7 @@ niveles:
         gramatica: el alfabeto en diez tandas; Это…; Кто это? Что это?; да / нет
         lexico: saludar y despedirse; presentarse; palabras internacionales
         fonetica: la sílaba tónica; la о átona suena [а]; ИК-1 (afirmar) e ИК-3 (preguntar sí/no)
+        episodio: {ru: "Знако́мство", es: "El encuentro", en: "Meeting", sinopsis: "Camila llega al edificio con una caja y llama a la puerta equivocada: abre Kira. Baja Tom por la escalera. Nombres, qué tal, café o té, hasta luego: solo con lo de la unidad 1."}
         dias:
           - tipo: leccion
             ru: А, О, К, М, Т — знако́мые бу́квы
@@ -164,6 +165,7 @@ niveles:
         gramatica: Что э́то? Кто э́то?; да / нет / не; и́ли; Э́то не…, а…
         lexico: objetos de todos los días; palabras internacionales
         fonetica: reducción de о, е, я; consonantes duras y blandas; ensordecimiento final; ИК-1, ИК-2, ИК-3, ИК-4
+        episodio: {ru: "Э́то не ша́пка, а кот!", es: "¡No es un gorro, es un gato!", en: "That's not a hat, it's a cat!", sinopsis: "Tom le devuelve a Kira un gorro que encontró en la escalera, y el gorro se mueve: es Bársik. Misha se ríe de él. Qué es esto, sí, no, no es esto sino aquello."}
 
       - numero: 3
         ru: Отку́да вы?
@@ -173,6 +175,7 @@ niveles:
         gramatica: pronombres personales; говори́ть; из + país (como bloque)
         lexico: saludos formales e informales; países, nacionalidades, lenguas; хорошо́, немно́го, чуть-чу́ть
         fonetica: la в y la й que no se pronuncian (здра́вствуйте, пожа́луйста); ИК-2
+        episodio: {ru: "Ве́ра Ива́новна", es: "Vera Ivánovna", en: "Vera Ivanovna", sinopsis: "La vecina que lo sabe todo para a Camila y a Tom en el portal: de dónde son, qué lenguas hablan. Ella exige el вы; Tom le habla de ты."}
 
       - numero: 4
         ru: Где метро́?
@@ -182,6 +185,7 @@ niveles:
         gramatica: género del sustantivo; acusativo de los pronombres (меня́, тебя́…); почему́ — потому́ что
         lexico: la ciudad y orientarse (где, спра́ва, сле́ва, здесь, там, в це́нтре); números 1–20
         fonetica: ensordecimiento y sonorización de consonantes
+        episodio: {ru: "Спра́ва и́ли сле́ва?", es: "¿A la derecha o a la izquierda?", en: "Right or left?", sinopsis: "Camila y Tom van al centro por primera vez y se pierden al salir del metro. Un transeúnte les indica el camino, y cada uno entiende una cosa distinta."}
 
       - numero: 5
         ru: Кем вы рабо́таете?
@@ -191,6 +195,7 @@ niveles:
         gramatica: las dos conjugaciones (рабо́тать, говори́ть)
         lexico: profesiones; tarjetas de visita; hablar de uno mismo; el ruso de clase
         fonetica: reducción de е y я átonas
+        episodio: {ru: "Врач, по́вар и преподава́тель", es: "Médica, cocinera y profesor", en: "A doctor, a cook and a teacher", sinopsis: "Kira vuelve de la policlínica de noche. En la escalera, cada uno cuenta en qué trabaja: Camila es cocinera, Tom da clases de inglés. Misha anuncia que él es cosmonauta."}
 
       - numero: 6
         ru: Что у тебя́ есть?
@@ -200,6 +205,7 @@ niveles:
         gramatica: у меня́ есть…
         lexico: mis cosas; números 20–100
         fonetica: ИК-3 en preguntas largas
+        episodio: {ru: "А у тебя́ есть стол?", es: "¿Y tú tienes mesa?", en: "Have you got a table?", sinopsis: "El piso de Camila está vacío. Kira y Tom le preguntan qué tiene: casi nada. Entre los vecinos le prestan una mesa, dos sillas y una lámpara."}
 
       - numero: 7
         ru: Моя́ семья́
@@ -209,6 +215,7 @@ niveles:
         gramatica: posesivos; чей?
         lexico: la familia; dar el correo, el teléfono y la dirección
         fonetica: ч y щ
+        episodio: {ru: "Фо́то на телефо́не", es: "Fotos en el móvil", en: "Photos on the phone", sinopsis: "Camila enseña a su familia de Lima; Tom, a la suya de Toronto; Kira habla de su madre, en Kazán. Al final se dan los teléfonos."}
 
       - numero: 8
         ru: Что ты лю́бишь?
@@ -218,6 +225,7 @@ niveles:
         gramatica: acusativo del sustantivo
         lexico: aficiones; де́лать, смотре́ть, чита́ть, слу́шать, люби́ть, ненави́деть
         fonetica: consonantes que no se pronuncian
+        episodio: {ru: "Футбо́л и́ли кино́?", es: "¿Fútbol o cine?", en: "Football or the movies?", sinopsis: "Viernes por la noche. Camila quiere ver el partido, Tom odia el fútbol y quiere ir al cine, Misha quiere las dos cosas. Qué te gusta y qué no soportas."}
 
       - numero: 9
         ru: Свобо́дное вре́мя
@@ -227,6 +235,7 @@ niveles:
         gramatica: verbos en -ова-/-ева-; la -л- de люблю́; с/ш (писа́ть — пишу́); игра́ть в / на
         lexico: aficiones 2
         fonetica: grupos de consonantes (тс, тьс, ться)
+        episodio: {ru: "Выходно́й", es: "Día libre", en: "Day off", sinopsis: "Un domingo cualquiera en el portal: Tom toca la guitarra, Camila cocina, Misha juega al ajedrez con Vera Ivánovna y Kira, por fin, duerme."}
 
       - numero: 10
         ru: Мой дом
@@ -236,6 +245,7 @@ niveles:
         gramatica: preposicional en -е y -у (в шкафу́); в / на
         lexico: la casa, las habitaciones, los muebles; люби́мый
         fonetica: la preposición в unida a la palabra siguiente
+        episodio: {ru: "Новосе́лье", es: "La fiesta del piso nuevo", en: "The housewarming", sinopsis: "Camila ya tiene muebles y celebra el новосе́лье. Enseña las habitaciones, y Vera Ivánovna le explica por qué en un piso nuevo debe entrar primero el gato."}
 
       - numero: 11
         ru: Где что стои́т
@@ -245,6 +255,7 @@ niveles:
         gramatica: preposicional en -ии; э́тот, э́та, э́то, э́ти
         lexico: сиде́ть, лежа́ть, стоя́ть, висе́ть, жить; где нахо́дится…?
         fonetica: ш y ж
+        episodio: {ru: "Где ключи́?", es: "¿Dónde están las llaves?", en: "Where are the keys?", sinopsis: "Después de la fiesta Camila no encuentra las llaves. Todos buscan: en la mesa, en el sofá, en el armario. Las tiene Bársik."}
 
       - numero: 12
         ru: На рабо́те
@@ -254,6 +265,7 @@ niveles:
         gramatica: el plural del sustantivo
         lexico: la oficina, un día de trabajo; adverbios
         fonetica: ИК-4 (А вы?)
+        episodio: {ru: "Том на рабо́те", es: "Tom en el trabajo", en: "Tom at work", sinopsis: "Un día en la escuela de idiomas de Tom: sus clases, sus alumnos, sus compañeros. Y los plurales rusos, que no esperaba."}
 
       - numero: 13
         ru: Како́й он?
@@ -263,6 +275,7 @@ niveles:
         gramatica: el adjetivo; adjetivo y adverbio (хоро́ший / хорошо́)
         lexico: colores, contrarios, нра́виться, наверху́ / внизу́; modismos con colores
         fonetica: ИК-5 (¡Qué bonito!)
+        episodio: {ru: "Кто живёт наверху́?", es: "¿Quién vive arriba?", en: "Who lives upstairs?", sinopsis: "Cada noche suena música en el piso de arriba. Los vecinos imaginan cómo es el nuevo: alto, joven, raro. Es Lev Borísovich, un violinista mayor y muy amable."}
 
       - numero: 14
         ru: За́втрак
@@ -272,6 +285,7 @@ niveles:
         gramatica: без + genitivo, с + instrumental (como bloques); есть, пить
         lexico: comida y bebida; desayunos del mundo; никогда́, ре́дко, иногда́, обы́чно, ча́сто, всегда́
         fonetica: ц
+        episodio: {ru: "Сы́рники и тама́лес", es: "Sýrniki y tamales", en: "Syrniki and tamales", sinopsis: "Desayuno a tres en casa de Kira: ella hace сы́рники, Camila trae tamales peruanos y Tom, tortitas con jarabe de arce. Qué se come por la mañana en cada país."}
 
       - numero: 15
         ru: В рестора́не
@@ -281,6 +295,7 @@ niveles:
         gramatica: acusativo de adjetivos, posesivos y numerales; хоте́ть; el pasado
         lexico: pedir en un restaurante; recetas; la cocina rusa
         fonetica: р y л
+        episodio: {ru: "Счёт, пожа́луйста!", es: "¡La cuenta, por favor!", en: "The bill, please!", sinopsis: "La primera cena fuera de los tres. Piden en ruso, Camila pregunta por cada plato como buena cocinera y el camarero acaba hablando más que ellos."}
 
       - numero: 16
         ru: Оде́жда
@@ -290,6 +305,7 @@ niveles:
         gramatica: acusativo del adjetivo; носи́ть, надева́ть
         lexico: ropa, calzado, accesorios; las estaciones
         fonetica: la ы después de consonante
+        episodio: {ru: "Пе́рвый снег", es: "La primera nieve", en: "The first snow", sinopsis: "Nieva por primera vez y Camila nunca ha visto nevar. Tom, que es de Toronto, la lleva a comprar un abrigo y unas botas de verdad."}
 
       - numero: 17
         ru: Поку́пки
@@ -299,6 +315,7 @@ niveles:
         gramatica: до́лжен, мочь; instrumental con рабо́тать, быть, стать
         lexico: comprar; precios
         fonetica: ИК-2 con palabra interrogativa
+        episodio: {ru: "На ры́нке", es: "En el mercado", en: "At the market", sinopsis: "Camila quiere cocinar algo de Lima y busca los ingredientes en el mercado: tiene que preguntar precios y decidir qué puede sustituir. Vera Ivánovna sabe dónde está todo."}
 
       - numero: 18
         ru: Мой день
@@ -308,6 +325,7 @@ niveles:
         gramatica: идти́; verbos reflexivos (-ся); genitivo del sustantivo
         lexico: la rutina; la hora; Ско́лько? / Во ско́лько?
         fonetica: -тся, -ться
+        episodio: {ru: "Буди́льник", es: "El despertador", en: "The alarm clock", sinopsis: "Tom es búho: se acuesta tarde y no oye el despertador. Kira es alondra: a las seis ya está en pie. Un día de cada uno, hora a hora."}
 
       - numero: 19
         ru: Неде́ля
@@ -317,6 +335,7 @@ niveles:
         gramatica: идти́ / ходи́ть
         lexico: días de la semana; frecuencia
         fonetica: ч, чт, чн
+        episodio: {ru: "По понеде́льникам", es: "Los lunes", en: "On Mondays", sinopsis: "La semana de cada uno: los lunes Tom va a la piscina, los martes Camila tiene clase hasta tarde. ¿Qué día pueden verse los tres?"}
 
       - numero: 20
         ru: Тра́нспорт
@@ -326,6 +345,7 @@ niveles:
         gramatica: е́хать / е́здить; где? / куда́?
         lexico: transporte; На чём ты е́здишь на рабо́ту?
         fonetica: ИК-3 en enumeraciones
+        episodio: {ru: "На метро́ и́ли на авто́бусе?", es: "¿En metro o en autobús?", en: "By metro or by bus?", sinopsis: "Tom empieza en una escuela al otro lado de la ciudad. Discuten la mejor ruta: metro, autobús, tranvía. Camila va en bicicleta, hasta que llega el frío."}
 
       - numero: 21
         ru: Пого́да и пла́ны
@@ -335,6 +355,7 @@ niveles:
         gramatica: где? куда́? отку́да?; preposicional, acusativo y genitivo juntos; repaso de los verbos de movimiento
         lexico: el tiempo; los meses; vacaciones y viajes de trabajo; planes del año
         fonetica: repaso de la reducción
+        episodio: {ru: "Пла́ны на зи́му", es: "Planes para el invierno", en: "Plans for the winter", sinopsis: "Se acercan las vacaciones de invierno. Tom quiere ir a San Petersburgo; Camila, a Kazán, a casa de la madre de Kira. Qué tiempo hace allí en enero."}
 
       - numero: 22
         ru: Пра́здники
@@ -344,6 +365,7 @@ niveles:
         gramatica: dativo del sustantivo y del pronombre; кому́? к кому́?; мне на́до, ну́жно; ordinales
         lexico: emociones; fechas; fiestas; Како́е сего́дня число́? Како́го числа́?
         fonetica: щ
+        episodio: {ru: "С Но́вым го́дом!", es: "¡Feliz Año Nuevo!", en: "Happy New Year!", sinopsis: "Nochevieja en casa de Kira: la ensalada de siempre, las doce campanadas, los regalos debajo del árbol. A quién se regala qué."}
 
       - numero: 23
         ru: С днём рожде́ния!
@@ -353,6 +375,7 @@ niveles:
         gramatica: el imperativo; dativo
         lexico: cumpleaños, regalos; orientarse en la ciudad
         fonetica: ИК-2 en el imperativo
+        episodio: {ru: "Пода́рок для Ми́ши", es: "Un regalo para Misha", en: "A present for Misha", sinopsis: "Misha cumple diez años. Camila y Tom no saben qué regalarle ni cómo llegar a la fiesta: Kira les da las instrucciones por teléfono, una tras otra."}
 
       - numero: 24
         ru: Всё вме́сте
@@ -362,6 +385,7 @@ niveles:
         gramatica: "repaso del A1: los seis casos en sus usos del nivel"
         lexico: quedar con alguien; repaso
         fonetica: las cinco entonaciones
+        episodio: {ru: "Всё по-ру́сски", es: "Todo en ruso", en: "Everything in Russian", sinopsis: "Un día entero en que Camila lo hace todo en ruso: el mercado, el metro, una llamada, una cita. Por la noche se lo cuenta a Kira, y Kira le dice algo que no esperaba."}
 
     fase_final:
       examen: ТЭУ

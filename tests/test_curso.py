@@ -59,7 +59,35 @@ class TestElCalendario(unittest.TestCase):
                 malas += validar.sin_acento(u["ru"])
                 for d in u.get("dias") or []:
                     malas += validar.sin_acento(d["ru"])
+                if u.get("episodio"):
+                    malas += validar.sin_acento(u["episodio"]["ru"])
         self.assertEqual(malas, [])
+
+
+class TestLaHistoria(unittest.TestCase):
+    """Los episodios viven en el calendario y se explican en historia.md: si
+    uno de los dos se queda viejo, el otro miente sin que nada falle."""
+
+    def setUp(self):
+        self.a1 = plan.niveles(plan.cargar())[0]
+        self.historia = (RAIZ / "programa" / "historia.md").read_text(encoding="utf-8")
+
+    def test_cada_unidad_del_a1_tiene_su_episodio(self):
+        for u in self.a1["unidades"]:
+            ep = u.get("episodio") or {}
+            for campo in ("ru", "es", "en", "sinopsis"):
+                self.assertTrue(ep.get(campo), f"unidad {u['numero']}: falta episodio.{campo}")
+
+    def test_historia_nombra_los_mismos_episodios(self):
+        faltan = [u["episodio"]["ru"] for u in self.a1["unidades"]
+                  if u["episodio"]["ru"] not in self.historia]
+        self.assertEqual(faltan, [])
+
+    def test_el_dia_14_de_cada_unidad_es_su_episodio(self):
+        for u in self.a1["unidades"]:
+            dias = u.get("dias") or []
+            if dias:
+                self.assertEqual(dias[13]["ru"], u["episodio"]["ru"], f"unidad {u['numero']}")
 
 
 class TestElValidador(unittest.TestCase):
