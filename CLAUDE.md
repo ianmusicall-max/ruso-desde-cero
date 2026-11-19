@@ -57,13 +57,49 @@ las decisiones y su porqué.
 ## Estado (2026-11-19)
 
 - Leídos los índices y la anatomía de lección de los siete libros, incluido
-  **Tochka Ru A1** (subido por el usuario en tres partes al chat; no está en
-  `libros-ruso-temp` y hay que subirlo ahí para las sesiones siguientes).
-- Escritos `programa/plan.md` y los análisis de `referencias/`.
-- En curso: calendario, metodología, listas de contraste, el motor del
-  sitio y la semana piloto del A1 en las dos pistas.
-- Pendiente del usuario: **nombre y dominio** de la web (no se puede crear el
-  repositorio de GitHub desde esta sesión: lo crea él, vacío, y se conecta).
+  **Tochka Ru A1** (subido por el usuario en tres partes al chat; **no está
+  en `libros-ruso-temp`** y hay que subirlo ahí para las sesiones
+  siguientes). Su secuencia está en `referencias/tochka-ru.md`.
+- Hechos: `programa/plan.md`, calendario A1–B2, metodología, las dos listas
+  de contraste, el motor (`plan.py`, `validar.py`, `construir_sitio.py`) y
+  27 pruebas.
+- **Escrita la semana 1 del A1 en las dos pistas** (14 lecciones, días 1–7):
+  las 15 primeras letras, la о átona, presentarse, la entonación de la
+  pregunta, el repaso con mini-test y el día de cultura del alfabeto.
+- Siguiente: la semana 2 (días 8–14). Antes del día 14 hay que escribir
+  `programa/historia.md` (el episodio 1), y antes de la unidad 2, detallar
+  sus días en el calendario.
+- Pendiente del usuario: **nombre y dominio** de la web, y crear el
+  repositorio de GitHub vacío (desde esta sesión no se puede).
+- Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
+
+## Cómo se escribe una lección (lo aprendido en la semana 1)
+
+- **Dentro de una cita (`>`) cada línea del Markdown es una línea en
+  pantalla.** La prosa de una cita va en una sola línea; los diálogos y las
+  opciones de un ejercicio que van en varias líneas, dentro de una cita
+  (fuera de ella, Markdown junta las líneas en un párrafo). `validar.py`
+  caza la frase partida.
+- **La negrita puede marcar una letra dentro de una palabra**
+  («М**о**сква́»): el validador quita los asteriscos antes de leer. Lo que
+  no se puede es citar un trozo de palabra («мната»): sale como ruso sin
+  acento. Se dice «el resto de la palabra».
+- **Letras latinas dentro de palabras rusas**: se colaron tres veces
+  escribiendo («до́ktор», «Алекса́ndр»). A ojo no se ven; `validar.py`
+  las caza, así que se valida cada lección al salir.
+- **La pronunciación aproximada** («Se lee» / «Say it») va en letras
+  latinas y con la sílaba tónica en mayúsculas, con la ortografía de cada
+  lengua: «niet», «mi-ÑA» en la pista española; «nyet», «mi-NYA» en la
+  inglesa. Solo en las primeras semanas: es una muleta.
+- **Nada de días de la semana** («el miércoles»): el alumno empieza cuando
+  quiere. Se dice «mañana», «el día 7», «la lección 5».
+- **El mini-test**: «N. ítem → а) … · б) … · в) …», tres bloques de cinco, y
+  la clave como «N б (día N)» para que el resultado mande a su lección. La
+  letra correcta 5/5/5, sin tres iguales seguidas ni escaleras (абв, вба):
+  se genera con un script, a mano siempre sale un patrón.
+- **Transcripciones comprobadas**: Москва́ es [масква́] (la в no se
+  ensordece delante de vocal); el calendario y la lista de contraste decían
+  [маскфа́] y se corrigió.
 
 ## El A1 sigue a Tochka Ru A1, lección por lección
 
