@@ -64,3 +64,78 @@ Correspondencia con el curso (`programa/calendario.yaml`): **unidad 10 «Пис�
 **Cultura:** Дед Мороз de Великий Устюг; Вологда; pintores; entrevistas a actores y deportistas; el concurso de TV «Кто хочет стать миллионером?» y teleconcursos rusos; Мария Шарапова; тенис.
 **Para el curso:** unidad 10: la **carta de respuesta** ya enseña a hacer referencia a la carta anterior, a justificar un gusto con «во-первых/во-вторых» y a pedir opinión. La técnica de **predecir un texto con la primera frase de cada párrafo** y la **reescritura entrevista→nota** son aprovechables para unidades de lectura/escritura. Falta (autoestudio): plantilla de correo formal; el libro no da los *nuestros* modelos de saludos según destinatario (ты/вы); no hay ejemplos de «Уважаемый…» ni de cierre formal.
 
+## Урок 3 — Родительный падеж (обладание, отсутствие, место, характеристика, принадлежность, время, количество; сложное предложение: чтобы)
+
+**Páginas PDF:** 68–87
+**Tema y situaciones comunicativas:** quién tiene y quién no tiene qué (familia, objetos, aparatos); de quién y de dónde se recibe correspondencia (carta, fax, SMS, notas cortas); gustos («lo que le gusta a X»); fechas exactas y festivos de Rusia; cantidad de hermanos/hijos; historia de la Universidad de Moscú (texto expositivo largo); deseo, finalidad y necesidad con subordinadas.
+**Género que enseña:** (1) **nota/recado breve** (cuatro modelos de «записка»: saludo corto, mensaje, firma de parentesco); (2) **fechas de vida y festivos escritos en palabras**; (3) «Моя страница в Интернете»; (4) **конспект** (resumen esquemático de un texto informativo), primera vez que aparece.
+**Estructura (partes, en orden):**
+- *Nota breve:* destinatario («Дорогая мамочка!», «Володя!», «Максим!») → mensaje de una o dos frases → firma con relación («Твоя любящая дочь…», «Твой друг…», «Твоя жена…»). Las notas se usan para practicar «получил СМС из… от…».
+- *Fechas:* día de mes en genitivo + mes en genitivo + año en genitivo ordinal («тридцатого мая тысяча шестьсот семьдесят второго года»).
+- *Конспект (págs. 80–83):* texto largo (~600 palabras, historia de la МГУ) → localizar el fragmento útil → de cada párrafo escoger 1–2 frases que expresan la idea principal (suelen ser primera o última del párrafo) → abreviarlas y copiarlas. Antes: vocabulario previo (explicaciones léxicas de выпускник, аспирант, кандидат/доктор наук, типография, впервые).
+**Fórmulas y conectores:** «Я получил(а) письмо от… из…»; «Дорогая/Дорогой…»; «Твоя любящая дочь», «Твой друг», «Жду. Приходи.»; con *чтобы*: «S1 + P1, чтобы + инф.»; «Чтобы + инф., надо + инф.»; «хочет, чтобы S2 + прошедшее» (S1 ≠ S2); *что* vs *чтобы*.
+**Tipo de tarea y extensión:** frases con modelo (oraciones simples de 15–25 palabras); fechas en palabras; conspecto de ~100–150 palabras a partir de un texto de ~600; página personal con fechas exactas de nacimiento, escuela, etc. (libre).
+**Gramática, en el orden en que se enseña:**
+1. **Родительный: обладание/отсутствие** — *у кого есть что; у кого нет чего* (siempre genitivo después de *нет*); *нет, не было, не будет*.
+2. **От кого / откуда** (от + Р.п., из/с + Р.п.): *письмо от близкой подруги из Тулы*, con títulos de cargo («главный редактор», «директор», «генеральный директор»).
+3. **Свой/мой/её в родительном**: cuándo *свой* (sujeto) y cuándo variante con *мой*.
+4. **Родительный: характеристика, принадлежность** — substantivo + sustantivo en Р.п.: *книги этого современного писателя; жизнь большого современного города; история Древнего мира*.
+5. **Родительный: время, количество** — fechas completas: *5-ого марта 1996-ого года*; numerales 2–4 + Р.п. sing., 5+ + Р.п. pl.: *2 брата, 4 сестры, 5 внуков, 13 актёров, 9 актрис, 3 танцора*, genitivo plural de nombres de profesión.
+6. **Который в родительном**: *у которого, у которой; из которого; без которого*; y construcción «NOM, главный офис которого / с братом которой…» (posesivo/relación dentro de la subordinada).
+7. **Выражение желания**: *S1 хочет + инф.* (mismo sujeto) vs. *S1 хочет, чтобы S2 + глагол в прошедшем времени* (sujetos distintos).
+8. **Цель**: *S1 + P1, чтобы + инф.*; *…, чтобы S2 + P2 (-л)*.
+9. **Необходимость**: *Чтобы + инф., надо / нужно + инф.*
+10. *Что* o *чтобы* (elegir con verbos *думать, знать, хотеть*).
+11. Formación de palabras: sustantivos deverbales con **-ение / -ание** (читать–чтение, понимать–понимание) y con **-тель** (учить–учитель, строить–строитель), con rección en genitivo (изучение иностранного языка).
+12. Régimen verbal: жениться/выйти замуж/пожениться, открывать/закрывать, начинать(ся)/продолжать(ся)/кончать(ся) (diferencias entre el verbo transitivo con sujeto persona y la forma reflexiva con sujeto cosa), tabla de rección (будить, использовать, праздновать, создавать, ссориться, участвовать, надеяться на…, желать/пожелать кому чего).
+**Léxico:** campos: familia y objetos del hogar, correspondencia (СМС, факс, письмо), festivos, ciencia y educación, historia de la universidad. Palabras: стиральная машина, холодильник, кухонный комбайн, электрическая плита, цифровой телевизор, музыкальный центр, диски, видеофильмы, мобильный телефон, меховая шапка, зимняя куртка, шарф, словарь, рекламный проспект, супермаркет, издательство, банк, сервисный центр, туристическое агентство, главный редактор, управляющий, Рождество, День защитника Отечества, Международный женский день, День Победы, День Конституции, царь, императрица, труппа, балетмейстер, танцовщик, певец/певица, праздновать/отмечать, основатель, открытие, факультет (юридический, медицинский, философский), кафедра, библиотека, типография, газета, выпускник, аспирант, докторант, кандидат/доктор наук, дворяне, крестьяне, интернат, студенческий городок, за границей/за границу/из-за границы, впервые, нужно/надо, интересно/скучно/трудно/весело/приятно/больно.
+**Fonética y entonación:** no hay.
+**Lectura y audio:** sin audio. Textos: lista de fechas de personajes (Пушкин, Толстой, Ломоносов, Цветаева, Орлова, Шостакович, Левитан, Пётр I), mini-historia del Teatro Bolshói, «Он и сейчас первый» (~600 palabras, informativo-histórico, con fecha y estadísticas), notas breves.
+**Tipos de ejercicio:** (a) frases con modelo «у кого есть/нет кого» (7 + 8); (b) rellenar «от кого/откуда» (4 + 4 fotos); (c) *мой/свой* (≈ 10 huecos, con discusión de variantes); (d) leer notas y escribir quién envió qué (3 modelos); (e) completar con el genitivo de grupos dados (3 párrafos); (f) frases parejas «Игорь любит… / Ире нравится…» (≈ 6 pares); (g) formación de nombres deverbales (≈ 18 verbos) y sintagmas (12); (h) fechas en palabras (8 festivos + 6 personajes); (i) terminaciones de genitivo plural (≈ 25 huecos); (j) página personal con fechas; (k) unir frases con *который* (≈ 16 + 4 con construcción posesiva); (l) formar frases con *хочет, чтобы* (6); (m) *чтобы + infinitivo/pasado* (4 pares); (n) emparejar «Чтобы…, надо…» (7); (o) *что/чтобы* (4 párrafos); (p) nombres en -тель (14); (q) régimen verbal (≈ 30 huecos); (r) conspecto. «Пишу сам»: festivos de tu país y página personal. **Parejas/grupo:** ninguno. Con clave.
+**Cultura:** festivos rusos con fecha, МГУ y Ломоносов, el Teatro Bolshói (fundación y compañía), Dmitri Mendeléev, Nikita Mijálkov; vida estudiantil en Rusia.
+**Para el curso:** lección útil para **fechas con día y mes completos** (hace falta en cartas y solicitudes) y para **«чтобы» y «хочу, чтобы»** (finalidad y petición en una carta o felicitación). El **конспект** es técnica propia para la unidad 24 / comprensión lectora. Para quien estudia solo falta: la nota breve aquí es solo de reconocimiento; el curso debe añadir un molde de **nota/recado** con 3–4 plantillas (aviso de llegada, invitación, disculpa).
+
+## Урок 4 — Дательный падеж (inicio; adresat, necesidad, estado/sentimiento; págs. PDF 88–90 de la segunda parte del urok)
+
+**Páginas PDF:** 88–90 (el resto de Урок 4 corresponde al otro tramo)
+**Tema y situaciones comunicativas:** a quién se compra, regala, dice o promete algo; cumpleaños/aniversarios de instituciones y personas; qué necesita cada profesión; estados emocionales y físicos de una persona.
+**Género que enseña:** frases con complemento indirecto y frases impersonales de estado; aún no aparece ningún género textual nuevo en estas tres páginas.
+**Gramática, en el orden en que se enseña:**
+1. **Дательный: адресат** — *кому* con купить, подарить, дать, отдать, сдать, передать привет, позвонить, рассказать, посвятить, пообещать, посоветовать, объяснить, помочь (adjetivos y sustantivos: *любимой бабушке, младшему брату, лучшему другу, новому студенту*).
+2. **Cumplir años/aniversario**: *Кому? исполнилось / исполняется / исполнится сколько лет* (для personas e instituciones: «университету исполнилось 260 лет»).
+3. **Необходимость**: *Кому? надо / нужно + инф.*; *Кому? нужен / нужна / нужно / нужны (был…/будет…) кто? что?* (presente, pasado y futuro).
+4. **Состояние/чувство** — *Кому? весело, скучно, трудно, интересно, холодно, приятно, больно* (predicativos impersonales).
+**Léxico:** сувенир, цветы, документы, номер телефона, привет, стихотворение, секретарь, экономист, архитектор, певица, журналист, балерина, фигурное катание, тренер, вечернее платье, режиссёр, комплимент, дискотека, исполниться.
+**Fonética y entonación:** no hay.
+**Lectura y audio:** no hay textos continuos en estas páginas.
+**Tipos de ejercicio:** frases de dos columnas (verbo + destinatario, 13 × 13); frases con modelo de edad/aniversario (6); «Кому надо + инф.» (5 pares) y «нужен/нужна» en 3 tiempos (3); describir el estado de 9 personas con un adverbio de estado. Sin trabajo de pareja.
+**Cultura:** aniversarios de museos y de ciudades rusas (Нижний Новгород, Библиотека), Майя Плисецкая.
+**Para el curso:** el **dativo impersonal de estado** («мне интересно / скучно») es muy productivo para escribir cartas con valoración emocional («мне было очень интересно…»). El resto de Урок 4 (felicitación, isloženie, verbos de movimiento) se verá en la segunda mitad.
+
+## Resumen del tramo
+
+| Lección | Gramática principal | Léxico principal |
+|---|---|---|
+| У1 (págs. 7–41) — Предложный | П.п. объект/место/время; *свой*; fechas con año; *который* И.п. y П.п.; formación de adjetivos; régimen de начинать/звать/помнить/играть/искать | arte, ciudad, familia/profesiones, universidad, biografía de artista/científico |
+| У2 (42–67) — Винительный | В.п. объект/время; *свой*; движение (пойти/приехать/уйти; идти/ходить, ехать/ездить); *прямая и косвенная речь* (primera); *который* В.п.; видовые пары | viajes, deporte (tenis), entrevista, pintura, carácter (antónimos), turismo (Вологда, В. Устюг) |
+| У3 (68–87) — Родительный | Р.п. (у кого есть/нет, от кого–откуда, принадлежность, даты, numerales + Р.п.); *который* Р.п. (incl. «которого» posesivo); *хочет, чтобы*; *чтобы* + инф.; *надо/нужно*; -ение/-ание/-тель; конспект | correspondencia, festivos, hogar, МГУ, nombres de cargos |
+| У4 (88–90) — Дательный (inicio) | Д.п. адресат, *исполнилось N лет*, *Кому надо/нужен*, estado impersonal | destinatario, profesiones, estados |
+
+### Géneros y fórmulas de escritura que hay en este tramo, para el curso
+
+| Género | Dónde | Estructura resumida | Fórmulas clave |
+|---|---|---|---|
+| Carta personal (amigo) | У1 ej. 5; У2 ej. 4 | saludo informal → referencia a carta anterior → novedades → opinión razonada (во-первых…/во-вторых…) → preguntas al destinatario → recuerdos → despedida + firma | Привет, X! / Здравствуй, X!; Пишу тебе…; Передай привет…; Пиши!; Жду твоего письма |
+| Nota breve | У3 ej. 5 | destinatario → 1–2 frases de mensaje → firma con parentesco | Дорогая мамочка!; Твой друг…; Жду. Приходи. |
+| Relato «mi día» | У1 ej. 9–10 | orden cronológico | сначала, потом, после, во время, вечером |
+| Entrevista → nota | У2 ej. 15–16 | preguntas + respuestas telegráficas → texto continuo con título | косвенная речь |
+| Изложение | У1 ej. 20–33; У2 ej. 24 | plan (preguntas o puntos) + опорные слова → texto cerrado | Вступление / Основная часть / Заключение |
+| Конспект | У3 ej. 18–19 | elegir 1–2 frases clave por párrafo y abreviarlas | — |
+| Página personal («Моя страница в Интернете») | У2 ej. 21; У3 ej. 10 | 3–4 preguntas guía (por qué estudias ruso, cómo, fechas de tu vida) | — |
+
+**Observaciones para el curso (síntesis del tramo)**
+- Lo que el calendario cita para la unidad 10 («Я пишу, уроки 1–2») es **solo carta personal informal** (tú): no hay correo formal, ni «Уважаемый…», ni cierre formal; eso hay que tomarlo de otro manual (Tochka Ru, Русский на каждый день).
+- El libro es **de escritura guiada**: el alumno completa terminaciones y luego escribe un texto propio con vocabulario dado; es el esquema «modelo → ejercicio de gramática → producción libre guiada» que puede copiarse en la forma.
+- Las felicitaciones aparecen en el tramo siguiente (У5, págs. 129–), no aquí.
+- Todos los ejercicios tienen clave (pág. 168); el alumno puede autocorregir los de gramática, pero **los textos libres no tienen modelo de respuesta** salvo las cartas modelo: el curso debe dar textos modelo y lista de verificación.
+- La unidad 24 («Пишем по-русски») puede reutilizar la secuencia **preguntas → plan → palabras clave → texto cerrado** del изложение.
