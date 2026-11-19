@@ -1,0 +1,249 @@
+# Los textos del sitio que no son lecciones, en las dos lenguas de la web.
+# Las páginas largas van en Markdown. {lecciones} y {correo} los rellena
+# construir_sitio.py; cualquier otra llave se escribe tal cual.
+
+es:
+  idioma: Español
+  lema: Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.
+  descripcion: >-
+    Curso gratuito de ruso para hispanohablantes: del alfabeto al nivel B2 en
+    lecciones de 30 minutos, con la pronunciación marcada en cada palabra,
+    ejercicios con sus respuestas y los errores que el español te hará
+    cometer, explicados antes.
+  paginas: {curso: curso.html, sobre: sobre.html, contacto: contacto.html, privacidad: privacidad.html}
+  menu: {curso: Curso, sobre: Sobre el curso, contacto: Contacto, privacidad: Privacidad}
+  botones:
+    empezar: Empezar por el día 1
+    continuar: Seguir donde lo dejé
+    marcar: Marcar como hecha
+    hecha: Hecha ✓
+    siguiente: Siguiente
+    anterior: Anterior
+    indice: Índice del curso
+    ver_respuestas: Ver las respuestas
+    tema: Cambiar entre claro y oscuro
+  etiquetas:
+    nivel: Nivel
+    unidad: Unidad
+    semana: Semana
+    dia: Día
+    proximamente: próximamente
+    disponibles: lecciones disponibles
+    de: de
+  tipos: {leccion: Lección, repaso: Repaso, cultura: Cultura, prueba: Prueba de unidad, simulacro: Simulacro, proyecto: Proyecto, examen: Examen, reserva: Reserva}
+  borrador: >-
+    Borrador: esta lección todavía no pasó la revisión final del ruso. Puede
+    cambiar.
+  progreso: >-
+    Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.
+  pie: Curso gratuito de ruso para hispanohablantes.
+  portada: |
+    ## Qué es
+
+    Un curso de ruso completo y gratuito que va **del alfabeto al nivel B2**:
+    cuatro niveles de 365 lecciones, una por día, de **treinta minutos**.
+    A una lección diaria, un nivel por año; a dos, B2 en dos años.
+
+    Está escrito **para hispanohablantes**. Cada lección te dice dónde el
+    español te ayuda —la erre, la ch, el género, «me gusta», la doble
+    negación— y qué error te va a hacer cometer, **antes** de que lo cometas.
+
+    ## Cómo es una lección
+
+    Treinta minutos con reloj, en seis partes: **calentamiento** con lo de
+    días anteriores, **fonética**, **lo nuevo**, **práctica**, **tu turno**
+    —hablar o escribir tú— y **cierre**. Todas las palabras rusas llevan
+    marcada la sílaba tónica, que en ruso no se puede adivinar. Las
+    respuestas están debajo de cada ejercicio, plegadas.
+
+    ## Hecho para estudiar solo
+
+    Los manuales de ruso están pensados para una clase con profesor: la
+    mitad de sus tareas son «trabajen en parejas». Aquí cada tarea tiene su
+    versión para una persona sola, con un modelo que escuchar y tu parte
+    para decir en voz alta.
+
+    ## En qué punto está
+
+    El curso se está escribiendo y se publica a medida que avanza: hoy hay
+    **{lecciones}** lecciones disponibles. Las que llevan el aviso de
+    borrador todavía no pasaron la revisión final.
+  sobre: |
+    ## El curso
+
+    Cuatro niveles —**A1, A2, B1 y B2**— de 365 lecciones cada uno. Cada
+    nivel tiene 24 unidades de dos semanas, cuatro semanas finales de
+    simulacros del examen del nivel y un día de reserva. Dentro de cada
+    semana hay cinco lecciones, un repaso o una prueba de unidad, y un
+    domingo de cultura.
+
+    El orden de los contenidos sigue la secuencia habitual de los manuales
+    de ruso para extranjeros y los niveles de los exámenes oficiales de
+    ruso como lengua extranjera (ТРКИ / TORFL). El curso no tiene ninguna
+    relación con los organismos que administran esos exámenes.
+
+    ## Dos versiones, el mismo ruso
+
+    El curso existe en español y en inglés. El ruso —los textos, los
+    diálogos, los ejemplos— es el mismo en las dos; lo que cambia es la
+    explicación y, sobre todo, **el contraste**: los errores de un
+    hispanohablante no son los de un angloparlante.
+
+    ## Quién lo hace
+
+    Lo dirige un profesor de idiomas hispanohablante. Cada lección se revisa
+    contra manuales de referencia; las que todavía no pasaron la revisión
+    final del ruso llevan el aviso de **borrador**.
+
+    ## Gratis
+
+    El curso es gratuito y no pide registrarse. Si algún día lleva
+    publicidad, la [política de privacidad](privacidad.html) lo dirá antes.
+  contacto: |
+    ## Contacto
+
+    {correo}
+
+    Si encuentras un error en una lección —una palabra mal acentuada, una
+    respuesta que no cuadra— escribe la dirección de la página y qué viste.
+    Cada error que llega se corrige en todas las lecciones donde aparece.
+  sin_correo: El correo de contacto se publicará en esta página muy pronto.
+  privacidad: |
+    ## Política de privacidad
+
+    **Este sitio no usa cookies y no recoge datos personales.**
+
+    - **Tu progreso** (las lecciones que marcas como hechas y la última que
+      abriste) y **el tema claro u oscuro** se guardan en el almacenamiento
+      local de tu navegador. No salen de tu aparato y no los vemos. Puedes
+      borrarlos cuando quieras borrando los datos del sitio en tu navegador.
+    - **No se carga nada de terceros**: ni publicidad, ni analítica, ni
+      tipografías externas. Las fuentes se sirven desde este mismo dominio.
+    - El sitio se aloja en GitHub Pages, que como cualquier servidor puede
+      registrar la dirección IP de las visitas por motivos de seguridad.
+
+    Si algún día el sitio incorpora publicidad o estadísticas, esta página
+    lo dirá antes, con lo que se carga y cómo desactivarlo.
+
+en:
+  idioma: English
+  lema: Russian from zero to B2, explained in English. Thirty minutes a day.
+  descripcion: >-
+    A free Russian course for English speakers: from the alphabet to B2 in
+    30-minute lessons, with the stress marked on every word, exercises with
+    their answers, and the mistakes English will make you make, explained
+    beforehand.
+  paginas: {curso: course.html, sobre: about.html, contacto: contact.html, privacidad: privacy.html}
+  menu: {curso: Course, sobre: About, contacto: Contact, privacidad: Privacy}
+  botones:
+    empezar: Start with day 1
+    continuar: Pick up where I left off
+    marcar: Mark as done
+    hecha: Done ✓
+    siguiente: Next
+    anterior: Previous
+    indice: Course index
+    ver_respuestas: Show the answers
+    tema: Switch between light and dark
+  etiquetas:
+    nivel: Level
+    unidad: Unit
+    semana: Week
+    dia: Day
+    proximamente: coming soon
+    disponibles: lessons available
+    de: of
+  tipos: {leccion: Lesson, repaso: Review, cultura: Culture, prueba: Unit test, simulacro: Mock exam, proyecto: Project, examen: Exam, reserva: Spare day}
+  borrador: >-
+    Draft: this lesson hasn't had its final Russian review yet. It may
+    change.
+  progreso: >-
+    Your progress is saved only in this browser: no sign-up, no accounts.
+  pie: A free Russian course for English speakers.
+  portada: |
+    ## What it is
+
+    A complete, free Russian course that goes **from the alphabet to B2**:
+    four levels of 365 lessons, one a day, **thirty minutes** each. At one
+    lesson a day, one level a year; at two, B2 in two years.
+
+    It's written **for English speakers**. Every lesson tells you where
+    English helps — sh, ch, the *s* in *measure*, vowels that already
+    reduce — and which mistake it's going to make you make, **before** you
+    make it.
+
+    ## What a lesson looks like
+
+    Thirty minutes on the clock, in six parts: a **warm-up** with earlier
+    words, **pronunciation**, **something new**, **practice**, **your
+    turn** — speaking or writing yourself — and a **wrap-up**. Every
+    Russian word has its stressed syllable marked, because in Russian you
+    can't guess it. The answers sit folded under each exercise.
+
+    ## Built for studying alone
+
+    Russian textbooks are written for a classroom: half their tasks say
+    "work in pairs". Here every task has a version for one person, with a
+    model to listen to and your part to say out loud.
+
+    ## Where it stands
+
+    The course is being written and published as it grows: there are
+    **{lecciones}** lessons available today. The ones marked as drafts
+    haven't had their final review yet.
+  sobre: |
+    ## The course
+
+    Four levels — **A1, A2, B1 and B2** — of 365 lessons each. Every level
+    has 24 two-week units, four final weeks of mock exams for that level,
+    and a spare day. Each week brings five lessons, a review or a unit test,
+    and a culture day on Sunday.
+
+    The order follows the usual sequence of Russian textbooks for foreigners
+    and the levels of the official Russian-as-a-foreign-language exams
+    (ТРКИ / TORFL). The course has no connection with the bodies that run
+    those exams.
+
+    ## Two versions, the same Russian
+
+    The course exists in English and in Spanish. The Russian — texts,
+    dialogues, examples — is the same in both; what changes is the
+    explanation and, above all, **the contrast**: an English speaker's
+    mistakes aren't a Spanish speaker's.
+
+    ## Who makes it
+
+    It's run by a language teacher. Every lesson is checked against
+    reference textbooks; the ones that haven't had their final Russian
+    review yet are marked as **drafts**.
+
+    ## Free
+
+    The course is free and needs no sign-up. If it ever carries ads, the
+    [privacy policy](privacy.html) will say so first.
+  contacto: |
+    ## Contact
+
+    {correo}
+
+    If you spot a mistake in a lesson — a wrongly stressed word, an answer
+    that doesn't add up — send the page address and what you saw. Every
+    mistake reported gets fixed in every lesson where it appears.
+  sin_correo: The contact email will be published on this page very soon.
+  privacidad: |
+    ## Privacy policy
+
+    **This site uses no cookies and collects no personal data.**
+
+    - **Your progress** (the lessons you mark as done and the last one you
+      opened) and **the light or dark theme** are kept in your browser's
+      local storage. They never leave your device and we never see them.
+      You can delete them at any time by clearing this site's data in your
+      browser.
+    - **Nothing is loaded from third parties**: no ads, no analytics, no
+      external fonts. The fonts are served from this same domain.
+    - The site is hosted on GitHub Pages, which like any server may log
+      visitors' IP addresses for security purposes.
+
+    If the site ever adds ads or statistics, this page will say so first,
+    with what gets loaded and how to turn it off.

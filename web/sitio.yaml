@@ -1,0 +1,19 @@
+# Configuración del sitio. Todo lo que está vacío está apagado a propósito.
+
+# El nombre es provisional: el definitivo sale con el dominio.
+nombre:
+  es: Ruso desde cero
+  en: Russian from Zero
+
+# https://dominio.com, sin barra al final. Vacío = sin dominio propio: no se
+# escriben CNAME ni sitemap (un sitemap necesita direcciones absolutas).
+dominio: ""
+
+# Correo de contacto público. Vacío = la página de contacto lo dice así.
+contacto: ""
+
+# AdSense: sin cliente no se carga nada de terceros, y la política de
+# privacidad lo dice. Se enciende cuando haya dominio y el sitio tenga
+# contenido suficiente para pedir la revisión.
+adsense:
+  cliente: ""
