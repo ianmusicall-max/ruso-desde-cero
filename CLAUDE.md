@@ -62,13 +62,20 @@ las decisiones y su porqué.
   siguientes). Su secuencia está en `referencias/tochka-ru.md`.
 - Hechos: `programa/plan.md`, calendario A1–B2, metodología, las dos listas
   de contraste, el motor (`plan.py`, `validar.py`, `construir_sitio.py`) y
-  27 pruebas.
-- **Escrita la semana 1 del A1 en las dos pistas** (14 lecciones, días 1–7):
-  las 15 primeras letras, la о átona, presentarse, la entonación de la
-  pregunta, el repaso con mini-test y el día de cultura del alfabeto.
-- Siguiente: la semana 2 (días 8–14). Antes del día 14 hay que escribir
-  `programa/historia.md` (el episodio 1), y antes de la unidad 2, detallar
-  sus días en el calendario.
+  32 pruebas.
+- **Escrita la unidad 1 del A1 entera en las dos pistas** (28 lecciones,
+  semanas 1 y 2): las 33 letras en diez tandas, la о átona, presentarse,
+  la entonación de la pregunta, Как дела́, спаси́бо / пожа́луйста, ты / вы,
+  las despedidas, el repaso con mini-test, el día de cultura del alfabeto,
+  la prueba de la unidad y el **episodio 1** de la historia.
+- **La historia está escrita** (`programa/historia.md`): Camila (Lima) y Tom
+  (Toronto), su vecina Kira, médica, su hijo Misha y el gato Bársik. Los 24
+  episodios del A1 viven en el calendario (campo `episodio`).
+- Siguiente: la unidad 2 (leer en ruso: reducción, consonantes blandas,
+  ensordecimiento, ИК-1 a ИК-4). Antes de escribirla hay que detallar sus 14
+  días en el calendario. Y queda por hacer: que las pruebas y los
+  mini-tests se puedan contestar pulsando, como en el proyecto hermano; hoy
+  son texto con la clave plegada.
 - Pendiente del usuario: **nombre y dominio** de la web, y crear el
   repositorio de GitHub vacío (desde esta sesión no se puede).
 - Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
