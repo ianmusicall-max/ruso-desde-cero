@@ -1,0 +1,483 @@
+# Calendario del curso — la única fuente de verdad de niveles, unidades,
+# semanas, días y temas. Cualquier cuenta de días, horas o temas sale de aquí.
+#
+# Forma de cada nivel (programa/plan.md): 24 unidades de dos semanas
+# (semanas 1–48), fase final de cuatro semanas (49–52) y un día de reserva
+# (el 365). Dentro de una unidad, el reparto de días lo pone scripts/plan.py:
+#   semana 1: días 1–5 lección, 6 repaso, 7 cultura (o «ruso de todos los días»)
+#   semana 2: días 1–5 lección, 6 prueba de unidad, 7 cultura con episodio
+#
+# Una unidad lleva `dias` (14) cuando ya se va a escribir. Hasta entonces
+# solo dice qué cubre, y el calendario la reparte en días genéricos.
+#
+# Todo el ruso con su acento (U+0301). Los títulos son propios: de los libros
+# se toma el orden y el tema, no los textos ni los títulos creativos.
+
+curso:
+  minutos_por_leccion: 30
+  dias_por_nivel: 365
+  unidades_por_nivel: 24
+
+niveles:
+
+  # ───────────────────────────────────────────────────────────────── A1 ──
+  - codigo: a1
+    examen: ТЭУ
+    ru: Элемента́рный у́ровень
+    es: Nivel A1 — elemental
+    en: Level A1 — beginner
+    fuentes: >-
+      Tochka Ru A1, lección por lección (unidad 1 y 2 = su 1.1; unidad 24 =
+      repaso y «Русский на каждый день»). Fonética y entonación de
+      «Русский язык сегодня A1+». Diagnóstico del angloparlante de
+      «Russian in Exercises».
+    unidades:
+
+      - numero: 1
+        ru: Приве́т! Как тебя́ зову́т?
+        es: ¡Hola! ¿Cómo te llamas?
+        en: Hi! What's your name?
+        fuente: Tochka Ru A1 1.1 (alfabeto en cuatro grupos y los primeros diálogos)
+        gramatica: el alfabeto en diez tandas; Это…; Кто это? Что это?; да / нет
+        lexico: saludar y despedirse; presentarse; palabras internacionales
+        fonetica: la sílaba tónica; la о átona suena [а]; ИК-1 (afirmar) e ИК-3 (preguntar sí/no)
+        dias:
+          - tipo: leccion
+            ru: А, О, К, М, Т — знако́мые бу́квы
+            es: А, О, К, М, Т — las letras que ya conoces
+            en: А, О, К, М, Т — the letters you already know
+            foco: >-
+              Cinco letras que se leen como en el alfabeto latino. Primeras
+              palabras solo con ellas (ма́ма, кот, там, так, как). Qué es la
+              tilde de acento y por qué el curso la pone siempre. El saludo
+              Приве́т! de oído.
+          - tipo: leccion
+            ru: С, Р, У, Х — бу́квы-обма́нщики
+            es: С, Р, У, Х — letras que engañan
+            en: С, Р, У, Х — letters that lie
+            foco: >-
+              Cuatro letras con forma conocida y sonido distinto: С = s,
+              Р = r, У = u, Х = j/h. Palabras: сок, торт, у́тро, у́хо, му́ха,
+              ко́смос.
+          - tipo: leccion
+            ru: В, Е, Н — ещё обма́нщики
+            es: В, Е, Н — más letras que engañan
+            en: В, Е, Н — more letters that lie
+            foco: >-
+              В = v, Е = ye, Н = n. Ya se leen метро́, рестора́н, раке́та,
+              Москва́. La о átona suena [а]: Москва́ [маскфа́]. Нет, вот.
+          - tipo: leccion
+            ru: Как тебя́ зову́т?
+            es: ¿Cómo te llamas?
+            en: What's your name?
+            foco: >-
+              La letra И. Diálogo: Как тебя́ зову́т? — Меня́ зову́т… А тебя́? —
+              О́чень прия́тно. Se aprende como bloque, de oído; los nombres
+              rusos (А́нна, Анто́н, Макси́м, Мари́на) ya se leen.
+          - tipo: leccion
+            ru: Э́то кот? Да, э́то кот
+            es: ¿Es un gato? Sí, es un gato
+            en: Is it a cat? Yes, it's a cat
+            foco: >-
+              Letras Э y Д. Э́то… sirve para «esto es», «es» y «son». La
+              pregunta de sí o no se hace solo con la entonación (ИК-3) y la
+              afirmación baja al final (ИК-1). Кто э́то? / Что э́то? (что se
+              lee [што]).
+          - tipo: repaso
+            ru: "Повторе́ние: чита́ем всё"
+            es: "Repaso: lees todo lo de la semana"
+            en: "Review: read everything from this week"
+            foco: >-
+              Las 16 letras de la semana, las palabras, el diálogo de
+              presentación y la entonación de la pregunta. Mini-test.
+          - tipo: cultura
+            ru: Отку́да кири́ллица
+            es: De dónde viene el alfabeto cirílico
+            en: Where the Cyrillic alphabet comes from
+            foco: >-
+              Cirilo y Metodio, el alfabeto de sus discípulos, las 33 letras
+              del ruso de hoy y las lenguas que lo usan. Los nombres rusos y
+              sus diminutivos (А́нна — А́ня, Алекса́ндр — Са́ша).
+          - tipo: leccion
+            ru: Б, П, Г, Л. Как дела́?
+            es: Б, П, Г, Л. ¿Qué tal?
+            en: Б, П, Г, Л. How are you?
+            foco: >-
+              Cuatro letras nuevas sin trampa. Palabras: бана́н, парк, суп,
+              спорт, гол, лимо́н. Diálogo: Как дела́? — Хорошо́. А у тебя́? —
+              То́же хорошо́. Спаси́бо.
+          - tipo: leccion
+            ru: Ф, З, Й
+            es: Ф, З, Й
+            en: Ф, З, Й
+            foco: >-
+              Ф = f, З = z (sonora: no es la z española), Й = y corta.
+              Palabras: фо́то, футбо́л, газе́та, музе́й, зоопа́рк, йо́гурт.
+              Спаси́бо. — Пожа́луйста.
+          - tipo: leccion
+            ru: Ж, Ш, Ч, Щ, Ц. Ко́фе и́ли чай?
+            es: Ж, Ш, Ч, Щ, Ц. ¿Café o té?
+            en: Ж, Ш, Ч, Щ, Ц. Coffee or tea?
+            foco: >-
+              Cinco consonantes que el español no tiene o escribe con dos
+              letras. Ж y Ш siempre duras; Ч y Щ siempre blandas. Palabras:
+              чай, журна́л, шокола́д, цирк, борщ, пи́цца. Diálogo: Ко́фе и́ли
+              чай? — Чай, пожа́луйста.
+          - tipo: leccion
+            ru: Я, Ю, Ё и Ы
+            es: Я, Ю, Ё y la Ы
+            en: Я, Ю, Ё and Ы
+            foco: >-
+              Las vocales que llevan una «y» delante (я, ю, ё, е) y la ы, que
+              no existe ni en español ni en inglés. Я, ты, мы, вы. Palabras:
+              я́хта, ю́мор, сыр, му́зыка. La ё siempre es tónica.
+          - tipo: leccion
+            ru: Ь и Ъ. Пока́!
+            es: Ь y Ъ. ¡Chao!
+            en: Ь and Ъ. Bye!
+            foco: >-
+              Dos signos que no suenan: Ь ablanda la consonante de antes
+              (фильм, Óльга), Ъ la separa de la vocal (подъе́зд). Despedirse:
+              Пока́! До встре́чи! До свида́ния! Ya se leen las 33 letras.
+          - tipo: prueba
+            ru: "Тест: алфави́т и пе́рвые фра́зы"
+            es: "Prueba de la unidad 1: el alfabeto y las primeras frases"
+            en: "Unit 1 test: the alphabet and first phrases"
+            foco: >-
+              Leer palabras, unir sonido y letra, entender los diálogos de la
+              unidad, distinguir afirmación y pregunta.
+          - tipo: cultura
+            ru: Знако́мство
+            es: "Episodio 1: Знако́мство"
+            en: "Episode 1: Знако́мство"
+            foco: >-
+              Empieza la historia: dos extranjeros y su vecina se conocen,
+              solo con lo de la unidad (Приве́т, Как тебя́ зову́т, Как дела́,
+              Ко́фе и́ли чай, Пока́). Ver programa/historia.md.
+
+      - numero: 2
+        ru: Чита́ем по-ру́сски
+        es: Leer en ruso
+        en: Reading Russian
+        fuente: Tochka Ru A1 1.1 (§6–10); Русский язык сегодня A1+, уроки 1–2 (fonética)
+        gramatica: Что э́то? Кто э́то?; да / нет / не; и́ли; Э́то не…, а…
+        lexico: objetos de todos los días; palabras internacionales
+        fonetica: reducción de о, е, я; consonantes duras y blandas; ensordecimiento final; ИК-1, ИК-2, ИК-3, ИК-4
+
+      - numero: 3
+        ru: Отку́да вы?
+        es: ¿De dónde eres?
+        en: Where are you from?
+        fuente: Tochka Ru A1 1.2; «Русский на каждый день 1» (la tarjeta migratoria)
+        gramatica: pronombres personales; говори́ть; из + país (como bloque)
+        lexico: saludos formales e informales; países, nacionalidades, lenguas; хорошо́, немно́го, чуть-чу́ть
+        fonetica: la в y la й que no se pronuncian (здра́вствуйте, пожа́луйста); ИК-2
+
+      - numero: 4
+        ru: Где метро́?
+        es: ¿Dónde está el metro?
+        en: Where's the metro?
+        fuente: Tochka Ru A1 1.3
+        gramatica: género del sustantivo; acusativo de los pronombres (меня́, тебя́…); почему́ — потому́ что
+        lexico: la ciudad y orientarse (где, спра́ва, сле́ва, здесь, там, в це́нтре); números 1–20
+        fonetica: ensordecimiento y sonorización de consonantes
+
+      - numero: 5
+        ru: Кем вы рабо́таете?
+        es: ¿A qué te dedicas?
+        en: What do you do?
+        fuente: Tochka Ru A1 1.4
+        gramatica: las dos conjugaciones (рабо́тать, говори́ть)
+        lexico: profesiones; tarjetas de visita; hablar de uno mismo; el ruso de clase
+        fonetica: reducción de е y я átonas
+
+      - numero: 6
+        ru: Что у тебя́ есть?
+        es: ¿Qué tienes?
+        en: What have you got?
+        fuente: Tochka Ru A1 2.1
+        gramatica: у меня́ есть…
+        lexico: mis cosas; números 20–100
+        fonetica: ИК-3 en preguntas largas
+
+      - numero: 7
+        ru: Моя́ семья́
+        es: Mi familia
+        en: My family
+        fuente: Tochka Ru A1 2.2; «Русский на каждый день 2» (teléfono, correo, dirección)
+        gramatica: posesivos; чей?
+        lexico: la familia; dar el correo, el teléfono y la dirección
+        fonetica: ч y щ
+
+      - numero: 8
+        ru: Что ты лю́бишь?
+        es: ¿Qué te gusta hacer?
+        en: What do you like?
+        fuente: Tochka Ru A1 2.3
+        gramatica: acusativo del sustantivo
+        lexico: aficiones; де́лать, смотре́ть, чита́ть, слу́шать, люби́ть, ненави́деть
+        fonetica: consonantes que no se pronuncian
+
+      - numero: 9
+        ru: Свобо́дное вре́мя
+        es: El tiempo libre
+        en: Free time
+        fuente: Tochka Ru A1 2.4
+        gramatica: verbos en -ова-/-ева-; la -л- de люблю́; с/ш (писа́ть — пишу́); игра́ть в / на
+        lexico: aficiones 2
+        fonetica: grupos de consonantes (тс, тьс, ться)
+
+      - numero: 10
+        ru: Мой дом
+        es: Mi casa
+        en: My home
+        fuente: Tochka Ru A1 3.1
+        gramatica: preposicional en -е y -у (в шкафу́); в / на
+        lexico: la casa, las habitaciones, los muebles; люби́мый
+        fonetica: la preposición в unida a la palabra siguiente
+
+      - numero: 11
+        ru: Где что стои́т
+        es: Dónde está cada cosa
+        en: Where things are
+        fuente: Tochka Ru A1 3.2; «Русский на каждый день 3» (el hotel)
+        gramatica: preposicional en -ии; э́тот, э́та, э́то, э́ти
+        lexico: сиде́ть, лежа́ть, стоя́ть, висе́ть, жить; где нахо́дится…?
+        fonetica: ш y ж
+
+      - numero: 12
+        ru: На рабо́те
+        es: En el trabajo
+        en: At work
+        fuente: Tochka Ru A1 3.3
+        gramatica: el plural del sustantivo
+        lexico: la oficina, un día de trabajo; adverbios
+        fonetica: ИК-4 (А вы?)
+
+      - numero: 13
+        ru: Како́й он?
+        es: ¿Cómo es?
+        en: What's it like?
+        fuente: Tochka Ru A1 3.4
+        gramatica: el adjetivo; adjetivo y adverbio (хоро́ший / хорошо́)
+        lexico: colores, contrarios, нра́виться, наверху́ / внизу́; modismos con colores
+        fonetica: ИК-5 (¡Qué bonito!)
+
+      - numero: 14
+        ru: За́втрак
+        es: El desayuno
+        en: Breakfast
+        fuente: Tochka Ru A1 4.1
+        gramatica: без + genitivo, с + instrumental (como bloques); есть, пить
+        lexico: comida y bebida; desayunos del mundo; никогда́, ре́дко, иногда́, обы́чно, ча́сто, всегда́
+        fonetica: ц
+
+      - numero: 15
+        ru: В рестора́не
+        es: En el restaurante
+        en: At the restaurant
+        fuente: Tochka Ru A1 4.2
+        gramatica: acusativo de adjetivos, posesivos y numerales; хоте́ть; el pasado
+        lexico: pedir en un restaurante; recetas; la cocina rusa
+        fonetica: р y л
+
+      - numero: 16
+        ru: Оде́жда
+        es: La ropa
+        en: Clothes
+        fuente: Tochka Ru A1 4.3; «Русский на каждый день 4» (la tienda de ropa)
+        gramatica: acusativo del adjetivo; носи́ть, надева́ть
+        lexico: ropa, calzado, accesorios; las estaciones
+        fonetica: la ы después de consonante
+
+      - numero: 17
+        ru: Поку́пки
+        es: De compras
+        en: Shopping
+        fuente: Tochka Ru A1 4.4
+        gramatica: до́лжен, мочь; instrumental con рабо́тать, быть, стать
+        lexico: comprar; precios
+        fonetica: ИК-2 con palabra interrogativa
+
+      - numero: 18
+        ru: Мой день
+        es: Mi día
+        en: My day
+        fuente: Tochka Ru A1 5.1
+        gramatica: идти́; verbos reflexivos (-ся); genitivo del sustantivo
+        lexico: la rutina; la hora; Ско́лько? / Во ско́лько?
+        fonetica: -тся, -ться
+
+      - numero: 19
+        ru: Неде́ля
+        es: La semana
+        en: The week
+        fuente: Tochka Ru A1 5.2
+        gramatica: идти́ / ходи́ть
+        lexico: días de la semana; frecuencia
+        fonetica: ч, чт, чн
+
+      - numero: 20
+        ru: Тра́нспорт
+        es: El transporte
+        en: Getting around
+        fuente: Tochka Ru A1 5.3
+        gramatica: е́хать / е́здить; где? / куда́?
+        lexico: transporte; На чём ты е́здишь на рабо́ту?
+        fonetica: ИК-3 en enumeraciones
+
+      - numero: 21
+        ru: Пого́да и пла́ны
+        es: El tiempo y los planes
+        en: Weather and plans
+        fuente: Tochka Ru A1 5.4; «Русский на каждый день 5» (la postal)
+        gramatica: где? куда́? отку́да?; preposicional, acusativo y genitivo juntos; repaso de los verbos de movimiento
+        lexico: el tiempo; los meses; vacaciones y viajes de trabajo; planes del año
+        fonetica: repaso de la reducción
+
+      - numero: 22
+        ru: Пра́здники
+        es: Las fiestas
+        en: Holidays
+        fuente: Tochka Ru A1 6.1
+        gramatica: dativo del sustantivo y del pronombre; кому́? к кому́?; мне на́до, ну́жно; ordinales
+        lexico: emociones; fechas; fiestas; Како́е сего́дня число́? Како́го числа́?
+        fonetica: щ
+
+      - numero: 23
+        ru: С днём рожде́ния!
+        es: ¡Feliz cumpleaños!
+        en: Happy birthday!
+        fuente: Tochka Ru A1 6.2
+        gramatica: el imperativo; dativo
+        lexico: cumpleaños, regalos; orientarse en la ciudad
+        fonetica: ИК-2 en el imperativo
+
+      - numero: 24
+        ru: Всё вме́сте
+        es: Todo junto
+        en: Putting it all together
+        fuente: "Tochka Ru A1 (juego de repaso y «Русский на каждый день 6», una cita); Русский язык сегодня A1+ (tablas de resumen)"
+        gramatica: "repaso del A1: los seis casos en sus usos del nivel"
+        lexico: quedar con alguien; repaso
+        fonetica: las cinco entonaciones
+
+    fase_final:
+      examen: ТЭУ
+
+  # ───────────────────────────────────────────────────────────────── A2 ──
+  - codigo: a2
+    examen: ТБУ
+    ru: Ба́зовый у́ровень
+    es: Nivel A2 — básico
+    en: Level A2 — elementary
+    fuentes: >-
+      Tochka Ru A2 parte 1 (unidades 1–3) y el cuaderno de la parte 2
+      (unidad 4). El sistema de casos completo y el plural de «Дорога в
+      Россию 2»; la escritura de «Я пишу по-русски A2».
+    unidades:
+      - {numero: 1, ru: "Расскажи́те о себе́", es: "Habla de ti", en: "Tell me about yourself", fuente: "Tochka Ru A2 1.1; Дорога в Россию 2, урок 1", gramatica: "preposicional completo (adjetivos, pronombres, ordinales); в, на, о/об/обо; -у (в лесу́)"}
+      - {numero: 2, ru: "Проце́сс и результа́т", es: "Proceso y resultado", en: "Process and result", fuente: "Tochka Ru A2 1.2", gramatica: "el aspecto (НСВ/СВ); чтобы + infinitivo; идти́ — пойти́ — прийти́, е́хать — пое́хать — прие́хать"}
+      - {numero: 3, ru: "Биогра́фия", es: "Una biografía", en: "A life story", fuente: "Tochka Ru A2 1.3", gramatica: "el aspecto en pasado y futuro; fechas y años (в 1990 году́, пя́того ма́я)"}
+      - {numero: 4, ru: "Знамени́тые лю́ди", es: "Gente famosa", en: "Famous people", fuente: "Tochka Ru A2 1.4; Дорога в Россию 2, урок 5", gramatica: "instrumental completo (adjetivos, pronombres, ordinales); свой"}
+      - {numero: 5, ru: "По телефо́ну", es: "Al teléfono", en: "On the phone", fuente: "Tochka Ru A2, Русский на каждый день 1", gramatica: "funciones: proponer, aceptar, rechazar, reaccionar a una noticia"}
+      - {numero: 6, ru: "Изуча́ть языки́", es: "Aprender idiomas", en: "Learning languages", fuente: "Tochka Ru A2 2.1; Дорога в Россию 2, урок 2", gramatica: "acusativo animado e inanimado; учи́ть / изуча́ть / учи́ться; любо́й, весь, друго́й, ка́ждый"}
+      - {numero: 7, ru: "Образова́ние", es: "La educación", en: "Education", fuente: "Tochka Ru A2 2.2; Дорога в Россию 2, урок 3", gramatica: "genitivo singular completo; уме́ть / знать"}
+      - {numero: 8, ru: "Ку́рсы и хо́бби", es: "Cursos y aficiones", en: "Courses and hobbies", fuente: "Tochka Ru A2 2.3", gramatica: "repaso de casos; интересова́ться, разбира́ться, занима́ться + instrumental"}
+      - {numero: 9, ru: "Рабо́та и карье́ра", es: "Trabajo y carrera", en: "Work and career", fuente: "Tochka Ru A2 2.4; Дорога в Россию 2, урок 3", gramatica: "до́лжен был / бу́ду; acusativo de los pronombres; чтобы (deseo, finalidad)"}
+      - {numero: 10, ru: "Пи́сьма", es: "Cartas y correos", en: "Letters and emails", fuente: "Tochka Ru A2, Русский на каждый день 2; Я пишу по-русски, уроки 1–2", gramatica: "escribir una carta personal y un correo formal"}
+      - {numero: 11, ru: "Го́род", es: "La ciudad", en: "The city", fuente: "Tochka Ru A2 3.1", gramatica: "genitivo plural; doble negación; números de tres y cuatro cifras"}
+      - {numero: 12, ru: "Го́род и́ли дере́вня", es: "¿Ciudad o pueblo?", en: "Town or country?", fuente: "Tochka Ru A2 3.2", gramatica: "el comparativo; так же, как / тако́й же, как; э́тот / тот; смотре́ть — ви́деть, слу́шать — слы́шать"}
+      - {numero: 13, ru: "Са́мый-са́мый", es: "El más de todos", en: "The very best", fuente: "Tochka Ru A2 3.3; Дорога в Россию 2, уроки 1–2", gramatica: "el superlativo; потому́ что, так как, поэ́тому; кото́рый"}
+      - {numero: 14, ru: "Сове́ты", es: "Consejos", en: "Advice", fuente: "Tochka Ru A2 3.4; Дорога в Россию 2, урок 4", gramatica: "el imperativo; ну́жно / на́до / необходи́мо; ну́жен, нужна́…; dativo singular"}
+      - {numero: 15, ru: "Фотогра́фия", es: "Una foto", en: "A photo", fuente: "Tochka Ru A2, Русский на каждый день 3", gramatica: "describir una foto y contar su historia"}
+      - {numero: 16, ru: "Доро́га", es: "En camino", en: "On the way", fuente: "Tochka Ru A2 4.1", gramatica: "verbos de movimiento con по-, при-, у-; в — из, на — с, к — от"}
+      - {numero: 17, ru: "Путеше́ствие", es: "El viaje", en: "The journey", fuente: "Tochka Ru A2 4.2", gramatica: "verbos de movimiento con в-(во-), вы-, за-; acusativo animado"}
+      - {numero: 18, ru: "О́тпуск", es: "Las vacaciones", en: "The holiday", fuente: "Tochka Ru A2 4.3", gramatica: "verbos de movimiento con до-, об-(обо-), про-"}
+      - {numero: 19, ru: "Исто́рии в доро́ге", es: "Historias de viaje", en: "Travel stories", fuente: "Tochka Ru A2 4.4", gramatica: "repaso de los verbos de movimiento con prefijo"}
+      - {numero: 20, ru: "Чу́вства", es: "Lo que sentimos", en: "Feelings", fuente: "Дорога в Россию 2, урок 4", gramatica: "dativo completo (по + dativo; мне ску́чно); estilo indirecto (сказа́л, что…; спроси́л, …ли)"}
+      - {numero: 21, ru: "Где и когда́", es: "Dónde y cuándo", en: "Where and when", fuente: "Дорога в Россию 2, урок 5", gramatica: "instrumental de lugar (под, над, пе́ред, за, ме́жду, ря́дом с) y de tiempo; кото́рый en todos los casos"}
+      - {numero: 22, ru: "Мно́го люде́й", es: "Mucha gente", en: "Lots of people", fuente: "Дорога в Россию 2, урок 6", gramatica: "el plural: nominativo, acusativo, genitivo y preposicional"}
+      - {numero: 23, ru: "Мы все ра́зные", es: "Todos somos distintos", en: "We're all different", fuente: "Дорога в Россию 2, урок 6", gramatica: "el plural: dativo e instrumental; е́сли; хотя́"}
+      - {numero: 24, ru: "Пи́шем по-ру́сски", es: "Escribir en ruso", en: "Writing in Russian", fuente: "Я пишу по-русски A2; Дорога в Россию 2, урок 7 (forma del examen)", gramatica: "el изложе́ние y la carta; repaso del A2"}
+    fase_final:
+      examen: ТБУ
+
+  # ───────────────────────────────────────────────────────────────── B1 ──
+  - codigo: b1
+    examen: ТРКИ-1
+    ru: Пе́рвый сертификацио́нный у́ровень
+    es: Nivel B1 — intermedio
+    en: Level B1 — intermediate
+    fuentes: >-
+      Tochka Ru B1 parte 1 (unidades 1–2, que son las unidades 1–10). De la
+      11 a la 24, complemento propio sobre el estándar del ТРКИ-1 y la
+      oración compuesta, los participios y los gerundios de «Russian in
+      Exercises». [VERIFICAR contra el estándar oficial del ТРКИ-1.]
+    unidades:
+      - {numero: 1, ru: "Знако́мство", es: "Conocerse", en: "Getting to know people", fuente: "Tochka Ru B1 1.1", gramatica: "repaso de todos los casos; кото́рый en todos los casos"}
+      - {numero: 2, ru: "Друзья́ и семья́", es: "Amigos y familia", en: "Friends and family", fuente: "Tochka Ru B1 1.2", gramatica: "dativo; друг дру́га; хотя́ / благодаря́"}
+      - {numero: 3, ru: "Вне́шность", es: "El aspecto físico", en: "Appearance", fuente: "Tochka Ru B1 1.3", gramatica: "comparativo y superlativo; чем…, тем…; estilo directo e indirecto; ли"}
+      - {numero: 4, ru: "Здоро́вье", es: "La salud", en: "Health", fuente: "Tochka Ru B1 1.4", gramatica: "el imperativo y su aspecto; verbos reflexivos"}
+      - {numero: 5, ru: "Моя́ исто́рия", es: "Mi historia", en: "My story", fuente: "Tochka Ru B1, Русский на каждый день 1", gramatica: "presentarse a fondo"}
+      - {numero: 6, ru: "Гости́ница", es: "El hotel", en: "The hotel", fuente: "Tochka Ru B1 2.1", gramatica: "с… до…, с… по…, от… до…"}
+      - {numero: 7, ru: "Кварти́ра", es: "El piso", en: "The flat", fuente: "Tochka Ru B1 2.2", gramatica: "preposiciones de lugar; dativo del adjetivo; из-за / благодаря́"}
+      - {numero: 8, ru: "Еда́ и поку́пки", es: "Comida y compras", en: "Food and shopping", fuente: "Tochka Ru B1 2.3", gramatica: "genitivo singular y plural del sustantivo y del adjetivo"}
+      - {numero: 9, ru: "За столо́м", es: "A la mesa", en: "At the table", fuente: "Tochka Ru B1 2.4", gramatica: "-нибудь, -то, кое-"}
+      - {numero: 10, ru: "В кафе́", es: "En el café", en: "At the café", fuente: "Tochka Ru B1, Русский на каждый день 2", gramatica: "funciones en el restaurante"}
+      - {numero: 11, ru: "Е́сли бы…", es: "Si yo…", en: "If only…", fuente: "complemento (ТРКИ-1)", gramatica: "el condicional: бы, е́сли бы"}
+      - {numero: 12, ru: "Заче́м и почему́", es: "Para qué y por qué", en: "Why and what for", fuente: "complemento (ТРКИ-1)", gramatica: "finalidad y causa: что́бы / что; для того́ что́бы; из-за, благодаря́, от, с"}
+      - {numero: 13, ru: "Когда́?", es: "¿Cuándo?", en: "When?", fuente: "complemento; Russian in Exercises (oración compuesta)", gramatica: "subordinadas de tiempo: когда́, пока́, пока́ не, по́сле того́ как, до того́ как, как то́лько"}
+      - {numero: 14, ru: "Несмотря́ ни на что", es: "A pesar de todo", en: "Despite everything", fuente: "complemento (ТРКИ-1)", gramatica: "la concesión: хотя́, несмотря́ на, всё равно́"}
+      - {numero: 15, ru: "Несём, везём, ведём", es: "Llevar, transportar, guiar", en: "Carry, drive, lead", fuente: "complemento (ТРКИ-1)", gramatica: "verbos de movimiento transitivos (нести́/носи́ть, везти́/вози́ть, вести́/води́ть)"}
+      - {numero: 16, ru: "Вре́мя идёт", es: "El tiempo pasa", en: "Time flies", fuente: "complemento (ТРКИ-1)", gramatica: "los verbos de movimiento en sentido figurado"}
+      - {numero: 17, ru: "Не на́до!", es: "¡No hace falta!", en: "Don't!", fuente: "complemento (ТРКИ-1)", gramatica: "el aspecto en el infinitivo y el imperativo con negación"}
+      - {numero: 18, ru: "Он сказа́л, что…", es: "Dijo que…", en: "He said that…", fuente: "Russian in Exercises (estilo directo e indirecto)", gramatica: "estilo indirecto completo: preguntas y órdenes (что́бы + pasado)"}
+      - {numero: 19, ru: "Челове́к, кото́рый…", es: "La persona que…", en: "The person who…", fuente: "Russian in Exercises (participios)", gramatica: "participios activos: reconocerlos y usarlos"}
+      - {numero: 20, ru: "Сде́лано в Росси́и", es: "Hecho en Rusia", en: "Made in Russia", fuente: "Russian in Exercises (participios)", gramatica: "participios pasivos y la forma corta (постро́ен)"}
+      - {numero: 21, ru: "Чита́я и слу́шая", es: "Leyendo y escuchando", en: "Reading and listening", fuente: "Russian in Exercises (gerundios)", gramatica: "los gerundios (дееприча́стия)"}
+      - {numero: 22, ru: "Из чего́ сде́ланы слова́", es: "De qué están hechas las palabras", en: "What words are made of", fuente: "complemento (ТРКИ-1)", gramatica: "formación de palabras: prefijos, sufijos, pares aspectuales"}
+      - {numero: 23, ru: "Но́вости и объявле́ния", es: "Noticias y anuncios", en: "News and notices", fuente: "complemento (ТРКИ-1)", gramatica: "leer noticias, anuncios y cartas oficiales; los números en todos los casos"}
+      - {numero: 24, ru: "Гото́вимся к экза́мену", es: "Preparando el examen", en: "Exam preparation", fuente: "complemento (ТРКИ-1)", gramatica: "repaso del B1; estrategias de escritura y expresión oral"}
+    fase_final:
+      examen: ТРКИ-1
+
+  # ───────────────────────────────────────────────────────────────── B2 ──
+  - codigo: b2
+    examen: ТРКИ-2
+    ru: Второ́й сертификацио́нный у́ровень
+    es: Nivel B2 — intermedio alto
+    en: Level B2 — upper intermediate
+    fuentes: >-
+      Ningún libro del lote llega a B2 y la serie Tochka Ru tampoco.
+      Complemento propio sobre el estándar del ТРКИ-2, con los participios y
+      gerundios de «Russian in Exercises». [VERIFICAR contra el estándar
+      oficial; si aparece un manual B2 —p. ej. «Русский язык: 5 элементов.
+      B2»—, cotejar el orden.] Literatura solo de dominio público.
+    unidades:
+      - {numero: 1, ru: "Сти́ли ре́чи", es: "Los registros del ruso", en: "Registers of Russian", fuente: "complemento (ТРКИ-2)", gramatica: "diagnóstico; los cuatro estilos funcionales"}
+      - {numero: 2, ru: "Лю́ди, кото́рые меня́ют мир", es: "Gente que cambia el mundo", en: "People who change the world", fuente: "complemento; Russian in Exercises", gramatica: "participios activos en la escritura: de кото́рый al participio"}
+      - {numero: 3, ru: "Как э́то сде́лано", es: "Cómo está hecho", en: "How it's made", fuente: "complemento; Russian in Exercises", gramatica: "la voz pasiva: -ся, participio pasivo, oraciones impersonales"}
+      - {numero: 4, ru: "Расска́з", es: "El relato", en: "The short story", fuente: "complemento; Russian in Exercises", gramatica: "los gerundios en la narración y su aspecto"}
+      - {numero: 5, ru: "Доро́ги", es: "Caminos", en: "Roads", fuente: "complemento (ТРКИ-2)", gramatica: "el sistema completo de verbos de movimiento con todos los prefijos"}
+      - {numero: 6, ru: "Слова́ из слов", es: "Palabras dentro de palabras", en: "Words within words", fuente: "complemento (ТРКИ-2)", gramatica: "formación de palabras II: abstractos y compuestos"}
+      - {numero: 7, ru: "Счёт и чи́сла", es: "Contar y los números", en: "Counting and numbers", fuente: "complemento (ТРКИ-2)", gramatica: "declinación completa de los numerales; colectivos (дво́е, тро́е); о́ба / о́бе"}
+      - {numero: 8, ru: "Тот, кто…", es: "Quien…", en: "Whoever…", fuente: "complemento (ТРКИ-2)", gramatica: "relativas con тот, кто / то, что / тако́й, како́й"}
+      - {numero: 9, ru: "Поско́льку…", es: "Puesto que…", en: "Since…", fuente: "complemento (ТРКИ-2)", gramatica: "causa y consecuencia en registro formal (поско́льку, ввиду́, всле́дствие, в связи́ с)"}
+      - {numero: 10, ru: "По-мо́ему…", es: "En mi opinión…", en: "In my opinion…", fuente: "complemento (ТРКИ-2)", gramatica: "argumentar: opinión, acuerdo, desacuerdo, conectores"}
+      - {numero: 11, ru: "Пре́сса", es: "La prensa", en: "The press", fuente: "complemento (ТРКИ-2)", gramatica: "titulares y estilo nominal; la entrevista"}
+      - {numero: 12, ru: "Нау́ка", es: "La ciencia", en: "Science", fuente: "complemento (ТРКИ-2)", gramatica: "el estilo científico: definir y clasificar"}
+      - {numero: 13, ru: "Официа́льно", es: "Lo oficial", en: "Official Russian", fuente: "complemento (ТРКИ-2)", gramatica: "currículum, solicitudes, reclamaciones"}
+      - {numero: 14, ru: "Эконо́мика и рабо́та", es: "Economía y trabajo", en: "Business and work", fuente: "complemento (ТРКИ-2)", gramatica: "correspondencia y negociación"}
+      - {numero: 15, ru: "Пу́шкин и Че́хов", es: "Pushkin y Chéjov", en: "Pushkin and Chekhov", fuente: "complemento; textos de dominio público", gramatica: "leer literatura original"}
+      - {numero: 16, ru: "Толсто́й и Бу́нин", es: "Tolstói y Bunin", en: "Tolstoy and Bunin", fuente: "complemento; textos de dominio público [VERIFICAR la fecha de dominio público de cada autor]", gramatica: "leer literatura original"}
+      - {numero: 17, ru: "Го́род и приро́да", es: "La ciudad y la naturaleza", en: "City and nature", fuente: "complemento (ТРКИ-2)", gramatica: "sociedad y vida diaria"}
+      - {numero: 18, ru: "Как говоря́т ру́сские", es: "Como dicen los rusos", en: "As the Russians say", fuente: "complemento (ТРКИ-2)", gramatica: "fraseología: modismos y refranes"}
+      - {numero: 19, ru: "Ну и ну!", es: "¡Vaya, vaya!", en: "Well, well!", fuente: "complemento (ТРКИ-2)", gramatica: "el ruso hablado: partículas (же, ведь, вот, ну, ра́зве, неуже́ли)"}
+      - {numero: 20, ru: "Поря́док слов", es: "El orden de las palabras", en: "Word order", fuente: "complemento (ТРКИ-2)", gramatica: "tema y rema; el énfasis"}
+      - {numero: 21, ru: "Вид глаго́ла: то́нкости", es: "El aspecto: los detalles", en: "Aspect: the fine print", fuente: "complemento (ТРКИ-2)", gramatica: "el aspecto en contextos difíciles"}
+      - {numero: 22, ru: "Глаго́л и паде́ж", es: "El verbo y el caso", en: "Verbs and cases", fuente: "complemento (ТРКИ-2)", gramatica: "el régimen verbal"}
+      - {numero: 23, ru: "Пи́шем эссе́", es: "Escribir un ensayo", en: "Writing an essay", fuente: "complemento (ТРКИ-2)", gramatica: "ensayo, resumen, carta formal"}
+      - {numero: 24, ru: "Гото́вы к ТРКИ-2", es: "Listos para el ТРКИ-2", en: "Ready for the ТРКИ-2", fuente: "complemento (ТРКИ-2)", gramatica: "repaso del B2"}
+    fase_final:
+      examen: ТРКИ-2

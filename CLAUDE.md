@@ -1,133 +1,79 @@
 # Ruso desde cero · contexto para Claude Code
 
-Dos cursos de ruso desde cero, en paralelo, para dos públicos distintos: uno
-para angloparlantes (`curso/en/`) y otro para hispanohablantes (`curso/es/`).
-Un año, 30 minutos al día — la misma forma que `espanol-desde-ruso`, el
-proyecto hermano, pero con el ruso como lengua META en vez de como lengua
-base.
+Curso de ruso **desde cero hasta B2** para hispanohablantes y angloparlantes,
+30 minutos al día, en una web nueva con publicidad. Proyecto hermano de
+`espanol-desde-ruso` (que enseña español a rusohablantes): mismo método,
+dirección inversa. **Leer `programa/plan.md` antes de tocar nada**: ahí están
+las decisiones y su porqué.
 
-## Por qué existe este repo, y qué decisión reemplaza
+## Dónde está cada cosa
 
-El 2026-10-30, trabajando en `espanol-desde-ruso`, se planteó esta misma idea
-(«¿hacemos el curso al revés, para enseñar ruso?») y se descartó. La razón
-que quedó escrita en `espanol-desde-ruso/CLAUDE.md` fue esta:
+- `programa/plan.md` — qué es el curso, el tamaño (4 niveles × 365 días), la
+  base (Tochka Ru), la línea de los derechos de autor y qué se mejora.
+- `programa/calendario.yaml` — **la única fuente de verdad** de niveles,
+  unidades, semanas, días y temas. Cualquier cuenta sale de aquí.
+- `programa/metodologia.md` — la lección de 30 minutos y sus apartados.
+- `programa/contrastiva-ru-es.md`, `programa/contrastiva-ru-en.md` — los
+  errores predecibles de cada lengua de partida: alimentan el bloque de
+  contraste y los distractores de las pruebas.
+- `referencias/` — análisis de los libros (estructura y secuencia, nunca su
+  contenido). Los PDF no se versionan: viven en el repositorio privado y
+  temporal `libros-ruso-temp`.
+- `curso/es/<nivel>/semana-NN/dia-N.md` y `curso/en/...` — las lecciones.
+  **Las dos pistas comparten el ruso** (textos, diálogos, ejemplos, audio) y
+  cambian la explicación y el contraste.
+- `scripts/` — `plan.py` (lee el calendario), `validar.py` (forma de las
+  lecciones), `construir_sitio.py` (Markdown → `docs/`).
+- `tests/` — `python3 -m unittest discover -s tests`.
 
-> «el código sirve casi entero y las 365 lecciones no [...] ese curso lo
-> firmaría alguien que no es nativo de ruso —sería el alumno y no el
-> profesor—»
+## Reglas
 
-El profesor de `espanol-desde-ruso` es nativo de español, con inglés como
-segunda lengua: puede firmar un curso que enseñe CUALQUIERA de esas dos, pero
-no puede firmar como experto un curso que enseñe ruso, porque el ruso es la
-lengua que él mismo está aprendiendo.
+1. **Una lección = 30 minutos exactos.** Los apartados llevan su franja
+   («## 3. Nuevo (8–18 min)» / «## 3. New (8–18 min)»); `validar.py` exige
+   0 → 30 contiguo.
+2. **Una lección = un punto nuevo y 6–10 palabras** (en B1–B2 hasta 12). Si no
+   cabe, son dos días y se cambia el calendario, no la duración.
+3. **Toda lección de tipo `leccion` lleva el bloque de contraste** («⚠️
+   Contraste con el español» / «⚠️ Contrast with English») con el error
+   predecible de esa lengua. Es lo que hace que el curso sea «desde el
+   español» o «desde el inglés».
+4. **El tema de la lección es el del calendario**, carácter por carácter. Si
+   hay que cambiarlo, se cambia primero el YAML.
+5. **Las claves son obligatorias** si hay ejercicios.
+6. **Nada se publica sin revisión.** Todo nace con `revisado: false`. El autor
+   del curso no es nativo de ruso: su revisión certifica el método; la
+   corrección del ruso la sostienen las fuentes y, antes de publicar en
+   serio, la mirada de un nativo.
+7. **No se inventan datos** (precios, fechas, cifras, ni errores de
+   interferencia): si no se sabe, `[VERIFICAR]`.
+8. **Todo el ruso lleva acento** (tilde combinante U+0301 sobre la vocal
+   tónica: молоко́). La ё no lo lleva: siempre es tónica. Para el audio y para
+   corregir respuestas, el acento se quita.
+9. **Ni un texto, diálogo, ejercicio ni dibujo de los libros.** De Tochka Ru y
+   compañía se toma el orden, los temas y la forma de la lección; el
+   contenido se escribe para este curso. Ver `programa/plan.md`.
+10. **Nada de política ni de guerra** en la cultura ni en la historia.
 
-**El 2026-11-19 se retomó la idea con esa objeción resuelta de otra forma**:
-en vez de un profesor nativo de ruso, el contraste va a salir de **libros de
-referencia** que el usuario va a mandar — el mismo método que ya usa
-`espanol-desde-ruso` con Nuzhdin y compañía (`referencias/`, análisis
-estructural, nunca copia del contenido ajeno). La diferencia es que ahí los
-libros confirman o corrigen decisiones de alguien que YA domina las dos
-lenguas; acá los libros son la fuente primaria de qué le cuesta a un
-angloparlante o a un hispanohablante en ruso, porque el autor no lo sabe de
-primera mano.
+## Estado (2026-11-19)
 
-**Esto es el eje de todo el proyecto, no un detalle**: sin los libros no hay
-manera honesta de escribir el bloque de contraste (lo que en
-`espanol-desde-ruso` es «⚠️ Контраст с русским», la pieza que hace que un
-curso sea «desde el inglés» o «desde el español» y no un curso de ruso
-genérico con la portada cambiada). Regla 7 del proyecto hermano — no se
-inventan datos — aplica acá con más fuerza todavía: inventar un error típico
-del angloparlante en ruso sin haberlo leído en ninguna parte sería peor que
-no tener esa lección.
+- Leídos los índices y la anatomía de lección de los siete libros, incluido
+  **Tochka Ru A1** (subido por el usuario en tres partes al chat; no está en
+  `libros-ruso-temp` y hay que subirlo ahí para las sesiones siguientes).
+- Escritos `programa/plan.md` y los análisis de `referencias/`.
+- En curso: calendario, metodología, listas de contraste, el motor del
+  sitio y la semana piloto del A1 en las dos pistas.
+- Pendiente del usuario: **nombre y dominio** de la web (no se puede crear el
+  repositorio de GitHub desde esta sesión: lo crea él, vacío, y se conecta).
 
-## Estado: ESPERANDO LOS LIBROS
+## El A1 sigue a Tochka Ru A1, lección por lección
 
-Al día de hoy (2026-11-19) este repo es solo el esqueleto. No hay
-`calendario.yaml`, no hay una sola lección escrita, no hay lista de errores
-por lengua base. Lo que sigue, apenas lleguen los libros:
+Tochka Ru A1 tiene 22 lecciones en 6 unidades más seis de «Русский на каждый
+день». En este curso cada lección suya es **una unidad de dos semanas**, salvo
+la 1.1 (todo el alfabeto), que se abre en dos: la unidad 1 son las letras y la
+2 los sonidos y las reglas de lectura. La unidad 24 cierra con el repaso. Las
+«Русский на каждый день» (tarjeta migratoria, intercambiar contactos, hotel,
+tienda de ropa, postal, cita) van en los domingos de la primera semana de la
+unidad donde encajan. El detalle está en `programa/calendario.yaml`.
 
-1. Leerlos y escribir `referencias/<libro>.md` con el análisis estructural de
-   cada uno — qué orden de gramática usa, qué dice de interferencias, qué se
-   toma y qué no. Es el mismo formato que `espanol-desde-ruso/referencias/`.
-2. De ahí sacar DOS listas negras de errores — una para el angloparlante
-   aprendiendo ruso, otra para el hispanohablante — porque el alfabeto
-   cirílico, el aspecto verbal, los seis casos y el orden de palabras le
-   pegan distinto a cada uno. No son la misma lista traducida.
-3. Recién con eso armar `programa/calendario-en.yaml` y
-   `programa/calendario-es.yaml`.
-
-**No se escribe ninguna lección de prueba ni ningún calendario de muestra
-mientras tanto**: un calendario inventado hoy se tiraría entero en cuanto
-lleguen los libros, y el precio de ese error ya está documentado en
-`espanol-desde-ruso` (la unidad 5, los 72 tiempos verbales usados antes de su
-lección) — ahí el defecto era de progresión interna; acá sería peor, sería
-el eje entero del curso construido sin su fuente.
-
-## Por qué DOS pistas y no una con selector de idioma
-
-`espanol-desde-ruso` tiene un selector de ru/es/en en la interfaz, pero las
-**lecciones** están escritas una sola vez, en ruso, porque el ruso es la
-lengua base de ESE curso (la instrucción) y el español la meta. Acá no hay
-un «idioma de interfaz»: hay dos lenguas base distintas (inglés, español) que
-enseñan la MISMA lengua meta (ruso), y lo que un angloparlante necesita que
-se le explique no es lo que necesita un hispanohablante — ni el vocabulario
-de apoyo, ni el orden de los casos, ni los falsos amigos. Son dos cursos que
-comparten método y quizá infraestructura, no un curso con interfaz traducida.
-
-Qué se puede compartir entre las dos pistas, probablemente (a decidir cuando
-haya contenido):
-
-- El armazón del calendario (24 unidades, fase final, día de reserva) —
-  **la progresión gramatical del ruso** puede ser casi igual para las dos,
-  porque el ruso es el mismo ruso; lo que cambia es el contraste, no el
-  temario.
-- Los scripts de construcción del sitio, audio, dibujos, tests — todo lo que
-  en `espanol-desde-ruso` no depende del idioma, adaptado.
-- La metodología de 30 minutos, los principios, la estructura de lección.
-
-Qué NO se comparte:
-
-- El bloque de contraste, palabra por palabra.
-- Probablemente buena parte del vocabulario de apoyo y los ejemplos.
-
-## Dónde está cada cosa (cuando haya algo)
-
-- `referencias/` — análisis de los libros que mande el usuario. No se copia
-  contenido ajeno; los PDF no se versionan (misma regla que el proyecto
-  hermano).
-- `programa/` — calendario y documentación del programa, uno por pista una
-  vez que el contraste esté claro.
-- `curso/en/`, `curso/es/` — las lecciones, cuando existan.
-- `scripts/` — se van a portar y adaptar desde
-  `../espanol-desde-ruso/scripts/` a medida que haga falta cada uno
-  (`construir_sitio.py`, `validar.py`, `generar_audio.py`...), no todos de
-  entrada: ese repo tiene más de medio año de ajustes específicos a SU
-  dirección (ru→es) que acá no aplican tal cual.
-- `tests/` — vacío. La convención del proyecto hermano es escribir la prueba
-  cuando aparece el primer caso real que puede fallar, no antes.
-
-## Reglas heredadas de `espanol-desde-ruso` (se mantienen acá)
-
-1. No se inventan datos (precios, fechas, cifras, y aquí además: errores de
-   interferencia) — si no está en un libro o no se puede verificar, se marca
-   `[VERIFICAR]` o no se escribe.
-2. Una lección = 30 minutos, un punto nuevo, 6-10 palabras.
-3. Nada generado se publica sin revisión. Acá la revisión tiene un peso
-   extra: el usuario no es nativo de ruso, así que su revisión certifica la
-   FORMA y el método, no la corrección del ruso en sí — eso lo sostienen los
-   libros y, en algún punto, convendría sumar una revisión humana nativa
-   antes de publicar de verdad (a decidir más adelante, no bloqueante para
-   armar el esqueleto).
-4. Variación regional: el español de España/América ya tiene su regla en el
-   proyecto hermano (🌎); acá habría que decidir si el ruso de Rusia alcanza
-   o si hace falta avisar de variantes (no es un problema hoy, con cero
-   contenido escrito).
-
-## Pendiente inmediato
-
-- **Recibir los libros de referencia** del usuario (mencionó que los va a
-  mandar). Sin esto no se avanza con contenido.
-- Decidir si este repo se conecta a GitHub ahora (vacío) o cuando ya tenga
-  algo. Hoy es un repo local sin remoto.
-- Nombre de dominio / plataforma de publicación: no se decide todavía, es
-  prematuro con cero lecciones.
+Lo que Tochka Ru A1 no trae y se completa con «Русский язык сегодня A1+»: la
+**fonética** de cada lección y la **entonación** (ИК-1 a ИК-5).
