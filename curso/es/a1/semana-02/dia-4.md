@@ -40,13 +40,17 @@ Ofrece y contesta en voz alta, con la voz que sube y baja:
 si fueras a decir una [u]. Sale un sonido sordo, de garganta. Casi nunca
 empieza una palabra.
 
-**Las vocales van por parejas.** Ya las tienes todas. La de arriba deja dura
-la consonante de delante; la de abajo la ablanda (o, al principio de
+**Las vocales van por parejas.** Ya las tienes todas. La de la izquierda deja
+dura la consonante de delante; la de la derecha la ablanda (o, al principio de
 palabra, suena con una y delante):
 
-| dura | а | у | о | э | ы |
-|---|---|---|---|---|---|
-| **blanda** | я | ю | ё | е | и |
+| Deja dura | Ablanda |
+|---|---|
+| а | я |
+| у | ю |
+| о | ё |
+| э | е |
+| ы | и |
 
 En la columna «Se lee» de hoy, la **y** es la **ы**.
 

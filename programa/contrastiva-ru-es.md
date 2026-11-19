@@ -61,3 +61,4 @@ Una nota que vale oro para el Río de la Plata: quien dice «yo» y «calle» co
 | 19 | los casos: dejar el sustantivo en nominativo: ~~Я люблю́ ма́ма~~ → **ма́му** | el español solo declina los pronombres (lo, le) | A1 U8 y siguientes | RiE + inferido |
 | 20 | el verbo con dos temas: ~~рисова́ю~~ → **рису́ю** | рисова́ть / рису́ю: el presente se forma sobre otro tema | A1 U9 | RiE |
 | 21 | presentarse con «yo»: ~~Я зову́т А́на~~ → **Меня́ зову́т А́на** | «me llamo» lleva el verbo en la persona; en ruso es «me llaman» y зову́т no cambia (como «me llaman Pepe») | A1 U1 | inferido |
+| 22 | una e delante de s + consonante: ~~[es-pa-sí-ba]~~ → **спаси́бо** [spa-sí-ba], ~~[es-port]~~ → **спорт** | el español no empieza palabra con s + consonante y mete una e («escuela», «España») | A1 U1 | inferido |

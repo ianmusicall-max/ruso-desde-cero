@@ -40,13 +40,17 @@ Offer and answer aloud, with your voice going up and down:
 you were about to say [oo]. You get a dull, throaty sound, a bit like the
 *i* of *bit* said from further back. It hardly ever starts a word.
 
-**The vowels come in pairs.** You now have them all. The top one keeps the
-consonant in front hard; the bottom one softens it (or, at the start of a
+**The vowels come in pairs.** You now have them all. The left one keeps the
+consonant in front hard; the right one softens it (or, at the start of a
 word, adds a *y*):
 
-| hard | а | у | о | э | ы |
-|---|---|---|---|---|---|
-| **soft** | я | ю | ё | е | и |
+| Keeps it hard | Softens |
+|---|---|
+| а | я |
+| у | ю |
+| о | ё |
+| э | е |
+| ы | и |
 
 In today's "Say it" column, **y** stands for **ы**.
 
