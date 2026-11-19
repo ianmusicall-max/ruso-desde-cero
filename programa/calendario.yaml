@@ -245,8 +245,10 @@ niveles:
             en: "Here you are: offering and giving"
             foco: >-
               Ofrecer, dar y pedir: Что вам? — Мне чай, пожа́луйста. — Вот,
-              пожа́луйста. А вам? (вам y мне como bloques). Bebidas: молоко́
-              [малако́], вино́, лимона́д, минера́льная вода́, кака́о.
+              пожа́луйста. А вам? (вам y мне como bloques). Bebidas que no
+              cambian al pedirlas: молоко́ [малако́], вино́, лимона́д, квас,
+              кака́о. Las palabras en -а sí cambian (Мне во́ду): eso es el
+              acusativo de la unidad 8, y hasta entonces se señala: Мне э́то.
           - tipo: leccion
             ru: Интернациона́льные слова́
             es: Palabras que ya conoces
@@ -255,8 +257,8 @@ niveles:
               Leer de corrido palabras internacionales aplicando todas las
               reglas de la unidad, y su acento, que casi nunca es el del
               español o el inglés: компью́тер, интерне́т, телеви́зор,
-              авто́бус, трамва́й, сала́т, ноутбу́к. La е de los préstamos que
-              no ablanda: кафе́, интерне́т [интэрнэ́т].
+              авто́бус, трамва́й, сала́т, аэропо́рт, пробле́ма. La е de los
+              préstamos que no ablanda: кафе́, интерне́т [интэрнэ́т].
           - tipo: leccion
             ru: Коне́чно!
             es: "¡Claro! Las respuestas cortas"
