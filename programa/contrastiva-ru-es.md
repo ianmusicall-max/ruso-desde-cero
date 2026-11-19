@@ -25,7 +25,7 @@ Esto es la mitad del bloque de contraste: decirle al alumno dónde su lengua
 |---|---|---|
 | la erre vibrante (perro) | la **р** rusa es la misma | A1 U1 |
 | la ch (chico) | la **ч** suena casi igual | A1 U1 |
-| la ñ (año) | **нь** / **ня** se parece mucho: ня ≈ ña | A1 U2 |
+| la ñ (año) | **нь** / **ня** se parece mucho: ня ≈ ña (**Меня́** ≈ «miñá») | A1 U1, U2 |
 | la j (jamón) | la **х** es casi la misma | A1 U1 |
 | el género masculino / femenino | el ruso también lo tiene (y uno más: el neutro) | A1 U4 |
 | «no vino nadie» | doble negación igual: **Никто́ не пришёл** | A2 U11 |
@@ -40,7 +40,7 @@ Una nota que vale oro para el Río de la Plata: quien dice «yo» y «calle» co
 
 | # | El error | Por qué | Dónde se enseña | Fuente |
 |---|---|---|---|---|
-| 1 | leer las átonas como se escriben: ~~[моско́ва]~~ → **Москва́ [маскфа́]**, молоко́ [малако́] | el español **nunca** reduce una vocal; el ruso reduce todas las átonas | A1 U1–U2 y todo el A1 | РЯС + inferido |
+| 1 | leer las átonas como se escriben: ~~[москва́]~~ → **Москва́ [масква́]**, молоко́ [малако́] | el español **nunca** reduce una vocal; el ruso reduce todas las átonas | A1 U1–U2 y todo el A1 | РЯС + inferido |
 | 2 | no distinguir **и / ы**: мил / мыл | el español tiene una sola i | A1 U1, U2 | РЯС + inferido |
 | 3 | la **з** como z española o como s: **коза́** («cabra») acaba sonando коса́ («trenza») | la z del español no es sonora; en América suena [s] | A1 U1 | inferido |
 | 4 | la **ж** y la **ш** como «ch» o «s» | no existen en el español general (sí en el rioplatense) | A1 U1 | РЯС + inferido |
@@ -60,3 +60,4 @@ Una nota que vale oro para el Río de la Plata: quien dice «yo» y «calle» co
 | 18 | buscar la tilde escrita en un texto real | en ruso normal el acento no se escribe: hay que aprenderlo con cada palabra | A1 U1 | inferido |
 | 19 | los casos: dejar el sustantivo en nominativo: ~~Я люблю́ ма́ма~~ → **ма́му** | el español solo declina los pronombres (lo, le) | A1 U8 y siguientes | RiE + inferido |
 | 20 | el verbo con dos temas: ~~рисова́ю~~ → **рису́ю** | рисова́ть / рису́ю: el presente se forma sobre otro tema | A1 U9 | RiE |
+| 21 | presentarse con «yo»: ~~Я зову́т А́на~~ → **Меня́ зову́т А́на** | «me llamo» lleva el verbo en la persona; en ruso es «me llaman» y зову́т no cambia (como «me llaman Pepe») | A1 U1 | inferido |

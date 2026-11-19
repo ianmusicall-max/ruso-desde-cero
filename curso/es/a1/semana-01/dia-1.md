@@ -25,7 +25,7 @@ alta:
 Todavía no conoces todas sus letras, y no hace falta: hoy se aprende de
 oído. Dentro de una semana la leerás entera.
 
-¿Ves la tilde sobre la **е**? Marca la sílaba fuerte: при-**ВЕТ**. En los
+¿Ves la tilde sobre la **е**? Marca la sílaba fuerte: pri-**VIET**. En los
 libros y en las calles rusas **no se escribe**; en este curso la vas a ver
 siempre, en todas las palabras, porque en ruso la sílaba tónica no se puede
 adivinar y si cambia, cambia la palabra.
@@ -59,7 +59,7 @@ cada una dos veces:
 
 | Palabra | Se lee | Significa |
 |---|---|---|
-| ма́ма | **МА**-ма | mamá |
+| ма́ма | **MA**-ma | mamá |
 | кот | kot | gato |
 | кто | kto | quién |
 | там | tam | allí |

@@ -46,3 +46,4 @@ como todo `programa/`; lo que lee el alumno está en inglés en la lección.
 | 18 | «his own» = его́: ~~Он взял его́ кни́гу~~ (la suya) → **свою́** | свой es el posesivo propio | A2 U1, U4 | inferido |
 | 19 | «want someone to»: ~~Я хочу́ тебя́ прочита́ть~~ → **Я хочу́, что́бы ты прочита́л** | el ruso usa что́бы + pasado | A2 U9 | inferido |
 | 20 | el acento: leer las palabras con el acento del inglés en la primera sílaba | en ruso la tónica puede estar en cualquier sílaba y cambia de una forma a otra | A1 U1 | inferido |
+| 21 | «my name is» calcado: ~~Я зову́т А́нна~~ (o el libresco Моё и́мя А́нна) → **Меня́ зову́т А́нна** | la frase de todos los días es «me llaman», y зову́т no cambia (como *people call me Annie*) | A1 U1 | inferido |

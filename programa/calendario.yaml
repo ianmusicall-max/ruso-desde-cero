@@ -57,15 +57,15 @@ niveles:
             en: С, Р, У, Х — letters that lie
             foco: >-
               Cuatro letras con forma conocida y sonido distinto: С = s,
-              Р = r, У = u, Х = j/h. Palabras: сок, торт, у́тро, у́хо, му́ха,
-              ко́смос.
+              Р = r, У = u, Х = j/h. Palabras: сок, торт, ка́рта, ма́ска,
+              ко́смос, у́тро, у́хо, рука́. Par mínimo de acento: му́ка / мука́.
           - tipo: leccion
             ru: В, Е, Н — ещё обма́нщики
             es: В, Е, Н — más letras que engañan
             en: В, Е, Н — more letters that lie
             foco: >-
               В = v, Е = ye, Н = n. Ya se leen метро́, рестора́н, раке́та,
-              Москва́. La о átona suena [а]: Москва́ [маскфа́]. Нет, вот.
+              Москва́. La о átona suena [а]: Москва́ [масква́], окно́ [акно́]. Нет, вот.
           - tipo: leccion
             ru: Как тебя́ зову́т?
             es: ¿Cómo te llamas?
@@ -88,8 +88,9 @@ niveles:
             es: "Repaso: lees todo lo de la semana"
             en: "Review: read everything from this week"
             foco: >-
-              Las 16 letras de la semana, las palabras, el diálogo de
-              presentación y la entonación de la pregunta. Mini-test.
+              Las 15 letras de la semana (5 + 4 + 3 + 1 + 2), las palabras,
+              el diálogo de presentación y la entonación de la pregunta.
+              Mini-test.
           - tipo: cultura
             ru: Отку́да кири́ллица
             es: De dónde viene el alfabeto cirílico

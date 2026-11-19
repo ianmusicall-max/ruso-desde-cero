@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="es" data-raiz="../../..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De dónde viene el alfabeto cirílico · Ruso desde cero</title>
+<meta name="description" content="A1 · Semana 1 · De dónde viene el alfabeto cirílico. Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.">
+<style>@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/literata-cyrillic-400.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/literata-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../../../fonts/literata-cyrillic-400i.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../../../fonts/literata-latin-400i.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Literata';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/literata-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/literata-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-cyrillic-400.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root{color-scheme:light;
+  --papel:#ffffff;--tinta:#111317;--tenue:#626873;--linea:#dfe2e7;--tarjeta:#f4f6f9;
+  --acento:#1f56a6;--acento-suave:#eaf1fb;--aviso:#b4461b;--aviso-suave:#fdf1ea;
+  --bien:#1f7a4d;--ancho:44rem}
+@media(prefers-color-scheme:dark){:root:not([data-tema="light"]){color-scheme:dark;
+  --papel:#121418;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2d3138;--tarjeta:#1b1e23;
+  --acento:#8db4f2;--acento-suave:#1a2433;--aviso:#f09a72;--aviso-suave:#2a1d17;--bien:#6fcf9c}}
+:root[data-tema="dark"]{color-scheme:dark;
+  --papel:#121418;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2d3138;--tarjeta:#1b1e23;
+  --acento:#8db4f2;--acento-suave:#1a2433;--aviso:#f09a72;--aviso-suave:#2a1d17;--bien:#6fcf9c}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);
+  font:400 17px/1.65 Literata,ui-serif,Georgia,serif;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+.envoltorio{max-width:var(--ancho);margin:0 auto;padding:0 18px}
+a{color:var(--acento)}
+h1,h2,h3,.sans,header.sitio,footer.sitio,.boton,.migas,summary{font-family:Onest,ui-sans-serif,system-ui,sans-serif}
+h1{font-size:1.9rem;line-height:1.2;margin:.4rem 0 .3rem;letter-spacing:-.01em}
+h2{font-size:1.3rem;line-height:1.3;margin:2.2rem 0 .7rem}
+h3{font-size:1.06rem;margin:1.6rem 0 .5rem}
+header.sitio{border-bottom:1px solid var(--linea)}
+header.sitio .envoltorio{max-width:60rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem;padding-block:.6rem;font-size:.9rem}
+header.sitio a{color:var(--tenue);text-decoration:none}
+header.sitio a:hover,header.sitio a[aria-current]{color:var(--acento)}
+header.sitio .marca{font-weight:700;color:var(--tinta);font-size:1rem;margin-right:auto}
+header.sitio nav{display:flex;gap:.9rem}
+header.sitio .idiomas a{font-weight:700}
+.tema{background:none;border:1px solid var(--linea);border-radius:99px;color:var(--tenue);cursor:pointer;
+  padding:.3rem .45rem;line-height:0;display:inline-flex;align-items:center}
+.tema:hover{color:var(--acento);border-color:var(--acento)}
+footer.sitio{border-top:1px solid var(--linea);margin-top:4rem;color:var(--tenue);font-size:.85rem}
+footer.sitio .envoltorio{padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem 1.2rem}
+footer.sitio a{color:var(--tenue)}
+main{padding-bottom:1rem}
+.migas{color:var(--tenue);font-size:.85rem;margin-top:1.6rem}
+.ru-tema{font-size:1.15rem;color:var(--tenue);margin:0 0 1rem}
+.borrador{background:var(--aviso-suave);border-left:4px solid var(--aviso);padding:.6rem .9rem;border-radius:6px;font-size:.92rem}
+blockquote{margin:1rem 0;padding:.75rem 1rem;background:var(--tarjeta);border-radius:10px;border-left:4px solid var(--acento)}
+blockquote p{margin:.35rem 0}
+blockquote ul{margin:.3rem 0;padding-left:1.2rem}
+.tabla{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--linea);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.85rem;color:var(--tenue);font-weight:700}
+h2.parte{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+h2.parte .num{display:inline-flex;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border-radius:50%;
+  background:var(--acento);color:var(--papel);font-size:.95rem;flex:none}
+h2.parte .franja{margin-left:auto;font-size:.8rem;font-weight:400;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:.05rem .55rem}
+aside.contraste{background:var(--aviso-suave);border-left:4px solid var(--aviso);border-radius:10px;padding:.2rem 1rem .4rem;margin:1.4rem 0}
+aside.contraste h3{color:var(--aviso);margin-top:.8rem}
+del{text-decoration-thickness:2px;text-decoration-color:var(--aviso);color:var(--tenue)}
+details.clave{margin-top:2.2rem;border:1px solid var(--linea);border-radius:10px;padding:.2rem 1rem}
+details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding:.6rem 0}
+.boton{display:inline-block;background:var(--acento);color:var(--papel);text-decoration:none;border:0;border-radius:99px;
+  padding:.6rem 1.15rem;font-size:.95rem;font-weight:700;cursor:pointer}
+.boton.secundario{background:var(--acento-suave);color:var(--acento)}
+.botones{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
+.final{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin:2.6rem 0 1rem;padding-top:1.2rem;border-top:1px solid var(--linea)}
+#marcar[aria-pressed="true"]{background:var(--bien)}
+.vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
+.nota{color:var(--tenue);font-size:.88rem}
+.heroe{padding:2.2rem 0 .6rem}
+.heroe h1{font-size:2.2rem}
+.lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
+.puertas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.6rem 0}
+.puerta{display:block;border:1px solid var(--linea);border-radius:14px;padding:1.1rem 1.2rem;text-decoration:none;color:var(--tinta);background:var(--tarjeta)}
+.puerta:hover{border-color:var(--acento)}
+.puerta strong{display:block;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:1.15rem;color:var(--acento);margin-bottom:.3rem}
+.nivel{margin-top:2.4rem}
+details.unidad{border:1px solid var(--linea);border-radius:10px;margin:.5rem 0;padding:.1rem .9rem}
+details.unidad summary{cursor:pointer;padding:.55rem 0;font-weight:700}
+details.unidad summary .ru{font-weight:400;color:var(--tenue);margin-left:.4rem}
+details.unidad ol{margin:.2rem 0 .8rem;padding-left:1.4rem}
+details.unidad li{margin:.15rem 0}
+li.pronto{color:var(--tenue)}
+li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
+.tipo{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:0 .45rem;margin-right:.3rem}
+</style>
+<script>try{var t=localStorage.getItem('rdc.tema');if(t)document.documentElement.setAttribute('data-tema',JSON.parse(t))}catch(e){}</script>
+</head>
+<body>
+<header class="sitio"><div class="envoltorio">
+<a class="marca" href="../../../es/index.html">Ruso desde cero</a><nav class="menu"><a href="../../../es/curso.html">Curso</a><a href="../../../es/sobre.html">Sobre el curso</a></nav><nav class="idiomas" aria-label="Language"><a lang="es" hreflang="es" href="../../../es/a1/semana-01/dia-7.html" aria-current=true>ES</a><a lang="en" hreflang="en" href="../../../en/a1/semana-01/dia-7.html">EN</a></nav>
+<button id="tema" class="tema" type="button" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+</div></header>
+<main class="envoltorio" data-leccion="es/a1/semana-01/dia-7" data-url="es/a1/semana-01/dia-7.html" data-titulo="De dónde viene el alfabeto cirílico">
+<p class="migas">A1 · Unidad 1 · Semana 1 · Día 7 · Cultura</p>
+<h1>De dónde viene el alfabeto cirílico</h1>
+<p class="ru-tema" lang="ru">Отку́да кири́ллица</p>
+<p class="borrador">Borrador: esta lección todavía no pasó la revisión final del ruso. Puede cambiar.</p>
+<article>
+<blockquote>
+<p><strong>Hoy</strong> descubres por qué siete letras te engañaron esta semana, quién inventó el alfabeto ruso (no fue quien le da nombre) y cómo se acortan los nombres rusos. Al terminar sabrás escribir tu nombre en cirílico.</p>
+</blockquote>
+<h2 id="parte-1" class="parte"><span class="num">1</span><span class="nombre">Antes de leer</span><span class="franja">0–5 min</span></h2>
+<p>El día 2 te engañaron cuatro letras y el día 3, tres más:</p>
+<blockquote>
+<p>С Р У Х В Е Н</p>
+</blockquote>
+<p>Antes de leer, piensa: ¿por qué se parecen tanto a las nuestras y suenan
+distinto? Apunta tu idea en una línea. Al final del texto verás si
+acertaste.</p>
+<p>Una pista. Esta palabra es griega, <strong>ΧΡΟΝΟΣ</strong>: significa «tiempo», y de ella
+viene «cronómetro». Léela con la Χ como una j y la Ρ como una r:
+[jró-nos]. ¿Te suenan esas dos letras?</p>
+<h2 id="parte-2" class="parte"><span class="num">2</span><span class="nombre">Texto</span><span class="franja">5–18 min</span></h2>
+<h3>Dos hermanos y un alfabeto</h3>
+<p>En el año 863 salieron de Bizancio, rumbo al norte, dos hermanos nacidos en
+Tesalónica: Constantino y Metodio. El príncipe de la Gran Moravia, un reino
+eslavo del centro de Europa, había pedido maestros que predicaran a su
+pueblo en su propia lengua. Pero los eslavos no tenían escritura.</p>
+<p>Constantino la inventó. Creó un alfabeto nuevo, de dibujo propio, pensado
+para los sonidos eslavos: la <strong>glagólica</strong> (глаго́лица). Con él, los dos
+hermanos tradujeron los textos que necesitaban. Constantino murió en Roma en
+869, después de hacerse monje con el nombre de <strong>Cirilo</strong>; Metodio siguió el
+trabajo hasta su muerte, en 885.</p>
+<h3>El alfabeto que lleva su nombre</h3>
+<p>El alfabeto que estás aprendiendo <strong>no es ese</strong>. A finales del siglo IX, ya
+en Bulgaria, los discípulos de los dos hermanos hicieron otro, más fácil
+para quien ya sabía griego: tomaron las letras griegas y añadieron las que
+hacían falta para los sonidos eslavos. Se llama <strong>cirílico</strong> (кири́ллица) en
+honor de Cirilo, aunque él no llegó a verlo.</p>
+<p>Y aquí está la respuesta a la pregunta del principio. Las letras que te
+engañan <strong>no son latinas mal leídas: son griegas</strong>, y suenan como sonaban en
+griego. La <strong>С</strong> es la sigma, que se escribía redonda; la <strong>Р</strong> es la ro,
+que ya era una r; la <strong>Х</strong> es la ji, que sonaba como una j; y la <strong>В</strong> es la
+beta, que en el griego de aquella época ya se pronunciaba [v]. Nuestro
+alfabeto también viene del griego, por otro camino: el latino y el cirílico
+son primos.</p>
+<h3>El último retoque</h3>
+<p>En 1708 el zar Pedro I mandó simplificar el dibujo de las letras para los
+libros impresos. El tipo nuevo, la <strong>letra civil</strong> (гражда́нский шрифт), se
+parecía más a las letras de imprenta europeas, y de ahí salen las formas que
+lees hoy.</p>
+<p>El ruso de hoy usa <strong>33 letras</strong>. El cirílico lo comparten el ucraniano, el
+bielorruso, el búlgaro, el serbio y el macedonio, y lenguas de Asia como el
+kazajo, el kirguís, el tayiko o el mongol; cada una lo ha ajustado a sus
+sonidos, con alguna letra propia. Cada 24 de mayo, Rusia y Bulgaria celebran
+el día de la escritura eslava en honor de los dos hermanos.</p>
+<h3>Nombres que se acortan</h3>
+<p>En ruso casi todos los nombres tienen una forma corta para la familia y los
+amigos, como Paco para Francisco o Pepe para José. Pero la forma corta rusa
+a veces se parece poco a la larga:</p>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Forma corta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>А́нна</td>
+<td>А́ня</td>
+</tr>
+<tr>
+<td>Мари́я</td>
+<td>Ма́ша</td>
+</tr>
+<tr>
+<td>Алекса́ндр</td>
+<td>Са́ша</td>
+</tr>
+<tr>
+<td>Ива́н</td>
+<td>Ва́ня</td>
+</tr>
+<tr>
+<td>Дми́трий</td>
+<td>Ди́ма</td>
+</tr>
+<tr>
+<td>Екатери́на</td>
+<td>Ка́тя</td>
+</tr>
+<tr>
+<td>Михаи́л</td>
+<td>Ми́ша</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Са́ша</strong> puede ser Alejandro o Alejandra. La forma corta con alguien que no
+conoces suena demasiado familiar; la larga con un amigo suena seria, casi de
+enfado.</p>
+<h2 id="parte-3" class="parte"><span class="num">3</span><span class="nombre">Palabras</span><span class="franja">18–23 min</span></h2>
+<p>Seis palabras del texto. Algunas llevan letras que aún no conoces: apréndelas
+de oído; la semana que viene las leerás.</p>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Ruso</th>
+<th>Español</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>бу́ква</td>
+<td>letra</td>
+<td>Э́то бу́ква А.</td>
+</tr>
+<tr>
+<td>алфави́т</td>
+<td>alfabeto</td>
+<td>Вот алфави́т.</td>
+</tr>
+<tr>
+<td>кири́ллица</td>
+<td>alfabeto cirílico</td>
+<td>Э́то кири́ллица.</td>
+</tr>
+<tr>
+<td>язы́к</td>
+<td>lengua, idioma</td>
+<td>Ру́сский язы́к.</td>
+</tr>
+<tr>
+<td>и́мя</td>
+<td>nombre (de pila)</td>
+<td>А́нна — э́то и́мя.</td>
+</tr>
+<tr>
+<td>сло́во</td>
+<td>palabra</td>
+<td>Э́то сло́во.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="parte-4" class="parte"><span class="num">4</span><span class="nombre">Tarea</span><span class="franja">23–29 min</span></h2>
+<h3>А. Ве́рно и́ли неве́рно?</h3>
+<p><em>¿Verdadero o falso?</em></p>
+<ol>
+<li>Cirilo inventó el alfabeto que usa hoy el ruso.</li>
+<li>Las letras que engañan son letras griegas con su sonido griego.</li>
+<li>El alfabeto latino y el cirílico vienen los dos del griego.</li>
+<li>En ruso, la forma corta del nombre se usa con todo el mundo.</li>
+<li><strong>Са́ша</strong> puede ser un hombre o una mujer.</li>
+</ol>
+<h3>Б. Напиши́те ва́ше и́мя.</h3>
+<p><em>Escribe tu nombre y el de tres personas de tu familia en cirílico. Aquí tienes las 33 letras; las que aún no has estudiado llegan la semana que viene. Escribe los nombres como suenan, no como se escriben: José → Хосе́.</em></p>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Suena</th>
+<th>Letra</th>
+<th>Suena</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>А а</td>
+<td>a</td>
+<td>Б б</td>
+<td>b</td>
+</tr>
+<tr>
+<td>В в</td>
+<td>v</td>
+<td>Г г</td>
+<td>g (de «gato»)</td>
+</tr>
+<tr>
+<td>Д д</td>
+<td>d</td>
+<td>Е е</td>
+<td>ye, e</td>
+</tr>
+<tr>
+<td>Ё ё</td>
+<td>yo</td>
+<td>Ж ж</td>
+<td>la ll de Buenos Aires</td>
+</tr>
+<tr>
+<td>З з</td>
+<td>z sonora, la s de «mismo»</td>
+<td>И и</td>
+<td>i</td>
+</tr>
+<tr>
+<td>Й й</td>
+<td>y corta, de «hoy»</td>
+<td>К к</td>
+<td>k</td>
+</tr>
+<tr>
+<td>Л л</td>
+<td>l</td>
+<td>М м</td>
+<td>m</td>
+</tr>
+<tr>
+<td>Н н</td>
+<td>n</td>
+<td>О о</td>
+<td>o</td>
+</tr>
+<tr>
+<td>П п</td>
+<td>p</td>
+<td>Р р</td>
+<td>r</td>
+</tr>
+<tr>
+<td>С с</td>
+<td>s</td>
+<td>Т т</td>
+<td>t</td>
+</tr>
+<tr>
+<td>У у</td>
+<td>u</td>
+<td>Ф ф</td>
+<td>f</td>
+</tr>
+<tr>
+<td>Х х</td>
+<td>j</td>
+<td>Ц ц</td>
+<td>ts</td>
+</tr>
+<tr>
+<td>Ч ч</td>
+<td>ch</td>
+<td>Ш ш</td>
+<td>sh</td>
+</tr>
+<tr>
+<td>Щ щ</td>
+<td>sh larga y blanda</td>
+<td>Ъ ъ</td>
+<td>signo duro: no suena</td>
+</tr>
+<tr>
+<td>Ы ы</td>
+<td>una i con la lengua atrás</td>
+<td>Ь ь</td>
+<td>signo blando: ablanda</td>
+</tr>
+<tr>
+<td>Э э</td>
+<td>e</td>
+<td>Ю ю</td>
+<td>yu</td>
+</tr>
+<tr>
+<td>Я я</td>
+<td>ya</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="parte-5" class="parte"><span class="num">5</span><span class="nombre">Cierre</span><span class="franja">29–30 min</span></h2>
+<blockquote>
+<p><strong>Ya sabes:</strong> las letras que engañan son griegas, el cirílico se llama así por Cirilo aunque no lo inventó él, y <strong>Са́ша</strong> puede ser Alejandro o Alejandra.</p>
+</blockquote>
+<p>La semana que viene: las 18 letras que faltan. Al terminarla leerás
+cualquier palabra rusa.</p>
+<details class="clave" id="respuestas"><summary>Ver las respuestas</summary>
+
+<p><strong>А.</strong> 1 falso: Cirilo inventó la glagólica; el cirílico lo hicieron sus
+discípulos. · 2 verdadero. · 3 verdadero. · 4 falso: la corta es para la
+familia y los amigos. · 5 verdadero.</p>
+<p><strong>Б.</strong> Algunos ejemplos: José — Хосе́ · María — Мари́я · Carlos — Ка́рлос ·
+Lucía — Луси́я · Javier — Хавье́р · Carmen — Ка́рмен. Si tu nombre lleva una
+h muda, desaparece: Héctor — Э́ктор.</p></details>
+
+</article>
+<div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
+ data-marcar="Marcar como hecha" data-hecha="Hecha ✓">Marcar como hecha</button>
+<span class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</span></div>
+<nav class="vecinos"><a href="../../../es/a1/semana-01/dia-6.html">← Anterior</a><a href="../../../es/curso.html">Índice del curso</a><span></span></nav>
+</main>
+<footer class="sitio"><div class="envoltorio"><span>Curso gratuito de ruso para hispanohablantes.</span><a href="../../../es/sobre.html">Sobre el curso</a><a href="../../../es/contacto.html">Contacto</a><a href="../../../es/privacidad.html">Privacidad</a></div></footer>
+<script src="../../../progreso.js" defer></script>
+</body>
+</html>

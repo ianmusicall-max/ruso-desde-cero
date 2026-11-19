@@ -110,6 +110,12 @@ class TestElValidador(unittest.TestCase):
     def test_las_siglas_no_necesitan_acento(self):
         self.assertEqual(validar.sin_acento("ТЭУ, ТРКИ-2 y ТБУ"), [])
 
+    def test_la_negrita_dentro_de_una_palabra_no_la_parte(self):
+        """La negrita marca a veces una letra («к**о́**мната», para señalar qué
+        о se reduce): la palabra sigue siendo una y lleva su acento."""
+        self.assertEqual(validar.sin_acento("к**о́**мната · М**о**сква́"), [])
+        self.assertEqual(validar.sin_acento("к**о**мната"), ["комната"])
+
     def test_la_frase_partida_en_una_cita(self):
         self.assertTrue(validar.frases_partidas_en_citas("> una frase que se parte y\n> sigue aquí\n"))
         self.assertFalse(validar.frases_partidas_en_citas("> ма — мо — ка\n> ам — ом — ак\n"))

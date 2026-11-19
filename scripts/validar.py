@@ -81,8 +81,12 @@ def pista_de(ruta: pathlib.Path) -> str:
 
 
 def _sin_codigo(texto: str) -> str:
+    """El texto sin código y sin asteriscos. Los asteriscos fuera porque la
+    negrita también marca una letra dentro de una palabra («М**о**сква́», para
+    señalar qué о se reduce), y sin quitarlos la palabra se lee en trozos:
+    «мната» sin acento, cuando la palabra entera es «ко́мната»."""
     texto = re.sub(r"```.*?```", "", texto, flags=re.S)
-    return re.sub(r"`[^`]*`", "", texto)
+    return re.sub(r"`[^`]*`", "", texto).replace("*", "")
 
 
 def sin_acento(texto: str) -> list[str]:
