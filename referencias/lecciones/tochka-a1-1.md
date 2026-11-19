@@ -17,7 +17,7 @@ Estructura fija de cada lección del libro: apartados numerados (1., 2., 3.…) 
    - grupo 3: Б И Л Г П Д Ф З Э (OCR dudoso: la fila está desordenada, pero las palabras de la actividad —гитара, стадион, банан, роза, лимон, радио, суп, вино, кофе, экзамен, доктор, парк, футболист— cubren exactamente esas letras);
    - grupo 4: Ж Ч Ц Ш Щ Ю Я Ё, más Й, Ь, Ъ, Ы vistas solo en palabras (Нью-Йорк, инъекция, Сибирь, шампанское, журнал, цирк…). **No hay explicación aparte de Ы, Ь, Ъ, ни de Й**: solo salen en la tabla alfabética de la pág. 2 con una etiqueta en inglés («hard sign» / «soft sign») y en las palabras de la actividad.
    - La pág. 2 es una tabla de las 33 letras con transcripción latina entre corchetes ([ts], [ch], [sh], [shch], [je], [jo]…) y una palabra-ejemplo por letra (Африка, банан, вино, гитара, доктор, ракета, актёр, журналист, роза, пицца, Нью-Йорк, карта, лимон, Москва, нота, кот, парк, ресторан, стадион, томат, суп, фильм, Хельсинки, цирк, чек, шеф, борщ, инъекция, ы, сибирь, эхо, тюльпан, яхта).
-2. **Это** + nombre: sirve para «es / esto es» (tarjeta de lectura con сartel-imagen y pregunta «Это нота или карта?»).
+2. **Это** + nombre: sirve para «es / esto es» (tarjeta de lectura con cartel-imagen y pregunta «Это нота или карта?»).
 3. **Кто это? Что это?** (la pregunta por persona y por cosa, con imágenes, en parejas).
 4. **Меня зовут … / Я …**: dos formas de presentarse (la segunda, solo «Я» + nombre, aparece en el recuadro final y en el diálogo del avión; la unidad 1 del curso solo enseña la primera).
 5. **Да, нет, не**: respuesta corta y negación con «не» («Нет, не …») en la serie de ejercicios por parejas «Это радио? — Нет, не…».
@@ -55,7 +55,7 @@ Estructura fija de cada lección del libro: apartados numerados (1., 2., 3.…) 
 **Tema y situaciones comunicativas:** pedir indicaciones («извините, где…?»); ubicar lugares de la ciudad a la izquierda, a la derecha o en el centro; preguntar cómo se llama alguien (él, ella, ellos); contar hasta 20 y hacer sumas y restas sencillas.
 **Gramática, en el orden en que se enseña:**
 1. Fórmulas para llamar la atención: извините, пожалуйста, где …? / где здесь …? (cuatro variantes).
-2. **Género del sustantivo** (он / она / оно): masculino = consonante dura o -й / -ь; femenino = -а, -я, -ь; neutro = -о, -е, -мя (tabla de las terminaciones; las excepciones «имя, время» mencionadas; palabras como метро, кафе, такси que son neutras e indeclinables). Se enseña con la pregunta **Почему? — Потому что -а** (aptека es она porque termina en -а). Las pronombres в tercera persona se usan al contestar: «Вот он / она / оно, слева».
+2. **Género del sustantivo** (он / она / оно): masculino = consonante dura o -й / -ь; femenino = -а, -я, -ь; neutro = -о, -е, -мя (tabla de las terminaciones; las excepciones «имя, время» mencionadas; palabras como метро, кафе, такси que son neutras e indeclinables). Se enseña con la pregunta **Почему? — Потому что -а** (аптека es она porque termina en -а). Las pronombres в tercera persona se usan al contestar: «Вот он / она / оно, слева».
 3. **Acusativo de los pronombres personales**, solo en la construcción «X зовут …»: меня, тебя, его, её, его, нас, вас, их (tabla nominativo ↔ acusativo; el libro no da otros casos de uso).
 4. **Слева / справа / в центре** para ubicar.
 5. **Numerales 0–20** (ноль, один, два… двадцать) y operaciones: плюс, минус, равно; «Сколько будет …?».
@@ -71,7 +71,7 @@ Estructura fija de cada lección del libro: apartados numerados (1., 2., 3.…) 
 **Páginas PDF:** 23–28
 **Tema y situaciones comunicativas:** preguntar y decir en qué se trabaja o se estudia; presentarse en una conferencia e intercambiar tarjetas de visita; frases útiles para clase (cómo se dice, qué significa, cómo se escribe, no entiendo, no sé…).
 **Gramática, en el orden en que se enseña:**
-1. **Dos conjugaciones del presente**: grupo I (-е-, con **работать**: я работаю, ты работаешь, он/она работает, мы работаем, вы работаете, они работают) y grupo II (-и-, con **говорить**: говорю, говоришь, говорит, говорим, говорите, говорят). El libro nombra «e-conjugation» e «и-conjugation».
+1. **Dos conjugaciones del presente**: grupo I (-е-, con **работать**: я работаю, ты работаешь, он/она работает, мы работаем, вы работаете, они работают) y grupo II (-и-, con **говорить**: говорю, говоришь, говорит, говорим, говорите, говорят). El libro nombra «e-conjugation» e «conjugación en и».
 2. Pregunta **Кто ты по профессии?** y respuesta «Я + profesión»; forma negativa «Я не работаю».
 3. Profesiones con **género**: студент/студентка, спортсмен/спортсменка, официант/официантка, пенсионер/пенсионерка; las que no cambian (врач, гид, секретарь, таксист, психолог, юрист, экономист…).
 4. Partículas expresivas de reacción: конечно, тоже, классно, о как интересно, нет, что ты / что вы.

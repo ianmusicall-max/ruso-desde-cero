@@ -166,6 +166,130 @@ niveles:
         lexico: objetos de todos los días; palabras internacionales
         fonetica: reducción de о, е, я; consonantes duras y blandas; ensordecimiento final; ИК-1, ИК-2, ИК-3, ИК-4
         episodio: {ru: "Э́то не ша́пка, а кот!", es: "¡No es un gorro, es un gato!", en: "That's not a hat, it's a cat!", sinopsis: "Tom le devuelve a Kira un gorro que encontró en la escalera, y el gorro se mueve: es Bársik. Misha se ríe de él. Qué es esto, sí, no, no es esto sino aquello."}
+        dias:
+          - tipo: leccion
+            ru: "Не…, а…"
+            es: "No es esto, es aquello: не…, а…"
+            en: "Not this, but that: не…, а…"
+            foco: >-
+              La negación не va justo delante de lo que se niega, y а trae
+              la corrección: Э́то не сок, а вода́. Objetos de todos los días
+              (ру́чка, кни́га, су́мка, ключ, зонт, телефо́н, ла́мпа, ша́пка) y la
+              о átona en ellos. ИК-1 en las dos partes de la frase.
+          - tipo: leccion
+            ru: Е и я без ударе́ния
+            es: La е y la я sin acento
+            en: Unstressed е and я
+            foco: >-
+              Sin acento, е y я se debilitan hasta una [и] corta: телефо́н
+              [тилифо́н], язы́к [изы́к], тетра́дь [титра́ть]. Las cosas de
+              clase: тетра́дь, каранда́ш, рюкза́к, слова́рь, уро́к, вопро́с,
+              отве́т.
+          - tipo: leccion
+            ru: Твёрдые и мя́гкие
+            es: Consonantes duras y blandas
+            en: Hard and soft consonants
+            foco: >-
+              Casi cada consonante tiene una versión dura y otra blanda, y la
+              vocal o la ь de detrás dice cuál: ма — мя, лу — лю, ны — ни;
+              лук — люк, рад — ряд. ж, ш, ц son siempre duras (маши́на se
+              dice [машы́на]). Palabras: мать, дверь, соль, ночь, ло́шадь,
+              мя́со, лук.
+          - tipo: leccion
+            ru: Хлеб и́ли [хлеп]?
+            es: La consonante final se apaga
+            en: Final consonants lose their voice
+            foco: >-
+              Al final de palabra б, в, г, д, ж, з suenan п, ф, к, т, ш, с:
+              хлеб [хлеп], сад [сат], нож [нош], глаз [глас], снег [снек],
+              зуб [зуп]; por eso код y кот suenan igual. Solo el final de
+              palabra: el contagio dentro de la palabra (авто́бус [афто́бус])
+              es de la unidad 4.
+          - tipo: leccion
+            ru: Кто э́то? А э́то?
+            es: "Preguntar con кто, что y а"
+            en: "Asking with кто, что and а"
+            foco: >-
+              ИК-2 en las preguntas con palabra interrogativa: la voz se
+              apoya en ella y baja (Кто э́то? Что э́то? Как дела́?). ИК-4 en
+              las preguntas que empiezan por а (А э́то? А вы?): sube y se
+              queda arriba. Personas: друг, подру́га, сосе́д, сосе́дка,
+              де́вушка, ма́льчик, челове́к.
+          - tipo: repaso
+            ru: "Повторе́ние: чита́ем по пра́вилам"
+            es: "Repaso: leer con las reglas"
+            en: "Review: reading by the rules"
+            foco: >-
+              Las cuatro reglas de la semana (о y а átonas, е y я átonas,
+              duras y blandas, el final que se apaga) y las tres entonaciones
+              (ИК-1, ИК-2, ИК-4). Mini-test de 15.
+          - tipo: cultura
+            ru: Слова́-путеше́ственники
+            es: Palabras que viajaron
+            en: Words that travelled
+            foco: >-
+              Palabras que el ruso tomó de otras lenguas (вокза́л, пальто́,
+              бутербро́д, футбо́л) y los falsos amigos que traen consigo:
+              фами́лия (apellido), магази́н (tienda), аккура́тный (ordenado).
+          - tipo: leccion
+            ru: Отли́чно! И́ли так себе́?
+            es: "¿Qué tal? Toda la escala"
+            en: "How are things? The whole scale"
+            foco: >-
+              La escala entera de Как дела́?: отли́чно, о́чень хорошо́,
+              хорошо́, норма́льно, так себе́, пло́хо, о́чень пло́хо. Как вы? y
+              А вы? para usted. Lo que pide cada respuesta (¿qué ha pasado?).
+          - tipo: leccion
+            ru: Вот, пожа́луйста
+            es: "Aquí tiene: ofrecer y dar"
+            en: "Here you are: offering and giving"
+            foco: >-
+              Ofrecer, dar y pedir: Что вам? — Мне чай, пожа́луйста. — Вот,
+              пожа́луйста. А вам? (вам y мне como bloques). Bebidas: молоко́
+              [малако́], вино́, лимона́д, минера́льная вода́, кака́о.
+          - tipo: leccion
+            ru: Интернациона́льные слова́
+            es: Palabras que ya conoces
+            en: Words you already know
+            foco: >-
+              Leer de corrido palabras internacionales aplicando todas las
+              reglas de la unidad, y su acento, que casi nunca es el del
+              español o el inglés: компью́тер, интерне́т, телеви́зор,
+              авто́бус, трамва́й, сала́т, ноутбу́к. La е de los préstamos que
+              no ablanda: кафе́, интерне́т [интэрнэ́т].
+          - tipo: leccion
+            ru: Коне́чно!
+            es: "¡Claro! Las respuestas cortas"
+            en: "Of course! Short answers"
+            foco: >-
+              Contestar sin repetir la frase: да, нет, коне́чно [кане́шна],
+              наве́рное, мо́жет быть, не зна́ю (como bloque), пра́вда, ла́дно.
+              ИК-3 en la pregunta, ИК-1 en la respuesta.
+          - tipo: leccion
+            ru: Пи́шем одно́, говори́м друго́е
+            es: Se escribe una cosa, se dice otra
+            en: Written one way, said another
+            foco: >-
+              Las palabras que no se leen como se escriben: что [што],
+              коне́чно [кане́шна], его́ [ево́], сего́дня [сево́дня],
+              здра́вствуйте (la primera в no suena), со́лнце (la л no suena),
+              ску́чно [ску́шна]. Con ellas, el alumno ya lee cualquier palabra.
+          - tipo: prueba
+            ru: "Тест: чита́ем по-ру́сски"
+            es: "Prueba de la unidad 2: leer en ruso"
+            en: "Unit 2 test: reading Russian"
+            foco: >-
+              Leer aplicando las reglas (reducción, duras y blandas, el final
+              que se apaga, las excepciones), entender las palabras de la
+              unidad y elegir la entonación de cada pregunta.
+          - tipo: cultura
+            ru: Э́то не ша́пка, а кот!
+            es: "Episodio 2: Э́то не ша́пка, а кот!"
+            en: "Episode 2: Э́то не ша́пка, а кот!"
+            foco: >-
+              Tom le devuelve a Kira un gorro que encontró en la escalera, y
+              el gorro se mueve: es Bársik. Entra Misha. Solo con lo de las
+              unidades 1 y 2. Ver programa/historia.md.
 
       - numero: 3
         ru: Отку́да вы?
