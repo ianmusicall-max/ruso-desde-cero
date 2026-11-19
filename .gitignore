@@ -1,0 +1,6 @@
+# PDFs de referencia: no se versionan (misma regla que espanol-desde-ruso)
+referencias/*.pdf
+*.pyc
+__pycache__/
+.venv/
+.env
