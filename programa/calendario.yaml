@@ -302,6 +302,129 @@ niveles:
         lexico: saludos formales e informales; países, nacionalidades, lenguas; хорошо́, немно́го, чуть-чу́ть
         fonetica: la в y la й que no se pronuncian (здра́вствуйте, пожа́луйста); ИК-2
         episodio: {ru: "Ве́ра Ива́новна", es: "Vera Ivánovna", en: "Vera Ivanovna", sinopsis: "La vecina que lo sabe todo para a Camila y a Tom en el portal: de dónde son, qué lenguas hablan. Ella exige el вы; Tom le habla de ты."}
+        dias:
+          - tipo: leccion
+            ru: До́брый день!
+            es: "Buenos días, buenas tardes: saludar según la hora"
+            en: "Good morning, good afternoon: greetings by the clock"
+            foco: >-
+              Los saludos según la hora (до́брое у́тро, до́брый день, до́брый
+              ве́чер, ве́чер) frente a приве́т, y la pregunta de usted Как вас
+              зову́т? (вас como bloque, igual que тебя́); добро́ пожа́ловать.
+              Fonética: lo que no suena en здра́вствуйте y пожа́луйста
+              [пажа́лста].
+          - tipo: leccion
+            ru: Отку́да вы?
+            es: "¿De dónde eres? Los países"
+            en: "Where are you from? Countries"
+            foco: >-
+              Отку́да ты? / Отку́да вы? — Я из… como bloque: из Росси́и, из
+              Испа́нии, из Ме́ксики, из Аргенти́ны, из Перу́, из Аме́рики, из
+              Кана́ды, из А́нглии (el caso de detrás de из llega en el A2; Перу́
+              no cambia). ИК-2 en Отку́да вы? frente a ИК-3 en Вы из Испа́нии?
+          - tipo: leccion
+            ru: Он, она́, они́
+            es: "Él, ella, ellos: hablar de otros"
+            en: "He, she, they: talking about others"
+            foco: >-
+              Los pronombres de tercera persona para personas (он, она́, они́)
+              junto a я, ты, мы, вы, y оно́ como adelanto de la unidad 4.
+              Она́ студе́нтка, он тури́ст; студе́нтка, тури́стка, вме́сте. La о
+              átona de она́, оно́, они́ [ана́, ано́, ани́].
+          - tipo: leccion
+            ru: Испа́нец и́ли испа́нка?
+            es: "Las nacionalidades: él y ella"
+            en: "Nationalities: he and she"
+            foco: >-
+              Кто вы по национа́льности? (bloque). El hombre en -ец y la mujer
+              en -ка (испа́нец, мексика́нец, перуа́нец, аргенти́нец, америка́нец,
+              кана́дец) y las que van por libre (ру́сский / ру́сская, англича́нин
+              / англича́нка). Sin mayúscula. La ц, siempre dura.
+          - tipo: leccion
+            ru: Вы говори́те по-ру́сски?
+            es: "¿Hablas ruso? Las lenguas"
+            en: "Do you speak Russian? Languages"
+            foco: >-
+              по-ру́сски, по-испа́нски, по-англи́йски, по-францу́зски,
+              по-неме́цки, по-кита́йски, con говорю́ y говори́те como bloques (el
+              verbo entero, el día 9). Con guion y sin mayúscula; la о de по-
+              se debilita [па-ру́ски].
+          - tipo: repaso
+            ru: "Повторе́ние: кто вы и отку́да"
+            es: "Repaso: quién eres y de dónde"
+            en: "Review: who you are and where from"
+            foco: >-
+              Los saludos según la hora y de usted, los países con из, он /
+              она́ / они́, las nacionalidades y las lenguas. Mini-test de 15.
+          - tipo: cultura
+            ru: И́мя, о́тчество, фами́лия
+            es: "Nombre, patronímico y apellido"
+            en: "First name, patronymic and surname"
+            foco: >-
+              «Русский на каждый день 1»: un formulario como la tarjeta
+              migratoria (фами́лия, и́мя, о́тчество, гражда́нство) [VERIFICAR
+              los campos de la tarjeta vigente]. Qué es el patronímico, cómo se
+              forma (-ович, -овна; -евич, -евна) y cuándo se usa: con вы, con
+              las personas mayores, en el trabajo.
+          - tipo: leccion
+            ru: Немно́го и чуть-чу́ть
+            es: "Un poco, un poquito: cuánto hablas"
+            en: "A little, a tiny bit: how much you speak"
+            foco: >-
+              Я говорю́ по-ру́сски хорошо́ / немно́го / чуть-чу́ть / пло́хо; Я не
+              говорю́ по-…; понима́ю / не понима́ю. Немно́го [н'имно́га]
+              conserva la г: la [в] es solo de его́, ничего́, сего́дня y de las
+              terminaciones de los adjetivos.
+          - tipo: leccion
+            ru: Я говорю́, ты говори́шь
+            es: "Hablar: el verbo entero"
+            en: "To speak: the whole verb"
+            foco: >-
+              говори́ть en todas las personas (говорю́, говори́шь, говори́т,
+              говори́м, говори́те, говоря́т), con el acento siempre al final.
+              ру́сский язы́к (la lengua, como nombre) frente a по-ру́сски (con
+              el verbo).
+          - tipo: leccion
+            ru: На «ты» и́ли на «вы»?
+            es: "¿De tú o de usted?"
+            en: "Ты or вы?"
+            foco: >-
+              Cuándo ты y cuándo вы: la edad, la confianza, el trabajo, los
+              desconocidos. Мо́жно на «ты»? / Дава́йте на «ты»!; el nombre con
+              patronímico va con вы; Вы con mayúscula en una carta.
+          - tipo: leccion
+            ru: Как по-ру́сски…?
+            es: "¿Cómo se dice en ruso?"
+            en: "How do you say it in Russian?"
+            foco: >-
+              Pedir ayuda con la lengua: Как по-ру́сски «…»? Что зна́чит «…»?
+              Повтори́те, пожа́луйста. Ме́дленнее, пожа́луйста. Я не понима́ю
+              (del día 8). Los imperativos, como bloques.
+          - tipo: leccion
+            ru: Расскажи́те о себе́
+            es: "Preséntate"
+            en: "Introduce yourself"
+            foco: >-
+              La presentación entera en seis frases (Здра́вствуйте! Меня́
+              зову́т… Я из… Я… Я говорю́ по-… Я немно́го говорю́ по-ру́сски) y
+              la entrevista al revés (Как вас зову́т? Отку́да вы? Кто вы по
+              национа́льности? Вы говори́те по-…?), con ИК-2 e ИК-3.
+          - tipo: prueba
+            ru: "Тест: отку́да вы?"
+            es: "Prueba de la unidad 3: de dónde eres"
+            en: "Unit 3 test: where you're from"
+            foco: >-
+              Saludar según la hora y de usted, los países con из, los
+              pronombres, las nacionalidades, las lenguas, говори́ть y la
+              elección entre ты y вы.
+          - tipo: cultura
+            ru: Ве́ра Ива́новна
+            es: "Episodio 3: Ве́ра Ива́новна"
+            en: "Episode 3: Ве́ра Ива́новна"
+            foco: >-
+              La vecina que lo sabe todo para a Camila y a Tom en el portal: de
+              dónde son, qué lenguas hablan. Ella exige el вы; Tom le habla de
+              ты. Solo con lo de las unidades 1 a 3. Ver programa/historia.md.
 
       - numero: 4
         ru: Где метро́?

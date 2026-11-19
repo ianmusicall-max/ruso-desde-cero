@@ -25,8 +25,10 @@ Contesta en voz alta con una respuesta corta, la que te salga:
 Casi todo el ruso se lee con las reglas de la unidad. Lo que queda son tres
 trampas, y cada una se esconde en pocas palabras:
 
-**1. La г que suena [v].** En las terminaciones `-ого` y `-его`, y en
-**сего́дня**:
+**1. La г que suena [v].** En unas pocas palabras que acaban en `-ого` o
+`-его`, como **его́** y **ничего́**, y en **сего́дня**. Más adelante la verás
+en las terminaciones de los adjetivos. Pero no en todas: **немно́го**
+(«un poco»), que llega en la unidad 3, se dice con г.
 
 > его́ [yi-vó] · ничего́ [ni-chi-vó] · сего́дня [si-vód-nia]
 
@@ -134,7 +136,7 @@ que no se dice.
 > **Ya puedo decir:**
 > сего́дня, со́лнце, ску́чно, пра́здник, ле́стница, его́ · Ничего́. · Мне ску́чно. · Сего́дня пра́здник!
 >
-> **Ya sé:** en `-ого` y `-его` la г suena [v]; **что** y **коне́чно** van con [sh]; y de un grupo de consonantes, a veces una no suena.
+> **Ya sé:** en **его́**, **ничего́** y **сего́дня** la г suena [v]; **что** y **коне́чно** van con [sh]; y de un grupo de consonantes, a veces una no suena.
 
 Mañana: la prueba de la unidad.
 

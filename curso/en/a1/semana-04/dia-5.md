@@ -25,8 +25,10 @@ Answer aloud with a short answer, whichever comes to you:
 Almost all of Russian is read with the unit's rules. What's left are three
 traps, and each one hides in just a few words:
 
-**1. The г that sounds [v].** In the endings `-ого` and `-его`, and in
-**сего́дня**:
+**1. The г that sounds [v].** In a few words ending in `-ого` or `-его`,
+like **его́** and **ничего́**, and in **сего́дня**. Later you'll see it in
+adjective endings. But not in all of them: **немно́го** ("a little"),
+which comes in unit 3, is said with г.
 
 > его́ [yi-VO] · ничего́ [ni-chi-VO] · сего́дня [si-VOD-nya]
 
@@ -135,7 +137,7 @@ letter that isn't said.
 > **I can now say:**
 > сего́дня, со́лнце, ску́чно, пра́здник, ле́стница, его́ · Ничего́. · Мне ску́чно. · Сего́дня пра́здник!
 >
-> **I know:** in `-ого` and `-его` the г sounds [v]; **что** and **коне́чно** go with [sh]; and in a cluster of consonants, sometimes one isn't said.
+> **I know:** in **его́**, **ничего́** and **сего́дня** the г sounds [v]; **что** and **коне́чно** go with [sh]; and in a cluster of consonants, sometimes one isn't said.
 
 Tomorrow: the unit test.
 
