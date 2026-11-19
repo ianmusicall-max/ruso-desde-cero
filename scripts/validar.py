@@ -58,9 +58,12 @@ APARTADO = re.compile(r"^## (\d+)\. (.+?) \((\d+)[–-](\d+) min\)\s*$")
 
 ACENTO = "́"
 VOCALES = set("аеёиоуыэюяАЕЁИОУЫЭЮЯ")
-PALABRA = re.compile(r"[A-Za-zА-Яа-яЁё́]+(?:-[A-Za-zА-Яа-яЁё́]+)*")
+# Las letras latinas con tilde cuentan como latinas: una «Ó» latina en
+# «Óльга» no se ve a ojo, y con [A-Za-z] a secas tampoco la veía el validador.
+LETRA_LATINA = "A-Za-zÀ-ÖØ-öø-ÿĀ-ſ"
+PALABRA = re.compile(rf"[{LETRA_LATINA}А-Яа-яЁё́]+(?:-[{LETRA_LATINA}А-Яа-яЁё́]+)*")
 CIRILICO = re.compile(r"[А-Яа-яЁё]")
-LATINO = re.compile(r"[A-Za-z]")
+LATINO = re.compile(rf"[{LETRA_LATINA}]")
 # Palabras rusas de dos o más vocales que de verdad son átonas.
 SIN_ACENTO = {"из-за", "из-под"}
 

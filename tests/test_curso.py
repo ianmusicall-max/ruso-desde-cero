@@ -46,6 +46,10 @@ class TestElCalendario(unittest.TestCase):
             if d.detallado:
                 self.assertTrue(d.ru and d.es and d.en and d.foco, d.ruta)
 
+    def test_el_calendario_no_mezcla_alfabetos(self):
+        texto = (RAIZ / "programa" / "calendario.yaml").read_text(encoding="utf-8")
+        self.assertEqual(validar.alfabetos_mezclados(texto), [])
+
     def test_el_ruso_del_calendario_lleva_acento(self):
         """Regla 8 también para los títulos: salen en la web."""
         malas = []
@@ -81,6 +85,11 @@ class TestElValidador(unittest.TestCase):
     def test_una_palabra_sin_acento(self):
         p = self._con(lambda t: t.replace("| ма́ма | mamá | Там ма́ма. |", "| мама | mamá | Там ма́ма. |"))
         self.assertTrue(any("sin acento" in x and "мама" in x for x in p), p)
+
+    def test_una_vocal_latina_con_tilde_dentro_de_una_palabra_rusa(self):
+        # «Óльга» con la Ó latina: pasó al calendario sin que nada avisara.
+        self.assertEqual(validar.alfabetos_mezclados("Óльга"), ["Óльга"])
+        self.assertEqual(validar.alfabetos_mezclados("О́льга, habitación, mi-ÑA"), [])
 
     def test_una_letra_latina_dentro_de_una_palabra_rusa(self):
         # «кот» con una o latina: no se ve a ojo.

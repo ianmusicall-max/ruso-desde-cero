@@ -84,9 +84,11 @@ las decisiones y su porqué.
   («М**о**сква́»): el validador quita los asteriscos antes de leer. Lo que
   no se puede es citar un trozo de palabra («мната»): sale como ruso sin
   acento. Se dice «el resto de la palabra».
-- **Letras latinas dentro de palabras rusas**: se colaron tres veces
-  escribiendo («до́ktор», «Алекса́ndр»). A ojo no se ven; `validar.py`
-  las caza, así que se valida cada lección al salir.
+- **Letras latinas dentro de palabras rusas**: se colaron cuatro veces
+  escribiendo («до́ktор», «Алекса́ndр», y una «Ó» latina en «О́льга» del
+  calendario). A ojo no se ven. `validar.py` las caza —las letras con tilde
+  también desde que la «Ó» pasó sin aviso— y una prueba recorre el
+  calendario, así que se valida cada lección al salir.
 - **La pronunciación aproximada** («Se lee» / «Say it») va en letras
   latinas y con la sílaba tónica en mayúsculas, con la ortografía de cada
   lengua: «niet», «mi-ÑA» en la pista española; «nyet», «mi-NYA» en la
