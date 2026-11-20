@@ -128,7 +128,22 @@
 }
 
 .portada .mascota {
-  max-width: clamp(9rem, 23vw, 15rem);
+  justify-self: center;
+  width: min(100%, 15rem);
+  max-width: none;
+}
+
+@media (min-width: 40.01rem) {
+  .portada .heroe:has(.mascota) {
+    grid-template-columns: minmax(0, 30rem) minmax(0, 15rem);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 40rem) {
+  .portada .mascota {
+    width: min(60vw, 12rem);
+  }
 }
 
 .portada .mascota img {

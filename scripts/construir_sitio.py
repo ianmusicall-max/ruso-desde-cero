@@ -783,7 +783,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
 </div>
-<figure class="mascota"><img src="../misha.png" alt="{e(t["oso_alt"])}" width="454" height="480">
+<figure class="mascota"><img src="../misha.png" alt="{e(t["oso_alt"])}" width="415" height="480">
 <figcaption>{e(t["mascota"])}</figcaption></figure>
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
