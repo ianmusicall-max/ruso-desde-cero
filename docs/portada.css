@@ -5,9 +5,11 @@
 .portada .heroe {
   margin: 2rem 0 1.5rem;
   padding: clamp(1.25rem, 4vw, 3rem);
+  border-top: .35rem solid #fff;
+  border-bottom: .35rem solid #c01b32;
   gap: 1.25rem;
-  background: #143c37;
-  color: #f8f6e9;
+  background: #103978;
+  color: #fff;
 }
 
 .portada .heroe h1 {
@@ -19,7 +21,7 @@
 .portada .heroe .nota,
 .portada .heroe figcaption,
 .portada .ventajas span:not(.icono) {
-  color: #d1e0d3;
+  color: #e9f1ff;
 }
 
 .portada .burbuja {
@@ -32,18 +34,18 @@
 }
 
 .portada .ventajas {
-  border-color: #658178;
+  border-color: #7994bf;
 }
 
 .portada .heroe .boton {
-  background: #f4dc91;
-  border-color: #f4dc91;
-  color: #18362f;
+  background: #b91d32;
+  border-color: #b91d32;
+  color: #fff;
 }
 
 .portada .heroe .boton.secundario {
   background: transparent;
-  color: #fff3d2;
+  color: #fff;
 }
 
 .portada .accesos {
@@ -57,10 +59,10 @@
   align-content: start;
   gap: .25rem;
   padding: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid #bdcdea;
   border-radius: .75rem;
   background: var(--fondo);
-  color: #182f29;
+  color: #142b54;
   font: 400 1rem/1.4 Onest, system-ui, sans-serif;
   text-decoration: none;
 }
@@ -76,7 +78,7 @@
 }
 
 .portada .heroe a:focus-visible {
-  outline-color: #fff3d2;
+  outline-color: #fff;
 }
 
 .portada .practica strong {
@@ -86,14 +88,14 @@
 .portada .glifo {
   margin: 0 0 .75rem;
   padding-bottom: .75rem;
-  border-bottom: 1px solid #182f2955;
+  border-bottom: 1px solid #142b5455;
   font: 700 clamp(2.15rem, 5vw, 3.8rem)/1.14 Literata, Georgia, serif;
 }
 
-.portada .alfabeto { --fondo: #e1ecd9; }
-.portada .lectura { --fondo: #f5e7ba; }
-.portada .escritura { --fondo: #f2ded6; }
-.portada .pronunciacion { --fondo: #d9e8ee; }
+.portada .alfabeto { --fondo: #e8f0ff; }
+.portada .lectura { --fondo: #fff; }
+.portada .escritura { --fondo: #fde8ec; }
+.portada .pronunciacion { --fondo: #d8e7ff; }
 
 .portada .puerta {
   display: grid;

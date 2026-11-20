@@ -377,8 +377,8 @@ _OSO_CABEZA = """<circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" 
 <path d="M60 73v4.5" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"/>
 <path d="M60 77.5q-6.5 6-12 0M60 77.5q6.5 6 12 0" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round" fill="none"/>"""
 
-_OSO_BUFANDA = """<path d="M24 97h72a8 8 0 0 1 8 8v3H16v-3a8 8 0 0 1 8-8z" fill="#0b3f91"/>
-<rect x="16" y="108" width="88" height="5" fill="#ffffff"/>
+_OSO_BUFANDA = """<path d="M24 97h72a8 8 0 0 1 8 8v3H16v-3a8 8 0 0 1 8-8z" fill="#ffffff"/>
+<rect x="16" y="108" width="88" height="5" fill="#0b3f91"/>
 <rect x="16" y="113" width="88" height="6" rx="2" fill="#c01b12"/>"""
 
 # Los accesorios: el mismo oso con una cosa en las manos, uno por tipo de
