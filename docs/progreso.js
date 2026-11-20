@@ -21,4 +21,25 @@ for(var i=0;i<items.length;i++){if(hechas.indexOf(items[i].getAttribute('data-le
 var c=d.getElementById('continuar');
 if(c){var u=leer('rdc.ultima.'+c.getAttribute('data-pista'),null);
   if(u&&u.url){c.href=raiz+'/'+u.url;c.hidden=false;var s=c.querySelector('.donde');if(s)s.textContent=u.titulo||'';}}
+// El buscador del índice. Filtra por el texto de cada lección, sin acentos
+// ni mayúsculas, y abre las unidades donde queda algo. Nace oculto en el
+// HTML: si no hay JavaScript, la lista entera se sigue leyendo.
+var caja=d.querySelector('.buscador');
+if(caja){var campo=d.getElementById('buscar'),nada=d.getElementById('buscar-nada');
+  var llanas=function(s){return (s||'').toLowerCase().replace(/\u0301/g,'')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'');};
+  var unidades=d.querySelectorAll('details.unidad'),secciones=d.querySelectorAll('section.nivel');
+  caja.hidden=false;
+  campo.addEventListener('input',function(){
+    var q=llanas(campo.value).trim(),vivos=0;
+    for(var i=0;i<unidades.length;i++){var u=unidades[i],lis=u.querySelectorAll('li'),deja=0;
+      for(var j=0;j<lis.length;j++){var ok=!q||llanas(lis[j].textContent).indexOf(q)>=0;
+        lis[j].hidden=!ok;if(ok)deja++;}
+      var cabe=!q||llanas(u.querySelector('summary').textContent).indexOf(q)>=0;
+      if(cabe&&q){for(var j2=0;j2<lis.length;j2++)lis[j2].hidden=false;deja=lis.length;}
+      u.hidden=q&&!deja&&!cabe;if(!u.hidden)vivos+=deja||1;
+      if(q&&!u.hidden)u.open=true;}
+    for(var k=0;k<secciones.length;k++){var vis=secciones[k].querySelectorAll('details.unidad:not([hidden])');
+      secciones[k].hidden=q&&!vis.length;}
+    if(nada)nada.hidden=!(q&&!vivos);});}
 })();

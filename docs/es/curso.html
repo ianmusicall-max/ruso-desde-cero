@@ -95,15 +95,51 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
-/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
-   escritorio, al lado. Es decoración, así que nunca empuja los botones
-   fuera de la primera pantalla. */
-.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
-.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
-.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
-.mascota .oso{width:100%;height:auto;max-width:8rem}
-.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
-@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El héroe es una tarjeta con el oso hablando desde un bocadillo. En el
+   móvil el oso va debajo y pequeño, para no empujar los botones fuera de la
+   primera pantalla; en escritorio, al lado del bocadillo. */
+.heroe{display:grid;gap:1rem;padding:1.4rem;margin:1.2rem 0 1.6rem;
+  background:var(--acento-suave);border-radius:22px;
+  grid-template-columns:1fr auto;align-items:center}
+.heroe h1{margin:.2rem 0 .3rem;font-size:2.1rem;line-height:1.1}
+.heroe .lema{margin:0 0 1rem;color:var(--tenue)}
+.burbuja{position:relative;background:var(--papel);border-radius:18px;padding:1.1rem 1.2rem;
+  min-width:0}
+/* La cola del bocadillo apunta al oso: a la derecha en escritorio y hacia
+   abajo en el móvil, que es donde está en cada caso. Se dibuja con un
+   borde, sin ninguna imagen. */
+.burbuja::after{content:"";position:absolute;top:50%;left:100%;margin-top:-10px;
+  border:10px solid transparent;border-left-color:var(--papel)}
+.saluda{margin:0 0 .5rem;display:inline-flex;flex-wrap:wrap;gap:.4rem;align-items:baseline;
+  background:var(--acento-suave);color:var(--acento);border-radius:99px;
+  padding:.28rem .75rem;font-size:.92rem;font-weight:700}
+.saluda .tr{color:var(--tenue);font-weight:400;font-size:.85rem}
+.mascota{margin:0;text-align:center;max-width:9.5rem}
+.mascota .oso{width:100%;height:auto;max-width:8.5rem}
+.mascota figcaption{font-size:.78rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+.heroe .nota{grid-column:1/-1;margin:0}
+/* Las tres ventajas, debajo y en fila: lo que se quiere saber antes de
+   pulsar nada. */
+.ventajas{grid-column:1/-1;list-style:none;display:grid;gap:.9rem;margin:.4rem 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+  border-top:1px solid var(--linea);padding-top:1.1rem}
+.ventajas li{display:grid;grid-template-columns:auto 1fr;gap:.2rem .7rem;align-items:center}
+.ventajas .icono{grid-row:1/3;display:inline-flex;align-items:center;justify-content:center;
+  width:2.2rem;height:2.2rem;border-radius:10px;background:var(--papel);color:var(--acento)}
+.ventajas .icono svg{width:1.2rem;height:1.2rem}
+.ventajas strong{align-self:end;line-height:1.2}
+.ventajas span:not(.icono){color:var(--tenue);font-size:.86rem;line-height:1.3}
+@media(max-width:40rem){.heroe{grid-template-columns:1fr;padding:1.1rem}
+  .burbuja::after{top:100%;left:50%;margin:0 0 0 -10px;border-left-color:transparent;
+    border-top-color:var(--papel)}
+  .heroe h1{font-size:1.8rem}
+  .mascota{max-width:7rem;justify-self:center}.mascota figcaption{display:none}}
+/* El buscador del índice. */
+.buscador{display:grid;gap:.35rem;margin:1.2rem 0}
+.buscador label{font-size:.9rem;color:var(--tenue)}
+.buscador input{font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:12px;padding:.6rem .85rem;width:100%}
+.buscador input:focus{outline:2px solid var(--acento);outline-offset:1px;border-color:var(--acento)}
 /* El mapa de unidades: tarjetas, no una lista de 365 filas. */
 .mapa{margin:2.2rem 0 1rem}
 .mapa h2{margin-bottom:.2rem}
@@ -121,8 +157,6 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
 .unidad-tarjeta.apagada{opacity:.55}
 .unidad-tarjeta.apagada .num{background:var(--tenue)}
-.heroe{padding:2.2rem 0 .6rem}
-.heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
 .puertas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.6rem 0}
 .puerta{display:block;border:1px solid var(--linea);border-radius:14px;padding:1.1rem 1.2rem;text-decoration:none;color:var(--tinta);background:var(--tarjeta)}
@@ -148,6 +182,7 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <main class="envoltorio">
 <h1>Curso</h1>
 <p class="nota">53 lecciones disponibles. Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</p>
+<div class="buscador" hidden><label for="buscar">Buscar una lección</label><input id="buscar" type="search" autocomplete="off"></div><p class="nota" id="buscar-nada" hidden>No hay ninguna lección con esas palabras.</p>
 <section class="nivel"><h2>Nivel A1 — elemental <span class="tipo">ТЭУ</span></h2><p class="nota">53 de 365</p>
 <details class="unidad" open><summary>Unidad 1 · ¡Hola! ¿Cómo te llamas?<span class="ru" lang="ru">Приве́т! Как тебя́ зову́т?</span></summary><ol><li data-leccion-item="es/a1/semana-01/dia-1"><span class="tipo">S1·D1</span><a href="a1/semana-01/dia-1.html">А, О, К, М, Т — las letras que ya conoces</a></li><li data-leccion-item="es/a1/semana-01/dia-2"><span class="tipo">S1·D2</span><a href="a1/semana-01/dia-2.html">С, Р, У, Х — letras que engañan</a></li><li data-leccion-item="es/a1/semana-01/dia-3"><span class="tipo">S1·D3</span><a href="a1/semana-01/dia-3.html">В, Е, Н — más letras que engañan</a></li><li data-leccion-item="es/a1/semana-01/dia-4"><span class="tipo">S1·D4</span><a href="a1/semana-01/dia-4.html">¿Cómo te llamas?</a></li><li data-leccion-item="es/a1/semana-01/dia-5"><span class="tipo">S1·D5</span><a href="a1/semana-01/dia-5.html">¿Es un gato? Sí, es un gato</a></li><li data-leccion-item="es/a1/semana-01/dia-6"><span class="tipo">S1·D6</span><a href="a1/semana-01/dia-6.html">Repaso: lees todo lo de la semana</a></li><li data-leccion-item="es/a1/semana-01/dia-7"><span class="tipo">S1·D7</span><a href="a1/semana-01/dia-7.html">De dónde viene el alfabeto cirílico</a></li><li data-leccion-item="es/a1/semana-02/dia-1"><span class="tipo">S2·D1</span><a href="a1/semana-02/dia-1.html">Б, П, Г, Л. ¿Qué tal?</a></li><li data-leccion-item="es/a1/semana-02/dia-2"><span class="tipo">S2·D2</span><a href="a1/semana-02/dia-2.html">Ф, З, Й</a></li><li data-leccion-item="es/a1/semana-02/dia-3"><span class="tipo">S2·D3</span><a href="a1/semana-02/dia-3.html">Ж, Ш, Ч, Щ, Ц. ¿Café o té?</a></li><li data-leccion-item="es/a1/semana-02/dia-4"><span class="tipo">S2·D4</span><a href="a1/semana-02/dia-4.html">Я, Ю, Ё y la Ы</a></li><li data-leccion-item="es/a1/semana-02/dia-5"><span class="tipo">S2·D5</span><a href="a1/semana-02/dia-5.html">Ь y Ъ. ¡Chao!</a></li><li data-leccion-item="es/a1/semana-02/dia-6"><span class="tipo">S2·D6</span><a href="a1/semana-02/dia-6.html">Prueba de la unidad 1: el alfabeto y las primeras frases</a></li><li data-leccion-item="es/a1/semana-02/dia-7"><span class="tipo">S2·D7</span><a href="a1/semana-02/dia-7.html">Episodio 1: Знако́мство</a></li></ol></details>
 <details class="unidad" open><summary>Unidad 2 · Leer en ruso<span class="ru" lang="ru">Чита́ем по-ру́сски</span></summary><ol><li data-leccion-item="es/a1/semana-03/dia-1"><span class="tipo">S3·D1</span><a href="a1/semana-03/dia-1.html">No es esto, es aquello: не…, а…</a></li><li data-leccion-item="es/a1/semana-03/dia-2"><span class="tipo">S3·D2</span><a href="a1/semana-03/dia-2.html">La е y la я sin acento</a></li><li data-leccion-item="es/a1/semana-03/dia-3"><span class="tipo">S3·D3</span><a href="a1/semana-03/dia-3.html">Consonantes duras y blandas</a></li><li data-leccion-item="es/a1/semana-03/dia-4"><span class="tipo">S3·D4</span><a href="a1/semana-03/dia-4.html">La consonante final se apaga</a></li><li data-leccion-item="es/a1/semana-03/dia-5"><span class="tipo">S3·D5</span><a href="a1/semana-03/dia-5.html">Preguntar con кто, что y а</a></li><li data-leccion-item="es/a1/semana-03/dia-6"><span class="tipo">S3·D6</span><a href="a1/semana-03/dia-6.html">Repaso: leer con las reglas</a></li><li data-leccion-item="es/a1/semana-03/dia-7"><span class="tipo">S3·D7</span><a href="a1/semana-03/dia-7.html">Palabras que viajaron</a></li><li data-leccion-item="es/a1/semana-04/dia-1"><span class="tipo">S4·D1</span><a href="a1/semana-04/dia-1.html">¿Qué tal? Toda la escala</a></li><li data-leccion-item="es/a1/semana-04/dia-2"><span class="tipo">S4·D2</span><a href="a1/semana-04/dia-2.html">Aquí tiene: ofrecer y dar</a></li><li data-leccion-item="es/a1/semana-04/dia-3"><span class="tipo">S4·D3</span><a href="a1/semana-04/dia-3.html">Palabras que ya conoces</a></li><li data-leccion-item="es/a1/semana-04/dia-4"><span class="tipo">S4·D4</span><a href="a1/semana-04/dia-4.html">¡Claro! Las respuestas cortas</a></li><li data-leccion-item="es/a1/semana-04/dia-5"><span class="tipo">S4·D5</span><a href="a1/semana-04/dia-5.html">Se escribe una cosa, se dice otra</a></li><li data-leccion-item="es/a1/semana-04/dia-6"><span class="tipo">S4·D6</span><a href="a1/semana-04/dia-6.html">Prueba de la unidad 2: leer en ruso</a></li><li data-leccion-item="es/a1/semana-04/dia-7"><span class="tipo">S4·D7</span><a href="a1/semana-04/dia-7.html">Episodio 2: Э́то не ша́пка, а кот!</a></li></ol></details>

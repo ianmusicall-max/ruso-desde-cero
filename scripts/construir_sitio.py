@@ -167,15 +167,51 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
-/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
-   escritorio, al lado. Es decoración, así que nunca empuja los botones
-   fuera de la primera pantalla. */
-.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
-.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
-.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
-.mascota .oso{width:100%;height:auto;max-width:8rem}
-.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
-@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El héroe es una tarjeta con el oso hablando desde un bocadillo. En el
+   móvil el oso va debajo y pequeño, para no empujar los botones fuera de la
+   primera pantalla; en escritorio, al lado del bocadillo. */
+.heroe{display:grid;gap:1rem;padding:1.4rem;margin:1.2rem 0 1.6rem;
+  background:var(--acento-suave);border-radius:22px;
+  grid-template-columns:1fr auto;align-items:center}
+.heroe h1{margin:.2rem 0 .3rem;font-size:2.1rem;line-height:1.1}
+.heroe .lema{margin:0 0 1rem;color:var(--tenue)}
+.burbuja{position:relative;background:var(--papel);border-radius:18px;padding:1.1rem 1.2rem;
+  min-width:0}
+/* La cola del bocadillo apunta al oso: a la derecha en escritorio y hacia
+   abajo en el móvil, que es donde está en cada caso. Se dibuja con un
+   borde, sin ninguna imagen. */
+.burbuja::after{content:"";position:absolute;top:50%;left:100%;margin-top:-10px;
+  border:10px solid transparent;border-left-color:var(--papel)}
+.saluda{margin:0 0 .5rem;display:inline-flex;flex-wrap:wrap;gap:.4rem;align-items:baseline;
+  background:var(--acento-suave);color:var(--acento);border-radius:99px;
+  padding:.28rem .75rem;font-size:.92rem;font-weight:700}
+.saluda .tr{color:var(--tenue);font-weight:400;font-size:.85rem}
+.mascota{margin:0;text-align:center;max-width:9.5rem}
+.mascota .oso{width:100%;height:auto;max-width:8.5rem}
+.mascota figcaption{font-size:.78rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+.heroe .nota{grid-column:1/-1;margin:0}
+/* Las tres ventajas, debajo y en fila: lo que se quiere saber antes de
+   pulsar nada. */
+.ventajas{grid-column:1/-1;list-style:none;display:grid;gap:.9rem;margin:.4rem 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+  border-top:1px solid var(--linea);padding-top:1.1rem}
+.ventajas li{display:grid;grid-template-columns:auto 1fr;gap:.2rem .7rem;align-items:center}
+.ventajas .icono{grid-row:1/3;display:inline-flex;align-items:center;justify-content:center;
+  width:2.2rem;height:2.2rem;border-radius:10px;background:var(--papel);color:var(--acento)}
+.ventajas .icono svg{width:1.2rem;height:1.2rem}
+.ventajas strong{align-self:end;line-height:1.2}
+.ventajas span:not(.icono){color:var(--tenue);font-size:.86rem;line-height:1.3}
+@media(max-width:40rem){.heroe{grid-template-columns:1fr;padding:1.1rem}
+  .burbuja::after{top:100%;left:50%;margin:0 0 0 -10px;border-left-color:transparent;
+    border-top-color:var(--papel)}
+  .heroe h1{font-size:1.8rem}
+  .mascota{max-width:7rem;justify-self:center}.mascota figcaption{display:none}}
+/* El buscador del índice. */
+.buscador{display:grid;gap:.35rem;margin:1.2rem 0}
+.buscador label{font-size:.9rem;color:var(--tenue)}
+.buscador input{font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:12px;padding:.6rem .85rem;width:100%}
+.buscador input:focus{outline:2px solid var(--acento);outline-offset:1px;border-color:var(--acento)}
 /* El mapa de unidades: tarjetas, no una lista de 365 filas. */
 .mapa{margin:2.2rem 0 1rem}
 .mapa h2{margin-bottom:.2rem}
@@ -193,8 +229,6 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
 .unidad-tarjeta.apagada{opacity:.55}
 .unidad-tarjeta.apagada .num{background:var(--tenue)}
-.heroe{padding:2.2rem 0 .6rem}
-.heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
 .puertas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.6rem 0}
 .puerta{display:block;border:1px solid var(--linea);border-radius:14px;padding:1.1rem 1.2rem;text-decoration:none;color:var(--tinta);background:var(--tarjeta)}
@@ -241,6 +275,27 @@ for(var i=0;i<items.length;i++){if(hechas.indexOf(items[i].getAttribute('data-le
 var c=d.getElementById('continuar');
 if(c){var u=leer('rdc.ultima.'+c.getAttribute('data-pista'),null);
   if(u&&u.url){c.href=raiz+'/'+u.url;c.hidden=false;var s=c.querySelector('.donde');if(s)s.textContent=u.titulo||'';}}
+// El buscador del índice. Filtra por el texto de cada lección, sin acentos
+// ni mayúsculas, y abre las unidades donde queda algo. Nace oculto en el
+// HTML: si no hay JavaScript, la lista entera se sigue leyendo.
+var caja=d.querySelector('.buscador');
+if(caja){var campo=d.getElementById('buscar'),nada=d.getElementById('buscar-nada');
+  var llanas=function(s){return (s||'').toLowerCase().replace(/\u0301/g,'')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'');};
+  var unidades=d.querySelectorAll('details.unidad'),secciones=d.querySelectorAll('section.nivel');
+  caja.hidden=false;
+  campo.addEventListener('input',function(){
+    var q=llanas(campo.value).trim(),vivos=0;
+    for(var i=0;i<unidades.length;i++){var u=unidades[i],lis=u.querySelectorAll('li'),deja=0;
+      for(var j=0;j<lis.length;j++){var ok=!q||llanas(lis[j].textContent).indexOf(q)>=0;
+        lis[j].hidden=!ok;if(ok)deja++;}
+      var cabe=!q||llanas(u.querySelector('summary').textContent).indexOf(q)>=0;
+      if(cabe&&q){for(var j2=0;j2<lis.length;j2++)lis[j2].hidden=false;deja=lis.length;}
+      u.hidden=q&&!deja&&!cabe;if(!u.hidden)vivos+=deja||1;
+      if(q&&!u.hidden)u.open=true;}
+    for(var k=0;k<secciones.length;k++){var vis=secciones[k].querySelectorAll('details.unidad:not([hidden])');
+      secciones[k].hidden=q&&!vis.length;}
+    if(nada)nada.hidden=!(q&&!vivos);});}
 })();
 """
 
@@ -541,7 +596,14 @@ def construir_indice(cfg, textos, cal, destino, publicadas) -> list[str]:
         t = textos[pista]
         hay = {d.ruta for d, _, _ in publicadas[pista]}
         bloques = [f"<h1>{e(t['menu']['curso'])}</h1>",
-                   f'<p class="nota">{len(hay)} {e(t["etiquetas"]["disponibles"])}. {e(t["progreso"])}</p>']
+                   f'<p class="nota">{len(hay)} {e(t["etiquetas"]["disponibles"])}. {e(t["progreso"])}</p>',
+                   # El buscador: con 365 lecciones por nivel, encontrar «los
+                   # números» o «пять» a ojo es imposible. Nace oculto y lo
+                   # enciende el guion: sin JavaScript no filtraría nada, y un
+                   # campo que no hace nada es peor que ninguno.
+                   f'<div class="buscador" hidden><label for="buscar">{e(t["buscar"])}</label>'
+                   f'<input id="buscar" type="search" autocomplete="off"></div>'
+                   f'<p class="nota" id="buscar-nada" hidden>{e(t["buscar_nada"])}</p>']
         for nivel in plan.niveles(cal):
             dias = plan.dias_del_nivel(nivel)
             n_hay = sum(d.ruta in hay for d in dias)
@@ -576,6 +638,30 @@ def construir_indice(cfg, textos, cal, destino, publicadas) -> list[str]:
                                         ruta=ruta, raiz="..", alternas=otras, actual="curso"))
         rutas.append(ruta)
     return rutas
+
+
+# Los tres iconos de las ventajas: dibujos propios, en línea y de un solo
+# trazo, que heredan el color del texto. Nada de una fuente de iconos ni de
+# una imagen de fuera.
+ICONOS = {
+    "registro": '<path d="M5 12l5 5L19 7"/>',
+    "reloj": '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    "niveles": '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+}
+
+
+def _ventajas(t) -> str:
+    """La fila de tres ventajas, con su icono: lo que el visitante quiere
+    saber antes de pulsar nada."""
+    claves = list(ICONOS)
+    filas = []
+    for clave, v in zip(claves, t["ventajas"]):
+        filas.append(
+            f'<li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" '
+            f'stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+            f'stroke-linejoin="round">{ICONOS[clave]}</svg></span>'
+            f'<strong>{e(v["t"])}</strong><span>{e(v["d"])}</span></li>')
+    return f'<ul class="ventajas">{"".join(filas)}</ul>'
 
 
 def _mapa_de_unidades(cal, pista, t, publicadas) -> str:
@@ -625,15 +711,17 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
                    if lista else "")
         continuar = (f'<a id="continuar" class="boton secundario" data-pista="{pista}" href="#" hidden>'
                      f'{e(t["botones"]["continuar"])}: <span class="donde"></span></a>')
-        cuerpo = f"""<section class="heroe con-oso">
-<div class="texto">
+        cuerpo = f"""<section class="heroe">
+<div class="burbuja">
+<p class="saluda"><span lang="ru">{e(t["oso_saluda"])}</span> <span class="tr">{e(t["oso_saluda_t"])}</span></p>
 <h1>{e(sitio)}</h1>
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
-<p class="nota">{e(t["progreso"])}</p>
 </div>
 <figure class="mascota">{OSO.format(alt=e(t["oso_alt"]))}
 <figcaption>{e(t["mascota"])}</figcaption></figure>
+{_ventajas(t)}
+<p class="nota">{e(t["progreso"])}</p>
 </section>
 {_mapa_de_unidades(cal, pista, t, lista)}
 {md(t["portada"].replace("{lecciones}", str(len(lista))))}"""

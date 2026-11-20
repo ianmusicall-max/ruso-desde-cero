@@ -95,15 +95,51 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
-/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
-   escritorio, al lado. Es decoración, así que nunca empuja los botones
-   fuera de la primera pantalla. */
-.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
-.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
-.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
-.mascota .oso{width:100%;height:auto;max-width:8rem}
-.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
-@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El héroe es una tarjeta con el oso hablando desde un bocadillo. En el
+   móvil el oso va debajo y pequeño, para no empujar los botones fuera de la
+   primera pantalla; en escritorio, al lado del bocadillo. */
+.heroe{display:grid;gap:1rem;padding:1.4rem;margin:1.2rem 0 1.6rem;
+  background:var(--acento-suave);border-radius:22px;
+  grid-template-columns:1fr auto;align-items:center}
+.heroe h1{margin:.2rem 0 .3rem;font-size:2.1rem;line-height:1.1}
+.heroe .lema{margin:0 0 1rem;color:var(--tenue)}
+.burbuja{position:relative;background:var(--papel);border-radius:18px;padding:1.1rem 1.2rem;
+  min-width:0}
+/* La cola del bocadillo apunta al oso: a la derecha en escritorio y hacia
+   abajo en el móvil, que es donde está en cada caso. Se dibuja con un
+   borde, sin ninguna imagen. */
+.burbuja::after{content:"";position:absolute;top:50%;left:100%;margin-top:-10px;
+  border:10px solid transparent;border-left-color:var(--papel)}
+.saluda{margin:0 0 .5rem;display:inline-flex;flex-wrap:wrap;gap:.4rem;align-items:baseline;
+  background:var(--acento-suave);color:var(--acento);border-radius:99px;
+  padding:.28rem .75rem;font-size:.92rem;font-weight:700}
+.saluda .tr{color:var(--tenue);font-weight:400;font-size:.85rem}
+.mascota{margin:0;text-align:center;max-width:9.5rem}
+.mascota .oso{width:100%;height:auto;max-width:8.5rem}
+.mascota figcaption{font-size:.78rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+.heroe .nota{grid-column:1/-1;margin:0}
+/* Las tres ventajas, debajo y en fila: lo que se quiere saber antes de
+   pulsar nada. */
+.ventajas{grid-column:1/-1;list-style:none;display:grid;gap:.9rem;margin:.4rem 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+  border-top:1px solid var(--linea);padding-top:1.1rem}
+.ventajas li{display:grid;grid-template-columns:auto 1fr;gap:.2rem .7rem;align-items:center}
+.ventajas .icono{grid-row:1/3;display:inline-flex;align-items:center;justify-content:center;
+  width:2.2rem;height:2.2rem;border-radius:10px;background:var(--papel);color:var(--acento)}
+.ventajas .icono svg{width:1.2rem;height:1.2rem}
+.ventajas strong{align-self:end;line-height:1.2}
+.ventajas span:not(.icono){color:var(--tenue);font-size:.86rem;line-height:1.3}
+@media(max-width:40rem){.heroe{grid-template-columns:1fr;padding:1.1rem}
+  .burbuja::after{top:100%;left:50%;margin:0 0 0 -10px;border-left-color:transparent;
+    border-top-color:var(--papel)}
+  .heroe h1{font-size:1.8rem}
+  .mascota{max-width:7rem;justify-self:center}.mascota figcaption{display:none}}
+/* El buscador del índice. */
+.buscador{display:grid;gap:.35rem;margin:1.2rem 0}
+.buscador label{font-size:.9rem;color:var(--tenue)}
+.buscador input{font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:12px;padding:.6rem .85rem;width:100%}
+.buscador input:focus{outline:2px solid var(--acento);outline-offset:1px;border-color:var(--acento)}
 /* El mapa de unidades: tarjetas, no una lista de 365 filas. */
 .mapa{margin:2.2rem 0 1rem}
 .mapa h2{margin-bottom:.2rem}
@@ -121,8 +157,6 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
 .unidad-tarjeta.apagada{opacity:.55}
 .unidad-tarjeta.apagada .num{background:var(--tenue)}
-.heroe{padding:2.2rem 0 .6rem}
-.heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
 .puertas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.6rem 0}
 .puerta{display:block;border:1px solid var(--linea);border-radius:14px;padding:1.1rem 1.2rem;text-decoration:none;color:var(--tinta);background:var(--tarjeta)}
@@ -146,12 +180,12 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <button id="tema" class="tema" type="button" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
 </div></header>
 <main class="envoltorio">
-<section class="heroe con-oso">
-<div class="texto">
+<section class="heroe">
+<div class="burbuja">
+<p class="saluda"><span lang="ru">Приве́т! Я Топты́гин.</span> <span class="tr">¡Hola! Soy Toptyguin.</span></p>
 <h1>Ruso desde cero</h1>
 <p class="lema">Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.</p>
 <div class="botones"><a class="boton" href="a1/semana-01/dia-1.html">Empezar por el día 1</a><a id="continuar" class="boton secundario" data-pista="es" href="#" hidden>Seguir donde lo dejé: <span class="donde"></span></a></div>
-<p class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</p>
 </div>
 <figure class="mascota"><svg class="oso" viewBox="0 0 120 124" role="img" aria-label="Топты́гин, el oso del curso" xmlns="http://www.w3.org/2000/svg">
 <g fill="none"><circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" cy="30" r="7.5" fill="#c99a72"/>
@@ -167,6 +201,8 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <rect x="16" y="108" width="88" height="5" fill="#ffffff"/>
 <rect x="16" y="113" width="88" height="6" rx="2" fill="#c01b12"/></g></svg>
 <figcaption>Te acompaña Топты́гин, que es como los cuentos rusos llaman al oso.</figcaption></figure>
+<ul class="ventajas"><li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></span><strong>Sin registro</strong><span>Ni cuenta ni correo. Abres y estudias.</span></li><li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><strong>Treinta minutos</strong><span>Una lección al día, con su reloj.</span></li><li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><strong>Del alfabeto al B2</strong><span>Cuatro niveles, 1.460 lecciones.</span></li></ul>
+<p class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</p>
 </section>
 <section class="mapa"><h2>El camino <span class="tipo">Nivel A1 — elemental · 24 unidades</span></h2><p class="nota">Cuatro niveles, uno por año a lección diaria. A dos lecciones al día, la mitad de tiempo.</p><div class="rejilla"><a class="unidad-tarjeta" href="a1/semana-01/dia-1.html"><span class="num">1</span><strong>¡Hola! ¿Cómo te llamas?</strong><span class="ru" lang="ru">Приве́т! Как тебя́ зову́т?</span><span class="pie">14 de 14 · lecciones escritas</span></a><a class="unidad-tarjeta" href="a1/semana-03/dia-1.html"><span class="num">2</span><strong>Leer en ruso</strong><span class="ru" lang="ru">Чита́ем по-ру́сски</span><span class="pie">14 de 14 · lecciones escritas</span></a><a class="unidad-tarjeta" href="a1/semana-05/dia-1.html"><span class="num">3</span><strong>¿De dónde eres?</strong><span class="ru" lang="ru">Отку́да вы?</span><span class="pie">14 de 14 · lecciones escritas</span></a><a class="unidad-tarjeta" href="a1/semana-07/dia-1.html"><span class="num">4</span><strong>¿Dónde está el metro?</strong><span class="ru" lang="ru">Где метро́?</span><span class="pie">11 de 14 · lecciones escritas</span></a><div class="unidad-tarjeta apagada"><span class="num">5</span><strong>¿A qué te dedicas?</strong><span class="ru" lang="ru">Кем вы рабо́таете?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">6</span><strong>¿Qué tienes?</strong><span class="ru" lang="ru">Что у тебя́ есть?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">7</span><strong>Mi familia</strong><span class="ru" lang="ru">Моя́ семья́</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">8</span><strong>¿Qué te gusta hacer?</strong><span class="ru" lang="ru">Что ты лю́бишь?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">9</span><strong>El tiempo libre</strong><span class="ru" lang="ru">Свобо́дное вре́мя</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">10</span><strong>Mi casa</strong><span class="ru" lang="ru">Мой дом</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">11</span><strong>Dónde está cada cosa</strong><span class="ru" lang="ru">Где что стои́т</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">12</span><strong>En el trabajo</strong><span class="ru" lang="ru">На рабо́те</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">13</span><strong>¿Cómo es?</strong><span class="ru" lang="ru">Како́й он?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">14</span><strong>El desayuno</strong><span class="ru" lang="ru">За́втрак</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">15</span><strong>En el restaurante</strong><span class="ru" lang="ru">В рестора́не</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">16</span><strong>La ropa</strong><span class="ru" lang="ru">Оде́жда</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">17</span><strong>De compras</strong><span class="ru" lang="ru">Поку́пки</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">18</span><strong>Mi día</strong><span class="ru" lang="ru">Мой день</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">19</span><strong>La semana</strong><span class="ru" lang="ru">Неде́ля</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">20</span><strong>El transporte</strong><span class="ru" lang="ru">Тра́нспорт</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">21</span><strong>El tiempo y los planes</strong><span class="ru" lang="ru">Пого́да и пла́ны</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">22</span><strong>Las fiestas</strong><span class="ru" lang="ru">Пра́здники</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">23</span><strong>¡Feliz cumpleaños!</strong><span class="ru" lang="ru">С днём рожде́ния!</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">24</span><strong>Todo junto</strong><span class="ru" lang="ru">Всё вме́сте</span><span class="pie">próximamente</span></div></div></section>
 <h2>Qué es</h2>

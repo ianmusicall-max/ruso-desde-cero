@@ -42,6 +42,17 @@ es:
   progreso: >-
     Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.
   pie: Curso gratuito de ruso para hispanohablantes.
+  oso_saluda: "Приве́т! Я Топты́гин."
+  oso_saluda_t: "¡Hola! Soy Toptyguin."
+  ventajas:
+    - t: Sin registro
+      d: Ni cuenta ni correo. Abres y estudias.
+    - t: Treinta minutos
+      d: Una lección al día, con su reloj.
+    - t: Del alfabeto al B2
+      d: Cuatro niveles, 1.460 lecciones.
+  buscar: Buscar una lección
+  buscar_nada: No hay ninguna lección con esas palabras.
   oso_alt: Топты́гин, el oso del curso
   mascota: >-
     Te acompaña Топты́гин, que es como los cuentos rusos llaman al oso.
@@ -180,6 +191,17 @@ en:
   progreso: >-
     Your progress is saved only in this browser: no sign-up, no accounts.
   pie: A free Russian course for English speakers.
+  oso_saluda: "Приве́т! Я Топты́гин."
+  oso_saluda_t: "Hi! I'm Toptygin."
+  ventajas:
+    - t: No sign-up
+      d: No account, no email. Open it and study.
+    - t: Thirty minutes
+      d: One lesson a day, timed.
+    - t: Alphabet to B2
+      d: Four levels, 1,460 lessons.
+  buscar: Search for a lesson
+  buscar_nada: No lesson matches those words.
   oso_alt: Топты́гин, the course bear
   mascota: >-
     Топты́гин keeps you company: that's what Russian folk tales call the
