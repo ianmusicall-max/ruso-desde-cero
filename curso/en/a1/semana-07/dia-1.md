@@ -151,7 +151,6 @@ Tomorrow: why the bank is **он** and the pharmacy is **она́**.
 | где | where | Где метро́? |
 | здесь | here | Вот, здесь. |
 | во́н там | over there (pointing) | Апте́ка? Во́н там. |
-| метро́ | metro, underground | Извини́те, где метро́? |
 | апте́ка | pharmacy, chemist's | Где здесь апте́ка? |
 | банк | bank | Вот банк. |
 | гости́ница | hotel | Там гости́ница. |

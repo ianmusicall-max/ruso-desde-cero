@@ -126,6 +126,9 @@ Mañana: la prueba de la unidad 3.
 
 ## Vocabulario del día
 
+*No son palabras nuevas: son las seis frases de la unidad,
+juntas y en el orden en que se dicen.*
+
 Hoy no hay palabras nuevas: repasa las de la unidad.
 
 | Ruso | Español | Ejemplo |

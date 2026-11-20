@@ -146,7 +146,6 @@ Tomorrow: **Почему́?** Explaining the gender with **потому́ что
 
 | Russian | English | Example |
 |---|---|---|
-| музе́й | museum | Где музе́й? — Вот он. |
 | у́лица | street | Э́то у́лица. |
 | пло́щадь | square | Там пло́щадь. |
 | зда́ние | building | Вот зда́ние. |

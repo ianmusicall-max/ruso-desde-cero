@@ -139,7 +139,6 @@ Mañana: la conversación entera para orientarse en la calle.
 |---|---|---|
 | меня́ | a mí, me | Меня́ зову́т Ками́ла. |
 | тебя́ | a ti, te | Как тебя́ зову́т? |
-| его́ | a él, lo | Его́ зову́т Том. |
 | её | a ella, la | Её зову́т Ки́ра. |
 | нас | a nosotros, nos | Нас зову́т Ми́ша и Ве́ра. |
 | вас | a usted, a ustedes | Как вас зову́т? |

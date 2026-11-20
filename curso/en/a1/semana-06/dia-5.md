@@ -129,6 +129,9 @@ Tomorrow: the unit 3 test.
 
 ## Today's vocabulary
 
+*These are not new words: they are the unit's six phrases,
+gathered in the order you say them.*
+
 There are no new words today: review the unit's.
 
 | Russian | English | Example |

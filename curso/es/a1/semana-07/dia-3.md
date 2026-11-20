@@ -56,8 +56,9 @@ Ya tienes la regla de ayer; hoy la dices en voz alta:
 
 **Y ahora las dos trampas.**
 
-**1. La -ь no se puede adivinar.** Unas palabras en **-ь** son **он** y
-otras son **она́**, y por fuera se ven iguales:
+**1. La -ь no se puede adivinar.** Las seis palabras de abajo ya las
+conoces; lo que no sabías es su género. Unas son **он** y otras **она́**, y
+por fuera se ven iguales:
 
 | он | она́ |
 |---|---|
@@ -70,10 +71,14 @@ de «el mapa» o «la mano». Buena noticia: casi todas las que acaban en
 **-чь**, **-шь**, **-щь** son **она́** —**ночь**, **пло́щадь**— y así te
 ahorras la mitad.
 
-**2. Los nombres de hombre en -а son он.** Ya lo viste con **Ми́ша** en la
-unidad 2: manda la persona, no la letra.
+**2. Si la palabra es un hombre, es он, acabe como acabe.** Ya lo viste
+con **Ми́ша** en la unidad 2: manda la persona, no la letra.
 
-> па́па — он · де́душка (abuelo) — он · Ми́ша — он · Са́ша — он и́ли она́
+> мужчи́на (hombre) — он · дя́дя (tío) — он · па́па — он
+> де́душка (abuelo) — он · Ми́ша — он · Са́ша — он и́ли она́
+
+**Мужчи́на** acaba en **-а** y **дя́дя** en **-я**, que son las dos
+terminaciones más femeninas del ruso, y los dos son **он**.
 
 ### ⚠️ Contraste con el español
 
@@ -149,11 +154,10 @@ Mañana: a la derecha, a la izquierda, en el centro.
 |---|---|---|
 | почему́ | por qué | Почему́ апте́ка — она́? |
 | потому́ что | porque | Потому́ что -а. |
-| слова́рь | diccionario | Слова́рь — он. |
-| день | día | До́брый день! День — он. |
-| дверь | puerta | Вот дверь. Она́ там. |
 | рубль | rublo | Рубль — он. |
 | де́душка | abuelo | Де́душка — он. |
+| мужчи́на | hombre | Мужчи́на — он. |
+| дя́дя | tío | Дя́дя то́же он. |
 
 ## Respuestas
 

@@ -148,9 +148,9 @@ Tomorrow: the consonant that changes inside a word.
 | Я не ме́стный. | I'm not from here. (man) | Извини́те, я не ме́стный. |
 | Я не ме́стная. | I'm not from here. (woman) | Извини́те, я не ме́стная. |
 | Поня́тно. | Got it. | Сле́ва? Поня́тно, спаси́бо! |
-| Ещё раз, пожа́луйста. | Once more, please. | Ещё раз, пожа́луйста! |
 | Разреши́те. | Excuse me (let me past). | Разреши́те, пожа́луйста. |
 | вокза́л | railway station | Где вокза́л? |
+| Ничего́. | It's all right. | — Извини́те! — Ничего́. |
 
 ## Answers
 

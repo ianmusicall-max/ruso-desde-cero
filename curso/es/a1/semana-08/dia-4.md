@@ -12,7 +12,7 @@ revisado: false
 >
 > - leer bien cualquier grupo de dos consonantes;
 > - saber cuál de las dos manda;
-> - nombrar seis palabras que ya decías mal.
+> - corregir tres palabras que ya conoces y decías mal.
 
 ## 1. Calentamiento (0–3 min)
 
@@ -38,19 +38,29 @@ acomoda a la segunda:
 
 > авто́бус [af-tó-bus] · ло́жка [lósh-ka] · ска́зка [skás-ka]
 > вокза́л [vag-zál] · футбо́л [fud-ból] · сде́лать [zdié-lat']
+> ло́дка [lót-ka] · ю́бка [yúp-ka] · остано́вка [as-ta-nóf-ka]
 
 ## 3. Nuevo (8–18 min)
 
-Las palabras de hoy, con su trampa marcada:
+**Empieza por tres que ya conoces.** Las sabes desde la unidad 1 y la 2, y
+muy probablemente las decías letra por letra:
+
+| Palabra | ✗ Como se escribe | ✓ Como se dice |
+|---|---|---|
+| авто́бус | ~~av-to-bus~~ | af-**TO**-bus |
+| футбо́л | ~~fut-bol~~ | fud-**BOL** |
+| вокза́л | ~~vak-sal~~ | vag-**ZAL** |
+
+**Y ahora seis nuevas**, cada una con su trampa:
 
 | Palabra | Se lee | Significa |
 |---|---|---|
-| авто́бус | af-**TO**-bus | autobús |
 | ло́жка | **LOSH**-ka | cuchara |
 | ска́зка | **SKAS**-ka | cuento |
-| вокза́л | vag-**ZAL** | estación de tren |
-| футбо́л | fud-**BOL** | fútbol |
 | ло́дка | **LOT**-ka | barca |
+| сде́лать | **ZDIE**-lat' | hacer |
+| ю́бка | **YUP**-ka | falda |
+| остано́вка | as-ta-**NOF**-ka | parada |
 
 Todas se escriben con una letra y se dicen con otra, y **la ortografía no
 miente**: escribe **ло́жка** con ж porque en otras formas de la palabra la ж
@@ -87,7 +97,8 @@ manda la primera sílaba y en ruso, la segunda.
 
 *Lee en voz alta, con el contagio.*
 
-> авто́бус · ло́жка · ска́зка · вокза́л · футбо́л · ло́дка · сде́лать
+> авто́бус · ло́жка · ска́зка · вокза́л · футбо́л · ло́дка
+> сде́лать · ю́бка · остано́вка
 
 ### Б. Глухо́й и́ли зво́нкий?
 
@@ -96,8 +107,9 @@ manda la primera sílaba y en ruso, la segunda.
 1. а**в**то́бус
 2. во**к**за́л
 3. ло́**ж**ка
-4. фу**т**бо́л
+4. ю́**б**ка
 5. ска́**з**ка
+6. **с**де́лать
 
 ### В. Как говори́м?
 
@@ -107,6 +119,7 @@ manda la primera sílaba y en ruso, la segunda.
 2. вокза́л → а) [vak-zál] · б) [vag-zál]
 3. ло́жка → а) [lósh-ka] · б) [lózh-ka]
 4. авто́бус → а) [af-tó-bus] · б) [av-tó-bus]
+5. остано́вка → а) [as-ta-nóv-ka] · б) [as-ta-nóf-ka]
 
 ## 5. Tu turno (25–29 min)
 
@@ -114,7 +127,7 @@ manda la primera sílaba y en ruso, la segunda.
 dos consonantes seguidas. Marca con un círculo la segunda —la que manda— y
 di la palabra en voz alta:
 
-> ло́жка · где · вокза́л · ска́зка · футбо́л
+> ло́жка · где · вокза́л · ска́зка · футбо́л · остано́вка
 
 Después léelas grabándote. Escucha: ¿**вокза́л** te sale con [g], o se te
 queda en [k] como se escribe?
@@ -122,7 +135,8 @@ queda en [k] como se escribe?
 ## 6. Cierre (29–30 min)
 
 > **Ya puedo decir:**
-> авто́бус, ло́жка, ска́зка, вокза́л, футбо́л, ло́дка
+> ло́жка, ска́зка, ло́дка, сде́лать, ю́бка, остано́вка
+> —y por fin bien авто́бус, футбо́л y вокза́л—
 >
 > **Ya sé:** dentro de la palabra manda la segunda consonante: delante de una sorda, la primera se apaga; delante de una sonora, se sonoriza. Y delante de **в** no pasa nada.
 
@@ -132,16 +146,16 @@ Mañana: mi ciudad.
 
 | Ruso | Español | Ejemplo |
 |---|---|---|
-| авто́бус | autobús | Вот авто́бус. |
 | ло́жка | cuchara | Ло́жка, пожа́луйста. |
 | ска́зка | cuento | Э́то ска́зка. |
-| вокза́л | estación de tren | Где вокза́л? |
-| футбо́л | fútbol | Там футбо́л! |
 | ло́дка | barca | Вот ло́дка. |
+| сде́лать | hacer | Что сде́лать? |
+| ю́бка | falda | Вот ю́бка. |
+| остано́вка | parada | Где остано́вка? |
 
 ## Respuestas
 
 **Б.** 1 se apaga: [f] · 2 se sonoriza: [g] · 3 se apaga: [sh] · 4 se
-sonoriza: [d] · 5 se apaga: [s]
+apaga: [p] · 5 se apaga: [s] · 6 se sonoriza: [z]
 
-**В.** 1 б · 2 б · 3 а · 4 а
+**В.** 1 б · 2 б · 3 а · 4 а · 5 б

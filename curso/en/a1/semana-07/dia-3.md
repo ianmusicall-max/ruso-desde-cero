@@ -56,7 +56,8 @@ You have yesterday's rule; today you say it out loud:
 
 **And now the two traps.**
 
-**1. The -ь can't be guessed.** Some words in **-ь** are **он** and others
+**1. The -ь can't be guessed.** You already know the six words below;
+what you didn't know is their gender. Some words in **-ь** are **он** and others
 are **она́**, and from the outside they look identical:
 
 | он | она́ |
@@ -70,10 +71,14 @@ German noun's gender. Good news: nearly all the words ending in **-чь**,
 **-шь**, **-щь** are **она́** —**ночь**, **пло́щадь**— so half of them come
 free.
 
-**2. Men's names ending in -а are он.** You saw it with **Ми́ша** in unit 2:
-the person decides, not the letter.
+**2. If the word is a man, it's он, whatever the ending.** You saw it with
+**Ми́ша** in unit 2: the person decides, not the letter.
 
-> па́па — он · де́душка (grandfather) — он · Ми́ша — он · Са́ша — он и́ли она́
+> мужчи́на (man) — он · дя́дя (uncle) — он · па́па — он
+> де́душка (grandfather) — он · Ми́ша — он · Са́ша — он и́ли она́
+
+**Мужчи́на** ends in **-а** and **дя́дя** in **-я**, the two most feminine
+endings in Russian, and both are **он**.
 
 ### ⚠️ Contrast with English
 
@@ -149,11 +154,10 @@ Tomorrow: on the right, on the left, in the centre.
 |---|---|---|
 | почему́ | why | Почему́ апте́ка — она́? |
 | потому́ что | because | Потому́ что -а. |
-| слова́рь | dictionary | Слова́рь — он. |
-| день | day | До́брый день! День — он. |
-| дверь | door | Вот дверь. Она́ там. |
 | рубль | rouble | Рубль — он. |
 | де́душка | grandfather | Де́душка — он. |
+| мужчи́на | man | Мужчи́на — он. |
+| дя́дя | uncle | Дя́дя то́же он. |
 
 ## Answers
 

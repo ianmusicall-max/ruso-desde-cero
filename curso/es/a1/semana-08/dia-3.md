@@ -146,9 +146,9 @@ Mañana: la consonante que cambia dentro de la palabra.
 | Я не ме́стный. | No soy de aquí. (hombre) | Извини́те, я не ме́стный. |
 | Я не ме́стная. | No soy de aquí. (mujer) | Извини́те, я не ме́стная. |
 | Поня́тно. | Entendido. | Сле́ва? Поня́тно, спаси́бо! |
-| Ещё раз, пожа́луйста. | Otra vez, por favor. | Ещё раз, пожа́луйста! |
 | Разреши́те. | Permítame, con permiso. | Разреши́те, пожа́луйста. |
 | вокза́л | estación de tren | Где вокза́л? |
+| Ничего́. | No pasa nada. | — Извини́те! — Ничего́. |
 
 ## Respuestas
 
