@@ -1,14 +1,25 @@
 .portada {
   --ancho: 66rem;
+  --azul: #123b7a;
+  --rojo: #b6192f;
+  --blanco: #fff;
+  --papel: var(--blanco);
+  --tinta: var(--azul);
+  --tenue: var(--azul);
+  --linea: var(--azul);
+  --tarjeta: var(--blanco);
+  --acento: var(--azul);
+  --acento-suave: var(--blanco);
+  color-scheme: light;
 }
 
 .portada .heroe {
   margin: 2rem 0 1.5rem;
   padding: clamp(1.25rem, 4vw, 3rem);
   border-top: .35rem solid #fff;
-  border-bottom: .35rem solid #c01b32;
+  border-bottom: .35rem solid var(--rojo);
   gap: 1.25rem;
-  background: #103978;
+  background: var(--azul);
   color: #fff;
 }
 
@@ -21,7 +32,7 @@
 .portada .heroe .nota,
 .portada .heroe figcaption,
 .portada .ventajas span:not(.icono) {
-  color: #e9f1ff;
+  color: var(--blanco);
 }
 
 .portada .burbuja {
@@ -34,12 +45,12 @@
 }
 
 .portada .ventajas {
-  border-color: #7994bf;
+  border-color: var(--blanco);
 }
 
 .portada .heroe .boton {
-  background: #b91d32;
-  border-color: #b91d32;
+  background: var(--rojo);
+  border-color: var(--rojo);
   color: #fff;
 }
 
@@ -59,10 +70,10 @@
   align-content: start;
   gap: .25rem;
   padding: 1rem;
-  border: 1px solid #bdcdea;
+  border: 1px solid var(--azul);
   border-radius: .75rem;
-  background: var(--fondo);
-  color: #142b54;
+  background: var(--blanco);
+  color: var(--azul);
   font: 400 1rem/1.4 Onest, system-ui, sans-serif;
   text-decoration: none;
 }
@@ -88,14 +99,14 @@
 .portada .glifo {
   margin: 0 0 .75rem;
   padding-bottom: .75rem;
-  border-bottom: 1px solid #142b5455;
+  border-bottom: 1px solid var(--azul);
   font: 700 clamp(2.15rem, 5vw, 3.8rem)/1.14 Literata, Georgia, serif;
 }
 
-.portada .alfabeto { --fondo: #e8f0ff; }
-.portada .lectura { --fondo: #fff; }
-.portada .escritura { --fondo: #fde8ec; }
-.portada .pronunciacion { --fondo: #d8e7ff; }
+.portada .lectura .glifo,
+.portada .pronunciacion .glifo {
+  color: var(--rojo);
+}
 
 .portada .puerta {
   display: grid;
@@ -135,8 +146,9 @@
 
 @media (min-width: 40.01rem) {
   .portada .heroe:has(.mascota) {
-    grid-template-columns: minmax(0, 30rem) minmax(0, 15rem);
+    grid-template-columns: minmax(0, 25rem) minmax(0, 15rem);
     justify-content: center;
+    column-gap: clamp(1rem, 3vw, 2rem);
   }
 }
 
