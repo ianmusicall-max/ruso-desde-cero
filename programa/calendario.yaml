@@ -435,6 +435,128 @@ niveles:
         lexico: la ciudad y orientarse (где, спра́ва, сле́ва, здесь, там, в це́нтре); números 1–20
         fonetica: ensordecimiento y sonorización de consonantes
         episodio: {ru: "Спра́ва и́ли сле́ва?", es: "¿A la derecha o a la izquierda?", en: "Right or left?", sinopsis: "Camila y Tom van al centro por primera vez y se pierden al salir del metro. Un transeúnte les indica el camino, y cada uno entiende una cosa distinta."}
+        dias:
+          - tipo: leccion
+            ru: "Извини́те, где метро́?"
+            es: "Perdone, ¿dónde está el metro?"
+            en: "Excuse me, where's the metro?"
+            foco: >-
+              Pedir indicaciones con Извини́те, где…? y Где здесь…?, y
+              contestar con здесь, там, во́н там. Lugares de la ciudad: метро́,
+              апте́ка, банк, гости́ница, шко́ла, по́чта. Pedir sin verbo, como
+              Мне чай: aquí, Где апте́ка?
+          - tipo: leccion
+            ru: Он, она́ и́ли оно́?
+            es: "El género: он, она́, оно́"
+            en: "Gender: он, она́, оно́"
+            foco: >-
+              La última letra dice el género: consonante → он; -а, -я → она́;
+              -о, -е → оно́. Los он y она́ de la unidad 3 valen también para
+              las cosas: Где банк? — Вот он. Palabras nuevas de la ciudad:
+              музе́й, пло́щадь, у́лица, зда́ние, окно́ (repaso).
+          - tipo: leccion
+            ru: "Почему́? Потому́ что"
+            es: "¿Por qué? Porque acaba en -а"
+            en: "Why? Because it ends in -а"
+            foco: >-
+              Почему́ апте́ка — она́? Потому́ что -а. La pareja почему́ —
+              потому́ что, de momento solo para explicar el género. Las
+              terminaciones difíciles: -ь (no se adivina: пло́щадь es она́,
+              слова́рь es он) y los nombres de hombre en -а (па́па, Ми́ша).
+          - tipo: leccion
+            ru: Спра́ва и́ли сле́ва
+            es: A la derecha, a la izquierda, en el centro
+            en: On the right, on the left, in the centre
+            foco: >-
+              Situar lo que se ve: спра́ва, сле́ва, в це́нтре, ря́дом, далеко́,
+              бли́зко. Вот он, спра́ва. Las preguntas con где llevan ИК-2.
+              Más ciudad: рестора́н (repaso), теа́тр, парк (repaso), це́рковь.
+          - tipo: leccion
+            ru: "Оди́н, два, три…"
+            es: "Los números del 1 al 10"
+            en: "Numbers from 1 to 10"
+            foco: >-
+              оди́н, два, три, четы́ре, пять, шесть, семь, во́семь, де́вять,
+              де́сять. El teléfono y el número de casa se dicen cifra a cifra.
+              Fonética: la т de пять y шесть es blanda, y во́семь acaba en
+              -мь.
+          - tipo: repaso
+            ru: "Повторе́ние: го́род"
+            es: "Repaso: la ciudad"
+            en: "Review: the city"
+            foco: >-
+              El género, где y las indicaciones, los números del 1 al 10 y el
+              léxico de la ciudad. Mini-test de 15.
+          - tipo: cultura
+            ru: Моско́вское метро́
+            es: El metro de Moscú
+            en: The Moscow metro
+            foco: >-
+              Cómo funciona un metro ruso: la ста́нция frente al вокза́л, las
+              estaciones con decoración, la tarjeta «Тро́йка», переса́дка y
+              вы́ход в го́род. Nada de cifras inventadas: lo que no se sepa,
+              [VERIFICAR].
+          - tipo: leccion
+            ru: "Оди́ннадцать, двена́дцать…"
+            es: "Los números del 11 al 20, y las cuentas"
+            en: "Numbers from 11 to 20, and sums"
+            foco: >-
+              De оди́ннадцать a два́дцать: todos llevan -надцать y el acento
+              en la primera parte. Ско́лько бу́дет…? con плюс, ми́нус, равно́.
+              Para contar cosas hay que esperar al A2: de momento, los números
+              solos.
+          - tipo: leccion
+            ru: "Меня́, тебя́, его́, её"
+            es: "A mí, a ti, a él, a ella"
+            en: "Me, you, him, her"
+            foco: >-
+              La tabla entera de меня́, тебя́, его́, её, нас, вас, их, de
+              momento solo con зову́т (el resto de usos, en la unidad 8). Как
+              его́ зову́т? — Его́ зову́т Ми́ша. La г de его́ y её suena [в].
+          - tipo: leccion
+            ru: "Э́то банк? — Да, э́то банк"
+            es: "Preguntar por la calle y entenderlo"
+            en: "Asking in the street and understanding the answer"
+            foco: >-
+              La conversación entera de orientarse: Извини́те, пожа́луйста!
+              Где здесь…? — Вот он, спра́ва. — Спаси́бо! — Пожа́луйста. Y qué
+              hacer si no se entiende: Повтори́те. Ме́дленнее. Где? Там?
+          - tipo: leccion
+            ru: Звук, кото́рый меня́ется
+            es: "La consonante que cambia dentro de la palabra"
+            en: "The consonant that changes inside a word"
+            foco: >-
+              El contagio: delante de una consonante sorda, la sonora se
+              apaga (авто́бус [афто́бус], ло́жка [ло́шка]), y delante de una
+              sonora, la sorda se sonoriza (вокза́л [вагза́л], футбо́л
+              [фудбо́л]). Manda la segunda consonante. Ya se vio el final de
+              palabra en la unidad 2.
+          - tipo: leccion
+            ru: Мой го́род
+            es: Mi ciudad
+            en: My city
+            foco: >-
+              Describir el sitio donde uno vive juntando la unidad: Э́то мой
+              го́род (мой como bloque, los posesivos en la unidad 7). В
+              це́нтре… Спра́ва… Сле́ва… Там… Y los números para decir cuántos
+              hay, sin contar el sustantivo.
+          - tipo: prueba
+            ru: "Тест: где метро́?"
+            es: "Prueba de la unidad 4: la ciudad"
+            en: "Unit 4 test: the city"
+            foco: >-
+              El género por la terminación, где y las indicaciones, los
+              números hasta 20, меня́ / тебя́ / его́ / её con зову́т y el
+              léxico de la ciudad.
+          - tipo: cultura
+            ru: Спра́ва и́ли сле́ва?
+            es: "Episodio 4: Спра́ва и́ли сле́ва?"
+            en: "Episode 4: Спра́ва и́ли сле́ва?"
+            foco: >-
+              Camila y Tom van al centro por primera vez y se pierden al salir
+              del metro. Un transeúnte les indica el camino, y cada uno
+              entiende una cosa distinta. Solo con lo de las unidades 1 a 4.
+              Ver programa/historia.md.
 
       - numero: 5
         ru: Кем вы рабо́таете?
