@@ -453,7 +453,7 @@ def absoluta(cfg: dict, ruta: str) -> str:
 
 
 def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
-           alternas=None, actual="", principal="") -> str:
+           alternas=None, actual="", principal="", portada=False) -> str:
     """Una página completa. `ruta` es la de esta página desde la raíz del sitio;
     `alternas` = {idioma: ruta} de sus versiones en las otras lenguas."""
     sitio = cfg["nombre"].get(idioma) or cfg["nombre"]["es"]
@@ -486,6 +486,7 @@ def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
         nav = ""
         pie = " · ".join(f'<a href="{raiz}/{p}/{textos[p]["paginas"]["privacidad"]}">{e(textos[p]["menu"]["privacidad"])}</a>'
                          for p in PISTAS)
+    estilo_portada = f'\n<link rel="stylesheet" href="{raiz}/portada.css">' if portada else ""
     boton_tema = e(t["botones"]["tema"])
     return f"""<!doctype html>
 <html lang="{idioma if idioma in textos else 'en'}" data-raiz="{raiz}">
@@ -493,10 +494,10 @@ def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 {chr(10).join(cabeza)}
-<style>{caras(raiz)}{CSS}</style>
+<style>{caras(raiz)}{CSS}</style>{estilo_portada}
 {TEMA_CABEZA}
 </head>
-<body>
+<body{' class="portada"' if portada else ''}>
 <header class="sitio"><div class="envoltorio">
 <a class="marca" href="{inicio}">{e(sitio)}</a>{nav}
 <button id="tema" class="tema" type="button" aria-label="{boton_tema}" title="{boton_tema}">{ICONO_TEMA}</button>
@@ -742,6 +743,29 @@ def _mapa_de_unidades(cal, pista, t, publicadas) -> str:
             f'<div class="rejilla">{"".join(tarjetas)}</div></section>')
 
 
+_PRACTICAS = (
+    ("alfabeto", "Я", "a1/semana-01/dia-1", 3),
+    ("lectura", "А́", "a1/semana-01/dia-1", 4),
+    ("escritura", "И́мя", "a1/semana-01/dia-7", 4),
+    ("pronunciacion", "О", "a1/semana-01/dia-3", 3),
+)
+
+
+def _accesos_de_practica(t, lecciones):
+    disponibles = {dia.ruta for dia, _, _ in lecciones}
+    tarjetas = []
+    for clave, letra, ruta, parte in _PRACTICAS:
+        if ruta in disponibles:
+            titulo, descripcion = t["practicas"][clave]
+            tarjetas.append(f'<a class="practica {clave}" href="{ruta}.html#parte-{parte}">'
+                            f'<span class="glifo" lang="ru" aria-hidden="true">{e(letra)}</span>'
+                            f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
+    if not tarjetas:
+        return ""
+    return (f'<section class="practicas"><h2>{e(t["practicas"]["titulo"])}</h2>'
+            f'<div class="accesos">{"".join(tarjetas)}</div></section>')
+
+
 def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
     rutas = []
     for pista in PISTAS:
@@ -764,25 +788,26 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
 </section>
+{_accesos_de_practica(t, lista)}
 {_mapa_de_unidades(cal, pista, t, lista)}
 {md(t["portada"].replace("{lecciones}", str(len(lista))))}"""
         ruta = f"{pista}/index.html"
         escribir(destino / ruta, pagina(cfg, textos, pista, sitio, cuerpo, ruta=ruta, raiz="..",
-                                        alternas={p: f"{p}/index.html" for p in PISTAS}))
+                                        alternas={p: f"{p}/index.html" for p in PISTAS}, portada=True))
         rutas.append(ruta)
     # La raíz: las dos puertas, cada una en su lengua.
     puertas = "".join(
-        f'<a class="puerta" lang="{p}" href="{p}/index.html"><strong>{e(cfg["nombre"][p])}</strong>'
-        f'{e(textos[p]["lema"])}</a>' for p in PISTAS)
+        f'<a class="puerta" lang="{p}" hreflang="{p}" href="{p}/index.html">'
+        f'<strong>{e(textos[p]["idioma"])}</strong><span>{e(textos[p]["lema"])}</span></a>' for p in PISTAS)
     cuerpo = (f'<section class="heroe"><h1 lang="ru">Ру́сский язы́к</h1>'
               f'<p class="lema">{e(textos["es"]["lema"])}<br><span lang="en">{e(textos["en"]["lema"])}</span></p>'
-              f'</section><div class="puertas">{puertas}</div>'
-              f'<p lang="es">{e(textos["es"]["descripcion"])}</p><p lang="en">{e(textos["en"]["descripcion"])}</p>')
+              f'</section><nav class="puertas" aria-label="Choose a language">{puertas}</nav>')
     raiz_cfg = dict(cfg, nombre=dict(cfg["nombre"], raiz="Ruso · Russian"))
     escribir(destino / "index.html",
              pagina(raiz_cfg, textos, "raiz", "Ruso · Russian", cuerpo, ruta="index.html", raiz=".",
                     descripcion=textos["en"]["descripcion"],
-                    alternas={"es": "es/index.html", "en": "en/index.html", "x-default": "index.html"}))
+                    alternas={"es": "es/index.html", "en": "en/index.html", "x-default": "index.html"},
+                    portada=True))
     rutas.append("index.html")
     return rutas
 
@@ -809,6 +834,7 @@ def construir_extras(cfg, destino, rutas) -> None:
     fuentes.mkdir(parents=True, exist_ok=True)
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
+    shutil.copy2(WEB / "portada.css", destino / "portada.css")
     escribir(destino / "progreso.js", PROGRESO_JS)
     escribir(destino / "test.js", TEST_JS)
     dominio = (cfg.get("dominio") or "").rstrip("/")
