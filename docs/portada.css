@@ -177,3 +177,31 @@
   width: 100%;
   height: auto;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .portada .mascota {
+    animation: llegada-misha 650ms ease-out both;
+  }
+
+  .portada .mascota img {
+    transform-origin: 50% 90%;
+    transition: transform 240ms ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .portada .mascota:hover img {
+    transform: translateY(-.3rem) rotate(-3deg);
+  }
+}
+
+@keyframes llegada-misha {
+  from {
+    opacity: 0;
+    transform: translateY(.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
