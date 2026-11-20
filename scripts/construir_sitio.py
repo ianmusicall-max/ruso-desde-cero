@@ -631,7 +631,13 @@ def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
         nav = ""
         pie = " · ".join(f'<a href="{raiz}/{p}/{textos[p]["paginas"]["privacidad"]}">{e(textos[p]["menu"]["privacidad"])}</a>'
                          for p in PISTAS)
-    estilo_portada = f'\n<link rel="stylesheet" href="{raiz}/portada.css">' if portada else ""
+    estilo_portada = ""
+    animacion_portada = ""
+    if portada:
+        estilo_portada = f'\n<link rel="stylesheet" href="{raiz}/portada.css">'
+        if idioma in PISTAS:
+            estilo_portada += f'\n<link rel="stylesheet" href="{raiz}/portada-animacion.css">'
+            animacion_portada = f'\n<script src="{raiz}/portada-animacion.js" defer></script>'
     boton_tema = e(t["botones"]["tema"])
     return f"""<!doctype html>
 <html lang="{idioma if idioma in textos else 'en'}" data-raiz="{raiz}">
@@ -651,7 +657,7 @@ def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
 {cuerpo}
 </main>
 <footer class="sitio"><div class="envoltorio">{pie}</div></footer>
-<script src="{raiz}/progreso.js" defer></script>
+<script src="{raiz}/progreso.js" defer></script>{animacion_portada}
 </body>
 </html>
 """
@@ -895,13 +901,21 @@ def _mapa_de_unidades(cal, pista, t, publicadas) -> str:
 _PRACTICAS = ("escucha", "lectura", "escritura", "habla")
 
 
+def _oso_animado(clave, imagen):
+    hoja = '<span class="hoja-libro" aria-hidden="true"></span>' if clave == "portada" else ""
+    return (f'<span class="oso-animado oso-animado--{clave}">{imagen}'
+            '<span class="parpado parpado--a" aria-hidden="true"></span>'
+            f'<span class="parpado parpado--b" aria-hidden="true"></span>{hoja}</span>')
+
+
 def _accesos_de_practica(t):
     tarjetas = []
     for clave in _PRACTICAS:
         titulo, descripcion = t["practicas"][clave]
         version = "dima-sin-libro" if clave == "escucha" else "dima"
+        imagen = f'<img src="../practica-{clave}.png?v={version}" alt="" loading="lazy" decoding="async">'
         tarjetas.append(f'<a class="practica" href="{e(t["pruebas"]["paginas"][clave])}">'
-                        f'<img src="../practica-{clave}.png?v={version}" alt="" loading="lazy" decoding="async">'
+                        f'<span class="ilustracion-practica">{_oso_animado(clave, imagen)}</span>'
                         f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
     return (f'<section class="practicas"><h2>{e(t["practicas"]["titulo"])}</h2>'
             f'<div class="accesos">{"".join(tarjetas)}</div></section>')
@@ -917,6 +931,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
                    if lista else "")
         continuar = (f'<a id="continuar" class="boton secundario" data-pista="{pista}" href="#" hidden>'
                      f'{e(t["botones"]["continuar"])}: <span class="donde"></span></a>')
+        imagen = f'<img src="../dima.png" alt="{e(t["oso_alt"])}" width="426" height="640">'
         cuerpo = f"""<section class="heroe">
 <div class="burbuja">
 <p class="saluda"><span lang="ru">{e(t["oso_saluda"])}</span> <span class="tr">{e(t["oso_saluda_t"])}</span></p>
@@ -924,7 +939,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
 </div>
-<figure class="mascota"><img src="../dima.png" alt="{e(t["oso_alt"])}" width="426" height="640">
+<figure class="mascota">{_oso_animado("portada", imagen)}
 <figcaption>{e(t["mascota"])}</figcaption></figure>
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
@@ -1180,7 +1195,8 @@ def construir_extras(cfg, destino, rutas) -> None:
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
     ilustraciones = tuple(f"practica-{clave}.png" for clave in _PRACTICAS)
-    for recurso in ("portada.css", "dima.png", *ilustraciones):
+    for recurso in ("portada.css", "portada-animacion.css", "portada-animacion.js",
+                    "dima.png", *ilustraciones):
         shutil.copy2(WEB / recurso, destino / recurso)
     escribir(destino / "progreso.js", PROGRESO_JS)
     escribir(destino / "test.js", TEST_JS)

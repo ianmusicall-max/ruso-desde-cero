@@ -1,0 +1,136 @@
+.portada .oso-animado {
+  display: block;
+  position: relative;
+}
+
+.portada .ilustracion-practica {
+  display: grid;
+  place-items: center;
+  --alto: clamp(6rem, 15vw, 10rem);
+  height: var(--alto);
+  margin-bottom: .65rem;
+  padding: .5rem;
+  border-radius: .65rem;
+  background: var(--azul-suave);
+}
+
+.portada .practica:nth-child(even) .ilustracion-practica {
+  background: var(--rojo-suave);
+}
+
+.portada .ilustracion-practica .oso-animado {
+  width: min(100%, calc((var(--alto) - 1rem) * var(--proporcion)));
+}
+
+.portada .ilustracion-practica .oso-animado img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.portada .oso-animado--portada {
+  --ojo-a: 36.9%;
+  --ojo-b: 42.1%;
+  --alto-a: 15.3%;
+  --alto-b: 14.7%;
+  --ancho-ojo: 4.4%;
+  --alto-ojo: 2.65%;
+}
+
+.portada .oso-animado--escucha {
+  --proporcion: 1.3333;
+  --ojo-a: 40.3%;
+  --ojo-b: 46.2%;
+  --alto-a: 26.8%;
+  --alto-b: 26.8%;
+  --ancho-ojo: 4.9%;
+  --alto-ojo: 6.2%;
+}
+
+.portada .oso-animado--lectura {
+  --proporcion: 1.3333;
+  --ojo-a: 40.4%;
+  --ojo-b: 45.5%;
+  --alto-a: 26.6%;
+  --alto-b: 25.5%;
+  --ancho-ojo: 4.7%;
+  --alto-ojo: 6.15%;
+}
+
+.portada .oso-animado--escritura {
+  --proporcion: 1.5;
+  --ojo-a: 42.6%;
+  --ojo-b: 47.1%;
+  --alto-a: 25%;
+  --alto-b: 24%;
+  --ancho-ojo: 4.2%;
+  --alto-ojo: 5.7%;
+}
+
+.portada .oso-animado--habla {
+  --proporcion: 1.5;
+  --ojo-a: 46.25%;
+  --ojo-b: 50.1%;
+  --alto-a: 24.6%;
+  --alto-b: 22.5%;
+  --ancho-ojo: 4.15%;
+  --alto-ojo: 6.6%;
+}
+
+.portada .parpado,
+.portada .hoja-libro {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portada .parpado {
+  width: var(--ancho-ojo);
+  height: var(--alto-ojo);
+  translate: -50% -50%;
+  transform-origin: center top;
+  border-radius: 60% 55% 48% 48%;
+  background: linear-gradient(#b77c46, #ddae73 74%, #57321f 80%, #bc8653 94%);
+}
+
+.portada .parpado--a {
+  left: var(--ojo-a);
+  top: var(--alto-a);
+}
+
+.portada .parpado--b {
+  left: var(--ojo-b);
+  top: var(--alto-b);
+}
+
+.portada .hoja-libro {
+  left: 43%;
+  bottom: 53.8%;
+  width: 20%;
+  height: 8.1%;
+  transform-origin: left bottom;
+  clip-path: polygon(0 100%, 13% 62%, 29% 40%, 62% 25%, 100% 14%, 100% 37%, 69% 47%, 36% 69%);
+  background: repeating-linear-gradient(171deg, #fff5dc 0 3px, #d9b98b 3px 4px, #f6e0b6 4px 7px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .portada .mascota .oso-animado img {
+    animation: none;
+    transform: none;
+  }
+
+  .portada .mascota .oso-animado {
+    transform-origin: 52% 78%;
+    animation: lectura-dima 1.5s 500ms ease-in-out;
+    transition: transform 420ms ease-in-out;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .portada .mascota:hover .oso-animado {
+    transform: translateY(.12rem) rotate(-3deg);
+  }
+}
