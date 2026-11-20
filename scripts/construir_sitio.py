@@ -206,6 +206,12 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
     border-top-color:var(--papel)}
   .heroe h1{font-size:1.8rem}
   .mascota{max-width:7rem;justify-self:center}.mascota figcaption{display:none}}
+/* El oso de la cabecera de la lección: pequeño, al lado del título, y solo
+   en los días que lo piden (cultura, prueba, repaso). Es decoración, así
+   que no se lleva ni un renglón de la lección. */
+.guia{float:right;margin:0 0 .4rem .8rem;width:3.6rem}
+.guia .oso{width:100%;height:auto;display:block}
+@media(max-width:28rem){.guia{width:2.9rem}}
 /* El buscador del índice. */
 .buscador{display:grid;gap:.35rem;margin:1.2rem 0}
 .buscador label{font-size:.9rem;color:var(--tenue)}
@@ -361,8 +367,7 @@ document.querySelectorAll('.test-vivo').forEach(function(caja){
 # mano, sin ninguna imagen de fuera. Va en línea, así que no cuesta una
 # petición más, se ve nítido a cualquier tamaño y cambia de color con el
 # tema. La bufanda lleva los tres colores de la bandera.
-OSO = """<svg class="oso" viewBox="0 0 120 124" role="img" aria-label="{alt}" xmlns="http://www.w3.org/2000/svg">
-<g fill="none"><circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" cy="30" r="7.5" fill="#c99a72"/>
+_OSO_CABEZA = """<circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" cy="30" r="7.5" fill="#c99a72"/>
 <circle cx="92" cy="30" r="15" fill="#7b4f2d"/><circle cx="92" cy="30" r="7.5" fill="#c99a72"/>
 <circle cx="60" cy="60" r="37" fill="#8b5a33"/>
 <ellipse cx="60" cy="74" rx="21" ry="16" fill="#e2c3a4"/>
@@ -370,10 +375,43 @@ OSO = """<svg class="oso" viewBox="0 0 120 124" role="img" aria-label="{alt}" xm
 <circle cx="47.6" cy="52.4" r="1.5" fill="#ffffff"/><circle cx="75.6" cy="52.4" r="1.5" fill="#ffffff"/>
 <ellipse cx="60" cy="68" rx="6.5" ry="4.8" fill="#2b2118"/>
 <path d="M60 73v4.5" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"/>
-<path d="M60 77.5q-6.5 6-12 0M60 77.5q6.5 6 12 0" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-<path d="M24 97h72a8 8 0 0 1 8 8v3H16v-3a8 8 0 0 1 8-8z" fill="#0b3f91"/>
+<path d="M60 77.5q-6.5 6-12 0M60 77.5q6.5 6 12 0" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round" fill="none"/>"""
+
+_OSO_BUFANDA = """<path d="M24 97h72a8 8 0 0 1 8 8v3H16v-3a8 8 0 0 1 8-8z" fill="#0b3f91"/>
 <rect x="16" y="108" width="88" height="5" fill="#ffffff"/>
-<rect x="16" y="113" width="88" height="6" rx="2" fill="#c01b12"/></g></svg>"""
+<rect x="16" y="113" width="88" height="6" rx="2" fill="#c01b12"/>"""
+
+# Los accesorios: el mismo oso con una cosa en las manos, uno por tipo de
+# día. Se dibujan DESPUÉS de la bufanda, así que quedan por delante.
+# El libro va DEBAJO de la bufanda y con su propio contorno: encima, a los
+# 58 píxeles que mide en la cabecera de una lección, se confundía con ella.
+_OSO_LIBRO = """<path d="M24 122h32v22H28a4 4 0 0 1-4-4z" fill="#e8eefb" stroke="#0b3f91" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M96 122H64v22h28a4 4 0 0 0 4-4z" fill="#e8eefb" stroke="#0b3f91" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M60 119l-6 4v22l6-2 6 2v-22z" fill="#0b3f91"/>
+<path d="M32 130h16M32 136h16M72 130h16M72 136h16" stroke="#7d9ed4" stroke-width="2.6" stroke-linecap="round"/>"""
+
+_OSO_LAPIZ = """<g transform="rotate(32 92 104)"><rect x="86" y="80" width="11" height="34" rx="2" fill="#f0b429"/>
+<rect x="86" y="80" width="11" height="7" rx="2" fill="#c01b12"/>
+<path d="M86 114h11l-5.5 9z" fill="#e2c3a4"/><path d="M89 120h5l-2.5 3z" fill="#2b2118"/></g>"""
+
+_OSOS = {"": "", "libro": _OSO_LIBRO, "lapiz": _OSO_LAPIZ}
+# Cada accesorio dice cuánto lienzo necesita: el libro cuelga por debajo de
+# la bufanda, así que pide uno más alto.
+_ALTO = {"": 124, "libro": 148, "lapiz": 124}
+
+# Un oso por tipo de día: con libro donde hay un texto largo que leer y con
+# lápiz donde hay que contestar. Los demás días no llevan ninguno: si lo
+# llevaran todos dejaría de significar nada.
+ACCESORIO = {"cultura": "libro", "prueba": "lapiz", "repaso": "lapiz",
+             "examen": "lapiz", "simulacro": "lapiz"}
+
+
+def oso(alt: str, accesorio: str = "") -> str:
+    return (f'<svg class="oso" viewBox="0 0 120 {_ALTO.get(accesorio, 124)}" role="img" aria-label="{alt}" '
+            'xmlns="http://www.w3.org/2000/svg"><g fill="none">'
+            f'{_OSO_CABEZA}{_OSO_BUFANDA}{_OSOS.get(accesorio, "")}</g></svg>')
+
+
 
 
 def cargar_config(ruta: pathlib.Path = WEB / "sitio.yaml") -> dict:
@@ -567,8 +605,11 @@ def construir_lecciones(cfg, textos, cal, destino, publicadas) -> list[str]:
                 nuevo = envolver_test(articulo, test, pista, textos, raiz, hay[pista], dias)
                 if nuevo != articulo:
                     articulo = nuevo + f'\n<script src="{raiz}/test.js" defer></script>'
+            accesorio = ACCESORIO.get(dia.tipo, "")
+            guia = (f'<figure class="guia">{oso(e(t["oso_alt"]), accesorio)}</figure>'
+                    if accesorio else "")
             cuerpo_html = f"""<p class="migas">{e(migas)}</p>
-<h1>{e(dia.tema(pista))}</h1>
+{guia}<h1>{e(dia.tema(pista))}</h1>
 <p class="ru-tema" lang="ru">{e(dia.ru)}</p>
 {aviso}
 <article>
@@ -718,7 +759,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
 </div>
-<figure class="mascota">{OSO.format(alt=e(t["oso_alt"]))}
+<figure class="mascota">{oso(e(t["oso_alt"]))}
 <figcaption>{e(t["mascota"])}</figcaption></figure>
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
