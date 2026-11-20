@@ -96,16 +96,22 @@
   font-size: 1.15rem;
 }
 
-.portada .glifo {
-  margin: 0 0 .75rem;
-  padding-bottom: .75rem;
+.portada .practica img {
+  display: block;
+  width: 100%;
+  height: clamp(6rem, 15vw, 10rem);
+  margin-bottom: .65rem;
+  padding-bottom: .65rem;
   border-bottom: 1px solid var(--azul);
-  font: 700 clamp(2.15rem, 5vw, 3.8rem)/1.14 Literata, Georgia, serif;
+  object-fit: contain;
 }
 
-.portada .lectura .glifo,
-.portada .pronunciacion .glifo {
-  color: var(--rojo);
+.portada .practica:nth-child(even) {
+  border-top: .2rem solid var(--rojo);
+}
+
+.portada .practica:nth-child(odd) {
+  border-top: .2rem solid var(--azul);
 }
 
 .portada .puerta {

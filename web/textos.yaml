@@ -5,10 +5,10 @@
 es:
   practicas:
     titulo: Explora el ruso
-    alfabeto: [Alfabeto, Aprende tus primeras cinco letras.]
+    escucha: [Escucha, Graba tu voz y escucha tu entonación.]
     lectura: [Lectura, Lee tus primeras palabras en voz alta.]
     escritura: [Escritura, Escribe tu nombre en cirílico.]
-    pronunciacion: [Pronunciación, Practica cómo suena la o sin acento.]
+    habla: [Conversación, Practica cómo presentarte en ruso.]
   idioma: Español
   lema: Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.
   descripcion: >-
@@ -159,10 +159,10 @@ es:
 en:
   practicas:
     titulo: Explore Russian
-    alfabeto: [Alphabet, Learn your first five letters.]
+    escucha: [Listening, Record yourself and listen to your intonation.]
     lectura: [Reading, Read your first words aloud.]
     escritura: [Writing, Write your name in Cyrillic.]
-    pronunciacion: [Pronunciation, Practise the sound of unstressed o.]
+    habla: [Speaking, Practise introducing yourself in Russian.]
   idioma: English
   lema: Russian from zero to B2, explained in English. Thirty minutes a day.
   descripcion: >-

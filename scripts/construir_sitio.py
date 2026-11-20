@@ -744,21 +744,21 @@ def _mapa_de_unidades(cal, pista, t, publicadas) -> str:
 
 
 _PRACTICAS = (
-    ("alfabeto", "Я", "a1/semana-01/dia-1", 3),
-    ("lectura", "А́", "a1/semana-01/dia-1", 4),
-    ("escritura", "И́мя", "a1/semana-01/dia-7", 4),
-    ("pronunciacion", "О", "a1/semana-01/dia-3", 3),
+    ("escucha", "a1/semana-01/dia-5", 5),
+    ("lectura", "a1/semana-01/dia-1", 4),
+    ("escritura", "a1/semana-01/dia-7", 4),
+    ("habla", "a1/semana-01/dia-4", 5),
 )
 
 
 def _accesos_de_practica(t, lecciones):
     disponibles = {dia.ruta for dia, _, _ in lecciones}
     tarjetas = []
-    for clave, letra, ruta, parte in _PRACTICAS:
+    for clave, ruta, parte in _PRACTICAS:
         if ruta in disponibles:
             titulo, descripcion = t["practicas"][clave]
-            tarjetas.append(f'<a class="practica {clave}" href="{ruta}.html#parte-{parte}">'
-                            f'<span class="glifo" lang="ru" aria-hidden="true">{e(letra)}</span>'
+            tarjetas.append(f'<a class="practica" href="{ruta}.html#parte-{parte}">'
+                            f'<img src="../practica-{clave}.png" alt="" loading="lazy" decoding="async">'
                             f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
     if not tarjetas:
         return ""
@@ -834,7 +834,8 @@ def construir_extras(cfg, destino, rutas) -> None:
     fuentes.mkdir(parents=True, exist_ok=True)
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
-    for recurso in ("portada.css", "misha.png"):
+    ilustraciones = tuple(f"practica-{clave}.png" for clave, _, _ in _PRACTICAS)
+    for recurso in ("portada.css", "misha.png", *ilustraciones):
         shutil.copy2(WEB / recurso, destino / recurso)
     escribir(destino / "progreso.js", PROGRESO_JS)
     escribir(destino / "test.js", TEST_JS)
