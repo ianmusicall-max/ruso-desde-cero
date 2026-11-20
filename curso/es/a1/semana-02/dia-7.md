@@ -98,7 +98,7 @@ se entienden solas:
 
 *Camila dice «Я есть Ками́ла» y Tom dice «Моё и́мя Том». Uno es el error típico de un hispanohablante y el otro, el de un angloparlante. ¿Cuál es el tuyo? ¿Cómo lo diría un ruso?*
 
-### В. Чита́йте по ро́лям.
+### В. Чита́йте по роля́м.
 
 *Lee el episodio en voz alta haciendo las tres voces, con las frases ya corregidas. Grábate y escucha: ¿suben tus preguntas donde tienen que subir?*
 

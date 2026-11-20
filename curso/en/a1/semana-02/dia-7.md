@@ -99,7 +99,7 @@ explain themselves:
 
 *Camila says "Я есть Ками́ла" and Tom says "Моё и́мя Том". One is the typical mistake of a Spanish speaker, the other that of an English speaker. Which one is yours? How would a Russian say it?*
 
-### В. Чита́йте по ро́лям.
+### В. Чита́йте по роля́м.
 
 *Read the episode aloud doing all three voices, with the lines corrected. Record yourself and listen: do your questions jump where they should?*
 

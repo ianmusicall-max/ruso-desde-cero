@@ -567,6 +567,136 @@ niveles:
         lexico: profesiones; tarjetas de visita; hablar de uno mismo; el ruso de clase
         fonetica: reducción de е y я átonas
         episodio: {ru: "Врач, по́вар и преподава́тель", es: "Médica, cocinera y profesor", en: "A doctor, a cook and a teacher", sinopsis: "Kira vuelve de la policlínica de noche. En la escalera, cada uno cuenta en qué trabaja: Camila es cocinera, Tom da clases de inglés. Misha anuncia que él es cosmonauta."}
+        dias:
+          - tipo: leccion
+            ru: Кем вы рабо́таете?
+            es: ¿En qué trabajas?
+            en: What do you do for a living?
+            foco: >-
+              Decir el oficio SIN verbo: Я врач. Кем вы рабо́таете? / Кем ты
+              рабо́таешь? se aprende como bloque: la forma de «кем» llega en el
+              A2, lo que hoy importa es que рабо́тать es el verbo de la unidad.
+              Primeras profesiones: врач, учи́тель, преподава́тель, по́вар,
+              инжене́р. Nada de artículo y nada de «ser»: ✗ Я есть врач.
+          - tipo: leccion
+            ru: Я рабо́таю, ты рабо́таешь
+            es: La conjugación en -е-
+            en: The -е- conjugation
+            foco: >-
+              рабо́тать entero: рабо́таю, рабо́таешь, рабо́тает, рабо́таем,
+              рабо́таете, рабо́тают. Se quita -ть y se pone la terminación; la -ю
+              y la -ют de los extremos. Otros verbos de la misma familia:
+              де́лать, чита́ть, слу́шать, отдыха́ть, гуля́ть. Что ты де́лаешь?
+          - tipo: leccion
+            ru: Е и Я без ударе́ния
+            es: La е y la я átonas suenan [i]
+            en: Unstressed е and я sound [i]
+            foco: >-
+              La segunda reducción del curso, después de la о de la unidad 1:
+              sin acento, la е y la я se cierran en [i]. секрета́рь
+              [si-kri-TARʹ], медсестра́ [mit-sis-TRA], перево́дчик
+              [pi-ri-VOT-chik]. Y el final átono de профе́ссия. Profesiones
+              nuevas para practicarlo: секрета́рь, медсестра́, перево́дчик,
+              продаве́ц, программи́ст, ме́неджер.
+          - tipo: leccion
+            ru: -е- и́ли -и-?
+            es: Las dos conjugaciones, cara a cara
+            en: The two conjugations, side by side
+            foco: >-
+              говори́ть, que ya se sabe entera desde la unidad 3, es la OTRA
+              familia: говорю́, говори́шь, говори́т. El contraste entre la -е- de
+              рабо́таешь y la -и- de говори́шь, y la regla práctica por el
+              infinitivo: -ить →
+              familia de la и; -ать / -ять → casi siempre familia de la е.
+              Verbos nuevos de la и: звони́ть, кури́ть, учи́ть, по́мнить, вари́ть.
+          - tipo: leccion
+            ru: Вот моя́ визи́тка
+            es: La tarjeta de visita
+            en: The business card
+            foco: >-
+              Dar los datos: и́мя, фами́лия y профе́ссия (las dos primeras ya se
+              saben), компа́ния, дире́ктор, а́дрес, но́мер телефо́на. «Вот моя́
+              визи́тка» va como bloque, igual que «мой го́род» en la unidad 4:
+              los posesivos llegan en la unidad 7. El correo y la dirección
+              completos, en la unidad 7.
+          - tipo: repaso
+            ru: 'Повторе́ние: профе́ссии'
+            es: 'Repaso: las profesiones'
+            en: 'Review: jobs'
+            foco: >-
+              Las dos conjugaciones, decir el oficio sin verbo, la е y la я
+              átonas y el léxico de profesiones. Mini-test de 15.
+          - tipo: cultura
+            ru: Рабо́та в Росси́и
+            es: El trabajo en Rusia
+            en: Work in Russia
+            foco: >-
+              Por qué «Кем вы рабо́таете?» sale tan pronto en una conversación
+              rusa y no se lee como indiscreción; профе́ссия frente a рабо́та y
+              специа́льность; la трудова́я кни́жка. Nada de cifras inventadas: lo
+              que no se sepa, [VERIFICAR].
+          - tipo: leccion
+            ru: Студе́нт и студе́нтка
+            es: Las profesiones en femenino
+            en: Jobs in the feminine
+            foco: >-
+              Muchas profesiones hacen el femenino en -ка (спортсме́н →
+              спортсме́нка, официа́нт → официа́нтка, пенсионе́р → пенсионе́рка) y
+              muchas otras NO cambian: она́ врач, она́ гид, она́ такси́ст. Cuál
+              es cuál se aprende con la palabra. Nuevas: спортсме́н, официа́нт,
+              пенсионе́р, гид, такси́ст, худо́жник.
+          - tipo: leccion
+            ru: Кла́ссно! Как интере́сно!
+            es: Reaccionar a lo que te cuentan
+            en: Reacting to what you're told
+            foco: >-
+              Una conversación rusa se sostiene con las reacciones: кла́ссно,
+              Как интере́сно!, Пра́вда?, Что ты! / Что вы!, Молоде́ц!, Серьёзно?
+              Callar mientras el otro habla se lee como desinterés. ИК-3 en
+              Пра́вда? y ИК-2 en Что ты!
+          - tipo: leccion
+            ru: Как э́то пи́шется?
+            es: El ruso de clase que faltaba
+            en: The classroom Russian that was missing
+            foco: >-
+              La unidad 3 dio Как по-ру́сски…?, Что зна́чит…?, Повтори́те y
+              Ме́дленнее. Faltan las de la memoria y la escritura: Как э́то
+              пи́шется?, Я по́мню / Я не по́мню, пра́вильно, непра́вильно, ещё
+              раз (repaso). Con по́мнить se practica la familia de la и.
+          - tipo: leccion
+            ru: Я ду́маю, что э́то интере́сно
+            es: Decir qué te parece
+            en: Saying what you think
+            foco: >-
+              Я ду́маю, что… + lo que uno opina de un oficio, con los adverbios
+              impersonales: Э́то тру́дно, легко́, ску́чно, ва́жно. Y по-мо́ему, que
+              se forma como по-ру́сски. En ruso no hay «que» de más: ✗ Я ду́маю
+              э́то тру́дно.
+          - tipo: leccion
+            ru: Приве́т! Я Ками́ла, я по́вар
+            es: Presentarse entero
+            en: Introducing yourself in full
+            foco: >-
+              Las cinco unidades en una sola presentación: nombre, de dónde,
+              qué lenguas, en qué trabaja y una reacción. Hoy no hay palabras
+              nuevas: hay un orden, como el día 5 de la semana 6.
+          - tipo: prueba
+            ru: 'Тест: кем вы рабо́таете?'
+            es: 'Prueba de la unidad 5: las profesiones'
+            en: 'Unit 5 test: jobs'
+            foco: >-
+              Las dos conjugaciones y cómo distinguirlas, el oficio sin verbo,
+              el femenino en -ка y las que no cambian, la е y la я átonas, las
+              reacciones y el ruso de clase.
+          - tipo: cultura
+            ru: Врач, по́вар и преподава́тель
+            es: 'Episodio 5: Врач, по́вар и преподава́тель'
+            en: 'Episode 5: Врач, по́вар и преподава́тель'
+            foco: >-
+              Kira vuelve de la policlínica de noche. En la escalera, cada uno
+              cuenta en qué trabaja: Camila es cocinera, Tom da clases de
+              inglés. Misha anuncia que él es cosmonauta. Solo con lo de las
+              unidades 1 a 5. Ver programa/historia.md.
 
       - numero: 6
         ru: Что у тебя́ есть?
