@@ -68,3 +68,8 @@ Una nota que vale oro para el Río de la Plata: quien dice «yo» y «calle» co
 | 26 | el acento del cognado español: ~~[af-ta-bús]~~ → **авто́бус** [af-tó-bus], ~~[tram-ví-a]~~ → **трамва́й** | la palabra se parece y la boca pone el acento español; con el acento cambian las vocales que se debilitan | A1 U2 | inferido |
 | 27 | leer letra por letra las palabras con trampa: ~~[si-gód-nia]~~ → **сего́дня** [si-vód-nia], ~~[sól-ntse]~~ → **со́лнце** [són-tse], ~~[ka-niéch-na]~~ → **коне́чно** | el español se lee casi siempre como se escribe | A1 U2, U8 | inferido |
 | 28 | los falsos amigos: **фами́лия** (apellido), **магази́н** (tienda), **аккура́тный** (ordenado), **лимона́д** (refresco con gas) | se parecen a una palabra española y quieren decir otra | A1 U2 | inferido |
+| 29 | «usted» en tercera persona: ~~Вы говори́т~~ → **Вы говори́те** | en español «usted habla» se conjuga como «él»; вы lleva siempre su forma en -те | A1 U3 | inferido |
+| 30 | la lengua como nombre: ~~Я говорю́ ру́сский~~ → **Я говорю́ по-ру́сски** | «hablo ruso» usa el nombre; el ruso habla «a la rusa», con по- | A1 U3 | inferido |
+| 31 | la nacionalidad como adjetivo: ~~Я испа́нский~~ → **Я испа́нец** / **испа́нка** | para una persona, el ruso usa el nombre; испа́нский es para las cosas | A1 U3 | inferido |
+| 32 | saludar con «buenas noches»: ~~Споко́йной но́чи!~~ al llegar → **До́брый ве́чер!** | el «buenas noches» español sirve para llegar y para irse | A1 U3 | inferido |
+| 33 | «¿cómo se dice…?» con verbo: ~~Как говори́т «llave» по-ру́сски?~~ → **Как по-ру́сски «llave»?** | el ruso pregunta sin verbo | A1 U3 | inferido |

@@ -52,3 +52,7 @@ como todo `programa/`; lo que lee el alumno está en inglés en la lección.
 | 24 | sonorizar el final: ~~[sad]~~ → **сад** [sat], ~~[khlyeb]~~ → **хлеб** [khlyep] | el inglés distingue *bad* y *bat*, y conserva la voz final | A1 U2, U4 | РЯС + inferido |
 | 25 | **наве́рное** como «surely»: es «probably»; lo seguro es **коне́чно** o **то́чно** | suena más seguro de lo que es | A1 U2 | inferido |
 | 26 | los falsos amigos: **фами́лия** (surname), **магази́н** (shop), **аккура́тный** (neat), y **лимона́д**, que es la *lemonade* británica | se parecen a una palabra inglesa y quieren decir otra | A1 U2 | inferido |
+| 27 | la lengua como nombre: ~~Я говорю́ ру́сский~~ → **Я говорю́ по-ру́сски** | *I speak Russian* usa el nombre; el ruso habla «a la rusa», con по- | A1 U3 | inferido |
+| 28 | la nacionalidad como adjetivo: ~~Я кана́дский~~ → **Я кана́дец** / **кана́дка** | *I'm Canadian* es un adjetivo; para una persona el ruso usa el nombre, y distingue hombre y mujer | A1 U3 | inferido |
+| 29 | el verbo sin cambiar: ~~Он говори́ть по-ру́сски~~ → **Он говори́т** | el inglés casi no conjuga (*speak / speaks*); el ruso tiene seis formas | A1 U3 | inferido |
+| 30 | «how do you say…?» calcado: ~~Как вы говори́те «key» по-ру́сски?~~ → **Как по-ру́сски «key»?** | el ruso pregunta sin «do», sin «you» y sin «say» | A1 U3 | inferido |

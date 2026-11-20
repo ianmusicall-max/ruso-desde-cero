@@ -54,7 +54,7 @@ las decisiones y su porqué.
    contenido se escribe para este curso. Ver `programa/plan.md`.
 10. **Nada de política ni de guerra** en la cultura ni en la historia.
 
-## Estado (2026-11-19)
+## Estado (2026-11-20)
 
 - Leídos los índices y la anatomía de lección de los siete libros, incluido
   **Tochka Ru A1** (subido por el usuario en tres partes al chat; **no está
@@ -79,8 +79,15 @@ las decisiones y su porqué.
   los préstamos y los falsos amigos, la prueba y el **episodio 2**. Probadas
   en Chromium la prueba y el mini-test: 15/15, 0/15, enlaces vivos y sin
   JavaScript en papel.
-- Siguiente: la unidad 3 (Отку́да вы?). Antes, detallar sus 14 días en el
-  calendario con las fichas de Tochka Ru A1 1.2 y de Русский язык сегодня.
+- **Escrita la unidad 3 entera en las dos pistas** (semanas 5 y 6):
+  saludar según la hora y de usted, los países con из como bloque, он /
+  она́ / они́, las nacionalidades en -ец / -ка, las lenguas con по-,
+  немно́го y чуть-чу́ть, говори́ть entero, ты o вы, el kit de supervivencia
+  (Как по-ру́сски…? Повтори́те…), la presentación entera, el repaso, el día
+  del patronímico y la анке́та (РнкД 1), la prueba y el **episodio 3**.
+  84 lecciones en total.
+- Siguiente: la unidad 4 (Где метро́?). Antes, detallar sus 14 días en el
+  calendario con la ficha de Tochka Ru A1 1.3.
 - **Las pruebas y los mini-tests se contestan pulsando** (`scripts/pruebas.py`
   + `test.js`): el lector saca preguntas y clave del propio Markdown y, ante
   cualquier duda, devuelve None y la página se queda en papel. Al terminar,
@@ -95,8 +102,11 @@ las decisiones y su porqué.
 - **El ritmo lo elige el alumno** (`programa/plan.md`): la lección es de 30
   minutos y una hora al día son dos lecciones. Con una hora, de cero a A2 en
   un año y a B2 en dos; «Ruso en un año» es ese plan.
-- Pendiente del usuario: **nombre y dominio** de la web, y crear el
-  repositorio de GitHub vacío (desde esta sesión no se puede).
+- Pendiente del usuario: **crear el repositorio de GitHub vacío**
+  `ruso-desde-cero` (público, sin README; desde esta sesión no se puede) y
+  activar Settings → Pages (rama `main`, carpeta `/docs`). Con eso la web
+  sale en `ianmusicall-max.github.io/ruso-desde-cero` y cada unidad se
+  publica al terminarla. **Nombre y dominio**, antes de pedir AdSense.
 - Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
 
 ## Cómo se escribe una lección (lo aprendido en la semana 1)
