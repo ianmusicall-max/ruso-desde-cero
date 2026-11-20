@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es" data-raiz="../../..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La е y la я sin acento · Ruso desde cero</title>
+<meta name="description" content="A1 · Semana 10 · La е y la я sin acento. Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.">
+<style>@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/literata-cyrillic-400.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/literata-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../../../fonts/literata-cyrillic-400i.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../../../fonts/literata-latin-400i.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Literata';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/literata-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/literata-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-cyrillic-400.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Blanco, azul y rojo: los tres colores de la bandera rusa. El azul es el
+   acento (enlaces, botones, citas) y el rojo queda para lo que avisa (el
+   bloque de contraste, los errores): así el rojo señala y no decora. Los
+   tonos son más oscuros que los de la bandera para que el texto se lea
+   sobre blanco. */
+:root{color-scheme:light;
+  --papel:#ffffff;--tinta:#111317;--tenue:#5d6470;--linea:#dbe1ea;--tarjeta:#f2f5fa;
+  --acento:#0b3f91;--acento-suave:#e8eefb;--aviso:#c01b12;--aviso-suave:#fdeceb;
+  --bien:#1f7a4d;--ancho:44rem}
+@media(prefers-color-scheme:dark){:root:not([data-tema="light"]){color-scheme:dark;
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}}
+:root[data-tema="dark"]{color-scheme:dark;
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);
+  font:400 17px/1.65 Literata,ui-serif,Georgia,serif;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+.envoltorio{max-width:var(--ancho);margin:0 auto;padding:0 18px}
+a{color:var(--acento)}
+h1,h2,h3,.sans,header.sitio,footer.sitio,.boton,.migas,summary{font-family:Onest,ui-sans-serif,system-ui,sans-serif}
+h1{font-size:1.9rem;line-height:1.2;margin:.4rem 0 .3rem;letter-spacing:-.01em}
+h2{font-size:1.3rem;line-height:1.3;margin:2.2rem 0 .7rem}
+h3{font-size:1.06rem;margin:1.6rem 0 .5rem}
+header.sitio{border-bottom:1px solid var(--linea)}
+header.sitio .envoltorio{max-width:60rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem;padding-block:.6rem;font-size:.9rem}
+header.sitio a{color:var(--tenue);text-decoration:none}
+header.sitio a:hover,header.sitio a[aria-current]{color:var(--acento)}
+header.sitio .marca{font-weight:700;color:var(--tinta);font-size:1rem;margin-right:auto}
+header.sitio nav{display:flex;gap:.9rem}
+header.sitio .idiomas a{font-weight:700}
+.tema{background:none;border:1px solid var(--linea);border-radius:99px;color:var(--tenue);cursor:pointer;
+  padding:.3rem .45rem;line-height:0;display:inline-flex;align-items:center}
+.tema:hover{color:var(--acento);border-color:var(--acento)}
+footer.sitio{border-top:1px solid var(--linea);margin-top:4rem;color:var(--tenue);font-size:.85rem}
+footer.sitio .envoltorio{padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem 1.2rem}
+footer.sitio a{color:var(--tenue)}
+main{padding-bottom:1rem}
+.migas{color:var(--tenue);font-size:.85rem;margin-top:1.6rem}
+.ru-tema{font-size:1.15rem;color:var(--tenue);margin:0 0 1rem}
+.borrador{background:var(--aviso-suave);border-left:4px solid var(--aviso);padding:.6rem .9rem;border-radius:6px;font-size:.92rem}
+blockquote{margin:1rem 0;padding:.75rem 1rem;background:var(--tarjeta);border-radius:10px;border-left:4px solid var(--acento)}
+blockquote p{margin:.35rem 0}
+blockquote ul{margin:.3rem 0;padding-left:1.2rem}
+.tabla{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--linea);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.85rem;color:var(--tenue);font-weight:700}
+h2.parte{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+h2.parte .num{display:inline-flex;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border-radius:50%;
+  background:var(--acento);color:var(--papel);font-size:.95rem;flex:none}
+h2.parte .franja{margin-left:auto;font-size:.8rem;font-weight:400;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:.05rem .55rem}
+aside.contraste{background:var(--aviso-suave);border-left:4px solid var(--aviso);border-radius:10px;padding:.2rem 1rem .4rem;margin:1.4rem 0}
+aside.contraste h3{color:var(--aviso);margin-top:.8rem}
+del{text-decoration-thickness:2px;text-decoration-color:var(--aviso);color:var(--tenue)}
+details.clave{margin-top:2.2rem;border:1px solid var(--linea);border-radius:10px;padding:.2rem 1rem}
+details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding:.6rem 0}
+.boton{display:inline-block;background:var(--acento);color:var(--papel);text-decoration:none;border:0;border-radius:99px;
+  padding:.6rem 1.15rem;font-size:.95rem;font-weight:700;cursor:pointer}
+.boton.secundario{background:var(--acento-suave);color:var(--acento)}
+.botones{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
+.final{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin:2.6rem 0 1rem;padding-top:1.2rem;border-top:1px solid var(--linea)}
+#marcar[aria-pressed="true"]{background:var(--bien)}
+.vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
+.nota{color:var(--tenue);font-size:.88rem}
+.test-vivo .pregunta{margin:0 0 1.2rem}
+.test-vivo .enunciado{margin:.2rem 0 .5rem;font-weight:600}
+.test-vivo .opciones{display:grid;gap:.4rem}
+.test-vivo .opcion{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:10px;padding:.6rem .85rem;cursor:pointer}
+.test-vivo .opcion:hover:not(:disabled){border-color:var(--acento)}
+.test-vivo .opcion:disabled{cursor:default}
+.test-vivo .opcion.bien{border-color:var(--bien);box-shadow:inset 5px 0 0 var(--bien)}
+.test-vivo .opcion.bien::after{content:" ✓";color:var(--bien);font-weight:700}
+.test-vivo .opcion.mal{border-color:var(--aviso);box-shadow:inset 5px 0 0 var(--aviso)}
+.test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
+.test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
+.test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
+/* El héroe es una tarjeta con el oso hablando desde un bocadillo. En el
+   móvil el oso va debajo y pequeño, para no empujar los botones fuera de la
+   primera pantalla; en escritorio, al lado del bocadillo. */
+.heroe{display:grid;gap:1rem;padding:1.4rem;margin:1.2rem 0 1.6rem;
+  background:var(--acento-suave);border-radius:22px;
+  grid-template-columns:1fr auto;align-items:center}
+.heroe h1{margin:.2rem 0 .3rem;font-size:2.1rem;line-height:1.1}
+.heroe .lema{margin:0 0 1rem;color:var(--tenue)}
+.burbuja{position:relative;background:var(--papel);border-radius:18px;padding:1.1rem 1.2rem;
+  min-width:0}
+/* La cola del bocadillo apunta al oso: a la derecha en escritorio y hacia
+   abajo en el móvil, que es donde está en cada caso. Se dibuja con un
+   borde, sin ninguna imagen. */
+.burbuja::after{content:"";position:absolute;top:50%;left:100%;margin-top:-10px;
+  border:10px solid transparent;border-left-color:var(--papel)}
+.saluda{margin:0 0 .5rem;display:inline-flex;flex-wrap:wrap;gap:.4rem;align-items:baseline;
+  background:var(--acento-suave);color:var(--acento);border-radius:99px;
+  padding:.28rem .75rem;font-size:.92rem;font-weight:700}
+.saluda .tr{color:var(--tenue);font-weight:400;font-size:.85rem}
+.mascota{margin:0;text-align:center;max-width:9.5rem}
+.mascota .oso{width:100%;height:auto;max-width:8.5rem}
+.mascota figcaption{font-size:.78rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+.heroe .nota{grid-column:1/-1;margin:0}
+/* Las tres ventajas, debajo y en fila: lo que se quiere saber antes de
+   pulsar nada. */
+.ventajas{grid-column:1/-1;list-style:none;display:grid;gap:.9rem;margin:.4rem 0 0;padding:0;
+  grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+  border-top:1px solid var(--linea);padding-top:1.1rem}
+.ventajas li{display:grid;grid-template-columns:auto 1fr;gap:.2rem .7rem;align-items:center}
+.ventajas .icono{grid-row:1/3;display:inline-flex;align-items:center;justify-content:center;
+  width:2.2rem;height:2.2rem;border-radius:10px;background:var(--papel);color:var(--acento)}
+.ventajas .icono svg{width:1.2rem;height:1.2rem}
+.ventajas strong{align-self:end;line-height:1.2}
+.ventajas span:not(.icono){color:var(--tenue);font-size:.86rem;line-height:1.3}
+@media(max-width:40rem){.heroe{grid-template-columns:1fr;padding:1.1rem}
+  .burbuja::after{top:100%;left:50%;margin:0 0 0 -10px;border-left-color:transparent;
+    border-top-color:var(--papel)}
+  .heroe h1{font-size:1.8rem}
+  .mascota{max-width:7rem;justify-self:center}.mascota figcaption{display:none}}
+/* El oso de la cabecera de la lección: pequeño, al lado del título, y solo
+   en los días que lo piden (cultura, prueba, repaso). Es decoración, así
+   que no se lleva ni un renglón de la lección. */
+.guia{float:right;margin:0 0 .4rem .8rem;width:3.6rem}
+.guia .oso{width:100%;height:auto;display:block}
+@media(max-width:28rem){.guia{width:2.9rem}}
+/* El buscador del índice. */
+.buscador{display:grid;gap:.35rem;margin:1.2rem 0}
+.buscador label{font-size:.9rem;color:var(--tenue)}
+.buscador input{font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:12px;padding:.6rem .85rem;width:100%}
+.buscador input:focus{outline:2px solid var(--acento);outline-offset:1px;border-color:var(--acento)}
+/* El mapa de unidades: tarjetas, no una lista de 365 filas. */
+.mapa{margin:2.2rem 0 1rem}
+.mapa h2{margin-bottom:.2rem}
+.mapa .rejilla{display:grid;gap:.7rem;margin-top:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(13rem,1fr))}
+.unidad-tarjeta{display:flex;flex-direction:column;gap:.25rem;padding:.8rem .9rem;
+  border:1px solid var(--linea);border-radius:12px;background:var(--tarjeta);
+  text-decoration:none;color:inherit}
+.unidad-tarjeta:hover{border-color:var(--acento)}
+.unidad-tarjeta .num{display:inline-flex;align-items:center;justify-content:center;
+  width:1.7rem;height:1.7rem;border-radius:99px;background:var(--acento);color:#fff;
+  font-size:.85rem;font-weight:700}
+.unidad-tarjeta strong{line-height:1.3}
+.unidad-tarjeta .ru{color:var(--tenue);font-size:.9rem}
+.unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
+.unidad-tarjeta.apagada{opacity:.55}
+.unidad-tarjeta.apagada .num{background:var(--tenue)}
+.lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
+.puertas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.6rem 0}
+.puerta{display:block;border:1px solid var(--linea);border-radius:14px;padding:1.1rem 1.2rem;text-decoration:none;color:var(--tinta);background:var(--tarjeta)}
+.puerta:hover{border-color:var(--acento)}
+.puerta strong{display:block;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:1.15rem;color:var(--acento);margin-bottom:.3rem}
+.nivel{margin-top:2.4rem}
+details.unidad{border:1px solid var(--linea);border-radius:10px;margin:.5rem 0;padding:.1rem .9rem}
+details.unidad summary{cursor:pointer;padding:.55rem 0;font-weight:700}
+details.unidad summary .ru{font-weight:400;color:var(--tenue);margin-left:.4rem}
+details.unidad ol{margin:.2rem 0 .8rem;padding-left:1.4rem}
+details.unidad li{margin:.15rem 0}
+li.pronto{color:var(--tenue)}
+li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
+.tipo{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:0 .45rem;margin-right:.3rem}
+</style>
+<script>try{var t=localStorage.getItem('rdc.tema');if(t)document.documentElement.setAttribute('data-tema',JSON.parse(t))}catch(e){}</script>
+</head>
+<body>
+<header class="sitio"><div class="envoltorio">
+<a class="marca" href="../../../es/index.html">Ruso desde cero</a><nav class="menu"><a href="../../../es/curso.html">Curso</a><a href="../../../es/sobre.html">Sobre el curso</a></nav><nav class="idiomas" aria-label="Language"><a lang="es" hreflang="es" href="../../../es/a1/semana-10/dia-4.html" aria-current=true>ES</a><a lang="en" hreflang="en" href="../../../en/a1/semana-10/dia-4.html">EN</a></nav>
+<button id="tema" class="tema" type="button" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+</div></header>
+<main class="envoltorio" data-leccion="es/a1/semana-10/dia-4" data-url="es/a1/semana-10/dia-4.html" data-titulo="La е y la я sin acento">
+<p class="migas">A1 · Unidad 5 · Semana 10 · Día 4 · Lección</p>
+<h1>La е y la я sin acento</h1>
+<p class="ru-tema" lang="ru">Бе́з уда́рения</p>
+<p class="borrador">Borrador: esta lección todavía no pasó la revisión final del ruso. Puede cambiar.</p>
+<article>
+<blockquote>
+<p><strong>Hoy.</strong> Recupera una regla de lectura y aplícala a palabras conocidas.</p>
+</blockquote>
+<h2 id="parte-1" class="parte"><span class="num">1</span><span class="nombre">Calentamiento</span><span class="franja">0–3 min</span></h2>
+<p>Di «yo también» y pregunta cómo se escribe una palabra que elijas.</p>
+<blockquote>
+<p>Я то́же. · Как э́то пи́шется?</p>
+</blockquote>
+<h2 id="parte-2" class="parte"><span class="num">2</span><span class="nombre">Fonética</span><span class="franja">3–8 min</span></h2>
+<p>Compara <strong>е</strong> con acento en <strong>це́нтре</strong> y sin acento antes de la sílaba fuerte en <strong>меня́</strong>. Primero marca el acento en el papel y luego lee.</p>
+<blockquote>
+<p>це́нтре · меня́ · тебя́</p>
+</blockquote>
+<h2 id="parte-3" class="parte"><span class="num">3</span><span class="nombre">Nuevo</span><span class="franja">8–18 min</span></h2>
+<p>Tras una consonante blanda, <strong>е</strong> y <strong>я</strong> inmediatamente antes de la sílaba tónica suelen sonar más cerca de una <strong>и</strong> breve. Busca esa posición en <strong>меня́</strong> y <strong>ряды́</strong>. La segunda palabra es solo un ejemplo de lectura: significa «filas». Conserva la letra original al escribir.</p>
+<blockquote>
+<p>Меня́ зову́т Том. · Преподава́тель. · Ряды́.</p>
+</blockquote>
+<aside class="contraste"><h3>⚠️ Contraste con el español</h3>
+<p>En español «me» conserva una <strong>e</strong> reconocible. Evita leer <strong>меня́</strong> con la misma vocal plena que en «mesa». La sílaba fuerte es <strong>ня́</strong>.</p>
+</aside>
+<h2 id="parte-4" class="parte"><span class="num">4</span><span class="nombre">Práctica</span><span class="franja">18–25 min</span></h2>
+<h3>А. Вы́берите отве́т.</h3>
+<p><em>Elige la respuesta.</em></p>
+<ol>
+<li>¿Dónde está el acento? → а) Сле́ва: ме. · б) Спра́ва: ня́.</li>
+<li>¿Qué е está acentuada? → а) це́нтре · б) меня́</li>
+<li>¿Qué я está antes del acento? → а) меня́ · б) ряды́</li>
+<li>¿Qué escribes al comienzo de тебя́? → а) те · б) ти</li>
+</ol>
+<h3>Б. Скажи́те.</h3>
+<p>Lee el modelo, tápalo y dilo de memoria.</p>
+<blockquote>
+<p>Меня́ зову́т Том. · Я преподава́тель. · Я рабо́таю в це́нтре.</p>
+</blockquote>
+<h2 id="parte-5" class="parte"><span class="num">5</span><span class="nombre">Tu turno</span><span class="franja">25–29 min</span></h2>
+<p>Lee las seis palabras de la tabla. Graba dos vueltas: una pausada y otra natural. Comprueba si en ambas se distingue la sílaba fuerte y si mantienes la escritura original.</p>
+<h2 id="parte-6" class="parte"><span class="num">6</span><span class="nombre">Cierre</span><span class="franja">29–30 min</span></h2>
+<p><strong>Ya puedo decir:</strong> Меня́ зову́т Том. · Я преподава́тель. · Я рабо́таю в це́нтре.</p>
+<h2>Vocabulario del día</h2>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Ruso</th>
+<th>Español</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>меня́</td>
+<td>me</td>
+<td>Меня́ зову́т Том.</td>
+</tr>
+<tr>
+<td>тебя́</td>
+<td>te</td>
+<td>Как тебя́ зову́т?</td>
+</tr>
+<tr>
+<td>це́нтре</td>
+<td>centro, en la expresión</td>
+<td>Я рабо́таю в це́нтре.</td>
+</tr>
+<tr>
+<td>ряды́</td>
+<td>filas</td>
+<td>Там ряды́.</td>
+</tr>
+<tr>
+<td>преподава́тель</td>
+<td>profesor</td>
+<td>Я преподава́тель.</td>
+</tr>
+<tr>
+<td>инжене́р</td>
+<td>ingeniero</td>
+<td>Я инжене́р.</td>
+</tr>
+</tbody>
+</table></div>
+<details class="clave" id="respuestas"><summary>Ver las respuestas</summary>
+
+<p><strong>А.</strong> 1 б · 2 а · 3 б · 4 а.</p>
+<p><strong>Б.</strong> Меня́ зову́т Том. · Я преподава́тель. · Я рабо́таю в це́нтре.</p></details>
+
+</article>
+<div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
+ data-marcar="Marcar como hecha" data-hecha="Hecha ✓">Marcar como hecha</button>
+<span class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</span></div>
+<nav class="vecinos"><a href="../../../es/a1/semana-10/dia-3.html">← Anterior</a><a href="../../../es/curso.html">Índice del curso</a><a href="../../../es/a1/semana-10/dia-5.html">Siguiente →</a></nav>
+</main>
+<footer class="sitio"><div class="envoltorio"><span>Curso gratuito de ruso para hispanohablantes.</span><a href="../../../es/sobre.html">Sobre el curso</a><a href="../../../es/contacto.html">Contacto</a><a href="../../../es/privacidad.html">Privacidad</a></div></footer>
+<script src="../../../progreso.js" defer></script>
+</body>
+</html>
