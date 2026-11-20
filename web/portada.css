@@ -126,3 +126,13 @@
     scroll-behavior: auto;
   }
 }
+
+.portada .mascota {
+  max-width: clamp(9rem, 23vw, 15rem);
+}
+
+.portada .mascota img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

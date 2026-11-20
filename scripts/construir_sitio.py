@@ -783,7 +783,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
 </div>
-<figure class="mascota">{oso(e(t["oso_alt"]))}
+<figure class="mascota"><img src="../misha.png" alt="{e(t["oso_alt"])}" width="454" height="480">
 <figcaption>{e(t["mascota"])}</figcaption></figure>
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
@@ -834,7 +834,8 @@ def construir_extras(cfg, destino, rutas) -> None:
     fuentes.mkdir(parents=True, exist_ok=True)
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
-    shutil.copy2(WEB / "portada.css", destino / "portada.css")
+    for recurso in ("portada.css", "misha.png"):
+        shutil.copy2(WEB / recurso, destino / recurso)
     escribir(destino / "progreso.js", PROGRESO_JS)
     escribir(destino / "test.js", TEST_JS)
     dominio = (cfg.get("dominio") or "").rstrip("/")
