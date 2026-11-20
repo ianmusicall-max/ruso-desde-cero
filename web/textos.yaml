@@ -48,8 +48,8 @@ es:
   progreso: >-
     Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.
   pie: Curso gratuito de ruso para hispanohablantes.
-  oso_saluda: "Приве́т! Я Ми́ша."
-  oso_saluda_t: "¡Hola! Soy Misha."
+  oso_saluda: "Приве́т! Я Ди́ма."
+  oso_saluda_t: "¡Hola! Soy Dima."
   ventajas:
     - t: Sin registro
       d: Ni cuenta ni correo. Abres y estudias.
@@ -59,8 +59,8 @@ es:
       d: Cuatro niveles, 1.460 lecciones.
   buscar: Buscar una lección
   buscar_nada: No hay ninguna lección con esas palabras.
-  oso_alt: Ми́ша, el oso del curso
-  mascota: Ми́ша, tu compañero de estudio.
+  oso_alt: Ди́ма, el oso del curso
+  mascota: Ди́ма, tu compañero de estudio.
   mapa: El camino
   mapa_nota: >-
     Cuatro niveles, uno por año a lección diaria. A dos lecciones al día, la
@@ -202,8 +202,8 @@ en:
   progreso: >-
     Your progress is saved only in this browser: no sign-up, no accounts.
   pie: A free Russian course for English speakers.
-  oso_saluda: "Приве́т! Я Ми́ша."
-  oso_saluda_t: "Hi! I'm Misha."
+  oso_saluda: "Приве́т! Я Ди́ма."
+  oso_saluda_t: "Hi! I'm Dima."
   ventajas:
     - t: No sign-up
       d: No account, no email. Open it and study.
@@ -213,8 +213,8 @@ en:
       d: Four levels, 1,460 lessons.
   buscar: Search for a lesson
   buscar_nada: No lesson matches those words.
-  oso_alt: Ми́ша, the course bear
-  mascota: Ми́ша, your study companion.
+  oso_alt: Ди́ма, the course bear
+  mascota: Ди́ма, your study companion.
   mapa: The road
   mapa_nota: >-
     Four levels, one a year at a lesson a day. At two lessons a day, half the

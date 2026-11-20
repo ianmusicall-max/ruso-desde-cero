@@ -757,7 +757,7 @@ def _accesos_de_practica(t, lecciones):
     for clave, ruta, parte in _PRACTICAS:
         if ruta in disponibles:
             titulo, descripcion = t["practicas"][clave]
-            version = "misha-sin-libro" if clave == "escucha" else "misha"
+            version = "dima-sin-libro" if clave == "escucha" else "dima"
             tarjetas.append(f'<a class="practica" href="{ruta}.html#parte-{parte}">'
                             f'<img src="../practica-{clave}.png?v={version}" alt="" loading="lazy" decoding="async">'
                             f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
@@ -784,7 +784,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
 </div>
-<figure class="mascota"><img src="../misha.png" alt="{e(t["oso_alt"])}" width="426" height="640">
+<figure class="mascota"><img src="../dima.png" alt="{e(t["oso_alt"])}" width="426" height="640">
 <figcaption>{e(t["mascota"])}</figcaption></figure>
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
@@ -836,7 +836,7 @@ def construir_extras(cfg, destino, rutas) -> None:
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
     ilustraciones = tuple(f"practica-{clave}.png" for clave, _, _ in _PRACTICAS)
-    for recurso in ("portada.css", "misha.png", *ilustraciones):
+    for recurso in ("portada.css", "dima.png", *ilustraciones):
         shutil.copy2(WEB / recurso, destino / recurso)
     escribir(destino / "progreso.js", PROGRESO_JS)
     escribir(destino / "test.js", TEST_JS)

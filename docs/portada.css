@@ -201,12 +201,12 @@
   }
 
   .portada .mascota {
-    animation: llegada-misha 450ms ease-out both;
+    animation: llegada-dima 450ms ease-out both;
   }
 
   .portada .mascota img {
     transform-origin: 52% 78%;
-    animation: lectura-misha 1.5s 500ms ease-in-out;
+    animation: lectura-dima 1.5s 500ms ease-in-out;
     transition: transform 420ms ease-in-out;
   }
 }
@@ -221,7 +221,7 @@
   }
 }
 
-@keyframes llegada-misha {
+@keyframes llegada-dima {
   from {
     opacity: .8;
     transform: translateY(.75rem);
@@ -232,7 +232,7 @@
   }
 }
 
-@keyframes lectura-misha {
+@keyframes lectura-dima {
   0%, 100% {
     transform: none;
   }
