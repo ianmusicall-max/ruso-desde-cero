@@ -86,8 +86,15 @@ las decisiones y su porqué.
   (Как по-ру́сски…? Повтори́те…), la presentación entera, el repaso, el día
   del patronímico y la анке́та (РнкД 1), la prueba y el **episodio 3**.
   84 lecciones en total.
-- Siguiente: la unidad 4 (Где метро́?). Antes, detallar sus 14 días en el
-  calendario con la ficha de Tochka Ru A1 1.3.
+- **Escrita la unidad 4 entera en las dos pistas** (semanas 7 y 8): dónde
+  está algo y cómo se pregunta, он / она́ / оно́ por la terminación, почему́
+  y потому́ что con las dos trampas del género (la -ь y los hombres en -а),
+  спра́ва / сле́ва / в це́нтре, los números hasta 20, el repaso, el metro de
+  Moscú, меня́ / тебя́ / его́ / её con зову́т, la conversación entera en la
+  calle, la asimilación dentro de la palabra, mi ciudad, la prueba y el
+  **episodio 4**. **112 lecciones en total.**
+- Siguiente: la unidad 5. Antes, detallar sus 14 días en el calendario con
+  la ficha de Tochka Ru A1.
 - **Las pruebas y los mini-tests se contestan pulsando** (`scripts/pruebas.py`
   + `test.js`): el lector saca preguntas y clave del propio Markdown y, ante
   cualquier duda, devuelve None y la página se queda en papel. Al terminar,
@@ -104,12 +111,15 @@ las decisiones y su porqué.
   un año y a B2 en dos; «Ruso en un año» es ese plan.
 - **El repositorio existe y el curso está subido**:
   `ianmusicall-max/ruso-desde-cero`, público, rama **`main`** (2026-11-20).
-  El sitio se publica desde `docs/`, con `.nojekyll`, en
-  `ianmusicall-max.github.io/ruso-desde-cero`. Al cerrar cada unidad:
-  `construir_sitio.py`, pruebas, commit y `git push`.
-- Pendiente del usuario: activar **Settings → Pages** (Deploy from a branch,
-  `main`, carpeta `/docs`) si aún no lo hizo, y elegir **nombre y dominio**
-  propios antes de pedir AdSense.
+  Al cerrar cada unidad: `construir_sitio.py`, pruebas, commit y `git push`.
+- **GitHub Pages está APAGADO a propósito** (2026-11-20) — ver más abajo.
+  Mientras tanto el sitio se mira en local (`python3 -m http.server 8000
+  --directory docs`) o en el artifact privado que se republica al cerrar
+  cada unidad.
+- Pendiente del usuario: **nombre y dominio** propios. Con el dominio se
+  vuelve a encender Pages, se pone en Custom domain y se escribe en
+  `web/sitio.yaml`, que ya genera el `CNAME` y el sitemap solos. Eso es
+  además lo que hace falta para pedir AdSense.
 - Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
 
 ## Cómo se escribe una lección (lo aprendido en la semana 1)
@@ -180,3 +190,66 @@ unidad donde encajan. El detalle está en `programa/calendario.yaml`.
 
 Lo que Tochka Ru A1 no trae y se completa con «Русский язык сегодня A1+»: la
 **fonética** de cada lección y la **entonación** (ИК-1 a ИК-5).
+
+## Por qué el curso salía en saludymetabolismo.com (2026-11-20)
+
+El profesor lo encontró abriendo
+`https://saludymetabolismo.com/ruso-desde-cero/es/index.html`: el curso de
+ruso estaba publicado dentro del dominio del proyecto de salud.
+
+**No lo copió nadie, y el sitio servido era byte a byte el nuestro** (25.263
+bytes, con el `dima.png` subido diez minutos antes). Es cómo funciona
+GitHub Pages: el repositorio de usuario (`ianmusicall-max.github.io`) tiene
+el dominio `saludymetabolismo.com`, y GitHub cuelga de ese dominio **todos
+los demás Pages de la cuenta**, en `/<nombre-del-repo>/`. No lo decide
+ningún archivo de este repositorio y le pasaría igual a cualquier proyecto
+de la misma cuenta.
+
+**Se apagó Pages** (Settings → Pages → Branch: None), que es lo único que lo
+separa sin dominio propio. Lo hizo el profesor: **la API de Pages está
+bloqueada por el proxy de este contenedor** (403) y no hay ninguna
+herramienta de GitHub que la alcance, así que desde aquí no se puede ni leer
+el estado ni cambiarlo. Comprobado después: la dirección da 404.
+
+Importa más de lo que parece porque `saludymetabolismo.com` está en revisión
+de AdSense, y un curso de ruso a medias colgando del mismo dominio es justo
+lo que enturbia una revisión.
+
+**Mientras no haya dominio**, el sitio se mira de dos maneras: en local con
+`python3 -m http.server 8000 --directory docs`, o en un **artifact privado**
+de claude.ai con los 137 archivos de `docs/` dentro (se republica al cerrar
+cada unidad; es una foto, no se actualiza sola).
+
+## Lo aprendido en la unidad 4
+
+- **Las semanas 1 a 4 enseñan el alfabeto con palabras fáciles, y esas
+  palabras vuelven.** метро́, музе́й, футбо́л, авто́бус, слова́рь, день y
+  дверь se habían enseñado como práctica de lectura y las unidades 3 y 4 las
+  presentaban otra vez como nuevas en su «Vocabulario del día»: diez entradas
+  repetidas, y вокза́л dos veces en la misma semana. **Se queda la PRIMERA
+  enseñanza** y la lección de después las usa como material conocido, que
+  además es mejor didáctica: el día del género ya no presenta слова́рь, день
+  y дверь como nuevas sino que dice «estas seis ya las conoces; lo que no
+  sabías es su género». Antes de escribir una tabla de vocabulario hay que
+  volcar lo ya enseñado y comprobar entrada por entrada.
+- **Un día de integración no tiene palabras nuevas, y la tabla tiene que
+  decirlo.** El día 5 de la semana 6 reúne las seis frases de la unidad 3 y
+  su apartado 3 ya avisaba («hoy no hay palabras nuevas: hay un orden»); la
+  tabla no, y parecía que las enseñaba. Ahora lleva la nota. Es la única
+  repetición que queda a propósito.
+- **El episodio puede salir con cero palabras nuevas** si se comprueba antes:
+  el 4 usa solo unidades 1 a 4, журна́л incluido, que ya estaba en la semana
+  2. Se comprueba volcando el léxico, no de memoria.
+- **El error de cada personaje sale de un contraste ya enseñado.** Camila
+  dice **Вот он, река́** porque «el río» es masculino en español (error nº 9
+  de la lista negra, el de esta unidad) y se corrige sola con la regla del
+  día 8; Tom pregunta si en un **магази́н** hay **журна́лы**, que es el falso
+  amigo del día 12.
+- **Un token con los dos alfabetos se cuela también en la prosa inglesa**:
+  «both unstressed **а**'s weaken», con а cirílica y apóstrofo inglés. El
+  barrido hay que hacerlo en las dos pistas.
+- **La letra correcta de la prueba se reparte con un script** (4/4/4/3, sin
+  tres iguales seguidas y sin escalera, con semilla del nombre del fichero);
+  a mano siempre sale un patrón. Y se comprueba **contestándola en Chromium
+  por el TEXTO de la opción**, no por su letra: por la letra sería repetir la
+  cuenta del generador. 15/15 y 0/15 en las dos pistas.
