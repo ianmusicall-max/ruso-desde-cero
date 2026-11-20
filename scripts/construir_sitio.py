@@ -601,6 +601,9 @@ def construir_extras(cfg, destino, rutas) -> None:
         if not host.endswith("github.io"):
             escribir(destino / "CNAME", host + "\n")
     escribir(destino / "robots.txt", robots)
+    # GitHub Pages pasa el sitio por Jekyll, que se salta las carpetas que
+    # empiezan por «_» y puede romper rutas: este archivo lo apaga.
+    escribir(destino / ".nojekyll", "")
     cliente = (cfg.get("adsense") or {}).get("cliente", "")
     if cliente:
         pub = cliente.replace("ca-", "")
