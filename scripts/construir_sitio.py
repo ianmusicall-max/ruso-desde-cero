@@ -167,6 +167,32 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
+/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
+   escritorio, al lado. Es decoración, así que nunca empuja los botones
+   fuera de la primera pantalla. */
+.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
+.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
+.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
+.mascota .oso{width:100%;height:auto;max-width:8rem}
+.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El mapa de unidades: tarjetas, no una lista de 365 filas. */
+.mapa{margin:2.2rem 0 1rem}
+.mapa h2{margin-bottom:.2rem}
+.mapa .rejilla{display:grid;gap:.7rem;margin-top:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(13rem,1fr))}
+.unidad-tarjeta{display:flex;flex-direction:column;gap:.25rem;padding:.8rem .9rem;
+  border:1px solid var(--linea);border-radius:12px;background:var(--tarjeta);
+  text-decoration:none;color:inherit}
+.unidad-tarjeta:hover{border-color:var(--acento)}
+.unidad-tarjeta .num{display:inline-flex;align-items:center;justify-content:center;
+  width:1.7rem;height:1.7rem;border-radius:99px;background:var(--acento);color:#fff;
+  font-size:.85rem;font-weight:700}
+.unidad-tarjeta strong{line-height:1.3}
+.unidad-tarjeta .ru{color:var(--tenue);font-size:.9rem}
+.unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
+.unidad-tarjeta.apagada{opacity:.55}
+.unidad-tarjeta.apagada .num{background:var(--tenue)}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -274,6 +300,25 @@ document.querySelectorAll('.test-vivo').forEach(function(caja){
 });
 })();
 """
+
+
+# El oso es la mascota del curso, y es un dibujo propio: un SVG escrito a
+# mano, sin ninguna imagen de fuera. Va en línea, así que no cuesta una
+# petición más, se ve nítido a cualquier tamaño y cambia de color con el
+# tema. La bufanda lleva los tres colores de la bandera.
+OSO = """<svg class="oso" viewBox="0 0 120 124" role="img" aria-label="{alt}" xmlns="http://www.w3.org/2000/svg">
+<g fill="none"><circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" cy="30" r="7.5" fill="#c99a72"/>
+<circle cx="92" cy="30" r="15" fill="#7b4f2d"/><circle cx="92" cy="30" r="7.5" fill="#c99a72"/>
+<circle cx="60" cy="60" r="37" fill="#8b5a33"/>
+<ellipse cx="60" cy="74" rx="21" ry="16" fill="#e2c3a4"/>
+<circle cx="46" cy="54" r="4.6" fill="#2b2118"/><circle cx="74" cy="54" r="4.6" fill="#2b2118"/>
+<circle cx="47.6" cy="52.4" r="1.5" fill="#ffffff"/><circle cx="75.6" cy="52.4" r="1.5" fill="#ffffff"/>
+<ellipse cx="60" cy="68" rx="6.5" ry="4.8" fill="#2b2118"/>
+<path d="M60 73v4.5" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M60 77.5q-6.5 6-12 0M60 77.5q6.5 6 12 0" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+<path d="M24 97h72a8 8 0 0 1 8 8v3H16v-3a8 8 0 0 1 8-8z" fill="#0b3f91"/>
+<rect x="16" y="108" width="88" height="5" fill="#ffffff"/>
+<rect x="16" y="113" width="88" height="6" rx="2" fill="#c01b12"/></g></svg>"""
 
 
 def cargar_config(ruta: pathlib.Path = WEB / "sitio.yaml") -> dict:
@@ -533,6 +578,43 @@ def construir_indice(cfg, textos, cal, destino, publicadas) -> list[str]:
     return rutas
 
 
+def _mapa_de_unidades(cal, pista, t, publicadas) -> str:
+    """Las tarjetas de las unidades del A1: el camino, antes de la lista.
+
+    Los enlaces van sin prefijo: la ruta de una lección ya es relativa a la
+    carpeta de la pista, igual que la del botón de empezar.
+
+    Es lo que el índice no da de un vistazo: cuántas unidades hay, de qué va
+    cada una y cuáles están escritas. Una unidad sin lecciones sale apagada y
+    no promete una puerta que no abre.
+    """
+    hay = {d.ruta for d, _, _ in publicadas}
+    nivel = plan.niveles(cal)[0]
+    dias = plan.dias_del_nivel(nivel)
+    tarjetas = []
+    for u in nivel["unidades"]:
+        propios = [d for d in dias if d.unidad == u["numero"]]
+        if not propios:
+            continue
+        listas = [d for d in propios if d.ruta in hay]
+        cuerpo = (f'<span class="num">{u["numero"]}</span>'
+                  f'<strong>{e(u[pista])}</strong>'
+                  f'<span class="ru" lang="ru">{e(u["ru"])}</span>')
+        if listas:
+            pie = (f'<span class="pie">{len(listas)} {e(t["etiquetas"]["de"])} '
+                   f'{len(propios)} · {e(t["lecciones_listas"])}</span>')
+            tarjetas.append(f'<a class="unidad-tarjeta" href="{listas[0].ruta}.html">'
+                            f'{cuerpo}{pie}</a>')
+        else:
+            pie = f'<span class="pie">{e(t["etiquetas"]["proximamente"])}</span>'
+            tarjetas.append(f'<div class="unidad-tarjeta apagada">{cuerpo}{pie}</div>')
+    return (f'<section class="mapa"><h2>{e(t["mapa"])} '
+            f'<span class="tipo">{e(nivel[pista])} · {len(nivel["unidades"])} '
+            f'{e(t["unidades_de"])}</span></h2>'
+            f'<p class="nota">{e(t["mapa_nota"])}</p>'
+            f'<div class="rejilla">{"".join(tarjetas)}</div></section>')
+
+
 def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
     rutas = []
     for pista in PISTAS:
@@ -543,12 +625,17 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
                    if lista else "")
         continuar = (f'<a id="continuar" class="boton secundario" data-pista="{pista}" href="#" hidden>'
                      f'{e(t["botones"]["continuar"])}: <span class="donde"></span></a>')
-        cuerpo = f"""<section class="heroe">
+        cuerpo = f"""<section class="heroe con-oso">
+<div class="texto">
 <h1>{e(sitio)}</h1>
 <p class="lema">{e(t["lema"])}</p>
 <div class="botones">{empezar}{continuar}</div>
 <p class="nota">{e(t["progreso"])}</p>
+</div>
+<figure class="mascota">{OSO.format(alt=e(t["oso_alt"]))}
+<figcaption>{e(t["mascota"])}</figcaption></figure>
 </section>
+{_mapa_de_unidades(cal, pista, t, lista)}
 {md(t["portada"].replace("{lecciones}", str(len(lista))))}"""
         ruta = f"{pista}/index.html"
         escribir(destino / ruta, pagina(cfg, textos, pista, sitio, cuerpo, ruta=ruta, raiz="..",

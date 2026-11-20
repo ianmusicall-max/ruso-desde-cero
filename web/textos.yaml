@@ -42,6 +42,16 @@ es:
   progreso: >-
     Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.
   pie: Curso gratuito de ruso para hispanohablantes.
+  oso_alt: Топты́гин, el oso del curso
+  mascota: >-
+    Te acompaña Топты́гин, que es como los cuentos rusos llaman al oso.
+  mapa: El camino
+  mapa_nota: >-
+    Cuatro niveles, uno por año a lección diaria. A dos lecciones al día, la
+    mitad de tiempo.
+  unidades_de: unidades
+  lecciones_listas: lecciones escritas
+  ver_unidad: Ver las lecciones
   portada: |
     ## Qué es
 
@@ -170,6 +180,17 @@ en:
   progreso: >-
     Your progress is saved only in this browser: no sign-up, no accounts.
   pie: A free Russian course for English speakers.
+  oso_alt: Топты́гин, the course bear
+  mascota: >-
+    Топты́гин keeps you company: that's what Russian folk tales call the
+    bear.
+  mapa: The road
+  mapa_nota: >-
+    Four levels, one a year at a lesson a day. At two lessons a day, half the
+    time.
+  unidades_de: units
+  lecciones_listas: lessons written
+  ver_unidad: See the lessons
   portada: |
     ## What it is
 

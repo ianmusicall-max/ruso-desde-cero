@@ -95,6 +95,32 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
+/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
+   escritorio, al lado. Es decoración, así que nunca empuja los botones
+   fuera de la primera pantalla. */
+.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
+.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
+.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
+.mascota .oso{width:100%;height:auto;max-width:8rem}
+.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El mapa de unidades: tarjetas, no una lista de 365 filas. */
+.mapa{margin:2.2rem 0 1rem}
+.mapa h2{margin-bottom:.2rem}
+.mapa .rejilla{display:grid;gap:.7rem;margin-top:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(13rem,1fr))}
+.unidad-tarjeta{display:flex;flex-direction:column;gap:.25rem;padding:.8rem .9rem;
+  border:1px solid var(--linea);border-radius:12px;background:var(--tarjeta);
+  text-decoration:none;color:inherit}
+.unidad-tarjeta:hover{border-color:var(--acento)}
+.unidad-tarjeta .num{display:inline-flex;align-items:center;justify-content:center;
+  width:1.7rem;height:1.7rem;border-radius:99px;background:var(--acento);color:#fff;
+  font-size:.85rem;font-weight:700}
+.unidad-tarjeta strong{line-height:1.3}
+.unidad-tarjeta .ru{color:var(--tenue);font-size:.9rem}
+.unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
+.unidad-tarjeta.apagada{opacity:.55}
+.unidad-tarjeta.apagada .num{background:var(--tenue)}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -116,7 +142,7 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 </head>
 <body>
 <header class="sitio"><div class="envoltorio">
-<a class="marca" href="../../../es/index.html">Ruso desde cero</a><nav class="menu"><a href="../../../es/curso.html">Curso</a><a href="../../../es/sobre.html">Sobre el curso</a></nav><nav class="idiomas" aria-label="Language"><a lang="es" hreflang="es" href="../../../es/a1/semana-08/dia-2.html" aria-current=true>ES</a><a lang="en" hreflang="en" href="../../../en/index.html">EN</a></nav>
+<a class="marca" href="../../../es/index.html">Ruso desde cero</a><nav class="menu"><a href="../../../es/curso.html">Curso</a><a href="../../../es/sobre.html">Sobre el curso</a></nav><nav class="idiomas" aria-label="Language"><a lang="es" hreflang="es" href="../../../es/a1/semana-08/dia-2.html" aria-current=true>ES</a><a lang="en" hreflang="en" href="../../../en/a1/semana-08/dia-2.html">EN</a></nav>
 <button id="tema" class="tema" type="button" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
 </div></header>
 <main class="envoltorio" data-leccion="es/a1/semana-08/dia-2" data-url="es/a1/semana-08/dia-2.html" data-titulo="A mí, a ti, a él, a ella">
@@ -343,7 +369,7 @@ la unidad 7.)</p>
 <div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
  data-marcar="Marcar como hecha" data-hecha="Hecha ✓">Marcar como hecha</button>
 <span class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</span></div>
-<nav class="vecinos"><a href="../../../es/a1/semana-08/dia-1.html">← Anterior</a><a href="../../../es/curso.html">Índice del curso</a><span></span></nav>
+<nav class="vecinos"><a href="../../../es/a1/semana-08/dia-1.html">← Anterior</a><a href="../../../es/curso.html">Índice del curso</a><a href="../../../es/a1/semana-08/dia-3.html">Siguiente →</a></nav>
 </main>
 <footer class="sitio"><div class="envoltorio"><span>Curso gratuito de ruso para hispanohablantes.</span><a href="../../../es/sobre.html">Sobre el curso</a><a href="../../../es/contacto.html">Contacto</a><a href="../../../es/privacidad.html">Privacidad</a></div></footer>
 <script src="../../../progreso.js" defer></script>

@@ -95,6 +95,32 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
+/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
+   escritorio, al lado. Es decoración, así que nunca empuja los botones
+   fuera de la primera pantalla. */
+.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
+.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
+.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
+.mascota .oso{width:100%;height:auto;max-width:8rem}
+.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El mapa de unidades: tarjetas, no una lista de 365 filas. */
+.mapa{margin:2.2rem 0 1rem}
+.mapa h2{margin-bottom:.2rem}
+.mapa .rejilla{display:grid;gap:.7rem;margin-top:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(13rem,1fr))}
+.unidad-tarjeta{display:flex;flex-direction:column;gap:.25rem;padding:.8rem .9rem;
+  border:1px solid var(--linea);border-radius:12px;background:var(--tarjeta);
+  text-decoration:none;color:inherit}
+.unidad-tarjeta:hover{border-color:var(--acento)}
+.unidad-tarjeta .num{display:inline-flex;align-items:center;justify-content:center;
+  width:1.7rem;height:1.7rem;border-radius:99px;background:var(--acento);color:#fff;
+  font-size:.85rem;font-weight:700}
+.unidad-tarjeta strong{line-height:1.3}
+.unidad-tarjeta .ru{color:var(--tenue);font-size:.9rem}
+.unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
+.unidad-tarjeta.apagada{opacity:.55}
+.unidad-tarjeta.apagada .num{background:var(--tenue)}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -399,7 +425,7 @@ beat at the front, or do they break in two?</p>
 <div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
  data-marcar="Mark as done" data-hecha="Done ✓">Mark as done</button>
 <span class="nota">Your progress is saved only in this browser: no sign-up, no accounts.</span></div>
-<nav class="vecinos"><a href="../../../en/a1/semana-07/dia-7.html">← Previous</a><a href="../../../en/course.html">Course index</a><span></span></nav>
+<nav class="vecinos"><a href="../../../en/a1/semana-07/dia-7.html">← Previous</a><a href="../../../en/course.html">Course index</a><a href="../../../en/a1/semana-08/dia-2.html">Next →</a></nav>
 </main>
 <footer class="sitio"><div class="envoltorio"><span>A free Russian course for English speakers.</span><a href="../../../en/about.html">About</a><a href="../../../en/contact.html">Contact</a><a href="../../../en/privacy.html">Privacy</a></div></footer>
 <script src="../../../progreso.js" defer></script>

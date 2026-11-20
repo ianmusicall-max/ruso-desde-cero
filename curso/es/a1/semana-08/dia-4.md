@@ -1,0 +1,147 @@
+---
+nivel: a1
+semana: 8
+dia: 4
+tipo: leccion
+unidad: 4
+tema: "La consonante que cambia dentro de la palabra"
+revisado: false
+---
+
+> **Hoy** entiendes por qué **авто́бус** suena [af-tó-bus] y **вокза́л**, [vag-zál]: dentro de la palabra, las consonantes se contagian. Al terminar podrás:
+>
+> - leer bien cualquier grupo de dos consonantes;
+> - saber cuál de las dos manda;
+> - nombrar seis palabras que ya decías mal.
+
+## 1. Calentamiento (0–3 min)
+
+La conversación de ayer, entera y de memoria:
+
+> — Извини́те, пожа́луйста! Где здесь банк? — Вот он, спра́ва. — Поня́тно, спаси́бо!
+
+## 2. Fonética (3–8 min)
+
+En la unidad 2 aprendiste que **al final de la palabra** la consonante
+sonora se apaga: **хлеб** [jliep]. Hoy, lo que pasa **dentro**.
+
+**Manda la segunda.** Cuando dos consonantes van juntas, la primera se
+acomoda a la segunda:
+
+| Si la segunda es… | La primera… | Ejemplo |
+|---|---|---|
+| sorda (п, т, к, с, ш, ф, ч, ц) | se apaga | авто́бус [af-tó-bus] |
+| sonora (б, д, г, з, ж) | se sonoriza | вокза́л [vag-zál] |
+
+**Слу́шайте и повторя́йте.**
+*Escucha y repite, y fíjate en la letra escrita y en el sonido:*
+
+> авто́бус [af-tó-bus] · ло́жка [lósh-ka] · ска́зка [skás-ka]
+> вокза́л [vag-zál] · футбо́л [fud-ból] · сде́лать [zdié-lat']
+
+## 3. Nuevo (8–18 min)
+
+Las palabras de hoy, con su trampa marcada:
+
+| Palabra | Se lee | Significa |
+|---|---|---|
+| авто́бус | af-**TO**-bus | autobús |
+| ло́жка | **LOSH**-ka | cuchara |
+| ска́зка | **SKAS**-ka | cuento |
+| вокза́л | vag-**ZAL** | estación de tren |
+| футбо́л | fud-**BOL** | fútbol |
+| ло́дка | **LOT**-ka | barca |
+
+Todas se escriben con una letra y se dicen con otra, y **la ortografía no
+miente**: escribe **ло́жка** con ж porque en otras formas de la palabra la ж
+vuelve a sonar. El ruso escribe la palabra entera y deja que el contagio
+pase al hablar.
+
+> — Где авто́бус?
+> *¿Dónde está el autobús?*
+> — Авто́бус? Вот он, спра́ва. А вокза́л далеко́.
+> *¿El autobús? Ahí está, a la derecha. La estación está lejos.*
+
+**Una excepción cómoda:** delante de **в** no pasa nada. **Два** sigue
+sonando [dva] y **свой**, [svoi]: la в no contagia.
+
+### ⚠️ Contraste con el español
+
+**El español hace lo mismo y no te has dado cuenta.** Di «desde» en voz alta:
+esa s suena [z], porque la d que viene detrás es sonora. Y en «los dos» pasa
+igual. O sea que ya sabes hacerlo; lo que hay que aprender es **dónde** pasa
+en ruso.
+
+| Palabra | ✗ Letra por letra | ✓ Se dice |
+|---|---|---|
+| авто́бус | ~~[av-tó-bus]~~ | [af-tó-bus] |
+| вокза́л | ~~[vak-sál]~~ | [vag-zál] |
+| футбо́л | ~~[fut-ból]~~ | [fud-ból] |
+
+**Y ojo con «fútbol» y футбо́л**, que además cambian de acento: en español
+manda la primera sílaba y en ruso, la segunda.
+
+## 4. Práctica (18–25 min)
+
+### А. Чита́йте.
+
+*Lee en voz alta, con el contagio.*
+
+> авто́бус · ло́жка · ска́зка · вокза́л · футбо́л · ло́дка · сде́лать
+
+### Б. Глухо́й и́ли зво́нкий?
+
+*¿La consonante en negrita se apaga o se sonoriza?*
+
+1. а**в**то́бус
+2. во**к**за́л
+3. ло́**ж**ка
+4. фу**т**бо́л
+5. ска́**з**ка
+
+### В. Как говори́м?
+
+*Elige la pronunciación correcta.*
+
+1. ло́дка → а) [lód-ka] · б) [lót-ka]
+2. вокза́л → а) [vak-zál] · б) [vag-zál]
+3. ло́жка → а) [lósh-ka] · б) [lózh-ka]
+4. авто́бус → а) [af-tó-bus] · б) [av-tó-bus]
+
+## 5. Tu turno (25–29 min)
+
+**Caza las trampas.** Coge diez palabras rusas que ya sepas y busca en ellas
+dos consonantes seguidas. Marca con un círculo la segunda —la que manda— y
+di la palabra en voz alta:
+
+> ло́жка · где · вокза́л · ска́зка · футбо́л
+
+Después léelas grabándote. Escucha: ¿**вокза́л** te sale con [g], o se te
+queda en [k] como se escribe?
+
+## 6. Cierre (29–30 min)
+
+> **Ya puedo decir:**
+> авто́бус, ло́жка, ска́зка, вокза́л, футбо́л, ло́дка
+>
+> **Ya sé:** dentro de la palabra manda la segunda consonante: delante de una sorda, la primera se apaga; delante de una sonora, se sonoriza. Y delante de **в** no pasa nada.
+
+Mañana: mi ciudad.
+
+## Vocabulario del día
+
+| Ruso | Español | Ejemplo |
+|---|---|---|
+| авто́бус | autobús | Вот авто́бус. |
+| ло́жка | cuchara | Ло́жка, пожа́луйста. |
+| ска́зка | cuento | Э́то ска́зка. |
+| вокза́л | estación de tren | Где вокза́л? |
+| футбо́л | fútbol | Там футбо́л! |
+| ло́дка | barca | Вот ло́дка. |
+
+## Respuestas
+
+**Б.** 1 se apaga: [f] · 2 se sonoriza: [g] · 3 se apaga: [sh] · 4 se
+sonoriza: [d] · 5 se apaga: [s]
+
+**В.** 1 б · 2 б · 3 а · 4 а

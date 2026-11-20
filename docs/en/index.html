@@ -95,6 +95,32 @@ details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding
 .test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
 .test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
 .test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
+/* El héroe con el oso: en el móvil, el oso debajo del texto y pequeño; en
+   escritorio, al lado. Es decoración, así que nunca empuja los botones
+   fuera de la primera pantalla. */
+.heroe.con-oso{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
+.heroe.con-oso .texto{flex:1 1 18rem;min-width:0}
+.mascota{margin:0;flex:0 0 auto;text-align:center;max-width:9rem}
+.mascota .oso{width:100%;height:auto;max-width:8rem}
+.mascota figcaption{font-size:.8rem;color:var(--tenue);margin-top:.3rem;line-height:1.35}
+@media(max-width:34rem){.mascota{max-width:6.5rem}.mascota figcaption{display:none}}
+/* El mapa de unidades: tarjetas, no una lista de 365 filas. */
+.mapa{margin:2.2rem 0 1rem}
+.mapa h2{margin-bottom:.2rem}
+.mapa .rejilla{display:grid;gap:.7rem;margin-top:1rem;
+  grid-template-columns:repeat(auto-fill,minmax(13rem,1fr))}
+.unidad-tarjeta{display:flex;flex-direction:column;gap:.25rem;padding:.8rem .9rem;
+  border:1px solid var(--linea);border-radius:12px;background:var(--tarjeta);
+  text-decoration:none;color:inherit}
+.unidad-tarjeta:hover{border-color:var(--acento)}
+.unidad-tarjeta .num{display:inline-flex;align-items:center;justify-content:center;
+  width:1.7rem;height:1.7rem;border-radius:99px;background:var(--acento);color:#fff;
+  font-size:.85rem;font-weight:700}
+.unidad-tarjeta strong{line-height:1.3}
+.unidad-tarjeta .ru{color:var(--tenue);font-size:.9rem}
+.unidad-tarjeta .pie{margin-top:auto;padding-top:.4rem;color:var(--tenue);font-size:.8rem}
+.unidad-tarjeta.apagada{opacity:.55}
+.unidad-tarjeta.apagada .num{background:var(--tenue)}
 .heroe{padding:2.2rem 0 .6rem}
 .heroe h1{font-size:2.2rem}
 .lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
@@ -120,12 +146,29 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <button id="tema" class="tema" type="button" aria-label="Switch between light and dark" title="Switch between light and dark"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
 </div></header>
 <main class="envoltorio">
-<section class="heroe">
+<section class="heroe con-oso">
+<div class="texto">
 <h1>Russian from Zero</h1>
 <p class="lema">Russian from zero to B2, explained in English. Thirty minutes a day.</p>
 <div class="botones"><a class="boton" href="a1/semana-01/dia-1.html">Start with day 1</a><a id="continuar" class="boton secundario" data-pista="en" href="#" hidden>Pick up where I left off: <span class="donde"></span></a></div>
 <p class="nota">Your progress is saved only in this browser: no sign-up, no accounts.</p>
+</div>
+<figure class="mascota"><svg class="oso" viewBox="0 0 120 124" role="img" aria-label="Топты́гин, the course bear" xmlns="http://www.w3.org/2000/svg">
+<g fill="none"><circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" cy="30" r="7.5" fill="#c99a72"/>
+<circle cx="92" cy="30" r="15" fill="#7b4f2d"/><circle cx="92" cy="30" r="7.5" fill="#c99a72"/>
+<circle cx="60" cy="60" r="37" fill="#8b5a33"/>
+<ellipse cx="60" cy="74" rx="21" ry="16" fill="#e2c3a4"/>
+<circle cx="46" cy="54" r="4.6" fill="#2b2118"/><circle cx="74" cy="54" r="4.6" fill="#2b2118"/>
+<circle cx="47.6" cy="52.4" r="1.5" fill="#ffffff"/><circle cx="75.6" cy="52.4" r="1.5" fill="#ffffff"/>
+<ellipse cx="60" cy="68" rx="6.5" ry="4.8" fill="#2b2118"/>
+<path d="M60 73v4.5" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M60 77.5q-6.5 6-12 0M60 77.5q6.5 6 12 0" stroke="#2b2118" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+<path d="M24 97h72a8 8 0 0 1 8 8v3H16v-3a8 8 0 0 1 8-8z" fill="#0b3f91"/>
+<rect x="16" y="108" width="88" height="5" fill="#ffffff"/>
+<rect x="16" y="113" width="88" height="6" rx="2" fill="#c01b12"/></g></svg>
+<figcaption>Топты́гин keeps you company: that&#x27;s what Russian folk tales call the bear.</figcaption></figure>
 </section>
+<section class="mapa"><h2>The road <span class="tipo">Level A1 — beginner · 24 units</span></h2><p class="nota">Four levels, one a year at a lesson a day. At two lessons a day, half the time.</p><div class="rejilla"><a class="unidad-tarjeta" href="a1/semana-01/dia-1.html"><span class="num">1</span><strong>Hi! What&#x27;s your name?</strong><span class="ru" lang="ru">Приве́т! Как тебя́ зову́т?</span><span class="pie">14 of 14 · lessons written</span></a><a class="unidad-tarjeta" href="a1/semana-03/dia-1.html"><span class="num">2</span><strong>Reading Russian</strong><span class="ru" lang="ru">Чита́ем по-ру́сски</span><span class="pie">14 of 14 · lessons written</span></a><a class="unidad-tarjeta" href="a1/semana-05/dia-1.html"><span class="num">3</span><strong>Where are you from?</strong><span class="ru" lang="ru">Отку́да вы?</span><span class="pie">14 of 14 · lessons written</span></a><a class="unidad-tarjeta" href="a1/semana-07/dia-1.html"><span class="num">4</span><strong>Where&#x27;s the metro?</strong><span class="ru" lang="ru">Где метро́?</span><span class="pie">10 of 14 · lessons written</span></a><div class="unidad-tarjeta apagada"><span class="num">5</span><strong>What do you do?</strong><span class="ru" lang="ru">Кем вы рабо́таете?</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">6</span><strong>What have you got?</strong><span class="ru" lang="ru">Что у тебя́ есть?</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">7</span><strong>My family</strong><span class="ru" lang="ru">Моя́ семья́</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">8</span><strong>What do you like?</strong><span class="ru" lang="ru">Что ты лю́бишь?</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">9</span><strong>Free time</strong><span class="ru" lang="ru">Свобо́дное вре́мя</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">10</span><strong>My home</strong><span class="ru" lang="ru">Мой дом</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">11</span><strong>Where things are</strong><span class="ru" lang="ru">Где что стои́т</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">12</span><strong>At work</strong><span class="ru" lang="ru">На рабо́те</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">13</span><strong>What&#x27;s it like?</strong><span class="ru" lang="ru">Како́й он?</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">14</span><strong>Breakfast</strong><span class="ru" lang="ru">За́втрак</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">15</span><strong>At the restaurant</strong><span class="ru" lang="ru">В рестора́не</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">16</span><strong>Clothes</strong><span class="ru" lang="ru">Оде́жда</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">17</span><strong>Shopping</strong><span class="ru" lang="ru">Поку́пки</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">18</span><strong>My day</strong><span class="ru" lang="ru">Мой день</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">19</span><strong>The week</strong><span class="ru" lang="ru">Неде́ля</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">20</span><strong>Getting around</strong><span class="ru" lang="ru">Тра́нспорт</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">21</span><strong>Weather and plans</strong><span class="ru" lang="ru">Пого́да и пла́ны</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">22</span><strong>Holidays</strong><span class="ru" lang="ru">Пра́здники</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">23</span><strong>Happy birthday!</strong><span class="ru" lang="ru">С днём рожде́ния!</span><span class="pie">coming soon</span></div><div class="unidad-tarjeta apagada"><span class="num">24</span><strong>Putting it all together</strong><span class="ru" lang="ru">Всё вме́сте</span><span class="pie">coming soon</span></div></div></section>
 <h2>What it is</h2>
 <p>A complete, free Russian course that goes <strong>from the alphabet to B2</strong>:
 four levels of 365 lessons, one a day, <strong>thirty minutes</strong> each. At one
@@ -146,7 +189,7 @@ can't guess it. The answers sit folded under each exercise.</p>
 model to listen to and your part to say out loud.</p>
 <h2>Where it stands</h2>
 <p>The course is being written and published as it grows: there are
-<strong>50</strong> lessons available today. The ones marked as drafts
+<strong>52</strong> lessons available today. The ones marked as drafts
 haven't had their final review yet.</p>
 </main>
 <footer class="sitio"><div class="envoltorio"><span>A free Russian course for English speakers.</span><a href="../en/about.html">About</a><a href="../en/contact.html">Contact</a><a href="../en/privacy.html">Privacy</a></div></footer>
