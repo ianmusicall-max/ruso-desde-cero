@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="es" data-raiz="../../..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Los números del 11 al 20, y las cuentas · Ruso desde cero</title>
+<meta name="description" content="A1 · Semana 8 · Los números del 11 al 20, y las cuentas. Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.">
+<style>@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/literata-cyrillic-400.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/literata-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../../../fonts/literata-cyrillic-400i.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:italic;font-weight:400;font-display:swap;src:url(../../../fonts/literata-latin-400i.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Literata';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/literata-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Literata';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/literata-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-cyrillic-400.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Blanco, azul y rojo: los tres colores de la bandera rusa. El azul es el
+   acento (enlaces, botones, citas) y el rojo queda para lo que avisa (el
+   bloque de contraste, los errores): así el rojo señala y no decora. Los
+   tonos son más oscuros que los de la bandera para que el texto se lea
+   sobre blanco. */
+:root{color-scheme:light;
+  --papel:#ffffff;--tinta:#111317;--tenue:#5d6470;--linea:#dbe1ea;--tarjeta:#f2f5fa;
+  --acento:#0b3f91;--acento-suave:#e8eefb;--aviso:#c01b12;--aviso-suave:#fdeceb;
+  --bien:#1f7a4d;--ancho:44rem}
+@media(prefers-color-scheme:dark){:root:not([data-tema="light"]){color-scheme:dark;
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}}
+:root[data-tema="dark"]{color-scheme:dark;
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);
+  font:400 17px/1.65 Literata,ui-serif,Georgia,serif;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+.envoltorio{max-width:var(--ancho);margin:0 auto;padding:0 18px}
+a{color:var(--acento)}
+h1,h2,h3,.sans,header.sitio,footer.sitio,.boton,.migas,summary{font-family:Onest,ui-sans-serif,system-ui,sans-serif}
+h1{font-size:1.9rem;line-height:1.2;margin:.4rem 0 .3rem;letter-spacing:-.01em}
+h2{font-size:1.3rem;line-height:1.3;margin:2.2rem 0 .7rem}
+h3{font-size:1.06rem;margin:1.6rem 0 .5rem}
+header.sitio{border-bottom:1px solid var(--linea)}
+header.sitio .envoltorio{max-width:60rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem;padding-block:.6rem;font-size:.9rem}
+header.sitio a{color:var(--tenue);text-decoration:none}
+header.sitio a:hover,header.sitio a[aria-current]{color:var(--acento)}
+header.sitio .marca{font-weight:700;color:var(--tinta);font-size:1rem;margin-right:auto}
+header.sitio nav{display:flex;gap:.9rem}
+header.sitio .idiomas a{font-weight:700}
+.tema{background:none;border:1px solid var(--linea);border-radius:99px;color:var(--tenue);cursor:pointer;
+  padding:.3rem .45rem;line-height:0;display:inline-flex;align-items:center}
+.tema:hover{color:var(--acento);border-color:var(--acento)}
+footer.sitio{border-top:1px solid var(--linea);margin-top:4rem;color:var(--tenue);font-size:.85rem}
+footer.sitio .envoltorio{padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.5rem 1.2rem}
+footer.sitio a{color:var(--tenue)}
+main{padding-bottom:1rem}
+.migas{color:var(--tenue);font-size:.85rem;margin-top:1.6rem}
+.ru-tema{font-size:1.15rem;color:var(--tenue);margin:0 0 1rem}
+.borrador{background:var(--aviso-suave);border-left:4px solid var(--aviso);padding:.6rem .9rem;border-radius:6px;font-size:.92rem}
+blockquote{margin:1rem 0;padding:.75rem 1rem;background:var(--tarjeta);border-radius:10px;border-left:4px solid var(--acento)}
+blockquote p{margin:.35rem 0}
+blockquote ul{margin:.3rem 0;padding-left:1.2rem}
+.tabla{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border-bottom:1px solid var(--linea);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.85rem;color:var(--tenue);font-weight:700}
+h2.parte{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+h2.parte .num{display:inline-flex;align-items:center;justify-content:center;width:1.8rem;height:1.8rem;border-radius:50%;
+  background:var(--acento);color:var(--papel);font-size:.95rem;flex:none}
+h2.parte .franja{margin-left:auto;font-size:.8rem;font-weight:400;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:.05rem .55rem}
+aside.contraste{background:var(--aviso-suave);border-left:4px solid var(--aviso);border-radius:10px;padding:.2rem 1rem .4rem;margin:1.4rem 0}
+aside.contraste h3{color:var(--aviso);margin-top:.8rem}
+del{text-decoration-thickness:2px;text-decoration-color:var(--aviso);color:var(--tenue)}
+details.clave{margin-top:2.2rem;border:1px solid var(--linea);border-radius:10px;padding:.2rem 1rem}
+details.clave summary{cursor:pointer;font-weight:700;color:var(--acento);padding:.6rem 0}
+.boton{display:inline-block;background:var(--acento);color:var(--papel);text-decoration:none;border:0;border-radius:99px;
+  padding:.6rem 1.15rem;font-size:.95rem;font-weight:700;cursor:pointer}
+.boton.secundario{background:var(--acento-suave);color:var(--acento)}
+.botones{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.2rem 0}
+.final{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin:2.6rem 0 1rem;padding-top:1.2rem;border-top:1px solid var(--linea)}
+#marcar[aria-pressed="true"]{background:var(--bien)}
+.vecinos{display:flex;justify-content:space-between;gap:1rem;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.9rem}
+.nota{color:var(--tenue);font-size:.88rem}
+.test-vivo .pregunta{margin:0 0 1.2rem}
+.test-vivo .enunciado{margin:.2rem 0 .5rem;font-weight:600}
+.test-vivo .opciones{display:grid;gap:.4rem}
+.test-vivo .opcion{display:block;width:100%;text-align:left;font:inherit;color:inherit;background:var(--tarjeta);
+  border:1px solid var(--linea);border-radius:10px;padding:.6rem .85rem;cursor:pointer}
+.test-vivo .opcion:hover:not(:disabled){border-color:var(--acento)}
+.test-vivo .opcion:disabled{cursor:default}
+.test-vivo .opcion.bien{border-color:var(--bien);box-shadow:inset 5px 0 0 var(--bien)}
+.test-vivo .opcion.bien::after{content:" ✓";color:var(--bien);font-weight:700}
+.test-vivo .opcion.mal{border-color:var(--aviso);box-shadow:inset 5px 0 0 var(--aviso)}
+.test-vivo .opcion.mal::after{content:" ✗";color:var(--aviso);font-weight:700}
+.test-vivo .resultado{border:1px solid var(--linea);border-radius:12px;padding:1rem 1.1rem;background:var(--acento-suave)}
+.test-vivo .nota-final{font-size:1.2rem;font-weight:700;margin:.2rem 0 .6rem}
+.heroe{padding:2.2rem 0 .6rem}
+.heroe h1{font-size:2.2rem}
+.lema{font-size:1.15rem;color:var(--tenue);margin:.2rem 0 0}
+.puertas{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.6rem 0}
+.puerta{display:block;border:1px solid var(--linea);border-radius:14px;padding:1.1rem 1.2rem;text-decoration:none;color:var(--tinta);background:var(--tarjeta)}
+.puerta:hover{border-color:var(--acento)}
+.puerta strong{display:block;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:1.15rem;color:var(--acento);margin-bottom:.3rem}
+.nivel{margin-top:2.4rem}
+details.unidad{border:1px solid var(--linea);border-radius:10px;margin:.5rem 0;padding:.1rem .9rem}
+details.unidad summary{cursor:pointer;padding:.55rem 0;font-weight:700}
+details.unidad summary .ru{font-weight:400;color:var(--tenue);margin-left:.4rem}
+details.unidad ol{margin:.2rem 0 .8rem;padding-left:1.4rem}
+details.unidad li{margin:.15rem 0}
+li.pronto{color:var(--tenue)}
+li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
+.tipo{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:0 .45rem;margin-right:.3rem}
+</style>
+<script>try{var t=localStorage.getItem('rdc.tema');if(t)document.documentElement.setAttribute('data-tema',JSON.parse(t))}catch(e){}</script>
+</head>
+<body>
+<header class="sitio"><div class="envoltorio">
+<a class="marca" href="../../../es/index.html">Ruso desde cero</a><nav class="menu"><a href="../../../es/curso.html">Curso</a><a href="../../../es/sobre.html">Sobre el curso</a></nav><nav class="idiomas" aria-label="Language"><a lang="es" hreflang="es" href="../../../es/a1/semana-08/dia-1.html" aria-current=true>ES</a><a lang="en" hreflang="en" href="../../../en/a1/semana-08/dia-1.html">EN</a></nav>
+<button id="tema" class="tema" type="button" aria-label="Cambiar entre claro y oscuro" title="Cambiar entre claro y oscuro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+</div></header>
+<main class="envoltorio" data-leccion="es/a1/semana-08/dia-1" data-url="es/a1/semana-08/dia-1.html" data-titulo="Los números del 11 al 20, y las cuentas">
+<p class="migas">A1 · Unidad 4 · Semana 8 · Día 1 · Lección</p>
+<h1>Los números del 11 al 20, y las cuentas</h1>
+<p class="ru-tema" lang="ru">Оди́ннадцать, двена́дцать…</p>
+<p class="borrador">Borrador: esta lección todavía no pasó la revisión final del ruso. Puede cambiar.</p>
+<article>
+<blockquote>
+<p><strong>Hoy</strong> terminas de contar hasta veinte y aprendes a decir una cuenta en voz alta: <strong>Ско́лько бу́дет два плюс три?</strong> Al terminar podrás:</p>
+<ul>
+<li>decir los números del 11 al 20;</li>
+<li>sumar y restar en ruso;</li>
+<li>leer sin tropezarte las palabras largas que acaban en <code>-надцать</code>.</li>
+</ul>
+</blockquote>
+<h2 id="parte-1" class="parte"><span class="num">1</span><span class="nombre">Calentamiento</span><span class="franja">0–3 min</span></h2>
+<p>Cuenta del uno al diez en voz alta, y después al revés:</p>
+<blockquote>
+<p>оди́н, два, три, четы́ре, пять, шесть, семь, во́семь, де́вять, де́сять</p>
+</blockquote>
+<h2 id="parte-2" class="parte"><span class="num">2</span><span class="nombre">Fonética</span><span class="franja">3–8 min</span></h2>
+<p><strong>Todos los números de hoy acaban en <code>-надцать</code></strong>, y el golpe va en la parte
+de delante, nunca en el final. El final se dice rápido y flojo: [-na-tsat'].</p>
+<blockquote>
+<p>оди́ннадцать [a-dí-na-tsat'] · двена́дцать [dvi-ná-tsat'] · пятна́дцать [pit-ná-tsat']</p>
+</blockquote>
+<p>Fíjate en que la <code>дц</code> suena [ts], una sola consonante: no se dice
+<del>[-nad-tsat]</del>.</p>
+<p><strong>Слу́шайте и повторя́йте.</strong>
+<em>Escucha y repite, marcando el golpe con la mano:</em></p>
+<blockquote>
+<p>оди́ннадцать — двена́дцать — трина́дцать — четы́рнадцать — пятна́дцать<br>
+шестна́дцать — семна́дцать — восемна́дцать — девятна́дцать — два́дцать</p>
+</blockquote>
+<h2 id="parte-3" class="parte"><span class="num">3</span><span class="nombre">Nuevo</span><span class="franja">8–18 min</span></h2>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Número</th>
+<th>Ruso</th>
+<th>Se lee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>оди́ннадцать</td>
+<td>a-<strong>DI</strong>-na-tsat'</td>
+</tr>
+<tr>
+<td>12</td>
+<td>двена́дцать</td>
+<td>dvi-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>13</td>
+<td>трина́дцать</td>
+<td>tri-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>14</td>
+<td>четы́рнадцать</td>
+<td>chi-<strong>TYR</strong>-na-tsat'</td>
+</tr>
+<tr>
+<td>15</td>
+<td>пятна́дцать</td>
+<td>pit-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>16</td>
+<td>шестна́дцать</td>
+<td>shys-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>17</td>
+<td>семна́дцать</td>
+<td>sim-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>18</td>
+<td>восемна́дцать</td>
+<td>va-sim-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>19</td>
+<td>девятна́дцать</td>
+<td>di-vit-<strong>NA</strong>-tsat'</td>
+</tr>
+<tr>
+<td>20</td>
+<td>два́дцать</td>
+<td><strong>DVA</strong>-tsat'</td>
+</tr>
+</tbody>
+</table></div>
+<p>Se ven largos y son fáciles: <strong>el número del 1 al 9 más la misma cola</strong>.
+<strong>Оди́н</strong> → <strong>оди́ннадцать</strong>, <strong>три</strong> → <strong>трина́дцать</strong>, <strong>во́семь</strong> →
+<strong>восемна́дцать</strong>. Dos se recortan un poco: <strong>четы́ре</strong> →
+<strong>четы́рнадцать</strong> y <strong>шесть</strong> → <strong>шестна́дцать</strong>, donde la т no se dice.</p>
+<p>Y las cuentas:</p>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Palabra</th>
+<th>Se lee</th>
+<th>Significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>плюс</td>
+<td>plius</td>
+<td>más</td>
+</tr>
+<tr>
+<td>ми́нус</td>
+<td><strong>MI</strong>-nus</td>
+<td>menos</td>
+</tr>
+<tr>
+<td>равно́</td>
+<td>rav-<strong>NO</strong></td>
+<td>igual a</td>
+</tr>
+<tr>
+<td>Ско́лько бу́дет…?</td>
+<td><strong>SKOL'</strong>-ka <strong>BU</strong>-dit</td>
+<td>¿Cuánto es…?</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>— Ско́лько бу́дет де́сять плюс пять?<br>
+<em>¿Cuánto es diez más cinco?</em><br>
+— Пятна́дцать.<br>
+<em>Quince.</em><br>
+— А два́дцать ми́нус три?<br>
+<em>¿Y veinte menos tres?</em><br>
+— Семна́дцать.<br>
+<em>Diecisiete.</em></p>
+</blockquote>
+<aside class="contraste"><h3>⚠️ Contraste con el español</h3>
+<p><strong>El español recorta y el ruso pega.</strong> «Once» y «doce» no se parecen a «uno»
+y «dos»; en ruso sí, y eso juega a tu favor: si sabes los diez primeros,
+tienes los veinte.</p>
+<p>Lo que cuesta es decirlos <strong>sin partirlos</strong>, porque son largos:</p>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Número</th>
+<th>✗ No digas</th>
+<th>✓ Di</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>двена́дцать</td>
+<td><del>[dve-nad-tsat]</del></td>
+<td>[dvi-ná-tsat']</td>
+</tr>
+<tr>
+<td>шестна́дцать</td>
+<td><del>[shest-nad-tsat]</del></td>
+<td>[shys-ná-tsat']</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Y ojo con las parejas que se confunden al oído</strong>: <strong>трина́дцать</strong> (13) y
+<strong>три</strong> (3), <strong>четы́рнадцать</strong> (14) y <strong>четы́ре</strong> (4). Si no estás seguro,
+<strong>Повтори́те, пожа́луйста</strong> o <strong>Напиши́те, пожа́луйста</strong>, del día 11 de la
+unidad 3.</p>
+</aside>
+<h2 id="parte-4" class="parte"><span class="num">4</span><span class="nombre">Práctica</span><span class="franja">18–25 min</span></h2>
+<h3>А. Чита́йте.</h3>
+<p><em>Lee en voz alta, de dos en dos.</em></p>
+<blockquote>
+<p>оди́ннадцать, трина́дцать, пятна́дцать, семна́дцать, девятна́дцать<br>
+двена́дцать, четы́рнадцать, шестна́дцать, восемна́дцать, два́дцать</p>
+</blockquote>
+<h3>Б. Напиши́те ци́фрой.</h3>
+<p><em>Escribe el número en cifra.</em></p>
+<ol>
+<li>четы́рнадцать</li>
+<li>семна́дцать</li>
+<li>два́дцать</li>
+<li>оди́ннадцать</li>
+<li>девятна́дцать</li>
+</ol>
+<h3>В. Ско́лько бу́дет?</h3>
+<p><em>Haz la cuenta y escribe el resultado en ruso.</em></p>
+<ol>
+<li>де́сять плюс три</li>
+<li>два́дцать ми́нус пять</li>
+<li>семь плюс семь</li>
+<li>девятна́дцать ми́нус оди́н</li>
+<li>во́семь плюс де́вять</li>
+</ol>
+<h2 id="parte-5" class="parte"><span class="num">5</span><span class="nombre">Tu turno</span><span class="franja">25–29 min</span></h2>
+<p><strong>La cuenta atrás y las cuentas.</strong> Cuenta en voz alta de veinte a uno, sin
+mirar. Después invéntate cinco cuentas y dilas enteras:</p>
+<blockquote>
+<p>Ско́лько бу́дет шесть плюс семь? — Трина́дцать.</p>
+</blockquote>
+<p>Grábate y escucha: ¿las palabras largas salen de un tirón, con el golpe delante,
+o se te parten en dos?</p>
+<h2 id="parte-6" class="parte"><span class="num">6</span><span class="nombre">Cierre</span><span class="franja">29–30 min</span></h2>
+<blockquote>
+<p><strong>Ya puedo decir:</strong><br>
+оди́ннадцать… два́дцать · Ско́лько бу́дет де́сять плюс пять? — Пятна́дцать.</p>
+<p><strong>Ya sé:</strong> del 11 al 19 es el número con la cola <code>-надцать</code>, con el golpe delante; y las cuentas van con <strong>плюс</strong>, <strong>ми́нус</strong> y <strong>равно́</strong>.</p>
+</blockquote>
+<p>Mañana: <strong>меня́</strong>, <strong>тебя́</strong>, <strong>его́</strong>, <strong>её</strong>.</p>
+<h2>Vocabulario del día</h2>
+<div class="tabla"><table>
+<thead>
+<tr>
+<th>Ruso</th>
+<th>Español</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>оди́ннадцать</td>
+<td>once</td>
+<td>Оди́ннадцать и́ли двена́дцать?</td>
+</tr>
+<tr>
+<td>двена́дцать</td>
+<td>doce</td>
+<td>Двена́дцать, трина́дцать…</td>
+</tr>
+<tr>
+<td>пятна́дцать</td>
+<td>quince</td>
+<td>Де́сять плюс пять — пятна́дцать.</td>
+</tr>
+<tr>
+<td>восемна́дцать</td>
+<td>dieciocho</td>
+<td>Восемна́дцать, девятна́дцать.</td>
+</tr>
+<tr>
+<td>два́дцать</td>
+<td>veinte</td>
+<td>Оди́н… два́дцать!</td>
+</tr>
+<tr>
+<td>плюс</td>
+<td>más</td>
+<td>Два плюс два.</td>
+</tr>
+<tr>
+<td>ми́нус</td>
+<td>menos</td>
+<td>Де́сять ми́нус оди́н.</td>
+</tr>
+<tr>
+<td>равно́</td>
+<td>igual a</td>
+<td>Два плюс два равно́ четы́ре.</td>
+</tr>
+<tr>
+<td>Ско́лько бу́дет…?</td>
+<td>¿Cuánto es…?</td>
+<td>Ско́лько бу́дет семь плюс три?</td>
+</tr>
+</tbody>
+</table></div>
+<details class="clave" id="respuestas"><summary>Ver las respuestas</summary>
+
+<p><strong>Б.</strong> 1 14 · 2 17 · 3 20 · 4 11 · 5 19</p>
+<p><strong>В.</strong> 1 трина́дцать · 2 пятна́дцать · 3 четы́рнадцать · 4 восемна́дцать ·
+5 семна́дцать</p></details>
+
+</article>
+<div class="final"><button id="marcar" class="boton" type="button" hidden aria-pressed="false"
+ data-marcar="Marcar como hecha" data-hecha="Hecha ✓">Marcar como hecha</button>
+<span class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</span></div>
+<nav class="vecinos"><a href="../../../es/a1/semana-07/dia-7.html">← Anterior</a><a href="../../../es/curso.html">Índice del curso</a><a href="../../../es/a1/semana-08/dia-2.html">Siguiente →</a></nav>
+</main>
+<footer class="sitio"><div class="envoltorio"><span>Curso gratuito de ruso para hispanohablantes.</span><a href="../../../es/sobre.html">Sobre el curso</a><a href="../../../es/contacto.html">Contacto</a><a href="../../../es/privacidad.html">Privacidad</a></div></footer>
+<script src="../../../progreso.js" defer></script>
+</body>
+</html>

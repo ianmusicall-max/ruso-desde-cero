@@ -87,16 +87,21 @@ def caras(raiz: str) -> str:
 
 
 CSS = """
+/* Blanco, azul y rojo: los tres colores de la bandera rusa. El azul es el
+   acento (enlaces, botones, citas) y el rojo queda para lo que avisa (el
+   bloque de contraste, los errores): así el rojo señala y no decora. Los
+   tonos son más oscuros que los de la bandera para que el texto se lea
+   sobre blanco. */
 :root{color-scheme:light;
-  --papel:#ffffff;--tinta:#111317;--tenue:#626873;--linea:#dfe2e7;--tarjeta:#f4f6f9;
-  --acento:#1f56a6;--acento-suave:#eaf1fb;--aviso:#b4461b;--aviso-suave:#fdf1ea;
+  --papel:#ffffff;--tinta:#111317;--tenue:#5d6470;--linea:#dbe1ea;--tarjeta:#f2f5fa;
+  --acento:#0b3f91;--acento-suave:#e8eefb;--aviso:#c01b12;--aviso-suave:#fdeceb;
   --bien:#1f7a4d;--ancho:44rem}
 @media(prefers-color-scheme:dark){:root:not([data-tema="light"]){color-scheme:dark;
-  --papel:#121418;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2d3138;--tarjeta:#1b1e23;
-  --acento:#8db4f2;--acento-suave:#1a2433;--aviso:#f09a72;--aviso-suave:#2a1d17;--bien:#6fcf9c}}
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}}
 :root[data-tema="dark"]{color-scheme:dark;
-  --papel:#121418;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2d3138;--tarjeta:#1b1e23;
-  --acento:#8db4f2;--acento-suave:#1a2433;--aviso:#f09a72;--aviso-suave:#2a1d17;--bien:#6fcf9c}
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}

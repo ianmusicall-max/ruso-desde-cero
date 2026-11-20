@@ -15,16 +15,21 @@
 @font-face{font-family:'Onest';font-style:normal;font-weight:400;font-display:swap;src:url(../../../fonts/onest-latin-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-cyrillic-700.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
 @font-face{font-family:'Onest';font-style:normal;font-weight:700;font-display:swap;src:url(../../../fonts/onest-latin-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* Blanco, azul y rojo: los tres colores de la bandera rusa. El azul es el
+   acento (enlaces, botones, citas) y el rojo queda para lo que avisa (el
+   bloque de contraste, los errores): así el rojo señala y no decora. Los
+   tonos son más oscuros que los de la bandera para que el texto se lea
+   sobre blanco. */
 :root{color-scheme:light;
-  --papel:#ffffff;--tinta:#111317;--tenue:#626873;--linea:#dfe2e7;--tarjeta:#f4f6f9;
-  --acento:#1f56a6;--acento-suave:#eaf1fb;--aviso:#b4461b;--aviso-suave:#fdf1ea;
+  --papel:#ffffff;--tinta:#111317;--tenue:#5d6470;--linea:#dbe1ea;--tarjeta:#f2f5fa;
+  --acento:#0b3f91;--acento-suave:#e8eefb;--aviso:#c01b12;--aviso-suave:#fdeceb;
   --bien:#1f7a4d;--ancho:44rem}
 @media(prefers-color-scheme:dark){:root:not([data-tema="light"]){color-scheme:dark;
-  --papel:#121418;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2d3138;--tarjeta:#1b1e23;
-  --acento:#8db4f2;--acento-suave:#1a2433;--aviso:#f09a72;--aviso-suave:#2a1d17;--bien:#6fcf9c}}
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}}
 :root[data-tema="dark"]{color-scheme:dark;
-  --papel:#121418;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2d3138;--tarjeta:#1b1e23;
-  --acento:#8db4f2;--acento-suave:#1a2433;--aviso:#f09a72;--aviso-suave:#2a1d17;--bien:#6fcf9c}
+  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
+  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
