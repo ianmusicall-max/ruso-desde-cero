@@ -102,11 +102,14 @@ las decisiones y su porqué.
 - **El ritmo lo elige el alumno** (`programa/plan.md`): la lección es de 30
   minutos y una hora al día son dos lecciones. Con una hora, de cero a A2 en
   un año y a B2 en dos; «Ruso en un año» es ese plan.
-- Pendiente del usuario: **crear el repositorio de GitHub vacío**
-  `ruso-desde-cero` (público, sin README; desde esta sesión no se puede) y
-  activar Settings → Pages (rama `main`, carpeta `/docs`). Con eso la web
-  sale en `ianmusicall-max.github.io/ruso-desde-cero` y cada unidad se
-  publica al terminarla. **Nombre y dominio**, antes de pedir AdSense.
+- **El repositorio existe y el curso está subido**:
+  `ianmusicall-max/ruso-desde-cero`, público, rama **`main`** (2026-11-20).
+  El sitio se publica desde `docs/`, con `.nojekyll`, en
+  `ianmusicall-max.github.io/ruso-desde-cero`. Al cerrar cada unidad:
+  `construir_sitio.py`, pruebas, commit y `git push`.
+- Pendiente del usuario: activar **Settings → Pages** (Deploy from a branch,
+  `main`, carpeta `/docs`) si aún no lo hizo, y elegir **nombre y dominio**
+  propios antes de pedir AdSense.
 - Sin audio todavía: no hay `OPENAI_API_KEY` en el entorno.
 
 ## Cómo se escribe una lección (lo aprendido en la semana 1)
