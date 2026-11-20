@@ -170,14 +170,15 @@
   }
 
   .portada .mascota img {
-    transform-origin: 50% 90%;
-    transition: transform 240ms ease-out;
+    transform-origin: 52% 78%;
+    animation: lectura-misha 1.5s 700ms ease-in-out;
+    transition: transform 420ms ease-in-out;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
   .portada .mascota:hover img {
-    transform: translateY(-.3rem) rotate(-3deg);
+    transform: translateY(.12rem) rotate(-3deg);
   }
 }
 
@@ -189,5 +190,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+@keyframes lectura-misha {
+  0%, 100% {
+    transform: none;
+  }
+  42%, 64% {
+    transform: translateY(.12rem) rotate(-3deg);
   }
 }
