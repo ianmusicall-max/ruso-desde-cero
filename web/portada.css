@@ -240,3 +240,30 @@
     transform: translateY(.12rem) rotate(-3deg);
   }
 }
+
+/* De noche. La portada fija su paleta clara en `.portada`, así que sin esto
+   el botón del tema guardaba la elección y en la portada no se veía nada:
+   el lector pulsaba, no pasaba nada, y el sitio salía oscuro al abrir una
+   lección. El héroe no cambia a propósito —el azul de la bandera con su
+   texto blanco funciona igual de noche—; lo que se da la vuelta es el
+   papel, las tarjetas y el texto de alrededor. */
+:root[data-tema="dark"] .portada {
+  --azul-suave: #172138;
+  --rojo-suave: #2b1715;
+  --papel: #101319;
+  --tinta: #e6e8eb;
+  --tenue: #9aa1ab;
+  --linea: #2b3038;
+  --tarjeta: #191d25;
+  --acento: #8fb6f5;
+  --acento-suave: #172138;
+  color-scheme: dark;
+}
+
+/* Estas tres usan los colores crudos de la bandera, no los tokens, así que
+   hay que darles la vuelta a mano. */
+:root[data-tema="dark"] .portada .practica {
+  background: var(--tarjeta);
+  color: var(--tinta);
+  border-color: var(--linea);
+}

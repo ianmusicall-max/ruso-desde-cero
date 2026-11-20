@@ -338,6 +338,43 @@ class TestElSitio(unittest.TestCase):
     def test_el_tachado_se_ve_tachado(self):
         self.assertIn("<del>mal</del>", construir_sitio.md("esto está ~~mal~~"))
 
+    def test_la_pagina_sale_siempre_de_dia(self):
+        """El modo oscuro del aparato no decide: lo decide el lector.
+
+        Si alguien vuelve a meter una regla de paleta dentro de un
+        `prefers-color-scheme: dark`, el sitio saldría oscuro de entrada en
+        un móvil puesto en oscuro, que es justo lo que no se quiere.
+        """
+        hojas = [construir_sitio.CSS,
+                 (construir_sitio.WEB / "portada.css").read_text(encoding="utf-8")]
+        for hoja in hojas:
+            for bloque in re.findall(r"prefers-color-scheme:\s*dark[^{]*\{(.*?)\}\s*\}",
+                                     hoja, re.S):
+                self.assertNotIn("--papel", bloque,
+                                 "la paleta no puede colgar de prefers-color-scheme")
+
+    def test_el_boton_del_tema_no_consulta_el_aparato(self):
+        """Si lo consultara, el primer clic en un móvil oscuro no haría nada.
+
+        La página nace clara; si el botón creyera que está oscura porque el
+        aparato lo está, guardaría «light» y el lector no vería ningún
+        cambio.
+        """
+        guion = construir_sitio.PROGRESO_JS
+        tema = guion[guion.index("getElementById('tema')"):][:400]
+        self.assertNotIn("prefers-color-scheme", tema)
+
+    def test_la_portada_tambien_tiene_noche(self):
+        """La portada fija su propia paleta, así que necesita su override.
+
+        Sin él el botón guarda la elección y en la portada no se ve nada:
+        el sitio solo sale oscuro al abrir una lección.
+        """
+        css = (construir_sitio.WEB / "portada.css").read_text(encoding="utf-8")
+        self.assertIn('[data-tema="dark"] .portada', css)
+        oscuro = css[css.index('[data-tema="dark"] .portada'):]
+        self.assertIn("--papel", oscuro)
+
 
 if __name__ == "__main__":
     unittest.main()

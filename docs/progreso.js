@@ -4,8 +4,7 @@ function leer(k,def){try{var v=localStorage.getItem(k);return v===null?def:JSON.
 function guardar(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 var b=d.getElementById('tema');
 if(b){b.addEventListener('click',function(){var h=d.documentElement,a=h.getAttribute('data-tema');
-  var oscuro=a==='dark'||(a!=='light'&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
-  var nuevo=oscuro?'light':'dark';h.setAttribute('data-tema',nuevo);guardar('rdc.tema',nuevo);});}
+  var nuevo=a==='dark'?'light':'dark';h.setAttribute('data-tema',nuevo);guardar('rdc.tema',nuevo);});}
 var hechas=leer('rdc.hechas',[]);if(!Array.isArray(hechas))hechas=[];
 var lec=d.querySelector('main[data-leccion]');
 if(lec){var id=lec.getAttribute('data-leccion'),pista=id.split('/')[0];

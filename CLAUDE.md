@@ -253,3 +253,36 @@ cada unidad; es una foto, no se actualiza sola).
   a mano siempre sale un patrón. Y se comprueba **contestándola en Chromium
   por el TEXTO de la opción**, no por su letra: por la letra sería repetir la
   cuenta del generador. 15/15 y 0/15 en las dos pistas.
+
+## La página sale siempre de día (2026-11-20)
+
+Lo pidió el profesor: «que siempre salga de día la página y la gente lo
+cambie a noche cuando quiera».
+
+El sitio seguía el `prefers-color-scheme` del aparato, así que en un móvil
+puesto en oscuro salía oscuro de entrada. Ahora la paleta oscura cuelga
+**solo** de `:root[data-tema="dark"]`, que es lo que pone el botón y lo que
+`TEMA_CABEZA` restaura antes de pintar. El que prefiera la noche la enciende
+una vez y no se le vuelve a preguntar.
+
+Tres cosas que lo rompen, y las tres tienen prueba:
+
+- **El botón no puede consultar el aparato.** Si lo hiciera, en un móvil
+  oscuro creería que la página está oscura —y está clara—, guardaría
+  `light` y el primer clic no haría nada visible. Ahora es
+  `a==='dark' ? 'light' : 'dark'` y nada más.
+- **La portada necesita su propia noche.** `portada.css` fija una paleta
+  clara en `.portada` (es la de la bandera), así que sin un override el
+  botón guardaba la elección y **en la portada no se veía nada**: el sitio
+  solo salía oscuro al abrir una lección. Se vio midiendo el color de fondo
+  en Chromium, no leyendo el CSS.
+- **El héroe NO cambia de noche**, a propósito: el azul de la bandera con su
+  texto blanco funciona igual en los dos temas. Lo que se da la vuelta es el
+  papel, las tarjetas y el texto de alrededor. Las tres reglas de
+  `.practica` usan los colores crudos (`--blanco`, `--azul`, `--azul-suave`)
+  en vez de los tokens, así que hay que darles la vuelta a mano.
+
+Comprobado en Chromium con el navegador puesto en oscuro y en claro: al
+entrar blanco en los dos casos, al pulsar oscuro, al recargar sigue oscuro,
+al abrir una lección sigue oscuro y al volver a pulsar vuelve a blanco. Cero
+errores de JavaScript.

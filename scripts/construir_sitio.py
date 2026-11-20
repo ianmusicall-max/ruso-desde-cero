@@ -96,9 +96,11 @@ CSS = """
   --papel:#ffffff;--tinta:#111317;--tenue:#5d6470;--linea:#dbe1ea;--tarjeta:#f2f5fa;
   --acento:#0b3f91;--acento-suave:#e8eefb;--aviso:#c01b12;--aviso-suave:#fdeceb;
   --bien:#1f7a4d;--ancho:44rem}
-@media(prefers-color-scheme:dark){:root:not([data-tema="light"]){color-scheme:dark;
-  --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
-  --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}}
+/* La página sale SIEMPRE de día, aunque el teléfono esté en modo oscuro:
+   no se mira prefers-color-scheme. La noche la enciende el lector con el
+   botón, y entonces se guarda. Un curso se lee media hora seguida y quien
+   llega por primera vez tiene que ver el sitio como está pensado; el que
+   prefiera el oscuro lo pulsa una vez y no se le vuelve a preguntar. */
 :root[data-tema="dark"]{color-scheme:dark;
   --papel:#101319;--tinta:#e6e8eb;--tenue:#9aa1ab;--linea:#2b3038;--tarjeta:#191d25;
   --acento:#8fb6f5;--acento-suave:#172138;--aviso:#f08478;--aviso-suave:#2b1715;--bien:#6fcf9c}
@@ -264,8 +266,7 @@ function leer(k,def){try{var v=localStorage.getItem(k);return v===null?def:JSON.
 function guardar(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 var b=d.getElementById('tema');
 if(b){b.addEventListener('click',function(){var h=d.documentElement,a=h.getAttribute('data-tema');
-  var oscuro=a==='dark'||(a!=='light'&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
-  var nuevo=oscuro?'light':'dark';h.setAttribute('data-tema',nuevo);guardar('rdc.tema',nuevo);});}
+  var nuevo=a==='dark'?'light':'dark';h.setAttribute('data-tema',nuevo);guardar('rdc.tema',nuevo);});}
 var hechas=leer('rdc.hechas',[]);if(!Array.isArray(hechas))hechas=[];
 var lec=d.querySelector('main[data-leccion]');
 if(lec){var id=lec.getAttribute('data-leccion'),pista=id.split('/')[0];
