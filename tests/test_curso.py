@@ -376,5 +376,160 @@ class TestElSitio(unittest.TestCase):
         self.assertIn("--papel", oscuro)
 
 
+class TestLasPruebasDeLaPortada(unittest.TestCase):
+    """Las cuatro pruebas de dos minutos a las que lleva la portada.
+
+    Nacieron de un defecto: los cuatro accesos apuntaban a un ancla DENTRO
+    de una lección de treinta minutos, así que «Escucha» dejaba al visitante
+    en el minuto 25 del día 5, con el ejercicio fuera de contexto y media
+    página por encima y por debajo.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp = pathlib.Path(tempfile.mkdtemp())
+        cfg = dict(construir_sitio.cargar_config(), adsense={"cliente": ""}, dominio="")
+        construir_sitio.construir(cls.tmp, cfg=cfg)
+        cls.textos = construir_sitio.cargar_textos()
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree(cls.tmp)
+
+    def _html(self, pista, clave):
+        pagina = self.textos[pista]["pruebas"]["paginas"][clave]
+        return (self.tmp / pista / pagina).read_text(encoding="utf-8")
+
+    def test_la_portada_lleva_a_las_pruebas_y_no_a_un_ancla(self):
+        """Una tarjeta que promete «graba tu voz» tiene que abrir eso.
+
+        Apuntando a `dia-5.html#parte-5` abría una lección entera y la
+        dejaba en su minuto 25, que es lo que se leía como un salto al
+        fondo de una página cualquiera.
+        """
+        for pista in plan.PISTAS:
+            texto = (self.tmp / pista / "index.html").read_text(encoding="utf-8")
+            destinos = re.findall(r'<a class="practica" href="([^"]+)"', texto)
+            paginas = self.textos[pista]["pruebas"]["paginas"]
+            self.assertEqual(destinos, [paginas[c] for c in construir_sitio._PRACTICAS], pista)
+            for d in destinos:
+                self.assertNotIn("#", d, "una tarjeta no puede llevar a media lección")
+
+    def test_las_ocho_paginas_existen_y_no_comparten_nombre(self):
+        rutas = set()
+        for pista in plan.PISTAS:
+            for clave in construir_sitio._PRUEBAS:
+                pagina = self.textos[pista]["pruebas"]["paginas"][clave]
+                self.assertTrue((self.tmp / pista / pagina).exists(), f"{pista}/{pagina}")
+                rutas.add(f"{pista}/{pagina}")
+        self.assertEqual(len(rutas), 8)
+
+    def test_las_dos_pistas_ensenan_el_mismo_ruso(self):
+        """Lo que cambia es la explicación, nunca el ruso.
+
+        El ruso vive una sola vez en el generador justamente para esto; si
+        alguien lo copiara a textos.yaml, las dos pistas podrían separarse
+        sin que nada fallara. La ÚNICA excepción es el ejemplo de la prueba
+        de escritura: transliterar «José» para un angloparlante no enseña
+        nada, así que ahí cada pista pone un nombre de su lengua, y esta
+        prueba exige que la diferencia esté solo ahí.
+        """
+        cirilico = re.compile(r"[\u0400-\u04FF\u0301]+")
+        for clave in construir_sitio._PRUEBAS:
+            a, b = (set(cirilico.findall(self._html(p, clave))) for p in plan.PISTAS)
+            if a == b:
+                continue
+            self.assertEqual(clave, "escritura", f"{clave} no comparte el ruso")
+            for pista, propias in zip(plan.PISTAS, (a - b, b - a)):
+                intro = self.textos[pista]["pruebas"]["escritura"]["intro"]
+                for palabra in propias:
+                    self.assertIn(palabra, intro,
+                                  f"{pista}: «{palabra}» no está en el ejemplo del nombre")
+
+    def test_cada_lista_de_textos_acompana_al_ruso(self):
+        """Una lista corta dejaría filas sin su traducción, en silencio: zip
+        se para en la más corta y la tabla saldría incompleta."""
+        largos = {"letras": len(construir_sitio._PRUEBA_LETRAS),
+                  "palabras": len(construir_sitio._PRUEBA_PALABRAS),
+                  "puerta": len(construir_sitio._PRUEBA_PUERTA),
+                  "alfabeto": len(construir_sitio._PRUEBA_ALFABETO),
+                  "pares": len(construir_sitio._PRUEBA_VOZ),
+                  "lineas": len(construir_sitio._PRUEBA_DIALOGO),
+                  "frases": len(construir_sitio._PRUEBA_FRASES)}
+        for pista in plan.PISTAS:
+            for clave in construir_sitio._PRUEBAS:
+                bloque = self.textos[pista]["pruebas"][clave]
+                for nombre, largo in largos.items():
+                    if nombre in bloque:
+                        self.assertEqual(len(bloque[nombre]), largo, f"{pista}/{clave}/{nombre}")
+
+    def test_la_voz_sube_sobre_su_silaba_y_no_al_lado(self):
+        """La curva y la fila de sílabas comparten caja y columnas iguales.
+
+        El vértice se calcula de la sílaba tónica, así que tiene que caer en
+        el centro de su columna. Dibujado con un número a ojo señalaría a
+        otra sílaba y la página enseñaría lo contrario de lo que dice.
+        """
+        for silabas, tonica, _, _ in construir_sitio._PRUEBA_VOZ:
+            n = len(silabas)
+            for sube in (False, True):
+                svg = construir_sitio._voz(silabas, tonica, sube)
+                ancho = float(re.search(r'viewBox="0 0 (\d+)', svg).group(1))
+                puntos = [p.split(",") for p in
+                          re.search(r'points="([^"]+)"', svg).group(1).split()]
+                x = float(puntos[2][0]) / ancho
+                self.assertAlmostEqual(x, (tonica + 0.5) / n, places=2,
+                                       msg=f"{''.join(silabas)} sube={sube}")
+
+    def test_las_palabras_se_abren_sin_javascript(self):
+        """Un <details> y no un botón: la página tiene que enseñar seis
+        palabras aunque el guion no cargue."""
+        texto = self._html("es", "lectura")
+        self.assertEqual(texto.count('<details class="palabra">'),
+                         len(construir_sitio._PRUEBA_PALABRAS))
+        self.assertNotIn('class="quiere" hidden', texto)
+
+    def test_la_grabadora_nace_oculta(self):
+        """Sin micrófono o sin MediaRecorder, un botón de grabar pediría
+        permiso para nada y no haría nada."""
+        for pista in plan.PISTAS:
+            texto = self._html(pista, "escucha")
+            self.assertIn('id="grabadora" class="grabadora" hidden', texto)
+        self.assertIn("zona.hidden=false", construir_sitio.PRUEBA_JS)
+        self.assertIn("MediaRecorder", construir_sitio.PRUEBA_JS)
+        # El micrófono se apaga de verdad al parar: si no, el punto rojo de
+        # la pestaña se queda encendido y se lee como que el sitio escucha.
+        self.assertIn("getTracks()", construir_sitio.PRUEBA_JS)
+
+    def test_el_hueco_del_nombre_no_deja_dos_puntos_seguidos(self):
+        """Con «…» salía «Меня́ зову́т …. А тебя́?»."""
+        hueco = construir_sitio._PRUEBA_HUECO
+        for pista in plan.PISTAS:
+            lineas = list(construir_sitio._PRUEBA_DIALOGO)
+            lineas += self.textos[pista]["pruebas"]["habla"]["lineas"]
+            for linea in lineas:
+                puesto = linea.replace("{nombre}", hueco)
+                self.assertNotIn("..", puesto, puesto)
+            texto = self._html(pista, "habla")
+            self.assertIn(f"data-plantilla=", texto)
+            self.assertIn("{nombre}", texto, "el guion necesita la plantilla")
+        self.assertIn(f"'{hueco}'", construir_sitio.PRUEBA_JS,
+                      "el guion y el HTML tienen que usar el mismo hueco")
+
+    def test_cada_prueba_vuelve_al_curso(self):
+        """Dos minutos sin puerta al día 1 son dos minutos perdidos."""
+        for pista in plan.PISTAS:
+            dia1 = f"a1/semana-01/dia-1.html"
+            for clave in construir_sitio._PRUEBAS:
+                texto = self._html(pista, clave)
+                self.assertIn(f'<a class="boton" href="{dia1}"', texto, f"{pista}/{clave}")
+                self.assertIn('class="otras"', texto, f"{pista}/{clave}")
+                # El enlace a la lección de la que sale, salvo en lectura,
+                # que viene del día 1 y tendría los dos botones iguales.
+                dia = construir_sitio._PRUEBA_DIA[clave]
+                if dia != 1:
+                    self.assertIn(f'a1/semana-01/dia-{dia}.html', texto, f"{pista}/{clave}")
+
+
 if __name__ == "__main__":
     unittest.main()

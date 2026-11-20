@@ -64,6 +64,14 @@ def md(texto: str) -> str:
     return markdown.markdown(texto, extensions=["tables", "sane_lists", "attr_list", Tachado()])
 
 
+def md_linea(texto: str) -> str:
+    """Markdown de una línea, sin el <p> de alrededor. Los textos de las
+    pruebas llevan negritas dentro de una celda o de un botón, y ahí un
+    párrafo no cabe."""
+    h = md(texto)
+    return h[3:-4] if h.startswith("<p>") and h.endswith("</p>") else h
+
+
 # ── Estilo ──────────────────────────────────────────────────────────────
 
 _CIRILICO = "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
@@ -250,7 +258,64 @@ details.unidad ol{margin:.2rem 0 .8rem;padding-left:1.4rem}
 details.unidad li{margin:.15rem 0}
 li.pronto{color:var(--tenue)}
 li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
+
 .tipo{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:0 .45rem;margin-right:.3rem}
+
+/* Las cuatro pruebas de la portada. Son páginas de dos minutos, así que
+   nada de ellas se apoya en haber leído lo de arriba. */
+.prueba .tr{color:var(--tenue);font-size:.92rem}
+.prueba .pide{font-weight:700}
+.palabras{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+/* Un <details> y no un botón: así la palabra se abre sin JavaScript. Lo que
+   esta página tiene que hacer es enseñar seis palabras, y una ficha que no
+   se puede abrir no enseña ninguna. */
+.palabra{background:var(--tarjeta);border:1px solid var(--linea);border-radius:12px;
+  padding:.55rem .9rem;text-align:center;min-width:6.5rem}
+.palabra:hover{border-color:var(--acento)}
+.palabra[open]{border-color:var(--acento);background:var(--acento-suave)}
+.palabra summary{cursor:pointer;font-size:1.3rem;list-style:none;font-family:inherit}
+.palabra summary::-webkit-details-marker{display:none}
+.palabra summary::marker{content:""}
+.palabra .dice{display:block;margin-top:.3rem;color:var(--tenue);font-size:.85rem}
+.palabra .quiere{display:block;color:var(--acento);font-weight:700;font-size:.9rem}
+.maquina{border:1px solid var(--linea);border-radius:14px;padding:1rem;margin:1.2rem 0;background:var(--tarjeta)}
+.maquina label{display:block;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.85rem;
+  color:var(--tenue);margin-bottom:.3rem}
+.maquina input{width:100%;font:inherit;font-size:1.5rem;padding:.5rem .7rem;border:1px solid var(--linea);
+  border-radius:10px;background:var(--papel);color:var(--tinta)}
+.maquina .acciones{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0 0}
+.teclado{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr));gap:.35rem;margin-top:.8rem}
+.tecla{font:inherit;color:inherit;background:var(--papel);border:1px solid var(--linea);border-radius:9px;
+  padding:.35rem .2rem;cursor:pointer;line-height:1.25}
+.tecla:hover{border-color:var(--acento)}
+.tecla span[lang=ru]{display:block;font-size:1.05rem}
+.tecla .suena{display:block;color:var(--tenue);font-size:.7rem}
+ul.nombres{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+ul.nombres span[lang=ru]{font-size:1.1rem;color:var(--acento)}
+.voces{margin:1.4rem 0}
+.voces .linea{margin:.9rem 0}
+.voces .linea p{margin:.1rem 0}
+.voces .rol{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--tenue);margin-right:.4rem}
+.voces span[lang=ru]{font-size:1.2rem}
+/* El dibujo de la voz: color de acento y ancho fijo, para que las dos
+   líneas de un par se puedan comparar de un vistazo. */
+.voz-caja{max-width:22rem;margin:.2rem 0 .3rem;color:var(--acento)}
+svg.voz{display:block;width:100%;height:auto}
+.silabas{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;text-align:center;
+  font-size:1.05rem;color:var(--tenue);margin-top:-.2rem}
+.silabas .fuerte{color:var(--acento);font-weight:700}
+.grabadora{border:1px solid var(--linea);border-radius:14px;padding:1rem;margin:1.4rem 0}
+.grabadora audio{width:100%;margin-top:.7rem}
+.grabadora .boton[aria-pressed=true]{background:var(--aviso)}
+#dialogo .replica{margin:.7rem 0}
+#dialogo span[lang=ru]{font-size:1.15rem}
+/* La traducción debajo y no detrás, como en los diálogos de las
+   lecciones: en el móvil, en la misma línea, el ruso y el español se
+   enredan en el mismo párrafo. */
+#dialogo .tr{display:block;font-style:italic}
+.cierre-prueba{border-top:1px solid var(--linea);margin-top:2.4rem;padding-top:1.2rem}
+.cierre-prueba .otras{color:var(--tenue);font-size:.9rem}
 """
 
 ICONO_TEMA = ('<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">'
@@ -368,6 +433,85 @@ document.querySelectorAll('.test-vivo').forEach(function(caja){
 # mano, sin ninguna imagen de fuera. Va en línea, así que no cuesta una
 # petición más, se ve nítido a cualquier tamaño y cambia de color con el
 # tema. La bufanda lleva los tres colores de la bandera.
+PRUEBA_JS = r"""(function(){
+// Las cuatro pruebas de dos minutos de la portada. Lo que de verdad enseña
+// cada página está en el HTML: el alfabeto, las frases, el dibujo de la voz
+// y las palabras —que se abren con <details>, sin guion—. Aquí solo van las
+// tres cosas que un navegador puede hacer y una página estática no.
+var d=document;
+
+// El teclado cirílico de la prueba de escritura. La mayúscula se pone sola
+// al principio y después de un espacio, que es la regla de un nombre.
+var caja=d.getElementById('nombre-ru');
+if(caja){
+  d.querySelectorAll('.tecla').forEach(function(k){
+    k.addEventListener('click',function(){
+      var l=k.getAttribute('data-letra')||'';
+      if(!caja.value||/\s$/.test(caja.value))l=l.toUpperCase();
+      caja.value+=l;caja.focus();
+    });
+  });
+  var una=d.getElementById('borra-letra');
+  if(una)una.addEventListener('click',function(){caja.value=caja.value.slice(0,-1);caja.focus()});
+  var todo=d.getElementById('borra-todo');
+  if(todo)todo.addEventListener('click',function(){caja.value='';caja.focus()});
+}
+
+// El nombre entra en el diálogo mientras se escribe. Sin guion, las líneas
+// ya se leen con un «…» en su sitio.
+var mio=d.getElementById('mi-nombre'),dialogo=d.getElementById('dialogo');
+if(mio&&dialogo){
+  var huecos=[];
+  dialogo.querySelectorAll('[data-plantilla]').forEach(function(s){
+    var p=s.getAttribute('data-plantilla');
+    if(p&&p.indexOf('{nombre}')>=0)huecos.push([s,p]);
+  });
+  var poner=function(){
+    var n=mio.value.trim()||'___';
+    huecos.forEach(function(h){h[0].textContent=h[1].replace('{nombre}',n)});
+  };
+  mio.addEventListener('input',poner);
+  poner();
+}
+
+// Grabarse y oírse. Nace oculto y lo enciende el navegador: un botón de
+// grabar que no puede grabar es peor que ninguno, y además pediría permiso
+// para nada. La grabación vive en memoria, no se sube a ninguna parte y
+// muere con la pestaña.
+var zona=d.getElementById('grabadora'),boton=d.getElementById('graba'),
+    audio=d.getElementById('mi-voz'),aviso=d.getElementById('sin-micro');
+if(zona&&boton&&audio&&window.MediaRecorder&&navigator.mediaDevices&&
+   navigator.mediaDevices.getUserMedia){
+  zona.hidden=false;
+  var rec=null,trozos=[],url=null;
+  boton.addEventListener('click',function(){
+    if(rec&&rec.state==='recording'){rec.stop();return}
+    navigator.mediaDevices.getUserMedia({audio:true}).then(function(flujo){
+      trozos=[];rec=new MediaRecorder(flujo);
+      rec.addEventListener('dataavailable',function(ev){if(ev.data&&ev.data.size)trozos.push(ev.data)});
+      rec.addEventListener('stop',function(){
+        // El micrófono se apaga de verdad: si no, el punto rojo de la
+        // pestaña se queda encendido y se lee como que el sitio escucha.
+        flujo.getTracks().forEach(function(p){p.stop()});
+        if(url)URL.revokeObjectURL(url);
+        url=URL.createObjectURL(new Blob(trozos,{type:rec.mimeType||''}));
+        audio.src=url;audio.hidden=false;
+        boton.textContent=boton.getAttribute('data-graba');
+        boton.setAttribute('aria-pressed','false');
+      });
+      rec.start();
+      boton.textContent=boton.getAttribute('data-para');
+      boton.setAttribute('aria-pressed','true');
+    }).catch(function(){
+      // Permiso denegado o micrófono ocupado: se dice, y la prueba sigue.
+      boton.hidden=true;
+      if(aviso)aviso.hidden=false;
+    });
+  });
+}
+})();
+"""
+
 _OSO_CABEZA = """<circle cx="28" cy="30" r="15" fill="#7b4f2d"/><circle cx="28" cy="30" r="7.5" fill="#c99a72"/>
 <circle cx="92" cy="30" r="15" fill="#7b4f2d"/><circle cx="92" cy="30" r="7.5" fill="#c99a72"/>
 <circle cx="60" cy="60" r="37" fill="#8b5a33"/>
@@ -454,7 +598,7 @@ def absoluta(cfg: dict, ruta: str) -> str:
 
 
 def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
-           alternas=None, actual="", principal="", portada=False) -> str:
+           alternas=None, actual="", principal="", clase="", portada=False) -> str:
     """Una página completa. `ruta` es la de esta página desde la raíz del sitio;
     `alternas` = {idioma: ruta} de sus versiones en las otras lenguas."""
     sitio = cfg["nombre"].get(idioma) or cfg["nombre"]["es"]
@@ -503,7 +647,7 @@ def pagina(cfg, textos, idioma, titulo, cuerpo, *, ruta, raiz, descripcion="",
 <a class="marca" href="{inicio}">{e(sitio)}</a>{nav}
 <button id="tema" class="tema" type="button" aria-label="{boton_tema}" title="{boton_tema}">{ICONO_TEMA}</button>
 </div></header>
-<main class="envoltorio"{principal}>
+<main class="envoltorio{clase}"{principal}>
 {cuerpo}
 </main>
 <footer class="sitio"><div class="envoltorio">{pie}</div></footer>
@@ -744,26 +888,21 @@ def _mapa_de_unidades(cal, pista, t, publicadas) -> str:
             f'<div class="rejilla">{"".join(tarjetas)}</div></section>')
 
 
-_PRACTICAS = (
-    ("escucha", "a1/semana-01/dia-5", 5),
-    ("lectura", "a1/semana-01/dia-1", 4),
-    ("escritura", "a1/semana-01/dia-7", 4),
-    ("habla", "a1/semana-01/dia-4", 5),
-)
+# El orden en que salen en la portada. Cada una lleva a SU página de prueba
+# (ver «Las cuatro pruebas de la portada», más abajo) y no a un ancla dentro
+# de una lección: una tarjeta que promete «graba tu voz» tiene que abrir eso
+# y no el minuto 25 de una lección de treinta.
+_PRACTICAS = ("escucha", "lectura", "escritura", "habla")
 
 
-def _accesos_de_practica(t, lecciones):
-    disponibles = {dia.ruta for dia, _, _ in lecciones}
+def _accesos_de_practica(t):
     tarjetas = []
-    for clave, ruta, parte in _PRACTICAS:
-        if ruta in disponibles:
-            titulo, descripcion = t["practicas"][clave]
-            version = "dima-sin-libro" if clave == "escucha" else "dima"
-            tarjetas.append(f'<a class="practica" href="{ruta}.html#parte-{parte}">'
-                            f'<img src="../practica-{clave}.png?v={version}" alt="" loading="lazy" decoding="async">'
-                            f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
-    if not tarjetas:
-        return ""
+    for clave in _PRACTICAS:
+        titulo, descripcion = t["practicas"][clave]
+        version = "dima-sin-libro" if clave == "escucha" else "dima"
+        tarjetas.append(f'<a class="practica" href="{e(t["pruebas"]["paginas"][clave])}">'
+                        f'<img src="../practica-{clave}.png?v={version}" alt="" loading="lazy" decoding="async">'
+                        f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
     return (f'<section class="practicas"><h2>{e(t["practicas"]["titulo"])}</h2>'
             f'<div class="accesos">{"".join(tarjetas)}</div></section>')
 
@@ -790,7 +929,7 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
 {_ventajas(t)}
 <p class="nota">{e(t["progreso"])}</p>
 </section>
-{_accesos_de_practica(t, lista)}
+{_accesos_de_practica(t)}
 {_mapa_de_unidades(cal, pista, t, lista)}
 {md(t["portada"].replace("{lecciones}", str(len(lista))))}"""
         ruta = f"{pista}/index.html"
@@ -814,6 +953,210 @@ def construir_portadas(cfg, textos, cal, destino, publicadas) -> list[str]:
     return rutas
 
 
+# ── Las cuatro pruebas de la portada ────────────────────────────────────
+#
+# Los cuatro accesos de la portada llevaban a un ANCLA dentro de una lección
+# de 30 minutos: «Escucha» dejaba al visitante en el minuto 25 del día 5, con
+# el ejercicio fuera de contexto —se apoya en lo que la lección enseñó veinte
+# minutos antes— y media página por encima y por debajo. Se leía como un
+# salto al fondo de una página cualquiera. Ahora cada acceso tiene su propia
+# página: dos minutos, el ejercicio solo y entero, y al final la puerta al
+# día 1 y las otras tres pruebas.
+#
+# El ruso vive AQUÍ y no en textos.yaml, una sola vez para las dos pistas:
+# las dos pistas comparten el ruso, así que escrito dos veces podría
+# separarse sin que nada fallara. Lo que cambia de pista a pista —la
+# pronunciación aproximada con la ortografía de cada lengua, y la
+# traducción— va en textos.yaml, en el mismo orden y con la misma longitud,
+# y hay pruebas que lo exigen.
+
+_PRUEBA_LETRAS = ("А а", "О о", "К к", "М м", "Т т")
+_PRUEBA_PALABRAS = ("кот", "там", "так", "как", "кто", "ма́ма")
+_PRUEBA_PUERTA = ("Кто там?", "Ма́ма.")
+_PRUEBA_ALFABETO = ("А а", "Б б", "В в", "Г г", "Д д", "Е е", "Ё ё", "Ж ж", "З з", "И и", "Й й",
+                    "К к", "Л л", "М м", "Н н", "О о", "П п", "Р р", "С с", "Т т", "У у", "Ф ф",
+                    "Х х", "Ц ц", "Ч ч", "Ш ш", "Щ щ", "Ъ ъ", "Ы ы", "Ь ь", "Э э", "Ю ю", "Я я")
+# Los cuatro de la historia del curso, ya escritos en cirílico en las
+# lecciones: así ningún ejemplo se inventa y de paso se conoce al reparto.
+_PRUEBA_NOMBRES = (("Camila", "Ками́ла"), ("Tom", "Том"), ("Kira", "Ки́ра"), ("Misha", "Ми́ша"))
+# Las cuatro líneas de la lección, con el hueco del nombre donde el alumno
+# contesta. El hueco es una raya y no unos puntos suspensivos: «зову́т …. А
+# тебя́?» sale con dos puntos seguidos.
+_PRUEBA_DIALOGO = ("Приве́т! Как тебя́ зову́т?", "Меня́ зову́т {nombre}. А тебя́?",
+                   "Ки́ра.", "О́чень прия́тно!")
+_PRUEBA_HUECO = "___"
+_PRUEBA_FRASES = ("Как тебя́ зову́т?", "Меня́ зову́т…", "А тебя́?", "О́чень прия́тно.")
+# Las sílabas y cuál es la tónica de la palabra que se pregunta. Las sílabas
+# no son adorno: son la regla sobre la que se dibuja la voz, y es lo que
+# hace ver de un vistazo que en «Э́то кот» la subida cae en la última —donde
+# el español y el inglés aciertan por casualidad— y en «Э́то ко́мната», en
+# medio, que es donde se equivocan.
+_PRUEBA_VOZ = ((("Э́", "то", "кот"), 2, "Э́то кот.", "Э́то кот?"),
+               (("Э́", "то", "ко́м", "на", "та"), 2, "Э́то ко́мната.", "Э́то ко́мната?"))
+
+_PRUEBAS = ("lectura", "escritura", "escucha", "habla")
+# De qué día del curso sale cada una: se dice y se enlaza la lección entera.
+_PRUEBA_DIA = {"lectura": 1, "habla": 4, "escucha": 5, "escritura": 7}
+
+
+def _voz(silabas, tonica: int, sube: bool) -> str:
+    """El dibujo de la entonación, con las sílabas debajo como regla.
+
+    No es un adorno. Es lo único que un curso todavía sin audio puede
+    enseñar de la entonación, y es justo el contraste de la lección: la voz
+    rusa sube EN la sílaba tónica y cae detrás, no al final como en español
+    y en inglés. La curva y la fila de sílabas comparten caja y columnas
+    iguales, así que la subida cae sobre su sílaba a cualquier ancho de
+    pantalla; dibujada a ojo, señalaría a otra.
+    """
+    ancho, n = 280.0, len(silabas)
+    paso = ancho / n
+    x = paso * (tonica + 0.5)
+    puntos = (f"4,26 {x - paso / 2:.0f},26 {x:.0f},7 {min(x + paso * 0.7, ancho - 4):.0f},37 276,37"
+              if sube else
+              f"4,16 {x - paso / 2:.0f},16 {x:.0f},37 276,37")
+    fila = "".join(f'<span{" class=fuerte" if i == tonica else ""}>{e(s)}</span>'
+                   for i, s in enumerate(silabas))
+    return (f'<div class="voz-caja" aria-hidden="true">'
+            f'<svg class="voz" viewBox="0 0 {ancho:.0f} 44" focusable="false">'
+            f'<polyline points="{puntos}" fill="none" stroke="currentColor" stroke-width="3" '
+            f'stroke-linecap="round" stroke-linejoin="round"/></svg>'
+            f'<div class="silabas" lang="ru">{fila}</div></div>')
+
+
+def _prueba_lectura(t) -> str:
+    p = t["pruebas"]["lectura"]
+    filas = "".join(f'<tr><td lang="ru">{e(l)}</td><td>[{e(s)}]</td><td>{md_linea(c)}</td></tr>'
+                    for l, (s, c) in zip(_PRUEBA_LETRAS, p["letras"]))
+    tabla = ('<div class="tabla"><table><thead><tr>'
+             + "".join(f"<th>{e(c)}</th>" for c in p["cab"])
+             + f"</tr></thead><tbody>{filas}</tbody></table></div>")
+    fichas = "".join(
+        f'<details class="palabra"><summary lang="ru">{e(w)}</summary>'
+        f'<span class="dice">{md_linea(s)}</span><span class="quiere">{e(q)}</span></details>'
+        for w, (s, q) in zip(_PRUEBA_PALABRAS, p["palabras"]))
+    puerta = "".join(f'<p>— <span lang="ru">{e(r)}</span> <span class="tr">{e(x)}</span></p>'
+                     for r, x in zip(_PRUEBA_PUERTA, p["puerta"]))
+    return (f'<p>{md_linea(p["intro"])}</p>{tabla}'
+            f'<p class="pide">{md_linea(p["pide"])}</p>'
+            f'<div class="palabras">{fichas}</div>'
+            f'<p>{md_linea(p["frase"])}</p><blockquote>{puerta}</blockquote>'
+            f'<p>{md_linea(p["cierre"])}</p>')
+
+
+def _prueba_escritura(t) -> str:
+    p = t["pruebas"]["escritura"]
+    teclas = "".join(
+        f'<button class="tecla" type="button" data-letra="{e(l.split()[1])}">'
+        f'<span lang="ru">{e(l)}</span><span class="suena">{e(s)}</span></button>'
+        for l, s in zip(_PRUEBA_ALFABETO, p["alfabeto"]))
+    nombres = "".join(f'<li>{e(lat)} → <span lang="ru">{e(cir)}</span></li>'
+                      for lat, cir in _PRUEBA_NOMBRES)
+    return (f'<p>{md_linea(p["intro"])}</p>'
+            '<div class="maquina">'
+            f'<label for="nombre-ru">{e(p["etiqueta"])}</label>'
+            f'<input id="nombre-ru" lang="ru" autocomplete="off" spellcheck="false" '
+            f'placeholder="{e(p["hueco"])}">'
+            '<div class="acciones">'
+            f'<button id="borra-letra" class="boton secundario" type="button">{e(p["borrar"])}</button>'
+            f'<button id="borra-todo" class="boton secundario" type="button">{e(p["vaciar"])}</button></div>'
+            f'<div class="teclado">{teclas}</div></div>'
+            f'<p>{md_linea(p["ejemplos"])}</p><ul class="nombres">{nombres}</ul>'
+            f'<p>{md_linea(p["cierre"])}</p>')
+
+
+def _prueba_escucha(t) -> str:
+    p = t["pruebas"]["escucha"]
+    bloques = []
+    for (silabas, tonica, afi, pre), (t_afi, t_pre) in zip(_PRUEBA_VOZ, p["pares"]):
+        lineas = "".join(
+            f'<div class="linea">'
+            f'<p><span class="rol">{e(rol)}</span> <span lang="ru">{e(ru)}</span> '
+            f'<span class="tr">{e(tr)}</span></p>{_voz(silabas, tonica, sube)}</div>'
+            for sube, rol, ru, tr in ((False, p["afirmacion"], afi, t_afi),
+                                      (True, p["pregunta"], pre, t_pre)))
+        bloques.append(f'<div class="voces">{lineas}</div>')
+    # La grabadora nace OCULTA y la enciende el navegador: sin micrófono o
+    # sin MediaRecorder, un botón de grabar no haría nada. La prueba funciona
+    # igual diciendo las frases en voz alta, que es lo que pide el cierre.
+    grabadora = (f'<div id="grabadora" class="grabadora" hidden>'
+                 f'<p>{md_linea(p["graba_pide"])}</p>'
+                 f'<div class="acciones"><button id="graba" class="boton" type="button"'
+                 f' aria-pressed="false" data-graba="{e(p["graba"])}" data-para="{e(p["para"])}">'
+                 f'{e(p["graba"])}</button></div>'
+                 f'<audio id="mi-voz" controls hidden></audio>'
+                 f'<p id="sin-micro" class="tr" hidden>{e(p["sin_permiso"])}</p></div>')
+    return (f'<p>{md_linea(p["intro"])}</p>{"".join(bloques)}'
+            f'<p>{md_linea(p["contraste"])}</p>{grabadora}'
+            f'<p>{md_linea(p["cierre"])}</p>')
+
+
+def _prueba_habla(t) -> str:
+    p = t["pruebas"]["habla"]
+    lineas = "".join(
+        f'<p class="replica">— <span lang="ru" data-plantilla="{e(ru)}">'
+        f'{e(ru.replace("{nombre}", _PRUEBA_HUECO))}</span> '
+        f'<span class="tr" data-plantilla="{e(tr)}">'
+        f'{e(tr.replace("{nombre}", _PRUEBA_HUECO))}</span></p>'
+        for ru, tr in zip(_PRUEBA_DIALOGO, p["lineas"]))
+    filas = "".join(f'<tr><td lang="ru">{e(f)}</td><td>{md_linea(s)}</td><td>{e(q)}</td></tr>'
+                    for f, (s, q) in zip(_PRUEBA_FRASES, p["frases"]))
+    tabla = ('<div class="tabla"><table><thead><tr>'
+             + "".join(f"<th>{e(c)}</th>" for c in p["cab"])
+             + f"</tr></thead><tbody>{filas}</tbody></table></div>")
+    return (f'<p>{md_linea(p["intro"])}</p>'
+            '<div class="maquina">'
+            f'<label for="mi-nombre">{e(p["etiqueta"])}</label>'
+            f'<input id="mi-nombre" autocomplete="off" placeholder="{e(p["hueco"])}"></div>'
+            f'<blockquote id="dialogo">{lineas}</blockquote>{tabla}'
+            f'<p>{md_linea(p["cierre"])}</p>')
+
+
+_PRUEBA_CUERPO = {"lectura": _prueba_lectura, "escritura": _prueba_escritura,
+                  "escucha": _prueba_escucha, "habla": _prueba_habla}
+
+
+def construir_pruebas(cfg, textos, destino, publicadas) -> list[str]:
+    rutas = []
+    for pista in PISTAS:
+        t = textos[pista]
+        p = t["pruebas"]
+        # Los días de la semana 1 que ya existen: de ahí salen el botón de
+        # empezar y el enlace a la lección de la que viene cada prueba. Si la
+        # lección no está escrita, el enlace no sale: un botón a una página
+        # que no existe es peor que ninguno.
+        semana1 = {d.dia: d for d, _, _ in publicadas[pista] if d.nivel == "a1" and d.semana == 1}
+        for clave in _PRUEBAS:
+            dia = _PRUEBA_DIA[clave]
+            titulo = p[clave]["titulo"]
+            pies = []
+            if 1 in semana1:
+                pies.append(f'<a class="boton" href="{semana1[1].ruta}.html">'
+                            f'{e(t["botones"]["empezar"])}</a>')
+            # En la prueba de lectura los dos botones llevarían al mismo
+            # sitio: viene del día 1, que es por donde se empieza.
+            if dia in semana1 and dia != 1:
+                pies.append(f'<a class="boton secundario" href="{semana1[dia].ruta}.html">'
+                            f'{e(p["ver_leccion"])}</a>')
+            otras = " · ".join(f'<a href="{e(p["paginas"][o])}">{e(p[o]["titulo"])}</a>'
+                               for o in _PRUEBAS if o != clave)
+            cuerpo = (f'<p class="migas"><a href="index.html">{e(p["volver"])}</a></p>'
+                      f'<h1>{e(titulo)}</h1><p class="ru-tema">{e(p["dura"])}</p>'
+                      f'{_PRUEBA_CUERPO[clave](t)}'
+                      f'<section class="cierre-prueba">'
+                      f'<p>{e(p["de_dia"].replace("{dia}", str(dia)))}</p>'
+                      f'<div class="botones">{"".join(pies)}</div>'
+                      f'<p class="otras">{e(p["otras"])}: {otras}</p></section>'
+                      f'\n<script src="../prueba.js" defer></script>')
+            ruta = f"{pista}/{p['paginas'][clave]}"
+            alternas = {q: f"{q}/{textos[q]['pruebas']['paginas'][clave]}" for q in PISTAS}
+            escribir(destino / ruta,
+                     pagina(cfg, textos, pista, titulo, cuerpo, ruta=ruta, raiz="..",
+                            descripcion=p[clave]["intro"].replace("**", ""),
+                            alternas=alternas, clase=" prueba"))
+            rutas.append(ruta)
+    return rutas
+
 def construir_estaticas(cfg, textos, destino) -> list[str]:
     rutas = []
     for clave in ("sobre", "contacto", "privacidad"):
@@ -836,11 +1179,12 @@ def construir_extras(cfg, destino, rutas) -> None:
     fuentes.mkdir(parents=True, exist_ok=True)
     for f in (WEB / "fonts").glob("*.woff2"):
         shutil.copy2(f, fuentes / f.name)
-    ilustraciones = tuple(f"practica-{clave}.png" for clave, _, _ in _PRACTICAS)
+    ilustraciones = tuple(f"practica-{clave}.png" for clave in _PRACTICAS)
     for recurso in ("portada.css", "dima.png", *ilustraciones):
         shutil.copy2(WEB / recurso, destino / recurso)
     escribir(destino / "progreso.js", PROGRESO_JS)
     escribir(destino / "test.js", TEST_JS)
+    escribir(destino / "prueba.js", PRUEBA_JS)
     dominio = (cfg.get("dominio") or "").rstrip("/")
     robots = "User-agent: *\nAllow: /\n"
     if dominio:
@@ -875,6 +1219,7 @@ def construir(destino: pathlib.Path = DOCS, cfg=None, textos=None, cal=None, cur
     rutas += construir_lecciones(cfg, textos, cal, destino, publicadas)
     rutas += construir_indice(cfg, textos, cal, destino, publicadas)
     rutas += construir_portadas(cfg, textos, cal, destino, publicadas)
+    rutas += construir_pruebas(cfg, textos, destino, publicadas)
     rutas += construir_estaticas(cfg, textos, destino)
     construir_extras(cfg, destino, rutas)
     return {"paginas": rutas, "lecciones": {p: len(publicadas[p]) for p in PISTAS}}

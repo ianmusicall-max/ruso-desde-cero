@@ -9,6 +9,127 @@ es:
     lectura: [Lectura, Lee tus primeras palabras en voz alta.]
     escritura: [Escritura, Escribe tu nombre en cirílico.]
     habla: [Conversación, Practica cómo presentarte en ruso.]
+  # Las cuatro pruebas de la portada. El ruso no está aquí: vive una sola vez
+  # en construir_sitio.py, porque las dos pistas lo comparten. Aquí va lo que
+  # cambia de lengua a lengua, y las listas tienen que seguir el mismo orden
+  # y la misma longitud que las de allí.
+  pruebas:
+    paginas: {lectura: prueba-lectura.html, escritura: prueba-escritura.html, escucha: prueba-escucha.html, habla: prueba-habla.html}
+    dura: Dos minutos, aquí mismo. No hace falta saber nada de ruso.
+    volver: Portada
+    de_dia: "Esto sale del día {dia} del curso."
+    ver_leccion: Ver la lección entera
+    otras: Las otras pruebas
+    lectura:
+      titulo: Lee tus primeras palabras en ruso
+      intro: >-
+        El alfabeto ruso tiene 33 letras, y **cinco se escriben y se leen
+        igual que en español**. Con esas cinco ya se leen palabras de verdad.
+      cab: [Letra, Suena, Como en]
+      letras: [[a, "**a**mor"], [o, "**o**so"], [k, "**c**asa"], [m, "**m**amá"], [t, "**t**omate"]]
+      pide: Lee cada palabra en voz alta y tócala para comprobar.
+      palabras: [[kot, gato], [tam, allí], [tak, así], [kak, cómo], [kto, quién], ["**MA**-ma", mamá]]
+      frase: "Y con cuatro de ellas se lee una conversación entera. Alguien llama a la puerta:"
+      puerta: ["¿Quién es?", "Mamá."]
+      cierre: >-
+        Seis palabras y una conversación en dos minutos. Fíjate en lo que
+        **no** hay: **Там кот** son dos palabras y significa «allí está el
+        gato». El ruso no tiene artículos y en presente no dice «es» ni
+        «está».
+    escritura:
+      titulo: Escribe tu nombre en cirílico
+      intro: >-
+        Aquí están las 33 letras con su sonido. Toca las que necesites y
+        escribe tu nombre **como suena**, no como se escribe. La **Х** suena
+        como nuestra j y la **Р** es una r, así que José se escribe **Хосе́** y
+        Jorge, **Хо́рхе**.
+      alfabeto:
+        - "a"
+        - "b"
+        - "v"
+        - "g (de «gato»)"
+        - "d"
+        - "ye, e"
+        - "yo"
+        - "la ll de Buenos Aires"
+        - "z sonora, la s de «mismo»"
+        - "i"
+        - "y corta, de «hoy»"
+        - "k"
+        - "l"
+        - "m"
+        - "n"
+        - "o"
+        - "p"
+        - "r"
+        - "s"
+        - "t"
+        - "u"
+        - "f"
+        - "j"
+        - "ts"
+        - "ch"
+        - "sh"
+        - "sh larga y blanda"
+        - "signo duro: no suena"
+        - "una i con la lengua atrás"
+        - "signo blando: ablanda"
+        - "e"
+        - "yu"
+        - "ya"
+      etiqueta: Tu nombre en ruso
+      hueco: Toca las letras
+      borrar: Borrar la última
+      vaciar: Vaciar
+      ejemplos: "Los cuatro personajes del curso, por si te sirven de modelo:"
+      cierre: >-
+        La tilde marca la sílaba fuerte y en Rusia no se escribe; en este
+        curso la vas a ver siempre, porque en ruso el acento no se adivina y
+        si cambia de sitio, cambia la palabra.
+    escucha:
+      titulo: La pregunta rusa no sube al final
+      intro: >-
+        En ruso, una pregunta de sí o no **tiene exactamente las mismas
+        palabras que la respuesta**. Lo único que cambia es la voz. Mira por
+        dónde sube:
+      afirmacion: Afirmación
+      pregunta: Pregunta
+      pares: [["Es un gato.", "¿Es un gato?"], ["Es una habitación.", "¿Es una habitación?"]]
+      contraste: >-
+        **Ahí está la trampa.** En español la voz sube al final de la frase y
+        se queda arriba: «¿es una habitación↗?». En ruso sube **en la sílaba
+        con acento** de la palabra que preguntas, y lo que viene detrás baja.
+        Con **кот** las dos lenguas coinciden, porque la tónica es la última;
+        con **ко́мната** ya no.
+      graba_pide: Dilo tú. Grábate y escucha si tu voz sube donde tiene que subir.
+      sin_permiso: >-
+        No se pudo usar el micrófono. Dilo en voz alta igual: la prueba
+        funciona sin grabar nada.
+      graba: Grabarme
+      para: Parar
+      cierre: >-
+        Son dos frases, pero la entonación es la mitad de lo que hace que te
+        entiendan: si subes al final, como en español, se entiende, pero
+        suena a extranjero.
+    habla:
+      titulo: Preséntate en ruso
+      intro: >-
+        Tu primera conversación, la que vas a usar el primer día que pongas
+        un pie en Rusia. Escribe tu nombre y dila entera, las dos voces, en
+        voz alta.
+      etiqueta: Tu nombre
+      hueco: Camila
+      lineas: ["¡Hola! ¿Cómo te llamas?", "Me llamo {nombre}. ¿Y tú?", "Kira.", "¡Mucho gusto!"]
+      cab: [Frase, Se dice, Significa]
+      frases:
+        - ["kak ti-**BIA** za-**VUT**", "¿Cómo te llamas?"]
+        - ["mi-**ÑA** za-**VUT**", "Me llamo…"]
+        - ["a ti-**BIA**", "¿Y tú?"]
+        - ["**O**-chin pri-**YAT**-na", "Mucho gusto."]
+      cierre: >-
+        Esta es la forma de **tú**, la de los amigos, la gente de tu edad y
+        los niños. La de usted llega en la unidad 3, y cuál de las dos usar
+        es una de las cosas que el español no te prepara para decidir.
   idioma: Español
   lema: Ruso desde cero hasta B2, explicado en español. Treinta minutos al día.
   descripcion: >-
@@ -163,6 +284,126 @@ en:
     lectura: [Reading, Read your first words aloud.]
     escritura: [Writing, Write your name in Cyrillic.]
     habla: [Speaking, Practise introducing yourself in Russian.]
+  # The four tasters linked from the home page. The Russian is not here: it
+  # lives once in construir_sitio.py, because both tracks share it. What
+  # changes from language to language goes here, and the lists must keep the
+  # same order and the same length as the ones over there.
+  pruebas:
+    paginas: {lectura: try-reading.html, escritura: try-writing.html, escucha: try-listening.html, habla: try-speaking.html}
+    dura: Two minutes, right here. You need to know no Russian at all.
+    volver: Home
+    de_dia: "This comes from day {dia} of the course."
+    ver_leccion: See the whole lesson
+    otras: The other tasters
+    lectura:
+      titulo: Read your first words in Russian
+      intro: >-
+        The Russian alphabet has 33 letters, and **five of them are written
+        and read exactly as in English**. Those five already spell real
+        words.
+      cab: [Letter, Sounds, As in]
+      letras: [[a, "f**a**ther"], [o, "**o**r (short, no glide)"], [k, "s**k**ate"], [m, "**m**um"], [t, "s**t**op"]]
+      pide: Read each word aloud, then tap it to check.
+      palabras: [[kot, cat], [tam, there], [tak, "so, like this"], [kak, how], [kto, who], ["**MA**-ma", mum]]
+      frase: "And four of them already spell a whole conversation. Someone knocks at the door:"
+      puerta: ["Who is it?", "Mum."]
+      cierre: >-
+        Six words and a conversation in two minutes. And look at what is
+        **missing**: **Там кот** is two words and means “the cat is there”.
+        Russian has no articles, and in the present it doesn't say “is”.
+    escritura:
+      titulo: Write your name in Cyrillic
+      intro: >-
+        Here are all 33 letters with their sound. Tap the ones you need and
+        write your name **the way it sounds**, not the way it's spelt. **Дж**
+        is the j of *jam* and **Х** is the ch of *loch*, so John is **Джон**
+        and Hugh is **Хью**.
+      alfabeto:
+        - "a (father)"
+        - "b"
+        - "v"
+        - "g (go)"
+        - "d"
+        - "ye, e"
+        - "yo"
+        - "zh, the s in measure"
+        - "z"
+        - "i (meet)"
+        - "y, as in boy"
+        - "k"
+        - "l"
+        - "m"
+        - "n"
+        - "o"
+        - "p"
+        - "rolled r"
+        - "s"
+        - "t"
+        - "oo"
+        - "f"
+        - "kh, as in loch"
+        - "ts, as in cats"
+        - "ch"
+        - "sh"
+        - "long soft sh"
+        - "hard sign: silent"
+        - "a deep i, tongue pulled back"
+        - "soft sign: softens"
+        - "e (bed)"
+        - "yu (you)"
+        - "ya (yard)"
+      etiqueta: Your name in Russian
+      hueco: Tap the letters
+      borrar: Delete last
+      vaciar: Clear
+      ejemplos: "The four characters of the course, as a model:"
+      cierre: >-
+        The mark over a vowel is the stress, and in Russia it isn't written;
+        in this course you'll see it on every word, because Russian stress
+        can't be guessed, and if it moves, the word changes.
+    escucha:
+      titulo: A Russian question doesn't rise at the end
+      intro: >-
+        In Russian a yes-or-no question has **exactly the same words as the
+        answer**. The only thing that changes is your voice. Watch where it
+        goes up:
+      afirmacion: Statement
+      pregunta: Question
+      pares: [["It's a cat.", "Is it a cat?"], ["It's a room.", "Is it a room?"]]
+      contraste: >-
+        **That's the trap.** In English your voice rises at the end of the
+        question and stays up: “is it a room↗?”. In Russian it jumps up **on
+        the stressed syllable** of the word you're asking about, and
+        everything after it drops. With **кот** both languages agree, because
+        the stress is on the last syllable; with **ко́мната** they don't.
+      graba_pide: Now you. Record yourself and listen for whether your voice rises where it should.
+      sin_permiso: >-
+        The microphone isn't available. Say it out loud anyway: the taster
+        works without recording a thing.
+      graba: Record me
+      para: Stop
+      cierre: >-
+        Two sentences, but intonation is half of being understood: if you
+        rise at the end, as in English, you'll be understood — and you'll
+        sound foreign.
+    habla:
+      titulo: Introduce yourself in Russian
+      intro: >-
+        Your first conversation, the one you'll use on your first day in
+        Russia. Type your name and say the whole thing out loud, both voices.
+      etiqueta: Your name
+      hueco: Tom
+      lineas: ["Hi! What's your name?", "My name's {nombre}. And yours?", "Kira.", "Nice to meet you!"]
+      cab: [Phrase, Say it, Means]
+      frases:
+        - ["kak ti-**BYA** za-**VOOT**", "What's your name?"]
+        - ["mi-**NYA** za-**VOOT**", "My name is…"]
+        - ["a ti-**BYA**", "And yours?"]
+        - ["**O**-chin pri-**YAT**-na", "Nice to meet you."]
+      cierre: >-
+        This is the **informal** form, for friends, people your age and
+        children. The polite one arrives in unit 3, and choosing between them
+        is one of the things English doesn't prepare you for.
   idioma: English
   lema: Russian from zero to B2, explained in English. Thirty minutes a day.
   descripcion: >-

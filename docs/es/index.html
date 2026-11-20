@@ -178,7 +178,64 @@ details.unidad ol{margin:.2rem 0 .8rem;padding-left:1.4rem}
 details.unidad li{margin:.15rem 0}
 li.pronto{color:var(--tenue)}
 li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
+
 .tipo{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:0 .45rem;margin-right:.3rem}
+
+/* Las cuatro pruebas de la portada. Son páginas de dos minutos, así que
+   nada de ellas se apoya en haber leído lo de arriba. */
+.prueba .tr{color:var(--tenue);font-size:.92rem}
+.prueba .pide{font-weight:700}
+.palabras{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+/* Un <details> y no un botón: así la palabra se abre sin JavaScript. Lo que
+   esta página tiene que hacer es enseñar seis palabras, y una ficha que no
+   se puede abrir no enseña ninguna. */
+.palabra{background:var(--tarjeta);border:1px solid var(--linea);border-radius:12px;
+  padding:.55rem .9rem;text-align:center;min-width:6.5rem}
+.palabra:hover{border-color:var(--acento)}
+.palabra[open]{border-color:var(--acento);background:var(--acento-suave)}
+.palabra summary{cursor:pointer;font-size:1.3rem;list-style:none;font-family:inherit}
+.palabra summary::-webkit-details-marker{display:none}
+.palabra summary::marker{content:""}
+.palabra .dice{display:block;margin-top:.3rem;color:var(--tenue);font-size:.85rem}
+.palabra .quiere{display:block;color:var(--acento);font-weight:700;font-size:.9rem}
+.maquina{border:1px solid var(--linea);border-radius:14px;padding:1rem;margin:1.2rem 0;background:var(--tarjeta)}
+.maquina label{display:block;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.85rem;
+  color:var(--tenue);margin-bottom:.3rem}
+.maquina input{width:100%;font:inherit;font-size:1.5rem;padding:.5rem .7rem;border:1px solid var(--linea);
+  border-radius:10px;background:var(--papel);color:var(--tinta)}
+.maquina .acciones{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0 0}
+.teclado{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr));gap:.35rem;margin-top:.8rem}
+.tecla{font:inherit;color:inherit;background:var(--papel);border:1px solid var(--linea);border-radius:9px;
+  padding:.35rem .2rem;cursor:pointer;line-height:1.25}
+.tecla:hover{border-color:var(--acento)}
+.tecla span[lang=ru]{display:block;font-size:1.05rem}
+.tecla .suena{display:block;color:var(--tenue);font-size:.7rem}
+ul.nombres{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+ul.nombres span[lang=ru]{font-size:1.1rem;color:var(--acento)}
+.voces{margin:1.4rem 0}
+.voces .linea{margin:.9rem 0}
+.voces .linea p{margin:.1rem 0}
+.voces .rol{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--tenue);margin-right:.4rem}
+.voces span[lang=ru]{font-size:1.2rem}
+/* El dibujo de la voz: color de acento y ancho fijo, para que las dos
+   líneas de un par se puedan comparar de un vistazo. */
+.voz-caja{max-width:22rem;margin:.2rem 0 .3rem;color:var(--acento)}
+svg.voz{display:block;width:100%;height:auto}
+.silabas{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;text-align:center;
+  font-size:1.05rem;color:var(--tenue);margin-top:-.2rem}
+.silabas .fuerte{color:var(--acento);font-weight:700}
+.grabadora{border:1px solid var(--linea);border-radius:14px;padding:1rem;margin:1.4rem 0}
+.grabadora audio{width:100%;margin-top:.7rem}
+.grabadora .boton[aria-pressed=true]{background:var(--aviso)}
+#dialogo .replica{margin:.7rem 0}
+#dialogo span[lang=ru]{font-size:1.15rem}
+/* La traducción debajo y no detrás, como en los diálogos de las
+   lecciones: en el móvil, en la misma línea, el ruso y el español se
+   enredan en el mismo párrafo. */
+#dialogo .tr{display:block;font-style:italic}
+.cierre-prueba{border-top:1px solid var(--linea);margin-top:2.4rem;padding-top:1.2rem}
+.cierre-prueba .otras{color:var(--tenue);font-size:.9rem}
 </style>
 <link rel="stylesheet" href="../portada.css">
 <script>try{var t=localStorage.getItem('rdc.tema');if(t)document.documentElement.setAttribute('data-tema',JSON.parse(t))}catch(e){}</script>
@@ -201,7 +258,7 @@ li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
 <ul class="ventajas"><li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L19 7"/></svg></span><strong>Sin registro</strong><span>Ni cuenta ni correo. Abres y estudias.</span></li><li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><strong>Treinta minutos</strong><span>Una lección al día, con su reloj.</span></li><li><span class="icono" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><strong>Del alfabeto al B2</strong><span>Cuatro niveles, 1.460 lecciones.</span></li></ul>
 <p class="nota">Tu progreso se guarda solo en este navegador: no hay registro ni cuentas.</p>
 </section>
-<section class="practicas"><h2>Explora el ruso</h2><div class="accesos"><a class="practica" href="a1/semana-01/dia-5.html#parte-5"><img src="../practica-escucha.png?v=dima-sin-libro" alt="" loading="lazy" decoding="async"><strong>Escucha</strong><span>Graba tu voz y escucha tu entonación.</span></a><a class="practica" href="a1/semana-01/dia-1.html#parte-4"><img src="../practica-lectura.png?v=dima" alt="" loading="lazy" decoding="async"><strong>Lectura</strong><span>Lee tus primeras palabras en voz alta.</span></a><a class="practica" href="a1/semana-01/dia-7.html#parte-4"><img src="../practica-escritura.png?v=dima" alt="" loading="lazy" decoding="async"><strong>Escritura</strong><span>Escribe tu nombre en cirílico.</span></a><a class="practica" href="a1/semana-01/dia-4.html#parte-5"><img src="../practica-habla.png?v=dima" alt="" loading="lazy" decoding="async"><strong>Conversación</strong><span>Practica cómo presentarte en ruso.</span></a></div></section>
+<section class="practicas"><h2>Explora el ruso</h2><div class="accesos"><a class="practica" href="prueba-escucha.html"><img src="../practica-escucha.png?v=dima-sin-libro" alt="" loading="lazy" decoding="async"><strong>Escucha</strong><span>Graba tu voz y escucha tu entonación.</span></a><a class="practica" href="prueba-lectura.html"><img src="../practica-lectura.png?v=dima" alt="" loading="lazy" decoding="async"><strong>Lectura</strong><span>Lee tus primeras palabras en voz alta.</span></a><a class="practica" href="prueba-escritura.html"><img src="../practica-escritura.png?v=dima" alt="" loading="lazy" decoding="async"><strong>Escritura</strong><span>Escribe tu nombre en cirílico.</span></a><a class="practica" href="prueba-habla.html"><img src="../practica-habla.png?v=dima" alt="" loading="lazy" decoding="async"><strong>Conversación</strong><span>Practica cómo presentarte en ruso.</span></a></div></section>
 <section class="mapa"><h2>El camino <span class="tipo">Nivel A1 — elemental · 24 unidades</span></h2><p class="nota">Cuatro niveles, uno por año a lección diaria. A dos lecciones al día, la mitad de tiempo.</p><div class="rejilla"><a class="unidad-tarjeta" href="a1/semana-01/dia-1.html"><span class="num">1</span><strong>¡Hola! ¿Cómo te llamas?</strong><span class="ru" lang="ru">Приве́т! Как тебя́ зову́т?</span><span class="pie">14 de 14 · lecciones escritas</span></a><a class="unidad-tarjeta" href="a1/semana-03/dia-1.html"><span class="num">2</span><strong>Leer en ruso</strong><span class="ru" lang="ru">Чита́ем по-ру́сски</span><span class="pie">14 de 14 · lecciones escritas</span></a><a class="unidad-tarjeta" href="a1/semana-05/dia-1.html"><span class="num">3</span><strong>¿De dónde eres?</strong><span class="ru" lang="ru">Отку́да вы?</span><span class="pie">14 de 14 · lecciones escritas</span></a><a class="unidad-tarjeta" href="a1/semana-07/dia-1.html"><span class="num">4</span><strong>¿Dónde está el metro?</strong><span class="ru" lang="ru">Где метро́?</span><span class="pie">14 de 14 · lecciones escritas</span></a><div class="unidad-tarjeta apagada"><span class="num">5</span><strong>¿A qué te dedicas?</strong><span class="ru" lang="ru">Кем вы рабо́таете?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">6</span><strong>¿Qué tienes?</strong><span class="ru" lang="ru">Что у тебя́ есть?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">7</span><strong>Mi familia</strong><span class="ru" lang="ru">Моя́ семья́</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">8</span><strong>¿Qué te gusta hacer?</strong><span class="ru" lang="ru">Что ты лю́бишь?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">9</span><strong>El tiempo libre</strong><span class="ru" lang="ru">Свобо́дное вре́мя</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">10</span><strong>Mi casa</strong><span class="ru" lang="ru">Мой дом</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">11</span><strong>Dónde está cada cosa</strong><span class="ru" lang="ru">Где что стои́т</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">12</span><strong>En el trabajo</strong><span class="ru" lang="ru">На рабо́те</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">13</span><strong>¿Cómo es?</strong><span class="ru" lang="ru">Како́й он?</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">14</span><strong>El desayuno</strong><span class="ru" lang="ru">За́втрак</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">15</span><strong>En el restaurante</strong><span class="ru" lang="ru">В рестора́не</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">16</span><strong>La ropa</strong><span class="ru" lang="ru">Оде́жда</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">17</span><strong>De compras</strong><span class="ru" lang="ru">Поку́пки</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">18</span><strong>Mi día</strong><span class="ru" lang="ru">Мой день</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">19</span><strong>La semana</strong><span class="ru" lang="ru">Неде́ля</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">20</span><strong>El transporte</strong><span class="ru" lang="ru">Тра́нспорт</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">21</span><strong>El tiempo y los planes</strong><span class="ru" lang="ru">Пого́да и пла́ны</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">22</span><strong>Las fiestas</strong><span class="ru" lang="ru">Пра́здники</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">23</span><strong>¡Feliz cumpleaños!</strong><span class="ru" lang="ru">С днём рожде́ния!</span><span class="pie">próximamente</span></div><div class="unidad-tarjeta apagada"><span class="num">24</span><strong>Todo junto</strong><span class="ru" lang="ru">Всё вме́сте</span><span class="pie">próximamente</span></div></div></section>
 <h2>Qué es</h2>
 <p>Un curso de ruso completo y gratuito que va <strong>del alfabeto al nivel B2</strong>:

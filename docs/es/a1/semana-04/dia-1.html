@@ -178,7 +178,64 @@ details.unidad ol{margin:.2rem 0 .8rem;padding-left:1.4rem}
 details.unidad li{margin:.15rem 0}
 li.pronto{color:var(--tenue)}
 li.hecha>a::after{content:" ✓";color:var(--bien);font-weight:700}
+
 .tipo{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.75rem;color:var(--tenue);border:1px solid var(--linea);border-radius:99px;padding:0 .45rem;margin-right:.3rem}
+
+/* Las cuatro pruebas de la portada. Son páginas de dos minutos, así que
+   nada de ellas se apoya en haber leído lo de arriba. */
+.prueba .tr{color:var(--tenue);font-size:.92rem}
+.prueba .pide{font-weight:700}
+.palabras{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+/* Un <details> y no un botón: así la palabra se abre sin JavaScript. Lo que
+   esta página tiene que hacer es enseñar seis palabras, y una ficha que no
+   se puede abrir no enseña ninguna. */
+.palabra{background:var(--tarjeta);border:1px solid var(--linea);border-radius:12px;
+  padding:.55rem .9rem;text-align:center;min-width:6.5rem}
+.palabra:hover{border-color:var(--acento)}
+.palabra[open]{border-color:var(--acento);background:var(--acento-suave)}
+.palabra summary{cursor:pointer;font-size:1.3rem;list-style:none;font-family:inherit}
+.palabra summary::-webkit-details-marker{display:none}
+.palabra summary::marker{content:""}
+.palabra .dice{display:block;margin-top:.3rem;color:var(--tenue);font-size:.85rem}
+.palabra .quiere{display:block;color:var(--acento);font-weight:700;font-size:.9rem}
+.maquina{border:1px solid var(--linea);border-radius:14px;padding:1rem;margin:1.2rem 0;background:var(--tarjeta)}
+.maquina label{display:block;font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.85rem;
+  color:var(--tenue);margin-bottom:.3rem}
+.maquina input{width:100%;font:inherit;font-size:1.5rem;padding:.5rem .7rem;border:1px solid var(--linea);
+  border-radius:10px;background:var(--papel);color:var(--tinta)}
+.maquina .acciones{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0 0}
+.teclado{display:grid;grid-template-columns:repeat(auto-fill,minmax(4.6rem,1fr));gap:.35rem;margin-top:.8rem}
+.tecla{font:inherit;color:inherit;background:var(--papel);border:1px solid var(--linea);border-radius:9px;
+  padding:.35rem .2rem;cursor:pointer;line-height:1.25}
+.tecla:hover{border-color:var(--acento)}
+.tecla span[lang=ru]{display:block;font-size:1.05rem}
+.tecla .suena{display:block;color:var(--tenue);font-size:.7rem}
+ul.nombres{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+ul.nombres span[lang=ru]{font-size:1.1rem;color:var(--acento)}
+.voces{margin:1.4rem 0}
+.voces .linea{margin:.9rem 0}
+.voces .linea p{margin:.1rem 0}
+.voces .rol{font-family:Onest,ui-sans-serif,system-ui,sans-serif;font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--tenue);margin-right:.4rem}
+.voces span[lang=ru]{font-size:1.2rem}
+/* El dibujo de la voz: color de acento y ancho fijo, para que las dos
+   líneas de un par se puedan comparar de un vistazo. */
+.voz-caja{max-width:22rem;margin:.2rem 0 .3rem;color:var(--acento)}
+svg.voz{display:block;width:100%;height:auto}
+.silabas{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;text-align:center;
+  font-size:1.05rem;color:var(--tenue);margin-top:-.2rem}
+.silabas .fuerte{color:var(--acento);font-weight:700}
+.grabadora{border:1px solid var(--linea);border-radius:14px;padding:1rem;margin:1.4rem 0}
+.grabadora audio{width:100%;margin-top:.7rem}
+.grabadora .boton[aria-pressed=true]{background:var(--aviso)}
+#dialogo .replica{margin:.7rem 0}
+#dialogo span[lang=ru]{font-size:1.15rem}
+/* La traducción debajo y no detrás, como en los diálogos de las
+   lecciones: en el móvil, en la misma línea, el ruso y el español se
+   enredan en el mismo párrafo. */
+#dialogo .tr{display:block;font-style:italic}
+.cierre-prueba{border-top:1px solid var(--linea);margin-top:2.4rem;padding-top:1.2rem}
+.cierre-prueba .otras{color:var(--tenue);font-size:.9rem}
 </style>
 <script>try{var t=localStorage.getItem('rdc.tema');if(t)document.documentElement.setAttribute('data-tema',JSON.parse(t))}catch(e){}</script>
 </head>

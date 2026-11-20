@@ -62,7 +62,7 @@ las decisiones y su porqué.
   siguientes). Su secuencia está en `referencias/tochka-ru.md`.
 - Hechos: `programa/plan.md`, calendario A1–B2, metodología, las dos listas
   de contraste, el motor (`plan.py`, `validar.py`, `construir_sitio.py`) y
-  38 pruebas.
+  50 pruebas.
 - **Escrita la unidad 1 del A1 entera en las dos pistas** (28 lecciones,
   semanas 1 y 2): las 33 letras en diez tandas, la о átona, presentarse,
   la entonación de la pregunta, Как дела́, спаси́бо / пожа́луйста, ты / вы,
@@ -95,6 +95,10 @@ las decisiones y su porqué.
   **episodio 4**. **112 lecciones en total.**
 - Siguiente: la unidad 5. Antes, detallar sus 14 días en el calendario con
   la ficha de Tochka Ru A1.
+- **La portada tiene cuatro pruebas de dos minutos** (`prueba-*.html` /
+  `try-*.html`), una por habilidad, con el ejercicio solo y entero y la
+  puerta al día 1 al final. Antes esas tarjetas llevaban a un ancla dentro
+  de una lección: ver más abajo.
 - **Las pruebas y los mini-tests se contestan pulsando** (`scripts/pruebas.py`
   + `test.js`): el lector saca preguntas y clave del propio Markdown y, ante
   cualquier duda, devuelve None y la página se queda en papel. Al terminar,
@@ -253,6 +257,96 @@ cada unidad; es una foto, no se actualiza sola).
   a mano siempre sale un patrón. Y se comprueba **contestándola en Chromium
   por el TEXTO de la opción**, no por su letra: por la letra sería repetir la
   cuenta del generador. 15/15 y 0/15 en las dos pistas.
+
+## Los cuatro botones de la portada llevaban al minuto 25 de una lección (2026-11-20)
+
+Lo trajo el profesor: «cuando presionas Escucha te abre una página y te manda
+al fondo». Tenía razón y el fallo era exacto. Los cuatro accesos de «Explora
+el ruso» apuntaban a un **ancla dentro de una lección de 30 minutos**:
+
+| Botón | Dejaba en | Que es |
+|---|---|---|
+| Escucha | día 5, parte 5 | «Tu turno», **minuto 25 de 30** |
+| Lectura | día 1, parte 4 | «Práctica», minuto 18 |
+| Escritura | día 7, parte 4 | «Tarea», minuto 23 |
+| Conversación | día 4, parte 5 | «Tu turno», minuto 25 |
+
+Quien pulsaba «graba tu voz» aparecía casi al final de una lección que no
+había empezado, con el ejercicio **fuera de contexto** —ese «Tu turno» se
+apoya en lo que la lección enseñó veinte minutos antes— y con media página
+por encima y por debajo. Se lee como un salto al fondo de una página
+cualquiera.
+
+Las cuatro tarjetas las añadió la otra sesión (`2ef0c17`) y el ancla venía de
+ahí.
+
+### Cada acceso tiene ahora su página de dos minutos
+
+Lo eligió el profesor sobre tres opciones (su propia página, el ejercicio
+dentro de la portada, o llevar al principio de la lección). Son ocho páginas,
+cuatro por pista, y **ninguna pide saber nada de ruso**:
+
+- **Lectura** (`prueba-lectura.html` / `try-reading.html`): las cinco letras
+  que se leen igual, las seis palabras del día 1 en fichas que se abren, y
+  **Кто там? — Ма́ма.** Cierra con lo que no hay: ni artículos ni «es».
+- **Escritura**: las 33 letras con su sonido como teclado, y tu nombre se
+  escribe tocándolas.
+- **Escucha**: la pregunta rusa con las mismas palabras que la respuesta, y
+  la voz dibujada sobre las sílabas.
+- **Conversación**: el diálogo del día 4 con tu nombre dentro.
+
+Al final, la puerta al día 1, el enlace a la lección de la que sale y las
+otras tres pruebas.
+
+### Lo que hay que saber si alguien lo toca
+
+- **El ruso vive en `construir_sitio.py` y no en `textos.yaml`**, una sola
+  vez para las dos pistas. Escrito dos veces, las pistas podrían separarse
+  sin que nada fallara, que es justo lo que la regla del curso prohíbe. En el
+  YAML va lo que cambia de lengua a lengua —la pronunciación aproximada con
+  la ortografía de cada una, y la traducción— en el mismo orden y con la
+  misma longitud, y hay una prueba que lo exige: una lista corta dejaría
+  filas sin traducción **en silencio**, porque `zip` se para en la más corta.
+- **La única diferencia de ruso entre las dos pistas es el ejemplo del
+  nombre**: transliterar «José» para un angloparlante no enseña nada, así que
+  el español da *Хосе́* y *Хо́рхе* y el inglés *Джон* y *Хью*. La prueba no la
+  tapa: exige que toda palabra que esté en una pista y no en la otra aparezca
+  en ese ejemplo.
+- **Las palabras de lectura son un `<details>` y no un botón.** Sin
+  JavaScript, un botón dejaría la página sin enseñar ni una palabra, que es
+  lo único que esa página hace. Es la misma razón por la que la clave de una
+  lección nace visible y la pliega el navegador.
+- **La curva de la voz y la fila de sílabas comparten caja y columnas
+  iguales**, así que la subida cae sobre su sílaba a cualquier ancho. Puesta
+  a ojo señalaría a otra, y la página enseñaría lo contrario de lo que dice.
+  Medido en Chromium: el vértice cae en el centro exacto de su sílaba en los
+  cuatro dibujos.
+- **El hueco del nombre es `___` y no `…`**: con puntos suspensivos salía
+  «Меня́ зову́т …. А тебя́?», con dos puntos seguidos. Hay una prueba que
+  recorre las líneas de las dos pistas buscando esa doble puntuación.
+- **La grabadora nace oculta y la enciende el navegador.** Sin micrófono o
+  sin `MediaRecorder` pediría permiso para nada, y la prueba funciona igual
+  diciendo las frases en voz alta. Al parar se apagan las pistas del flujo:
+  si no, el punto rojo de la pestaña se queda encendido y se lee como que el
+  sitio sigue escuchando. La grabación vive en memoria y muere con la
+  pestaña.
+- **`pagina()` recibe la clase del `<main>` en su propio parámetro.** La
+  primera versión la metía en `principal`, que se pega como atributo: salían
+  dos `class` en la misma etiqueta y el navegador se queda con uno.
+- **La ruta a la lección sale de `dia.ruta`, no de `ruta_leccion()`**: la
+  prueba vive en `es/` igual que la portada, así que el enlace relativo no
+  lleva la pista delante. Es el mismo fallo que el ancla ya tuvo.
+
+Comprobado en Chromium y no deducido: las cuatro páginas en las dos pistas,
+las fichas que se abren, el teclado (33 teclas, la mayúscula sola al empezar
+y tras un espacio), el nombre entrando en el diálogo ruso y en su traducción,
+los cuatro vértices de la voz sobre su sílaba, una toma de micrófono de 6.856
+bytes y el botón del tema. **Cero errores de JavaScript.**
+
+Y una medida que se equivocó de motivo: la primera comprobación decía que las
+fichas de lectura salían abiertas. Era la medida: un `<details>` cerrado
+esconde con `content-visibility`, así que sus hijos **siguen teniendo caja** y
+`offsetParent`. La señal es `checkVisibility()`.
 
 ## La página sale siempre de día (2026-11-20)
 
