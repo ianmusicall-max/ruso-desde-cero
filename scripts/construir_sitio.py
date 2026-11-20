@@ -757,8 +757,9 @@ def _accesos_de_practica(t, lecciones):
     for clave, ruta, parte in _PRACTICAS:
         if ruta in disponibles:
             titulo, descripcion = t["practicas"][clave]
+            version = "misha-sin-libro" if clave == "escucha" else "misha"
             tarjetas.append(f'<a class="practica" href="{ruta}.html#parte-{parte}">'
-                            f'<img src="../practica-{clave}.png?v=misha" alt="" loading="lazy" decoding="async">'
+                            f'<img src="../practica-{clave}.png?v={version}" alt="" loading="lazy" decoding="async">'
                             f'<strong>{e(titulo)}</strong><span>{e(descripcion)}</span></a>')
     if not tarjetas:
         return ""
