@@ -709,9 +709,9 @@ niveles:
         episodio: {ru: "А у тебя́ есть стол?", es: "¿Y tú tienes mesa?", en: "Have you got a table?", sinopsis: "El piso de Camila está vacío. Kira y Tom le preguntan qué tiene: casi nada. Entre los vecinos le prestan una mesa, dos sillas y una lámpara."}
         dias:
           - tipo: leccion
-            ru: "Что э́то?"
-            es: "Seis objetos y su género"
-            en: "Six objects and their gender"
+            ru: "У меня́ есть стол"
+            es: "Tengo una mesa"
+            en: "I've got a table"
             foco: >-
               Si señalas algo y preguntas Что э́то?, puedes responder con
               Э́то y el nombre. Para las seis palabras de hoy, usa la última
@@ -719,9 +719,9 @@ niveles:
               оно́. Haz tres columnas y coloca dos objetos en cada una.
               Palabras: стол, стул, ла́мпа, ру́чка, письмо́, окно́.
           - tipo: leccion
-            ru: "Ключ и ключи́"
-            es: "Objetos en plural"
-            en: "Objects in the plural"
+            ru: "Часы́, очки́, де́ньги"
+            es: "Palabras que solo existen en plural"
+            en: "Words that only exist in the plural"
             foco: >-
               Aprende dos parejas como vocabulario: ключ / ключи́, биле́т /
               биле́ты. En los sentidos de hoy, часы́ significa un reloj o
@@ -730,9 +730,9 @@ niveles:
               они́ cuando sustituyas el nombre. Palabras: ключ, ключи́,
               биле́т, биле́ты, часы́, очки́, де́ньги.
           - tipo: leccion
-            ru: "Где телефо́н?"
-            es: "¿Dónde está el teléfono?"
-            en: "Where's the phone?"
+            ru: "Где мои́ ве́щи?"
+            es: "¿Dónde están mis cosas?"
+            en: "Where are my things?"
             foco: >-
               Pregunta con Где y el nombre. En la respuesta, usa здесь si el
               objeto está aquí, o там si está allí. Puedes decir solo Там.
@@ -740,9 +740,9 @@ niveles:
               он, су́мка — она́, письмо́ — оно́, ключи́ — они́. Palabras:
               телефо́н, су́мка, здесь, там, где?, они́.
           - tipo: leccion
-            ru: "У меня́ есть"
-            es: "Tengo una lámpara"
-            en: "I've got a lamp"
+            ru: "У тебя́, у него́, у неё"
+            es: "¿Tienes? ¿Tiene él? ¿Tiene ella?"
+            en: "Do you have? Does he? Does she?"
             foco: >-
               Para decir que tienes algo, usa У меня́ есть y el nombre del
               objeto. En los ejemplos de hoy, el objeto conserva la forma
@@ -751,9 +751,9 @@ niveles:
               o preguntar a un grupo. Palabras: у меня́, у тебя́, у вас,
               есть, ла́мпа, стол.
           - tipo: leccion
-            ru: "У него́ и у неё"
-            es: "¿Quién tiene qué?"
-            en: "Who has what?"
+            ru: "У нас, у вас, у них"
+            es: "¿Tenemos? ¿Tenéis? ¿Tienen?"
+            en: "Do we have? Do you (plural)? Do they?"
             foco: >-
               Haz una fila para los bloques que ya usas, у меня́, у тебя́, у
               вас, y otra con у него́ (él), у неё (ella), у нас (nosotros) y
@@ -779,9 +779,9 @@ niveles:
               Том: У меня́ есть ру́чка и письмо́. Они́ там. Ки́ра: А у вас
               есть ключи́? Ка
           - tipo: leccion
-            ru: "Что у тебя́ есть?"
-            es: "¿Qué tienes en tu bolsa?"
-            en: "What have you got in your bag?"
+            ru: "Что у тебя́ в су́мке?"
+            es: "Пра́вильно o непра́вильно: el juego de adivinar"
+            en: "Правильно or непра́вильно: the guessing game"
             foco: >-
               Si quieres saber qué hay, empieza por что. Si ya tienes un
               objeto en mente, nómbralo. Para el juego de adivinar,
