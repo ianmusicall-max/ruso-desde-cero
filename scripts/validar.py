@@ -65,7 +65,7 @@ PALABRA = re.compile(rf"[{LETRA_LATINA}А-Яа-яЁё́]+(?:-[{LETRA_LATINA}А-�
 CIRILICO = re.compile(r"[А-Яа-яЁё]")
 LATINO = re.compile(rf"[{LETRA_LATINA}]")
 # Palabras rusas de dos o más vocales que de verdad son átonas.
-SIN_ACENTO = {"из-за", "из-под"}
+SIN_ACENTO = {"из-за", "из-под", "обо"}  # «обо» (ante мне/мной/всех) es átona, como «о»/«об»
 
 
 def leer(ruta: pathlib.Path) -> tuple[dict, str]:

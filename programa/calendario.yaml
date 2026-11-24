@@ -707,6 +707,151 @@ niveles:
         lexico: mis cosas; números 20–100
         fonetica: ИК-3 en preguntas largas
         episodio: {ru: "А у тебя́ есть стол?", es: "¿Y tú tienes mesa?", en: "Have you got a table?", sinopsis: "El piso de Camila está vacío. Kira y Tom le preguntan qué tiene: casi nada. Entre los vecinos le prestan una mesa, dos sillas y una lámpara."}
+        dias:
+          - tipo: leccion
+            ru: "Что э́то?"
+            es: "Seis objetos y su género"
+            en: "Six objects and their gender"
+            foco: >-
+              Si señalas algo y preguntas Что э́то?, puedes responder con
+              Э́то y el nombre. Para las seis palabras de hoy, usa la última
+              letra como pista: consonante para он, -а para она́, -о para
+              оно́. Haz tres columnas y coloca dos objetos en cada una.
+              Palabras: стол, стул, ла́мпа, ру́чка, письмо́, окно́.
+          - tipo: leccion
+            ru: "Ключ и ключи́"
+            es: "Objetos en plural"
+            en: "Objects in the plural"
+            foco: >-
+              Aprende dos parejas como vocabulario: ключ / ключи́, биле́т /
+              биле́ты. En los sentidos de hoy, часы́ significa un reloj o
+              varios, очки́ unas gafas y де́ньги dinero. Puedes responder
+              Э́то часы́ aunque veas un solo reloj. Con estas formas, usa
+              они́ cuando sustituyas el nombre. Palabras: ключ, ключи́,
+              биле́т, биле́ты, часы́, очки́, де́ньги.
+          - tipo: leccion
+            ru: "Где телефо́н?"
+            es: "¿Dónde está el teléfono?"
+            en: "Where's the phone?"
+            foco: >-
+              Pregunta con Где y el nombre. En la respuesta, usa здесь si el
+              objeto está aquí, o там si está allí. Puedes decir solo Там.
+              Si añades un pronombre, elígelo según el nombre: телефо́н —
+              он, су́мка — она́, письмо́ — оно́, ключи́ — они́. Palabras:
+              телефо́н, су́мка, здесь, там, где?, они́.
+          - tipo: leccion
+            ru: "У меня́ есть"
+            es: "Tengo una lámpara"
+            en: "I've got a lamp"
+            foco: >-
+              Para decir que tienes algo, usa У меня́ есть y el nombre del
+              objeto. En los ejemplos de hoy, el objeto conserva la forma
+              que aprendiste: ла́мпа, стол, ключи́. Usa У тебя́ есть…? con
+              alguien a quien tuteas y У вас есть…? para hablar con cortesía
+              o preguntar a un grupo. Palabras: у меня́, у тебя́, у вас,
+              есть, ла́мпа, стол.
+          - tipo: leccion
+            ru: "У него́ и у неё"
+            es: "¿Quién tiene qué?"
+            en: "Who has what?"
+            foco: >-
+              Haz una fila para los bloques que ya usas, у меня́, у тебя́, у
+              вас, y otra con у него́ (él), у неё (ella), у нас (nosotros) y
+              у них (ellos). Después del bloque, el patrón sigue igual: есть
+              y el objeto. Practica cambiando solo quién lo tiene. Palabras:
+              у него́, у неё, у нас, у них, у вас, у меня́.
+          - tipo: repaso
+            ru: >-
+              Повторе́ние: ве́щи
+            es: >-
+              Repaso: las cosas
+            en: >-
+              Review: belongings
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Ве́щи на столе́"
+            es: "Una mudanza en cajas"
+            en: "Moving in boxes"
+            foco: >-
+              Las etiquetas se mezclaron. Tom y Camila dicen qué tienen y
+              dónde está cada cosa. Escucha tu propia lectura y apunta quién
+              tiene cada objeto. Ками́ла: У меня́ есть ла́мпа. Она́ здесь.
+              Том: У меня́ есть ру́чка и письмо́. Они́ там. Ки́ра: А у вас
+              есть ключи́? Ка
+          - tipo: leccion
+            ru: "Что у тебя́ есть?"
+            es: "¿Qué tienes en tu bolsa?"
+            en: "What have you got in your bag?"
+            foco: >-
+              Si quieres saber qué hay, empieza por что. Si ya tienes un
+              objeto en mente, nómbralo. Para el juego de adivinar,
+              пра́вильно confirma el acierto y непра́вильно indica que hay
+              que probar otra vez. Palabras: Что у тебя́ есть?, У тебя́ есть
+              ру́чка?, У меня́ есть су́мка., пра́вильно, непра́вильно,
+              ключи́.
+          - tipo: leccion
+            ru: "Два́дцать, три́дцать, со́рок"
+            es: "De veinte a cuarenta y nueve"
+            en: "From twenty to forty-nine"
+            foco: >-
+              Di primero la decena y luego la unidad. 20, 30 y 40 son
+              два́дцать, три́дцать, со́рок. Para 27, di veinte y después
+              siete, sin otra palabra entre ambos. Palabras: два́дцать,
+              два́дцать семь, три́дцать, три́дцать оди́н, со́рок, со́рок
+              два.
+          - tipo: leccion
+            ru: "Пятьдеся́т — сто"
+            es: "De cincuenta a cien"
+            en: "From fifty to one hundred"
+            foco: >-
+              Aprende las seis cifras de la tabla. Para añadir una unidad,
+              usa el mismo patrón que ayer. Di la decena y después la
+              unidad. Lee y comprueba 56, 73 y 91. Palabras: пятьдеся́т,
+              шестьдеся́т, се́мьдесят, во́семьдесят, девяно́сто, сто.
+          - tipo: leccion
+            ru: "Ско́лько вам лет?"
+            es: "Preguntar la edad"
+            en: "Asking someone's age"
+            foco: >-
+              Aprende la pregunta con тебе́ entre personas que se tutean y
+              con вам para tratar de usted. Responde con мне y el número.
+              Hoy la respuesta termina en la cifra; las formas de «años» se
+              estudian más adelante. Palabras: Ско́лько тебе́ лет?, Ско́лько
+              вам лет?, мне, Мне два́дцать шесть., Мне со́рок два., Мне
+              шестьдеся́т..
+          - tipo: leccion
+            ru: "У вас есть телефо́н?"
+            es: "Entonación e inventario"
+            en: "Intonation and inventory"
+            foco: >-
+              Usa la pregunta de información para llenar un inventario
+              vacío. Después comprueba un dato con una pregunta de sí o no.
+              También puedes confirmar una cifra con la voz: hoy basta decir
+              la cifra y preguntar si es correcta. Palabras: Что у вас
+              есть?, У вас есть телефо́н?, У меня́ есть су́мка., У неё есть
+              ключи́., со́рок два, Да, пра́вильно..
+          - tipo: prueba
+            ru: >-
+              Тест: что у тебя́ есть?
+            es: >-
+              Prueba de la unidad 6: las cosas
+            en: >-
+              Unit 6 test: belongings
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "А у тебя́ есть стол?"
+            es: >-
+              Episodio 6: А у тебя́ есть стол?
+            en: >-
+              Episode 6: А у тебя́ есть стол?
+            foco: >-
+              Kira llama a la puerta. Camila abre con la lámpara todavía en
+              la mano. Ки́ра: Приве́т! Что у тебя́ есть? Ками́ла: У меня́
+              есть ла́мпа. Ки́ра: А у тебя́ есть стол? Ками́ла: Нет. А у
+              тебя́? Ки́ра: Да, у меня́ есть стол. Вот он. Tom aparece con
+              una silla. Camila
 
       - numero: 7
         ru: Моя́ семья́
@@ -717,6 +862,149 @@ niveles:
         lexico: la familia; dar el correo, el teléfono y la dirección
         fonetica: ч y щ
         episodio: {ru: "Фо́то на телефо́не", es: "Fotos en el móvil", en: "Photos on the phone", sinopsis: "Camila enseña a su familia de Lima; Tom, a la suya de Toronto; Kira habla de su madre, en Kazán. Al final se dan los teléfonos."}
+        dias:
+          - tipo: leccion
+            ru: "Моя́ семья́"
+            es: "Las personas de mi familia"
+            en: "People in my family"
+            foco: >-
+              Presenta una foto diciendo Э́то моя́ семья́. Aprende ese
+              bloque entero hoy. Señala a cada persona y di su parentesco.
+              Роди́тели nombra a los padres y se usa en plural. Palabras:
+              семья́, ма́ма, па́па, брат, сестра́, роди́тели.
+          - tipo: leccion
+            ru: "Мой, моя́, моё, мои́"
+            es: "Mis cosas y mi familia"
+            en: "My things and my family"
+            foco: >-
+              Elige la forma de «mi» con el nombre: мой con masculino, моя́
+              con femenino, моё con neutro y мои́ con plural. Usa el plural
+              incluso cuando el objeto sea un solo reloj, porque часы́ es
+              plural. Palabras: мой стол, моя́ ла́мпа, моё письмо́, мои́
+              ключи́, мой брат, мои́ часы́.
+          - tipo: leccion
+            ru: "Твой и ваш"
+            es: "Tu nombre, su nombre"
+            en: "Your name, familiar and polite"
+            foco: >-
+              Con alguien a quien tuteas, usa твой / твоя́ / твоё / твои́.
+              Para tratar de usted, usa ваш / ва́ша / ва́ше / ва́ши. En cada
+              grupo, el objeto decide cuál de las cuatro formas va.
+              Palabras: твой телефо́н, твоя́ су́мка, твоё и́мя, твои́
+              ключи́, ва́ше письмо́, ва́ша ру́чка.
+          - tipo: leccion
+            ru: "Наш и ваш"
+            es: "Nuestro y vuestro"
+            en: "Our and your"
+            foco: >-
+              Usa наш / на́ша / на́ше / на́ши para algo de tu grupo. Si
+              hablas al otro grupo, usa ваш / ва́ша / ва́ше / ва́ши. El
+              grupo decide qué serie usar; el nombre decide la terminación.
+              Palabras: наш стол, на́ша ла́мпа, на́ше письмо́, на́ши ключи́,
+              ваш стол, ва́ши ключи́.
+          - tipo: leccion
+            ru: "Его́, её, их"
+            es: "De él, de ella, de ellos"
+            en: "His, her, their"
+            foco: >-
+              Elige его́ si el dueño es él, её si es ella e их si son ellos.
+              Esas tres palabras se mantienen igual con cualquier objeto.
+              Compara его́ стол y его́ ключи́. Palabras: его́ стол, его́
+              ключи́, её су́мка, её письмо́, их ла́мпа, их часы́.
+          - tipo: repaso
+            ru: >-
+              Повторе́ние: семья́
+            es: >-
+              Repaso: la familia
+            en: >-
+              Review: family
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Номе́р телефо́на"
+            es: "Intercambiar teléfonos"
+            en: "Exchanging phone numbers"
+            foco: >-
+              En una agenda de práctica, Nina tiene el código 2746. Tom
+              tiene el 6183. Son datos ficticios. El ejemplo muestra cómo
+              pedir un número y confirmarlo. — Како́й у вас номе́р
+              телефо́на? — Два, семь, четы́ре, шесть. — Повтори́те,
+              пожа́луйста. — Два, семь, четы́ре,
+          - tipo: leccion
+            ru: "Чей э́то стол?"
+            es: "¿De quién es?"
+            en: "Whose is it?"
+            foco: >-
+              Para preguntar quién es el dueño, elige чей con un nombre
+              masculino, чья con uno femenino, чьё con uno neutro y чьи con
+              uno plural. Responde con el posesivo y el nombre, o deja el
+              nombre fuera si ya se entiende. Palabras: Чей э́то стол?, Чья
+              э́то су́мка?, Чьё э́то письмо́?, Чьи э́то ключи́?, моя́
+              су́мка, его́ ключи́.
+          - tipo: leccion
+            ru: "Э́то моя́ су́мка"
+            es: "Mi bolsa y lo que tengo"
+            en: "My bag and what I have"
+            foco: >-
+              Э́то моя́ су́мка identifica la bolsa. У меня́ есть су́мка
+              cuenta algo que tienes. Para cambiar de una frase a la otra,
+              conserva el nombre y sustituye el bloque inicial. La segunda
+              frase no identifica una bolsa concreta. Palabras: Э́то моя́
+              су́мка., У меня́ есть су́мка., Э́то её ла́мпа., У неё есть
+              ла́мпа., мои́ ключи́, Чья э́то су́мка?.
+          - tipo: leccion
+            ru: "Соба́ка и то́чка"
+            es: "El correo electrónico"
+            en: "Email addresses"
+            foco: >-
+              En una dirección de correo, puedes leer @ como соба́ка y el
+              punto como то́чка. Pide el dato con Како́й у вас име́йл? como
+              frase entera. Practica con direcciones de ejemplo que terminan
+              en example.com. Di las letras latinas y nombra cada separador.
+              Palabras: име́йл, соба́ка, то́чка, Како́й у вас име́йл?,
+              Повтори́те, пожа́луйста., Да, пра́вильно..
+          - tipo: leccion
+            ru: "У́лица, дом, кварти́ра"
+            es: "Dar una dirección"
+            en: "Giving an address"
+            foco: >-
+              En el modelo, da el nombre de la calle tras у́лица, el número
+              del edificio tras дом y el número del apartamento tras
+              кварти́ра. Usa las cifras que ya sabes. La calle del ejemplo
+              es inventada. Palabras: а́дрес, у́лица, дом, кварти́ра,
+              два́дцать четы́ре, три́дцать оди́н.
+          - tipo: leccion
+            ru: "Ч и щ"
+            es: >-
+              Dos sonidos: ч y щ
+            en: >-
+              Two sounds: ч and щ
+            foco: >-
+              Lee час, чай, ключ, luego щи, вещь, ещё. Usa la duración como
+              ayuda: щ se puede mantener, ч tiene un inicio más marcado. Щи
+              es el nombre de una sopa; aquí sirve para practicar el sonido
+              inicial. Palabras: чай, ключ, час, щи, вещь, ещё.
+          - tipo: prueba
+            ru: >-
+              Тест: семья́
+            es: >-
+              Prueba de la unidad 7: la familia
+            en: >-
+              Unit 7 test: family
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Фо́то на телефо́не"
+            es: >-
+              Episodio 7: Фо́то на телефо́не
+            en: >-
+              Episode 7: Фо́то на телефо́не
+            foco: >-
+              Camila enseña una foto de Lima. Tom reconoce a una persona y
+              pregunta por la otra. Ками́ла: Э́то моя́ семья́. Вот ма́ма. А
+              э́то мой брат. Том: Э́то твоя́ ма́ма? Ками́ла: Да, моя́ ма́ма.
+              Она́ из Перу́. Tom enseña una foto de Toronto. Camila pregunta
+              si el móvil
 
       - numero: 8
         ru: Что ты лю́бишь?
@@ -727,6 +1015,145 @@ niveles:
         lexico: aficiones; де́лать, смотре́ть, чита́ть, слу́шать, люби́ть, ненави́деть
         fonetica: consonantes que no se pronuncian
         episodio: {ru: "Футбо́л и́ли кино́?", es: "¿Fútbol o cine?", en: "Football or the movies?", sinopsis: "Viernes por la noche. Camila quiere ver el partido, Tom odia el fútbol y quiere ir al cine, Misha quiere las dos cosas. Qué te gusta y qué no soportas."}
+        dias:
+          - tipo: leccion
+            ru: "Я люблю́ футбо́л"
+            es: "Me gusta el fútbol"
+            en: "I like football"
+            foco: >-
+              Para decir lo que te gusta, aprende Я люблю́… y, para lo que
+              no te gusta, Я не люблю́…. Hoy practica con objetos inanimados
+              masculinos o neutros de la tabla. Su forma se mantiene después
+              del verbo. Palabras: футбо́л, кино́, бале́т, джаз, рок, ко́фе.
+          - tipo: leccion
+            ru: "Я люблю́ му́зыку"
+            es: "Me gusta la música"
+            en: "I like music"
+            foco: >-
+              Al presentar una cosa puedes decir Э́то му́зыка. En el modelo
+              de gusto, el nombre va como objeto directo: Я люблю́ му́зыку.
+              Con los nombres de hoy, -а pasa a -у, y -я a -ю. Practica el
+              cambio con las parejas de la tabla. Aprende э́ту пе́сню como
+              un bloque para «esta canción». Palabras: му́зыка, му́зыку,
+              пе́сня, пе́сню, пи́цца, пи́ццу.
+          - tipo: leccion
+            ru: "Что ты чита́ешь?"
+            es: "¿Qué lees?"
+            en: "What are you reading?"
+            foco: >-
+              Usa чита́ю al responder y чита́ешь al preguntar de tú. Журна́л
+              y письмо́ conservan su forma; газе́та cambia a газе́ту después
+              del verbo. Palabras: Что ты чита́ешь?, Я чита́ю журна́л., Я
+              чита́ю газе́ту., Я чита́ю письмо́., Ты чита́ешь письмо́?, Я не
+              чита́ю журна́л..
+          - tipo: leccion
+            ru: "Что ты слу́шаешь?"
+            es: "¿Qué escuchas?"
+            en: "What are you listening to?"
+            foco: >-
+              Pregunta con слу́шаешь y responde con слу́шаю. Usa му́зыку y
+              пе́сню como objetos directos. Ра́дио conserva su forma.
+              Palabras: Что ты слу́шаешь?, Я слу́шаю му́зыку., Я слу́шаю
+              ра́дио., Я слу́шаю пе́сню., Ты слу́шаешь джаз?, Я не слу́шаю
+              рок..
+          - tipo: leccion
+            ru: "Что ты смо́тришь?"
+            es: "¿Qué ves?"
+            en: "What are you watching?"
+            foco: >-
+              Aprende смотрю́ y смо́тришь como pareja: son del modelo de
+              говори́ть en la segunda persona. Usa фильм, сериа́л y футбо́л
+              sin cambiar el nombre. Palabras: Что ты смо́тришь?, Я смотрю́
+              фильм., Я смотрю́ сериа́л., Я смотрю́ футбо́л., Ты смо́тришь
+              фильм?, Я не смотрю́ сериа́л..
+          - tipo: repaso
+            ru: >-
+              Повторе́ние: хо́бби
+            es: >-
+              Repaso: los gustos
+            en: >-
+              Review: likes and dislikes
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Афи́ша"
+            es: "Leer una cartelera"
+            en: "Reading a programme"
+            foco: >-
+              Оди́н — кино́. Два — футбо́л. Три — бале́т. — Ты лю́бишь
+              кино́? — Да, люблю́. А ты? — Я люблю́ бале́т. — А футбо́л? —
+              Нет, я не люблю́ футбо́л.
+          - tipo: leccion
+            ru: "Что ты де́лаешь?"
+            es: "¿Qué haces?"
+            en: "What are you doing?"
+            foco: >-
+              Usa Что ты де́лаешь? para preguntar por una actividad.
+              Contesta con un verbo conocido. Де́лаю y де́лаешь siguen el
+              modelo de рабо́таю y рабо́таешь. Palabras: Что ты де́лаешь?, Я
+              чита́ю., Я слу́шаю му́зыку., Я смотрю́ фильм., Я рабо́таю.,
+              Что вы де́лаете?.
+          - tipo: leccion
+            ru: "Я не люблю́"
+            es: "Lo que no me gusta"
+            en: "What I don't like"
+            foco: >-
+              Ordena de más a menos: о́чень люблю́, люблю́, не люблю́.
+              Conserva el objeto directo que ya aprendiste, también en los
+              ejemplos negativos de hoy. Palabras: Я о́чень люблю́ кино́., Я
+              люблю́ джаз., Я не люблю́ футбо́л., Я люблю́ му́зыку., Я не
+              люблю́ бале́т., Я о́чень люблю́ пи́ццу..
+          - tipo: leccion
+            ru: "Ненави́жу"
+            es: "Lo que no soporto"
+            en: "What I can't stand"
+            foco: >-
+              Не люблю́ expresa que algo no te gusta. Ненави́жу es mucho más
+              fuerte. Aprende esta forma con я como bloque; hoy no hace
+              falta conjugarla. Palabras: Я не люблю́ рок., Я ненави́жу
+              рок., Я не люблю́ футбо́л., Я ненави́жу футбо́л., Я люблю́
+              кино́., Я о́чень люблю́ джаз..
+          - tipo: leccion
+            ru: "Со́лнце"
+            es: "Consonantes que no se oyen"
+            en: "Consonants you don't hear"
+            foco: >-
+              En estas palabras, una letra escrita no se pronuncia de forma
+              separada: л en со́лнце, д en пра́здник y la primera в de
+              здра́вствуйте. Aprende cada caso con la palabra completa.
+              Palabras: со́лнце, пра́здник, здра́вствуйте, Э́то пра́здник.,
+              Там со́лнце., Здра́вствуйте, Том!.
+          - tipo: leccion
+            ru: "Ты лю́бишь кино́?"
+            es: "Una encuesta de gustos"
+            en: "A survey about likes"
+            foco: >-
+              Pregunta Ты лю́бишь…?; si hablas con cortesía, usa Вы
+              лю́бите…?. Para contar el resultado, aprende он лю́бит y она́
+              лю́бит. Mantén los objetos de las lecciones anteriores.
+              Palabras: Ты лю́бишь кино́?, Вы лю́бите му́зыку?, Да, люблю́.,
+              Нет, не люблю́., Он лю́бит кино́., Она́ лю́бит му́зыку..
+          - tipo: prueba
+            ru: >-
+              Тест: хо́бби
+            es: >-
+              Prueba de la unidad 8: aficiones
+            en: >-
+              Unit 8 test: hobbies
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Футбо́л и́ли кино́?"
+            es: >-
+              Episodio 8: Футбо́л и́ли кино́?
+            en: >-
+              Episode 8: Футбо́л и́ли кино́?
+            foco: >-
+              Ками́ла: Что ты смо́тришь, Том? Том: Я смотрю́ фильм. Ты
+              лю́бишь кино́? Ками́ла: Да, но я о́чень люблю́ футбо́л. Том:
+              Ой, я ненави́жу футбо́л! Ми́ша: Я люблю́ футбо́л и кино́.
+              Ками́ла: А ещё му́зыка? Том: Я о́чень люблю́ му́зыку. Ми́ша: Я
+              то́же. Футбо́л и́ли к
 
       - numero: 9
         ru: Свобо́дное вре́мя
@@ -737,6 +1164,144 @@ niveles:
         lexico: aficiones 2
         fonetica: grupos de consonantes (тс, тьс, ться)
         episodio: {ru: "Выходно́й", es: "Día libre", en: "Day off", sinopsis: "Un domingo cualquiera en el portal: Tom toca la guitarra, Camila cocina, Misha juega al ajedrez con Vera Ivánovna y Kira, por fin, duerme."}
+        dias:
+          - tipo: leccion
+            ru: "Я гуля́ю"
+            es: "Pasear y descansar"
+            en: "Walking and relaxing"
+            foco: >-
+              Los verbos гуля́ть y отдыха́ть siguen el modelo de рабо́тать.
+              Usa -ю con я y -ешь con ты. Palabras: Я гуля́ю., Ты гуля́ешь?,
+              Я отдыха́ю., Ты отдыха́ешь?, Он гуля́ет., Мы отдыха́ем..
+          - tipo: leccion
+            ru: "Я игра́ю в футбо́л"
+            es: "Jugar a un deporte"
+            en: "Playing a sport"
+            foco: >-
+              Cuando hablas de un juego o deporte, usa игра́ть в. Los
+              nombres inanimados de estos ejemplos no cambian con respecto a
+              la forma que ya sabes. Palabras: Я игра́ю в футбо́л., Я игра́ю
+              в те́ннис., Он игра́ет в ша́хматы., Ты игра́ешь в хокке́й?, Мы
+              игра́ем в футбо́л., Я не игра́ю в те́ннис..
+          - tipo: leccion
+            ru: "Я игра́ю на гита́ре"
+            es: "Tocar un instrumento"
+            en: "Playing an instrument"
+            foco: >-
+              El mismo verbo игра́ть sirve para instrumentos. Aprende los
+              bloques на гита́ре, на скри́пке y на пиа́нино. El caso de
+              lugar se sistematiza después; hoy memoriza los bloques.
+              Palabras: Я игра́ю на гита́ре., Она́ игра́ет на скри́пке., Он
+              игра́ет на пиа́нино., Ты игра́ешь на гита́ре?, Мы игра́ем в
+              те́ннис., Я не игра́ю на пиа́нино..
+          - tipo: leccion
+            ru: "Я рису́ю"
+            es: "Dibujar y bailar"
+            en: "Drawing and dancing"
+            foco: >-
+              En estos dos verbos, рисова́ть y танцева́ть, la parte -ова- o
+              -ева- se sustituye en presente por la base que ves en рису́ю y
+              танцу́ю. Luego se añade el final de persona: рису́ешь,
+              танцу́ешь. Palabras: Я рису́ю., Ты рису́ешь?, Она́ рису́ет., Я
+              танцу́ю., Ты танцу́ешь?, Они́ танцу́ют..
+          - tipo: leccion
+            ru: "Я фотографи́рую"
+            es: "Viajar y hacer fotos"
+            en: "Travelling and taking photos"
+            foco: >-
+              Aplica el modelo de ayer a путеше́ствовать y фотографи́ровать.
+              Aprende primero la forma de yo y compárala con la de tú:
+              путеше́ствую — путеше́ствуешь. Palabras: Я путеше́ствую., Ты
+              путеше́ствуешь?, Мы путеше́ствуем., Я фотографи́рую., Она́
+              фотографи́рует., Они́ фотографи́руют..
+          - tipo: repaso
+            ru: >-
+              Повторе́ние: хо́бби
+            es: >-
+              Repaso: el tiempo libre
+            en: >-
+              Review: free time
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Музыка́льный кружо́к"
+            es: "Un taller de música"
+            en: "A music workshop"
+            foco: >-
+              — Здра́вствуйте! Меня́ зову́т Том. Я игра́ю на гита́ре. — А я
+              Ки́ра. Я игра́ю на пиа́нино. — А Ками́ла игра́ет на гита́ре? —
+              Нет. Ками́ла танцу́ет. — А ты игра́ешь в те́ннис? — Да,
+              игра́ю. Я то́же люблю́ те́ннис.
+          - tipo: leccion
+            ru: "Я пишу́"
+            es: "Escribir mensajes"
+            en: "Writing messages"
+            foco: >-
+              En писа́ть, la с se convierte en ш en las formas del presente
+              que practicamos: пишу́, пи́шешь, пи́шет. Conserva с en el
+              infinitivo. Palabras: Я пишу́ письмо́., Что ты пи́шешь?, Он
+              пи́шет письмо́., Мы пи́шем., Вы пи́шете?, Они́ пи́шут..
+          - tipo: leccion
+            ru: "Я гото́влю"
+            es: "Cocinar y decir lo que me gusta"
+            en: "Cooking and saying what I like"
+            foco: >-
+              Compara гото́вить — гото́влю — гото́вишь y люби́ть — люблю́ —
+              лю́бишь. En estas dos series, aparece л en la forma de yo,
+              pero no en la de tú. Palabras: Я гото́влю пи́ццу., Ты
+              гото́вишь?, Она́ гото́вит., Я люблю́ пи́ццу., Ты лю́бишь
+              пи́ццу?, Он лю́бит му́зыку..
+          - tipo: leccion
+            ru: "Я пою́"
+            es: "Cantar y dormir"
+            en: "Singing and sleeping"
+            foco: >-
+              Aprende dos pares de presente: пою́ — поёшь y сплю — спишь.
+              Las formas de yo no se deducen aquí añadiendo un final al
+              infinitivo. Usa el modelo para aprenderlas. Palabras: Я пою́.,
+              Ты поёшь?, Она́ поёт., Я сплю., Ты спишь?, Он спит..
+          - tipo: leccion
+            ru: "Как э́то пи́шется?"
+            es: "La terminación que suena como ц"
+            en: "The ending that sounds like ц"
+            foco: >-
+              En пи́шется, el final escrito -тся se pronuncia como un grupo
+              que empieza por ц. En un infinitivo como учи́ться, -ться se
+              oye de manera parecida. Hoy distingue la escritura con estas
+              parejas, sin estudiar aún todos los verbos reflexivos.
+              Palabras: пи́шется, у́чится, нра́вится, учи́ться,
+              знако́миться, улыба́ться.
+          - tipo: leccion
+            ru: "Я хорошо́ игра́ю"
+            es: "Cómo hago las cosas"
+            en: "How I do things"
+            foco: >-
+              Añade un adverbio que diga cómo o cuánto: хорошо́, пло́хо,
+              мно́го, ма́ло. Colócalo antes del verbo en los modelos de hoy.
+              El adverbio no cambia con la persona. Palabras: Я хорошо́
+              игра́ю., Он пло́хо поёт., Мы мно́го чита́ем., Она́ ма́ло
+              спит., Я хорошо́ гото́влю., Ты мно́го путеше́ствуешь?.
+          - tipo: prueba
+            ru: >-
+              Тест: свобо́дное вре́мя
+            es: >-
+              Prueba de la unidad 9: tiempo libre
+            en: >-
+              Unit 9 test: free time
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Выходно́й"
+            es: >-
+              Episodio 9: Выходно́й
+            en: >-
+              Episode 9: Выходно́й
+            foco: >-
+              Том: Я игра́ю на гита́ре. Ками́ла: А я гото́влю пи́ццу. Том:
+              Ты хорошо́ гото́вишь! Ми́ша: А я игра́ю в ша́хматы. Ве́ра
+              Ива́новна то́же игра́ет. Ками́ла: А Ки́ра? Ми́ша: Ки́ра спит.
+              Том: Я игра́ю на гита́ре, а Ки́ра спит? Ками́ла: Да. Ки́ра
+              спит.
 
       - numero: 10
         ru: Мой дом
@@ -747,6 +1312,148 @@ niveles:
         lexico: la casa, las habitaciones, los muebles; люби́мый
         fonetica: la preposición в unida a la palabra siguiente
         episodio: {ru: "Новосе́лье", es: "La fiesta del piso nuevo", en: "The housewarming", sinopsis: "Camila ya tiene muebles y celebra el новосе́лье. Enseña las habitaciones, y Vera Ivánovna le explica por qué en un piso nuevo debe entrar primero el gato."}
+        dias:
+          - tipo: leccion
+            ru: "Мой дом"
+            es: "Las habitaciones de la casa"
+            en: "Rooms in the home"
+            foco: >-
+              Para nombrar una habitación usa Э́то y el nombre en su forma
+              de diccionario. Aprende seis etiquetas de un plano. Hoy
+              identificas habitaciones; mañana dirás dónde están las
+              personas. Palabras: Э́то дом., Э́то кварти́ра., Э́то
+              ко́мната., Э́то ку́хня., Э́то спа́льня., Э́то гости́ная..
+          - tipo: leccion
+            ru: "В ко́мнате"
+            es: "Dentro de la habitación"
+            en: "Inside the room"
+            foco: >-
+              Para responder Где?, usa в con estos lugares interiores.
+              Aprende el paso a -е en ко́мната → в ко́мнате, спа́льня → в
+              спа́льне y дом → в до́ме. Palabras: Том в ко́мнате., Ками́ла в
+              спа́льне., Ки́ра в до́ме., Где Том?, Я в кварти́ре., Мы в
+              ко́мнате..
+          - tipo: leccion
+            ru: "На столе́"
+            es: "Sobre la mesa"
+            en: "On the table"
+            foco: >-
+              Para una superficie, usa на y aprende la forma de lugar: на
+              столе́, на по́лке, на дива́не. Compara un objeto sobre la mesa
+              con una persona dentro de una habitación. Palabras: Ключи́ на
+              столе́., Письмо́ на по́лке., Су́мка на дива́не., Где ключи́?,
+              Телефо́н на столе́., Ру́чка на по́лке..
+          - tipo: leccion
+            ru: "На ку́хне"
+            es: "En la cocina y en el balcón"
+            en: "In the kitchen and on the balcony"
+            foco: >-
+              Algunos lugares se aprenden con su preposición. Practica на
+              ку́хне y на балко́не, frente a в спа́льне y в коридо́ре. La
+              distinción superficie/interior ayuda, pero no permite adivinar
+              cada expresión. Palabras: Я на ку́хне., Ки́ра на балко́не.,
+              Том в коридо́ре., Ми́ша в спа́льне., Где ку́хня?, Ками́ла
+              то́же на ку́хне..
+          - tipo: leccion
+            ru: "В шкафу́"
+            es: "En el armario y en el suelo"
+            en: "In the cupboard and on the floor"
+            foco: >-
+              Algunos nombres masculinos tienen -у tónica en estas
+              expresiones de lugar: в шкафу́, в углу́, на полу́ y в саду́.
+              Aprende cada forma con su preposición y contrástala con una
+              forma en -е que ya conoces. Palabras: Су́мка в шкафу́., Стул в
+              углу́., Ключи́ на полу́., Том в саду́., Телефо́н на столе́.,
+              Письмо́ в шкафу́..
+          - tipo: repaso
+            ru: >-
+              Повторе́ние: дом
+            es: >-
+              Repaso: la casa
+            en: >-
+              Review: home
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "План кварти́ры"
+            es: "Un plano de piso"
+            en: "An apartment floor plan"
+            foco: >-
+              Вот кварти́ра. Э́то ку́хня. Стол на ку́хне. Ла́мпа на столе́.
+              Телефо́н то́же на столе́. Э́то спа́льня. Су́мка в шкафу́.
+              Ключи́ на полу́. А э́то балко́н. Том на балко́не.
+          - tipo: leccion
+            ru: "В гости́ной"
+            es: "En la sala y en el baño"
+            en: "In the living room and bathroom"
+            foco: >-
+              Aprende гости́ная → в гости́ной y ва́нная → в ва́нной. En
+              estos dos nombres de habitación la terminación -ая pasa a -ой
+              al decir dónde. Compáralos con в спа́льне. Palabras: Э́то
+              гости́ная., Том в гости́ной., Э́то ва́нная., Ла́мпа в
+              ва́нной., Ки́ра в спа́льне., Ми́ша то́же в гости́ной..
+          - tipo: leccion
+            ru: "Люби́мая ко́мната"
+            es: "Mi rincón favorito"
+            en: "My favourite spot"
+            foco: >-
+              Usa люби́мый, люби́мая, люби́мое o люби́мые según el género o
+              número. En los modelos de hoy, nombra lo favorito: моя́
+              люби́мая ко́мната. Palabras: Мой люби́мый дива́н., Моя́
+              люби́мая ко́мната., Моё люби́мое письмо́., Мои́ люби́мые
+              биле́ты., Мой люби́мый фильм., Моя́ люби́мая пе́сня..
+          - tipo: leccion
+            ru: "В до́ме"
+            es: "La в pegada a la palabra"
+            en: "Linking в to the next word"
+            foco: >-
+              Lee в con el sustantivo que sigue, sin una sílaba aparte. En в
+              кварти́ре y в спа́льне se oye [f] ante la consonante sorda. En
+              в до́ме, conserva [v]. Palabras: в ко́мнате, в кварти́ре, в
+              спа́льне, в до́ме, в коридо́ре, в гости́ной.
+          - tipo: leccion
+            ru: "Что ты де́лаешь на ку́хне?"
+            es: "Qué haces en cada habitación"
+            en: "What you do in each room"
+            foco: >-
+              Combina una actividad de la unidad 9 con un lugar. Contesta
+              Где? con el bloque de lugar y Что де́лаешь? con el verbo.
+              Puedes reunir ambos en una frase. Palabras: Я гото́влю на
+              ку́хне., Том чита́ет в гости́ной., Ки́ра спит в спа́льне.,
+              Ми́ша рису́ет в ко́мнате., Что ты де́лаешь на ку́хне?, Где Том
+              чита́ет?.
+          - tipo: leccion
+            ru: "Вот моя́ кварти́ра"
+            es: "Una visita por mi casa"
+            en: "A tour of my home"
+            foco: >-
+              Empieza una visita con Вот моя́ кварти́ра. Nombra una
+              habitación, di un objeto que hay y añade dónde está. Usa los
+              bloques de lugar ya conocidos para que la otra persona pueda
+              dibujar el plano. Palabras: Вот моя́ кварти́ра., Э́то моя́
+              ку́хня., На столе́ телефо́н., Вот моя́ спа́льня., Су́мка в
+              шкафу́., Ключи́ на по́лке..
+          - tipo: prueba
+            ru: >-
+              Тест: дом
+            es: >-
+              Prueba de la unidad 10: la casa
+            en: >-
+              Unit 10 test: home
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Новосе́лье"
+            es: >-
+              Episodio 10: Новосе́лье
+            en: >-
+              Episode 10: Новосе́лье
+            foco: >-
+              Ками́ла: Вот моя́ кварти́ра! Ве́ра Ива́новна: А где Ба́рсик?
+              Ми́ша: Вот он. Э́то кот! Ве́ра Ива́новна: Снача́ла кот.
+              Ками́ла: Да, снача́ла Ба́рсик. Том: Где мо́жно чай? Ками́ла:
+              Чай на ку́хне. Том, вот моя́ ку́хня! Ки́ра: А гости́ная где?
+              Ками́ла: Вот гости́на
 
       - numero: 11
         ru: Где что стои́т
@@ -757,6 +1464,154 @@ niveles:
         lexico: сиде́ть, лежа́ть, стоя́ть, висе́ть, жить; где нахо́дится…?
         fonetica: ш y ж
         episodio: {ru: "Где ключи́?", es: "¿Dónde están las llaves?", en: "Where are the keys?", sinopsis: "Después de la fiesta Camila no encuentra las llaves. Todos buscan: en la mesa, en el sofá, en el armario. Las tiene Bársik."}
+        dias:
+          - tipo: leccion
+            ru: "На сту́ле"
+            es: "Sentado o de pie"
+            en: "Sitting or standing"
+            foco: >-
+              Para una persona sentada, usa сиди́т. Para una que está de
+              pie, usa стои́т. Después añade el lugar. Hoy practica las dos
+              formas con он o она́. Palabras: Он сиди́т на сту́ле., Она́
+              стои́т на ку́хне., Ми́ша сиди́т на дива́не., Том стои́т в
+              коридо́ре., Где сиди́т Ми́ша?, Ки́ра сиди́т в гости́ной..
+          - tipo: leccion
+            ru: "Ключи́ лежа́т"
+            es: "Sobre una superficie o colgado"
+            en: "Lying or hanging"
+            foco: >-
+              Usa лежи́т para un objeto acostado o apoyado, y виси́т para
+              algo colgado. Con varias cosas usa лежа́т o вися́т. Imagina la
+              posición antes de elegir el verbo. Palabras: Письмо́ лежи́т на
+              столе́., Су́мка виси́т на сту́ле., Ключи́ лежа́т на по́лке.,
+              Ру́чка лежи́т на дива́не., Карти́на виси́т на стене́., Где
+              лежа́т ключи́?.
+          - tipo: leccion
+            ru: "Ла́мпа стои́т"
+            es: "El plano con cosas de pie"
+            en: "Objects standing upright"
+            foco: >-
+              Un objeto con base, como la lámpara, puede стоя́ть, estar de
+              pie. Un bolígrafo acostado лежи́т. Usa los verbos como pistas
+              de un plano y conserva la forma de lugar que sabes. Palabras:
+              Ла́мпа стои́т на столе́., Ру́чка лежи́т на столе́., Стул
+              стои́т в углу́., Ключи́ лежа́т на полу́., Карти́на виси́т на
+              стене́., Том сиди́т на сту́ле..
+          - tipo: leccion
+            ru: "В Росси́и"
+            es: "En Rusia y en Italia"
+            en: "In Russia and in Italy"
+            foco: >-
+              En estos nombres de países, -ия cambia a -ии en la expresión
+              de lugar. Aprende в Росси́и, в Ита́лии y в Испа́нии. En во
+              Фра́нции, memoriza también во. Palabras: В Росси́и., В
+              Ита́лии., В Испа́нии., Во Фра́нции., Том в Ита́лии., Ками́ла в
+              Испа́нии..
+          - tipo: leccion
+            ru: "Где ты живёшь?"
+            es: "Dónde vivo"
+            en: "Where I live"
+            foco: >-
+              Aprende живу́, живёшь y живёт. Úsalas con las formas de lugar
+              que ya conoces. El infinitivo es жить: aprende las formas
+              juntas en vez de intentar deducirlas todas del infinitivo.
+              Palabras: Я живу́ в Росси́и., Где ты живёшь?, Она́ живёт в
+              Ита́лии., Он живёт в Испа́нии., Я живу́ во Фра́нции., Ки́ра
+              живёт в Росси́и..
+          - tipo: repaso
+            ru: >-
+              Повторе́ние: ве́щи
+            es: >-
+              Repaso: dónde están las cosas
+            en: >-
+              Review: where things are
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Гости́ница"
+            es: "En el hotel"
+            en: "At the hotel"
+            foco: >-
+              — Здра́вствуйте! Где мой но́мер? — Ваш но́мер? Два́дцать
+              четы́ре. — Два́дцать четы́ре? Спаси́бо. А где ключ? — Вот
+              ключ. Он на столе́. — А где телефо́н? — Телефо́н то́же на
+              столе́.
+          - tipo: leccion
+            ru: "Э́тот стол"
+            es: "Este, esta, estos"
+            en: "This and these"
+            foco: >-
+              Pon э́тот, э́та, э́то o э́ти delante de un sustantivo para
+              señalar uno concreto. Elige según género y número. Contrasta
+              Э́то стол, que identifica, con Э́тот стол на ку́хне, que
+              señala de qué mesa hablas. Palabras: Э́тот стол на ку́хне.,
+              Э́та су́мка в шкафу́., Э́то письмо́ на столе́., Э́ти ключи́ на
+              по́лке., Э́то стол., Э́та ла́мпа стои́т в углу́..
+          - tipo: leccion
+            ru: "Э́то ла́мпа"
+            es: "Lo que señala э́то"
+            en: "What э́то points to"
+            foco: >-
+              Э́то al principio puede significar «esto es» y no cambia: Э́то
+              ключи́. Cuando acompaña a un sustantivo, la forma depende de
+              ese nombre: э́та ла́мпа, э́ти ключи́. Para comprobarlo, quita
+              el resto de la frase y pregunta si estás identificando o
+              señalando uno concreto. Palabras: Э́то ла́мпа., Э́та ла́мпа на
+              столе́., Э́то ключи́., Э́ти ключи́ на полу́., Э́то су́мка.,
+              Э́та су́мка в шкафу́..
+          - tipo: leccion
+            ru: "Где журна́л?"
+            es: >-
+              Dos sonidos: ш y ж
+            en: >-
+              Two sounds: ш and ж
+            foco: >-
+              Los dos sonidos se hacen con fricción. Para ш, deja pasar aire
+              sin vibración. Para ж, añade voz. Comprueba la diferencia al
+              comienzo de шкаф y журна́л; usa luego las palabras en el plano
+              de la habitación. Palabras: Где журна́л?, Журна́л лежи́т на
+              столе́., Шкаф стои́т в углу́., На́ши ключи́ на по́лке., Э́то
+              ва́ша су́мка?, Письмо́ лежи́т на дива́не..
+          - tipo: leccion
+            ru: "Где нахо́дится?"
+            es: "¿Dónde queda?"
+            en: "Where is it located?"
+            foco: >-
+              Usa нахо́дится con un lugar o cosa y нахо́дятся cuando
+              preguntas por varios. Contesta con в o на y una ubicación
+              conocida. Palabras: Где нахо́дится банк?, Где нахо́дятся
+              ключи́?, Они́ на столе́., стол, ла́мпа, ключи́.
+          - tipo: leccion
+            ru: "Где э́ти ве́щи?"
+            es: "Reconstruir una habitación"
+            en: "Reconstructing a room"
+            foco: >-
+              Empieza con el sustantivo y el demostrativo que corresponde.
+              Elige después el verbo según cómo está el objeto: apoyado, de
+              pie o colgado. Palabras: Э́та ла́мпа стои́т в углу́., Э́ти
+              ключи́ лежа́т на полу́., Э́та карти́на виси́т на стене́.,
+              стол, ла́мпа, ключи́.
+          - tipo: prueba
+            ru: >-
+              Тест: где?
+            es: >-
+              Prueba de la unidad 11: ubicación
+            en: >-
+              Unit 11 test: location
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Где ключи́?"
+            es: >-
+              Episodio 11: Где ключи́?
+            en: >-
+              Episode 11: Где ключи́?
+            foco: >-
+              Ками́ла: Где ключи́? На столе́? Том: На столе́ лежи́т письмо́.
+              Ми́ша: А в шкафу́? Ки́ра: В шкафу́ су́мка. А ключи́ где?
+              Ками́ла: Вот Ба́рсик! Ми́ша: Ключи́ на полу́. Ба́рсик сиди́т
+              ря́дом! Lee otra vez en voz alta y reordena tus notas antes de
+              responder.
 
       - numero: 12
         ru: На рабо́те
@@ -767,6 +1622,138 @@ niveles:
         lexico: la oficina, un día de trabajo; adverbios
         fonetica: ИК-4 (А вы?)
         episodio: {ru: "Том на рабо́те", es: "Tom en el trabajo", en: "Tom at work", sinopsis: "Un día en la escuela de idiomas de Tom: sus clases, sus alumnos, sus compañeros. Y los plurales rusos, que no esperaba."}
+        dias:
+          - tipo: leccion
+            ru: "План и пла́ны"
+            es: "Objetos de oficina en plural"
+            en: "Office items in the plural"
+            foco: >-
+              Después de consonantes como н y л, el plural de estos nombres
+              añade -ы. Aprende también la pareja стол — столы́, donde el
+              acento va al final. Palabras: Э́то план., Э́то пла́ны., Столы́
+              в о́фисе., о́фис, план, рабо́та.
+          - tipo: leccion
+            ru: "Карандаши́"
+            es: "Plurales con и"
+            en: "Plurals with и"
+            foco: >-
+              En los ejemplos de hoy se escribe -и tras ш y tras к. Compara
+              каранда́ш — карандаши́ y ру́чка — ру́чки. Palabras: Вот
+              каранда́ш., Вот карандаши́., Ру́чки на столе́., о́фис, план,
+              рабо́та.
+          - tipo: leccion
+            ru: "Окно́ и о́кна"
+            es: "Plural de los neutros"
+            en: "Neuter plurals"
+            foco: >-
+              En los pares de hoy, el neutro en -о pasa a -а y el de -е pasa
+              a -я. Aprende también dónde cae el acento en cada plural.
+              Palabras: Э́то окно́., Э́то о́кна., Мо́ре и моря́., о́фис,
+              план, рабо́та.
+          - tipo: leccion
+            ru: "Стул и сту́лья"
+            es: "Cuatro plurales frecuentes"
+            en: "Four common plurals"
+            foco: >-
+              Aprende como parejas las formas de hoy. En сту́лья aparece un
+              grupo distinto, y дом y го́род forman el plural con -а tónica.
+              Palabras: Э́то сту́лья., Там дома́., Учителя́ на рабо́те.,
+              о́фис, план, рабо́та.
+          - tipo: leccion
+            ru: "Бы́стро и ме́дленно"
+            es: "Rápido y despacio"
+            en: "Quickly and slowly"
+            foco: >-
+              Coloca el adverbio junto al verbo para decir cómo ocurre la
+              acción. Бы́стро y ме́дленно no cambian al pasar de я a они́.
+              Palabras: Я бы́стро чита́ю., Том ме́дленно пи́шет., Они́
+              ме́дленно говоря́т., о́фис, план, рабо́та.
+          - tipo: repaso
+            ru: "На рабо́те"
+            es: >-
+              Repaso: la oficina
+            en: >-
+              Review: the office
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "На рабо́те"
+            es: "Un tablón de oficina"
+            en: "An office noticeboard"
+            foco: >-
+              О́фис. Э́то столы́. Пла́ны на столе́. Ру́чки и карандаши́ на
+              по́лке. Где сту́лья? Вот они́, в о́фисе. О́кна там. Мы
+              ме́дленно чита́ем пла́ны. Lee otra vez en voz alta y reordena
+              tus notas antes de responder.
+          - tipo: leccion
+            ru: "Ти́хо и гро́мко"
+            es: "Silencio o ruido"
+            en: "Quiet or loud"
+            foco: >-
+              Con un verbo, ти́хо y гро́мко dicen a qué volumen ocurre algo.
+              Para una petición, Повтори́те, пожа́луйста sigue siendo cortés
+              aunque pidas otro volumen. Palabras: Она́ ти́хо говори́т., Том
+              гро́мко чита́ет., Повтори́те, пожа́луйста., о́фис, план,
+              рабо́та.
+          - tipo: leccion
+            ru: "На рабо́те"
+            es: "Un día en la oficina"
+            en: "A day at the office"
+            foco: >-
+              Aprende на рабо́те y по телефо́ну como bloques. Únelos con
+              verbos conocidos para contar lo que ocurre. Palabras: Я на
+              рабо́те., Том говори́т по телефо́ну., Мы пи́шем пла́ны.,
+              о́фис, план, рабо́та.
+          - tipo: leccion
+            ru: "А вы?"
+            es: "¿Y usted?"
+            en: "And you?"
+            foco: >-
+              Devuelve una pregunta con А вы? en un intercambio formal. En
+              esta pregunta de eco practica un descenso y luego un ascenso
+              de la voz en вы, como en la entonación ИК-4. Palabras: Я
+              рабо́таю в це́нтре. А вы?, Я говорю́ по-ру́сски. А вы?, Я
+              рабо́таю до́ма. А вы?, о́фис, план, рабо́та.
+          - tipo: leccion
+            ru: "Э́то ру́чка"
+            es: "Definir un objeto de trabajo"
+            en: "Defining a work item"
+            foco: >-
+              Identifica primero el objeto con Э́то. Después añade una frase
+              breve que diga dónde está o qué haces con él. Hoy no hace
+              falta unir las dos frases con una relativa. Palabras: Э́то
+              ру́чка. Она́ на столе́., Э́то письмо́. Я чита́ю., Э́то пла́ны.
+              Они́ на по́лке., о́фис, план, рабо́та.
+          - tipo: leccion
+            ru: "Что есть в о́фисе?"
+            es: "El inventario de la oficina"
+            en: "The office inventory"
+            foco: >-
+              Agrupa objetos por lugar antes de describir la oficina.
+              Distingue la forma de uno y varios y usa un adverbio para
+              contar cómo trabaja alguien. Palabras: Ру́чки на столе́.,
+              Пла́ны на по́лке., Мы ме́дленно чита́ем., о́фис, план,
+              рабо́та.
+          - tipo: prueba
+            ru: "На рабо́те"
+            es: >-
+              Prueba de la unidad 12: el trabajo
+            en: >-
+              Unit 12 test: work
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Том на рабо́те"
+            es: >-
+              Episodio 12: Том на рабо́те
+            en: >-
+              Episode 12: Том на рабо́те
+            foco: >-
+              Том: Вот план. Вот каранда́ш. А́нна: А где пла́ны? Студе́нты
+              здесь. Том: Пла́ны на столе́. А карандаши́? А́нна: Карандаши́
+              на по́лке. Том: Спаси́бо. Я ме́дленно чита́ю. А вы? А́нна: Я
+              бы́стро чита́ю, но ти́хо. Lee otra vez en voz alta y reordena
+              tus notas ante
 
       - numero: 13
         ru: Како́й он?
@@ -777,6 +1764,136 @@ niveles:
         lexico: colores, contrarios, нра́виться, наверху́ / внизу́; modismos con colores
         fonetica: ИК-5 (¡Qué bonito!)
         episodio: {ru: "Кто живёт наверху́?", es: "¿Quién vive arriba?", en: "Who lives upstairs?", sinopsis: "Cada noche suena música en el piso de arriba. Los vecinos imaginan cómo es el nuevo: alto, joven, raro. Es Lev Borísovich, un violinista mayor y muy amable."}
+        dias:
+          - tipo: leccion
+            ru: "Но́вый стол"
+            es: "Un adjetivo para cada cosa"
+            en: "Matching adjectives to nouns"
+            foco: >-
+              Con los adjetivos de hoy, el final concuerda con el nombre:
+              -ый con masculino, -ая con femenino, -ое con neutro y -ые con
+              plural. Practica las formas del nominativo. Palabras: Э́то
+              но́вый стол., Э́то но́вая ла́мпа., Э́то но́вое окно́., шкаф,
+              су́мка, окно́.
+          - tipo: leccion
+            ru: "Кра́сная су́мка"
+            es: "Los colores"
+            en: "Colours"
+            foco: >-
+              Para describir un color, usa la forma que corresponde al
+              nombre. Compara кра́сный, кра́сная y кра́сное. Añade си́ний y
+              бе́лый como modelos de hoy. Palabras: Э́то кра́сная су́мка.,
+              Э́то си́ний дива́н., Э́то бе́лое окно́., шкаф, су́мка, окно́.
+          - tipo: leccion
+            ru: "Высо́кий и ни́зкий"
+            es: "Alto, bajo, grande y pequeño"
+            en: "Tall, short, big and small"
+            foco: >-
+              Distingue altura y tamaño. Высо́кий y ни́зкий describen
+              altura. Большо́й y ма́ленький describen tamaño. Conserva la
+              concordancia en cada ejemplo. Palabras: Э́то высо́кий шкаф.,
+              Э́то ма́ленькая ла́мпа., Э́то большо́е окно́., шкаф, су́мка,
+              окно́.
+          - tipo: leccion
+            ru: "Како́й он?"
+            es: "¿Cómo es?"
+            en: "What's it like?"
+            foco: >-
+              Para pedir una descripción, elige како́й, кака́я, како́е o
+              каки́е según el nombre. Contesta con el color o tamaño que
+              corresponda. Palabras: Како́й э́то шкаф?, Кака́я э́то ла́мпа?,
+              Како́е э́то окно́?, шкаф, су́мка, окно́.
+          - tipo: leccion
+            ru: "Хоро́ший и хорошо́"
+            es: "Bueno o bien"
+            en: "Good or well"
+            foco: >-
+              Usa хоро́ший con el sustantivo masculino y хорошо́ con el
+              verbo. El adverbio dice cómo actúas y no cambia con la
+              persona. Palabras: Э́то хоро́ший план., Она́ хорошо́ чита́ет.,
+              Том хорошо́ игра́ет., шкаф, су́мка, окно́.
+          - tipo: repaso
+            ru: "Како́й он?"
+            es: >-
+              Repaso: las descripciones
+            en: >-
+              Review: descriptions
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Како́й он?"
+            es: "Describir una habitación"
+            en: "Describing a room"
+            foco: >-
+              — Како́й э́то шкаф? — Э́то высо́кий шкаф. — Кака́я э́то
+              су́мка? — Кра́сная. — А окно́? — Бе́лое и большо́е. Lee otra
+              vez en voz alta y reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Мне нра́вится карти́на"
+            es: "Me gusta este cuadro"
+            en: "I like this picture"
+            foco: >-
+              En el modelo de hoy, di мне нра́вится con un objeto singular y
+              мне нра́вятся con objetos plurales. El verbo responde al
+              objeto que causa el gusto. Palabras: Мне нра́вится карти́на.,
+              Мне нра́вятся о́кна., Тебе́ нра́вится дива́н?, шкаф, су́мка,
+              окно́.
+          - tipo: leccion
+            ru: "Кто живёт наверху́?"
+            es: "Arriba y abajo"
+            en: "Upstairs and downstairs"
+            foco: >-
+              Наверху́ y внизу́ indican dónde, no adónde. Úsalos con живёт o
+              en una frase sin verbo. Palabras: Том живёт наверху́., Ки́ра
+              внизу́., Кто живёт наверху́?, шкаф, су́мка, окно́.
+          - tipo: leccion
+            ru: "Како́й он?"
+            es: "Describir a un vecino"
+            en: "Describing a neighbour"
+            foco: >-
+              Elige un adjetivo para edad o carácter y hazlo concordar con
+              la persona. El contexto dice si estás describiendo un rasgo o
+              una impresión. Palabras: Он молодо́й., Она́ до́брая., Он
+              пожило́й., шкаф, су́мка, окно́.
+          - tipo: leccion
+            ru: "Как краси́во!"
+            es: "¡Qué bonito!"
+            en: "How lovely!"
+            foco: >-
+              En una exclamación con как, marca el ascenso en как y una
+              caída en la sílaba tónica de la palabra siguiente. Practica el
+              patrón ИК-5 con estos modelos. Palabras: Как краси́во!, Как
+              интере́сно!, Ка́к э́то краси́во!, шкаф, су́мка, окно́.
+          - tipo: leccion
+            ru: "Зелёный свет"
+            es: "Colores en expresiones"
+            en: "Colours in expressions"
+            foco: >-
+              Aprende зелёный свет como una expresión completa. Primero
+              puede ser un semáforo en verde; en el segundo contexto indica
+              que hay permiso. No hagas literal cada ejemplo. Palabras: Э́то
+              зелёный свет., У нас зелёный свет., Э́то кра́сный цвет., шкаф,
+              су́мка, окно́.
+          - tipo: prueba
+            ru: "Како́й он?"
+            es: >-
+              Prueba de la unidad 13: descripciones
+            en: >-
+              Unit 13 test: descriptions
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Кто живёт наверху́?"
+            es: >-
+              Episodio 13: Кто живёт наверху́?
+            en: >-
+              Episode 13: Кто живёт наверху́?
+            foco: >-
+              Ками́ла: Кто живёт наверху́? Том: Не зна́ю. Он молодо́й?
+              Ми́ша: Нет, он пожило́й. Вот он! Лев Бори́сович:
+              Здра́вствуйте! Я игра́ю на скри́пке. Ками́ла: Как краси́во!
+              Том: Мне то́же нра́вится му́зыка. Lee otra vez en voz alta y
+              reordena tus notas antes de respo
 
       - numero: 14
         ru: За́втрак
@@ -787,6 +1904,135 @@ niveles:
         lexico: comida y bebida; desayunos del mundo; никогда́, ре́дко, иногда́, обы́чно, ча́сто, всегда́
         fonetica: ц
         episodio: {ru: "Сы́рники и тама́лес", es: "Sýrniki y tamales", en: "Syrniki and tamales", sinopsis: "Desayuno a tres en casa de Kira: ella hace сы́рники, Camila trae tamales peruanos y Tom, tortitas con jarabe de arce. Qué se come por la mañana en cada país."}
+        dias:
+          - tipo: leccion
+            ru: "Что ты ешь?"
+            es: "Qué comes"
+            en: "What do you eat?"
+            foco: >-
+              Aprende я ем, ты ешь y он ест como formas de есть en el
+              sentido de comer. El nombre que comes va como objeto directo.
+              Palabras: Я ем хлеб., Ты ешь ка́шу?, Она́ ест я́блоко., чай,
+              ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Что ты пьёшь?"
+            es: "Qué bebes"
+            en: "What do you drink?"
+            foco: >-
+              Aprende пью, пьёшь y пьёт. Practica con чай, ко́фе y во́ду. La
+              forma во́ду sigue el patrón de objeto directo de la unidad 8.
+              Palabras: Я пью чай., Ты пьёшь ко́фе?, Он пьёт во́ду., чай,
+              ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Чай с молоко́м"
+            es: "Con leche"
+            en: "With milk"
+            foco: >-
+              Aprende с молоко́м y с са́харом como bloques. En estos
+              ejemplos, la forma que sigue a с indica qué acompaña a la
+              bebida. Palabras: Мне чай с молоко́м., Я пью ко́фе с
+              са́харом., Вода́ с га́зом., чай, ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Чай без са́хара"
+            es: "Sin azúcar"
+            en: "Without sugar"
+            foco: >-
+              Aprende без са́хара, без молока́ y без га́за como bloques.
+              Compara las parejas con с del día anterior. Palabras: Мне чай
+              без са́хара., Я пью ко́фе без молока́., Вода́ без га́за., чай,
+              ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Обы́чно я пью чай"
+            es: "A veces, a menudo y siempre"
+            en: "Sometimes, often and always"
+            foco: >-
+              Usa a veces иногда́, a menudo ча́сто y siempre всегда́.
+              Colócalos cerca del verbo para marcar la frecuencia de tu
+              desayuno. Palabras: Я иногда́ пью ко́фе., Я ча́сто пью чай., Я
+              всегда́ ем хлеб., чай, ко́фе, хлеб.
+          - tipo: repaso
+            ru: "За́втрак"
+            es: >-
+              Repaso: el desayuno
+            en: >-
+              Review: breakfast
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "За́втрак"
+            es: "Dos desayunos en casa"
+            en: "Two breakfasts at home"
+            foco: >-
+              Я Ки́ра. Я ча́сто ем ка́шу. Я пью чай без са́хара. Я Том. Я
+              иногда́ ем хлеб. Я пью ко́фе с молоко́м. — Чай с молоко́м? —
+              Нет, чай без молока́, пожа́луйста. Lee otra vez en voz alta y
+              reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Я никогда́ не пью"
+            es: "Casi nunca y nunca"
+            en: "Rarely and never"
+            foco: >-
+              Ре́дко significa rara vez. Con никогда́, conserva не delante
+              del verbo en estos ejemplos. Contrasta una frecuencia baja con
+              ninguna. Palabras: Я ре́дко пью ко́фе., Я никогда́ не пью
+              ко́фе., Я обы́чно ем ка́шу., чай, ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Яйцо́ и я́йца"
+            es: "El sonido ц en la mesa"
+            en: "The sound ц at the table"
+            foco: >-
+              La ц representa una secuencia breve parecida a [ts].
+              Practícala en яйцо́, я́йца y пи́цца sin insertar una vocal
+              entre los dos componentes. Palabras: Э́то яйцо́., Э́то я́йца.,
+              Я люблю́ пи́ццу., чай, ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Что вы еди́те на за́втрак?"
+            es: "El desayuno de cada persona"
+            en: "Each person's breakfast"
+            foco: >-
+              Usa на за́втрак para situar lo que se come en el desayuno.
+              Pregunta con еди́те en trato formal y responde con ем.
+              Palabras: Что вы еди́те на за́втрак?, На за́втрак я ем ка́шу.,
+              На за́втрак я пью чай., чай, ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Чай и́ли ко́фе?"
+            es: "Elegir entre dos bebidas"
+            en: "Choosing between two drinks"
+            foco: >-
+              Une dos opciones con и́ли. Mantén el bloque de acompañamiento
+              unido para que se entienda qué contiene cada bebida. Palabras:
+              Чай и́ли ко́фе?, Чай с молоко́м и́ли без молока́?, Мне ко́фе
+              без са́хара., чай, ко́фе, хлеб.
+          - tipo: leccion
+            ru: "Вот за́втрак"
+            es: "Un menú de desayuno"
+            en: "A breakfast menu"
+            foco: >-
+              Lee el menú y combina una comida, una bebida y un
+              acompañamiento. Después cuenta el hábito normal de la persona
+              y compáralo con el pedido de hoy. Palabras: Мне я́йца и чай.,
+              Обы́чно я ем ка́шу., Сего́дня я пью ко́фе с молоко́м., чай,
+              ко́фе, хлеб.
+          - tipo: prueba
+            ru: "За́втрак"
+            es: >-
+              Prueba de la unidad 14: el desayuno
+            en: >-
+              Unit 14 test: breakfast
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Сы́рники и тама́лес"
+            es: >-
+              Episodio 14: Сы́рники и тама́лес
+            en: >-
+              Episode 14: Сы́рники и тама́лес
+            foco: >-
+              Ки́ра: Вот сы́рники. Я пью чай. Ками́ла: А э́то тама́лес. Мне
+              чай без са́хара. Том: А у меня́ блины́. Я пью ко́фе с
+              молоко́м. Ки́ра: Ты ча́сто пьёшь ко́фе? Том: Да, ча́сто. А ты?
+              Ки́ра: Я обы́чно пью чай. Lee otra vez en voz alta y reordena
+              tus notas antes de
 
       - numero: 15
         ru: В рестора́не
@@ -797,6 +2043,137 @@ niveles:
         lexico: pedir en un restaurante; recetas; la cocina rusa
         fonetica: р y л
         episodio: {ru: "Счёт, пожа́луйста!", es: "¡La cuenta, por favor!", en: "The bill, please!", sinopsis: "La primera cena fuera de los tres. Piden en ruso, Camila pregunta por cada plato como buena cocinera y el camarero acaba hablando más que ellos."}
+        dias:
+          - tipo: leccion
+            ru: "Я хочу́ суп"
+            es: "Pedir con quiero"
+            en: "Ordering with I want"
+            foco: >-
+              Aprende хочу́ para yo y хоти́те para una pregunta cortés. En
+              un pedido, мне y пожа́луйста siguen siendo útiles para
+              suavizar la petición. Palabras: Я хочу́ суп., Вы хоти́те чай?,
+              Мне суп, пожа́луйста., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Горя́чий суп"
+            es: "Pedir una sopa caliente"
+            en: "Ordering a hot soup"
+            foco: >-
+              Con un objeto masculino inanimado, conserva el nombre y el
+              adjetivo en los ejemplos de hoy. Compara el plato en la carta
+              y el mismo plato en un pedido. Palabras: Вот горя́чий суп., Я
+              хочу́ горя́чий суп., Мне чёрный чай., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Холо́дную во́ду"
+            es: "Pedir agua fría"
+            en: "Ordering cold water"
+            foco: >-
+              Con sustantivos femeninos como вода́, el nombre y el adjetivo
+              cambian en el objeto directo: холо́дная вода́ pasa a холо́дную
+              во́ду. Palabras: Э́то холо́дная вода́., Я хочу́ холо́дную
+              во́ду., Мне горя́чую ка́шу., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Одну́ пи́ццу"
+            es: "Una porción y mi pizza"
+            en: "One portion and my pizza"
+            foco: >-
+              Con el objeto femenino, aprende una como одну́ y mi como мою́
+              en estos modelos. Conserva también la forma de objeto del
+              sustantivo. Palabras: Я хочу́ одну́ пи́ццу., Где моя́ пи́цца?,
+              Том ест мою́ пи́ццу., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Счёт, пожа́луйста"
+            es: "Ver la carta y pedir la cuenta"
+            en: "The menu and the bill"
+            foco: >-
+              Usa меню́, пожа́луйста al llegar y счёт, пожа́луйста al
+              terminar. Coloca el pedido entre ambos momentos. Palabras:
+              Меню́, пожа́луйста., Что вы хоти́те?, Счёт, пожа́луйста., суп,
+              меню́, счёт.
+          - tipo: repaso
+            ru: "В рестора́не"
+            es: >-
+              Repaso: pedir y pagar
+            en: >-
+              Review: ordering and paying
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "В рестора́не"
+            es: "Leer un menú"
+            en: "Reading a menu"
+            foco: >-
+              Горя́чий суп. Холо́дная вода́. Пи́цца. — Меню́, пожа́луйста. —
+              Что вы хоти́те? — Я хочу́ горя́чий суп и холо́дную во́ду. — А
+              пи́ццу? — Нет, спаси́бо. Lee otra vez en voz alta y reordena
+              tus notas antes de responder.
+          - tipo: leccion
+            ru: "Вчера́"
+            es: "Contar lo de ayer"
+            en: "Talking about yesterday"
+            foco: >-
+              Con рабо́тать, usa рабо́тал para un hombre, рабо́тала para una
+              mujer y рабо́тали para varias personas. En pasado estas formas
+              dependen del género o número, no de la persona gramatical.
+              Palabras: Вчера́ Том рабо́тал., Вчера́ Ки́ра рабо́тала., Мы
+              рабо́тали в це́нтре., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Я ел и пил"
+            es: "Qué comimos y bebimos"
+            en: "What we ate and drank"
+            foco: >-
+              Aprende los pasados ел, е́ла, е́ли y пил, пила́, пи́ли.
+              Conserva las diferencias de acento. Usa вчера́ para ubicar la
+              comida. Palabras: Том ел суп., Ки́ра пила́ чай., Мы е́ли
+              пи́ццу., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Был и была́"
+            es: "Dónde estuve"
+            en: "Where I was"
+            foco: >-
+              Para decir dónde estaba alguien ayer, usa был, была́ o бы́ли
+              según la persona o el grupo. Conserva el bloque de lugar
+              después del verbo. Palabras: Том был в рестора́не., Ки́ра
+              была́ на рабо́те., Мы бы́ли в кафе́., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "Ры́ба и ла́мпа"
+            es: >-
+              Dos sonidos: р y л
+            en: >-
+              Two sounds: р and л
+            foco: >-
+              Para р, la punta de la lengua hace contacto breve hacia los
+              alvéolos. Para л, la punta se apoya y el aire pasa por los
+              lados. Alterna sin añadir vocales. Palabras: Ры́ба на столе́.,
+              Ла́мпа в углу́., Том пил чай., суп, меню́, счёт.
+          - tipo: leccion
+            ru: "В рестора́не"
+            es: "Un pedido de principio a fin"
+            en: "An order from start to finish"
+            foco: >-
+              Pregunta qué quieren, confirma el pedido y pide la cuenta.
+              Después usa el pasado para contar qué se comió. No cambies de
+              tiempo en mitad del pedido. Palabras: Я хочу́ одну́ пи́ццу.,
+              Счёт, пожа́луйста., Вчера́ мы е́ли пи́ццу., суп, меню́, счёт.
+          - tipo: prueba
+            ru: "В рестора́не"
+            es: >-
+              Prueba de la unidad 15: el restaurante
+            en: >-
+              Unit 15 test: the restaurant
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Счёт, пожа́луйста!"
+            es: >-
+              Episodio 15: Счёт, пожа́луйста!
+            en: >-
+              Episode 15: Счёт, пожа́луйста!
+            foco: >-
+              Ками́ла: Меню́, пожа́луйста. Официа́нт: Что вы хоти́те?
+              Ками́ла: Мне горя́чий суп и холо́дную во́ду. Том: Я хочу́
+              одну́ пи́ццу и чай. Ками́ла: Счёт, пожа́луйста! Ками́ла:
+              Вчера́ мы бы́ли в рестора́не. Том ел пи́ццу. Я е́ла суп. Lee
+              otra vez en voz alta y reord
 
       - numero: 16
         ru: Оде́жда
@@ -807,6 +2184,136 @@ niveles:
         lexico: ropa, calzado, accesorios; las estaciones
         fonetica: la ы después de consonante
         episodio: {ru: "Пе́рвый снег", es: "La primera nieve", en: "The first snow", sinopsis: "Nieva por primera vez y Camila nunca ha visto nevar. Tom, que es de Toronto, la lleva a comprar un abrigo y unas botas de verdad."}
+        dias:
+          - tipo: leccion
+            ru: "Оде́жда"
+            es: "La ropa en el armario"
+            en: "Clothes in the cupboard"
+            foco: >-
+              Identifica las prendas con э́то antes de decir cómo alguien
+              las usa. Пальто́ conserva su forma y es neutro; сапоги́ nombra
+              botas en plural. Palabras: Э́то пальто́., Э́то ша́пка.,
+              Сапоги́ в шкафу́., пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Я ношу́"
+            es: "Lo que llevo habitualmente"
+            en: "What I usually wear"
+            foco: >-
+              Aprende ношу́, но́сишь y но́сит para la ropa que alguien lleva
+              o usa habitualmente. El objeto directo sigue las formas de la
+              unidad anterior. Palabras: Я ношу́ пальто́., Она́ но́сит
+              ша́пку., Ты но́сишь сапоги́?, пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Я надева́ю"
+            es: "Lo que me pongo ahora"
+            en: "What I'm putting on"
+            foco: >-
+              Usa надева́ю para la acción de ponerse algo y ношу́ para decir
+              qué ropa llevas habitualmente. En ambos ejemplos, la prenda es
+              objeto directo. Palabras: Я надева́ю ша́пку., Я но́шу ша́пку.,
+              Том надева́ет пальто́., пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Кра́сную ку́ртку"
+            es: "Una chaqueta roja"
+            en: "A red jacket"
+            foco: >-
+              Al identificar una chaqueta di кра́сная ку́ртка. Con надева́ю
+              cambia las dos terminaciones: кра́сную ку́ртку. Compara con el
+              neutro бе́лое пальто́. Palabras: Э́то кра́сная ку́ртка., Я
+              надева́ю кра́сную ку́ртку., Она́ но́сит бе́лое пальто́.,
+              пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Зимо́й и ле́том"
+            es: "En invierno y en verano"
+            en: "In winter and in summer"
+            foco: >-
+              Usa зимо́й y ле́том para situar hábitos. Ве́сной y о́сенью
+              completan la lista. Hoy aprende las palabras como bloques de
+              tiempo. Palabras: Зимо́й я ношу́ пальто́., Ле́том я ношу́
+              футбо́лку., О́сенью Том но́сит ку́ртку., пальто́, ша́пка,
+              сапоги́.
+          - tipo: repaso
+            ru: "Оде́жда"
+            es: >-
+              Repaso: la ropa
+            en: >-
+              Review: clothes
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Оде́жда"
+            es: "En la tienda de ropa"
+            en: "At the clothes shop"
+            foco: >-
+              — Зимо́й я ношу́ пальто́. — Вот бе́лое пальто́. — А я надева́ю
+              кра́сную ку́ртку. — Где сапоги́? — Вот они́, в шкафу́. Lee
+              otra vez en voz alta y reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Мо́жно приме́рить?"
+            es: "¿Puedo probármelo?"
+            en: "Can I try it on?"
+            foco: >-
+              Practica мо́жно приме́рить como petición de permiso. Si ya
+              sabes la prenda, añádela con el demostrativo que la señala y
+              la forma de objeto que conoces. Palabras: Мо́жно приме́рить?,
+              Мо́жно приме́рить пальто́?, Да, мо́жно., пальто́, ша́пка,
+              сапоги́.
+          - tipo: leccion
+            ru: "Како́й разме́р?"
+            es: "Talla y color"
+            en: "Size and colour"
+            foco: >-
+              Pregunta por la talla con како́й разме́р. Aprende разме́ры
+              como plural regular y pide el color que buscas en una frase
+              separada. Palabras: Како́й разме́р?, Мне чёрное пальто́., Есть
+              друго́й разме́р?, пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Разме́ры и сапоги́"
+            es: "La vocal ы"
+            en: "The vowel ы"
+            foco: >-
+              Para ы, mantén la lengua más atrás que para и. Escucha el
+              contraste en tu propia grabación y mira cómo cambia la
+              posición de la lengua. Palabras: Разме́ры в спи́ске., Мы на
+              рабо́те., Сапоги́ в шкафу́., пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Что вы продаёте?"
+            es: "Lo que vende la tienda"
+            en: "What the shop sells"
+            foco: >-
+              Aprende продаю́, продаёшь y продаёт. Usa el verbo para hablar
+              desde el punto de vista del vendedor; el cliente puede
+              preguntar con продаёте. Palabras: Что вы продаёте?, Мы продаём
+              пальто́., Она́ продаёт ку́ртки., пальто́, ша́пка, сапоги́.
+          - tipo: leccion
+            ru: "Пальто́ и сапоги́"
+            es: "Elegir un conjunto"
+            en: "Choosing an outfit"
+            foco: >-
+              Reúne estación, prenda y color. Decide si describes un hábito
+              con ношу́ o una acción de ahora con надева́ю. Palabras: Зимо́й
+              я ношу́ пальто́., Я надева́ю си́нюю ку́ртку., Мо́жно
+              приме́рить сапоги́?, пальто́, ша́пка, сапоги́.
+          - tipo: prueba
+            ru: "Оде́жда"
+            es: >-
+              Prueba de la unidad 16: la ropa
+            en: >-
+              Unit 16 test: clothes
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Пе́рвый снег"
+            es: >-
+              Episodio 16: Пе́рвый снег
+            en: >-
+              Episode 16: Пе́рвый снег
+            foco: >-
+              Ками́ла: Снег! Что ты но́сишь зимо́й? Том: Я ношу́ пальто́ и
+              сапоги́. Ками́ла: Вот чёрное пальто́. Мо́жно приме́рить?
+              Продаве́ц: Да, мо́жно. Како́й разме́р? Ками́ла: Со́рок два.
+              Том: А вот сапоги́. Ками́ла: Я надева́ю пальто́. Спаси́бо! Lee
+              otra vez en voz alt
 
       - numero: 17
         ru: Поку́пки
@@ -817,6 +2324,142 @@ niveles:
         lexico: comprar; precios
         fonetica: ИК-2 con palabra interrogativa
         episodio: {ru: "На ры́нке", es: "En el mercado", en: "At the market", sinopsis: "Camila quiere cocinar algo de Lima y busca los ingredientes en el mercado: tiene que preguntar precios y decidir qué puede sustituir. Vera Ivánovna sabe dónde está todo."}
+        dias:
+          - tipo: leccion
+            ru: "Ско́лько сто́ит?"
+            es: "Preguntar el precio"
+            en: "Asking the price"
+            foco: >-
+              Usa Ско́лько сто́ит? con una cosa y Ско́лько сто́ят? con
+              varias. Di el importe de la etiqueta en voz alta. Hoy puedes
+              responder solo con la cifra. Palabras: Ско́лько сто́ит
+              ку́ртка?, Ско́лько сто́ят сапоги́?, Се́мьдесят два., де́ньги,
+              ку́ртка, цена́.
+          - tipo: leccion
+            ru: "Я хочу́ купи́ть"
+            es: "Elegir qué comprar"
+            en: "Choosing what to buy"
+            foco: >-
+              Aprende хочу́ купи́ть como bloque para una compra que quieres
+              hacer. Combínalo con nombres que ya sabes poner como objeto
+              directo. Palabras: Я хочу́ купи́ть ку́ртку., Я хочу́ купи́ть
+              сапоги́., Ско́лько сто́ит ку́ртка?, де́ньги, ку́ртка, цена́.
+          - tipo: leccion
+            ru: "Я до́лжен купи́ть"
+            es: "Tengo que comprar"
+            en: "I have to buy"
+            foco: >-
+              Usa до́лжен si habla un hombre, должна́ si habla una mujer y
+              должны́ con un grupo. El infinitivo posterior se mantiene
+              igual. Palabras: Я до́лжен купи́ть пальто́., Я должна́ купи́ть
+              ку́ртку., Мы должны́ купи́ть сапоги́., де́ньги, ку́ртка,
+              цена́.
+          - tipo: leccion
+            ru: "Я могу́"
+            es: "Lo que puedo hacer"
+            en: "What I can do"
+            foco: >-
+              Aprende могу́, мо́жешь y мо́жет con un infinitivo. La forma de
+              мочь indica la persona, mientras el infinitivo nombra la
+              acción. Palabras: Я могу́ купи́ть сапоги́., Ты мо́жешь купи́ть
+              пальто́?, Она́ мо́жет купи́ть ку́ртку., де́ньги, ку́ртка,
+              цена́.
+          - tipo: leccion
+            ru: "Мо́жно и нельзя́"
+            es: "Permiso y prohibición"
+            en: "Permission and prohibition"
+            foco: >-
+              Usa мо́жно para preguntar si está permitido algo y нельзя́
+              para indicar que no se permite. Ambas formas se mantienen al
+              añadir el infinitivo. Palabras: Мо́жно приме́рить?, Здесь
+              нельзя́ фотогра́фировать., Здесь мо́жно плати́ть ка́ртой?,
+              де́ньги, ку́ртка, цена́.
+          - tipo: repaso
+            ru: "Поку́пки"
+            es: >-
+              Repaso: las compras
+            en: >-
+              Review: shopping
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Поку́пки"
+            es: "Una etiqueta de precio"
+            en: "Reading a price tag"
+            foco: >-
+              Ку́ртка: со́рок два. Сапоги́: се́мьдесят два. — Ско́лько
+              сто́ит ку́ртка? — Со́рок два. — Я могу́ купи́ть ку́ртку.
+              Мо́жно приме́рить? — Да, мо́жно. Lee otra vez en voz alta y
+              reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Я рабо́таю врачо́м"
+            es: "¿En qué trabajas?"
+            en: "What do you work as?"
+            foco: >-
+              Con рабо́тать, el nombre de profesión toma la forma de estos
+              bloques: врачо́м, по́варом, инжене́ром. Compara con
+              presentarte directamente como Я врач. Palabras: Я рабо́таю
+              врачо́м., Она́ рабо́тает по́варом., Кем вы рабо́таете?,
+              де́ньги, ку́ртка, цена́.
+          - tipo: leccion
+            ru: "Он был студе́нтом"
+            es: "Lo que era antes"
+            en: "What someone used to be"
+            foco: >-
+              Lee fue estudiante, era médica y era guía en los modelos con
+              был o была́. Aprende la forma de la profesión como parte de la
+              frase, no como una regla para otros adjetivos. Palabras: Он
+              был студе́нтом., Она́ была́ врачо́м., Он был ги́дом., де́ньги,
+              ку́ртка, цена́.
+          - tipo: leccion
+            ru: "Я ста́ну инжене́ром"
+            es: "La profesión del futuro"
+            en: "A future occupation"
+            foco: >-
+              Aprende ста́ну con la profesión como un bloque de futuro.
+              Compara el presente рабо́таю con el proyecto personal ста́ну.
+              Palabras: Я ста́ну инжене́ром., Она́ ста́нет врачо́м., Я хочу́
+              стать по́варом., де́ньги, ку́ртка, цена́.
+          - tipo: leccion
+            ru: "Ско́лько сто́ит пальто́?"
+            es: "La pregunta lleva el acento"
+            en: "Stress in wh-questions"
+            foco: >-
+              En estos ejemplos de ИК-2, haz la palabra interrogativa
+              prominente y deja bajar el tono después. Luego compara con la
+              misma cifra dicha como confirmación. Palabras: Ско́лько сто́ит
+              пальто́?, Где ку́ртка?, Како́й разме́р?, де́ньги, ку́ртка,
+              цена́.
+          - tipo: leccion
+            ru: "Ско́лько сто́ит?"
+            es: "Una compra completa"
+            en: "A complete purchase"
+            foco: >-
+              Ordena el intercambio en cuatro pasos: busca la prenda,
+              pregunta el precio, pide permiso si hace falta y decide si
+              puedes comprarla. Usa precios de práctica. Palabras: Где
+              ку́ртка?, Ско́лько сто́ит ку́ртка?, Я могу́ купи́ть ку́ртку.,
+              де́ньги, ку́ртка, цена́.
+          - tipo: prueba
+            ru: "Поку́пки"
+            es: >-
+              Prueba de la unidad 17: las compras
+            en: >-
+              Unit 17 test: shopping
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "На ры́нке"
+            es: >-
+              Episodio 17: На ры́нке
+            en: >-
+              Episode 17: На ры́нке
+            foco: >-
+              Ками́ла: Я хочу́ купи́ть ры́бу. Ве́ра Ива́новна: Вот ры́ба.
+              Ско́лько сто́ит? Продаве́ц: Девяно́сто. Ками́ла: Я не могу́
+              купи́ть ры́бу. А я́йца? Продаве́ц: Я́йца сто́ят со́рок два.
+              Ками́ла: Тогда́ я могу́ купи́ть я́йца. Спаси́бо! Lee otra vez
+              en voz alta y reor
 
       - numero: 18
         ru: Мой день
@@ -827,6 +2470,140 @@ niveles:
         lexico: la rutina; la hora; Ско́лько? / Во ско́лько?
         fonetica: -тся, -ться
         episodio: {ru: "Буди́льник", es: "El despertador", en: "The alarm clock", sinopsis: "Tom es búho: se acuesta tarde y no oye el despertador. Kira es alondra: a las seis ya está en pie. Un día de cada uno, hora a hora."}
+        dias:
+          - tipo: leccion
+            ru: "Кото́рый час?"
+            es: "Las horas en punto"
+            en: "Telling the hour"
+            foco: >-
+              Pregunta Кото́рый час? y responde con las expresiones de hora
+              completa: час, два часа́, пять часо́в. Aprende estos tres
+              grupos antes de añadir minutos. Palabras: Кото́рый час?,
+              Сейча́с два часа́., Сейча́с пять часо́в., час, мину́та,
+              за́втрак.
+          - tipo: leccion
+            ru: "Два часа́ пять мину́т"
+            es: "Minutos y horario digital"
+            en: "Minutes and digital times"
+            foco: >-
+              Para leer una hora de forma directa, añade los minutos.
+              Aprende одна́ мину́та, две мину́ты y пять мину́т. Di la hora
+              antes de los minutos. Palabras: Два часа́ пять мину́т., Три
+              часа́ две мину́ты., Шесть часо́в одна́ мину́та., час, мину́та,
+              за́втрак.
+          - tipo: leccion
+            ru: "Во ско́лько?"
+            es: "¿A qué hora?"
+            en: "At what time?"
+            foco: >-
+              Pregunta Во ско́лько? por el momento de una actividad y
+              contesta con в más la expresión de hora. Para la una usa в
+              час. Palabras: Во ско́лько ты за́втракаешь?, Я за́втракаю в
+              семь часо́в., Я рабо́таю в два часа́., час, мину́та, за́втрак.
+          - tipo: leccion
+            ru: "Я иду́"
+            es: "Voy ahora"
+            en: "I'm going now"
+            foco: >-
+              Usa иду́, идёшь y идёт para alguien que va a pie en una
+              dirección. Hoy practica acciones en curso y el destino en
+              bloques que aprenderás a combinar. Palabras: Я иду́ домо́й.,
+              Куда́ ты идёшь?, Он идёт на рабо́ту., час, мину́та, за́втрак.
+          - tipo: leccion
+            ru: "В теа́тр и́ли на уро́к?"
+            es: "Adónde voy"
+            en: "Where I'm going"
+            foco: >-
+              Distingue el destino con в теа́тр o на уро́к de la ubicación
+              de la unidad 10. Aprende hoy las dos preposiciones con su
+              destino ya formado. Palabras: Я иду́ в теа́тр., Она́ идёт на
+              уро́к., Мы идём в кафе́., час, мину́та, за́втрак.
+          - tipo: repaso
+            ru: "Мой день"
+            es: >-
+              Repaso: la hora y los destinos
+            en: >-
+              Review: time and destinations
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Мой день"
+            es: "Leer una agenda"
+            en: "Reading a schedule"
+            foco: >-
+              В семь часо́в я за́втракаю. В два часа́ я рабо́таю. В пять
+              часо́в я иду́ в теа́тр. — Во ско́лько ты идёшь в теа́тр? — В
+              пять часо́в. Lee otra vez en voz alta y reordena tus notas
+              antes de responder.
+          - tipo: leccion
+            ru: "Я одева́юсь"
+            es: "Me visto y me levanto"
+            en: "Getting dressed and getting up"
+            foco: >-
+              Aprende la pareja одева́юсь y одева́ешься. Para la rutina,
+              añade встаю́ como forma aprendida de yo. Ordena las acciones
+              por hora. Palabras: Я встаю́ в семь часо́в., Я одева́юсь., Во
+              ско́лько ты одева́ешься?, час, мину́та, за́втрак.
+          - tipo: leccion
+            ru: "Пять мину́т"
+            es: "Cuánto dura"
+            en: "How long it takes"
+            foco: >-
+              Pregunta por la duración con Ско́лько вре́мени? y contesta con
+              la cantidad de minutos. Contrasta con Во ско́лько?, que
+              pregunta cuándo ocurre la actividad. Palabras: Ско́лько
+              вре́мени ты отдыха́ешь?, Я отдыха́ю пять мину́т., Во ско́лько
+              ты за́втракаешь?, час, мину́та, за́втрак.
+          - tipo: leccion
+            ru: "До за́втрака и по́сле за́втрака"
+            es: "Antes y después"
+            en: "Before and after"
+            foco: >-
+              En estos bloques, до y по́сле llevan la misma forma de
+              за́втрак, que es за́втрака. Con рабо́та, aprende рабо́ты.
+              Ordena una rutina usando esos bloques. Palabras: До за́втрака
+              я одева́юсь., По́сле за́втрака я иду́ на рабо́ту., По́сле
+              рабо́ты я отдыха́ю., час, мину́та, за́втрак.
+          - tipo: leccion
+            ru: "Одева́ться и одева́ется"
+            es: "Cómo suenan тся y ться"
+            en: "How тся and ться sound"
+            foco: >-
+              En el infinitivo одева́ться se escribe ь; en la forma
+              одева́ется no. En el habla, ambos finales se oyen con un
+              sonido parecido a ц. Decide cómo se escribe mirando la función
+              de la palabra. Palabras: Одева́ться., Она́ одева́ется., Как
+              э́то пи́шется?, час, мину́та, за́втрак.
+          - tipo: leccion
+            ru: "У меня́ нет"
+            es: "Lo que no tengo"
+            en: "What I don't have"
+            foco: >-
+              Compara У меня́ есть стол con У меня́ нет стола́. En los
+              ejemplos de hoy, нет pide una forma distinta del objeto.
+              Aprende los pares стол — стола́, ла́мпа — ла́мпы y телефо́н —
+              телефо́на. Palabras: У меня́ нет стола́., У неё нет ла́мпы., У
+              нас нет телефо́на., час, мину́та, за́втрак.
+          - tipo: prueba
+            ru: "Мой день"
+            es: >-
+              Prueba de la unidad 18: la rutina
+            en: >-
+              Unit 18 test: daily routine
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Буди́льник"
+            es: >-
+              Episodio 18: Буди́льник
+            en: >-
+              Episode 18: Буди́льник
+            foco: >-
+              Том: Кото́рый час? Ки́ра: Сейча́с во́семь часо́в. Том: Я
+              встаю́ в во́семь часо́в. А ты? Ки́ра: Я встаю́ в шесть часо́в.
+              В семь я уже́ на рабо́те. Том: Ой! До за́втрака я одева́юсь.
+              Пото́м я иду́ на рабо́ту. Ки́ра: А где буди́льник? Том: Он на
+              столе́! Lee otra
 
       - numero: 19
         ru: Неде́ля
@@ -837,6 +2614,135 @@ niveles:
         lexico: días de la semana; frecuencia
         fonetica: ч, чт, чн
         episodio: {ru: "По понеде́льникам", es: "Los lunes", en: "On Mondays", sinopsis: "La semana de cada uno: los lunes Tom va a la piscina, los martes Camila tiene clase hasta tarde. ¿Qué día pueden verse los tres?"}
+        dias:
+          - tipo: leccion
+            ru: "Сего́дня понеде́льник."
+            es: "De lunes a viernes"
+            en: "Monday to Friday"
+            foco: >-
+              Aprende los nombres de los días laborables. Con «qué día» usa
+              како́й день como bloque. Palabras: Сего́дня понеде́льник.,
+              За́втра вто́рник., Среда́, четве́рг, пя́тница., день, неде́ля,
+              ча́сто.
+          - tipo: leccion
+            ru: "Сего́дня суббо́та."
+            es: "Sábado y domingo"
+            en: "Saturday and Sunday"
+            foco: >-
+              Суббо́та y воскресе́нье cierran la semana en el calendario del
+              ejercicio. Repasa qué día viene después de cada uno. Palabras:
+              Сего́дня суббо́та., За́втра воскресе́нье., Пото́м
+              понеде́льник., день, неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "Я рабо́таю в понеде́льник."
+            es: "El día de una cita"
+            en: "The day of an appointment"
+            foco: >-
+              Aprende el bloque de cada día al contestar cuándo: в
+              понеде́льник, во вто́рник, в сре́ду. En el tercero cambia la
+              terminación. Palabras: Я рабо́таю в понеде́льник., Уро́к во
+              вто́рник., Мы рабо́таем в сре́ду., день, неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "Как ча́сто ты чита́ешь?"
+            es: "Con qué frecuencia"
+            en: "How often"
+            foco: >-
+              Ordena всегда́, ча́сто e иногда́ de mayor a menor frecuencia.
+              Pregunta con Как ча́сто? y contesta con un hábito. Palabras:
+              Как ча́сто ты чита́ешь?, Я ча́сто чита́ю., Я иногда́
+              гото́влю., день, неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "Я чита́ю раз в неде́лю."
+            es: "Repeticiones por semana"
+            en: "Times per week"
+            foco: >-
+              Aprende раз в неде́лю, два ра́за в неде́лю y пять раз в
+              неде́лю. Cuenta las repeticiones a partir de una tabla.
+              Palabras: Я чита́ю раз в неде́лю., Я игра́ю два ра́за в
+              неде́лю., Я рабо́таю пять раз в неде́лю., день, неде́ля,
+              ча́сто.
+          - tipo: repaso
+            ru: "Неде́ля"
+            es: >-
+              Repaso: los días
+            en: >-
+              Review: days
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Неде́ля"
+            es: "Una agenda de la semana"
+            en: "A weekly calendar"
+            foco: >-
+              В понеде́льник мы чита́ем. Во вто́рник мы рису́ем. В сре́ду мы
+              гото́вим. — Како́й сего́дня день? — Сего́дня вто́рник. Мы
+              рису́ем. Lee otra vez en voz alta y reordena tus notas antes
+              de responder.
+          - tipo: leccion
+            ru: "Я сейча́с иду́ в кафе́."
+            es: "Ir siempre o ir ahora"
+            en: "Going regularly or going now"
+            foco: >-
+              Usa иду́ para un trayecto a pie en curso. Usa хожу́ para una
+              costumbre, como ir siempre o a menudo a un lugar. Palabras: Я
+              сейча́с иду́ в кафе́., Я ча́сто хожу́ в кафе́., Ты хо́дишь в
+              кино́?, день, неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "Я хожу́ в бассе́йн."
+            es: "Las formas de ходи́ть"
+            en: "Forms of ходи́ть"
+            foco: >-
+              Aprende хожу́, хо́дишь y хо́дит para hábitos. Usa el mismo
+              destino en los tres modelos y cambia solo quién va. Palabras:
+              Я хожу́ в бассе́йн., Ты хо́дишь в бассе́йн?, Том хо́дит в
+              бассе́йн., день, неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "У́тром я рабо́таю."
+            es: "Por la mañana y por la tarde"
+            en: "In the morning and evening"
+            foco: >-
+              Usa у́тром, днём, ве́чером y но́чью como bloques de tiempo.
+              Combínalos con una actividad ya conocida. Palabras: У́тром я
+              рабо́таю., Днём я чита́ю., Ве́чером я отдыха́ю., день,
+              неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "Что ты де́лаешь?"
+            es: "Qué se oye en что y коне́чно"
+            en: "What you hear in что and коне́чно"
+            foco: >-
+              La ч tiene un inicio de cierre breve. En что se oye [sht] y en
+              коне́чно el grupo чн suena [shn]. Aprende estas lecturas
+              concretas. Palabras: Что ты де́лаешь?, Да, коне́чно., Я пью
+              чай., день, неде́ля, ча́сто.
+          - tipo: leccion
+            ru: "В понеде́льник у́тром я рабо́таю."
+            es: "Encontrar un hueco"
+            en: "Finding a free slot"
+            foco: >-
+              Combina día, parte del día y actividad. Distingue un plan de
+              hoy de algo que ocurre con frecuencia. Palabras: В
+              понеде́льник у́тром я рабо́таю., Ве́чером я ча́сто хожу́ в
+              кино́., Во вто́рник есть уро́к., день, неде́ля, ча́сто.
+          - tipo: prueba
+            ru: "Неде́ля"
+            es: >-
+              Prueba de la unidad 19: la semana
+            en: >-
+              Unit 19 test: the week
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "По понеде́льникам"
+            es: >-
+              Episodio 19: По понеде́льникам
+            en: >-
+              Episode 19: По понеде́льникам
+            foco: >-
+              Том: В понеде́льник я хожу́ в бассе́йн. Ками́ла: Во вто́рник у
+              меня́ уро́к. Ки́ра: А в сре́ду ве́чером? Том: В сре́ду я
+              могу́. Ками́ла: Я то́же! Ки́ра: Тогда́ в сре́ду, в семь
+              часо́в. Lee otra vez en voz alta y reordena tus notas antes de
+              responder.
 
       - numero: 20
         ru: Тра́нспорт
@@ -847,6 +2753,137 @@ niveles:
         lexico: transporte; На чём ты е́здишь на рабо́ту?
         fonetica: ИК-3 en enumeraciones
         episodio: {ru: "На метро́ и́ли на авто́бусе?", es: "¿En metro o en autobús?", en: "By metro or by bus?", sinopsis: "Tom empieza en una escuela al otro lado de la ciudad. Discuten la mejor ruta: metro, autobús, tranvía. Camila va en bicicleta, hasta que llega el frío."}
+        dias:
+          - tipo: leccion
+            ru: "Э́то авто́бус."
+            es: "Medios de transporte"
+            en: "Means of transport"
+            foco: >-
+              Identifica los vehículos antes de usarlos en una ruta. Aprende
+              на метро́ y на такси́ como bloques sin cambio visible.
+              Palabras: Э́то авто́бус., Э́то трамва́й., Где метро́?,
+              авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "Я е́ду на авто́бусе."
+            es: "Viajo en autobús"
+            en: "Travelling by bus"
+            foco: >-
+              Para el medio, usa на con la forma aprendida: на авто́бусе, на
+              трамва́е, на велосипе́де. No confundas el medio con el
+              destino. Palabras: Я е́ду на авто́бусе., Том е́дет на
+              трамва́е., Ками́ла е́дет на велосипе́де., авто́бус, трамва́й,
+              пе́шком.
+          - tipo: leccion
+            ru: "Я е́ду на рабо́ту."
+            es: "Voy en vehículo ahora"
+            en: "Going by vehicle now"
+            foco: >-
+              Aprende е́ду, е́дешь y е́дет para un trayecto en vehículo en
+              curso. Para la ruta a pie, recupera иду́ de la unidad
+              anterior. Palabras: Я е́ду на рабо́ту., Куда́ ты е́дешь?, Она́
+              е́дет в це́нтр., авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "Я ча́сто е́зжу на метро́."
+            es: "Cómo viajo habitualmente"
+            en: "How I usually travel"
+            foco: >-
+              Usa е́зжу, е́здишь y е́здит para desplazamientos habituales en
+              vehículo. Compara е́ду ahora con ча́сто е́зжу. Palabras: Я
+              ча́сто е́зжу на метро́., На чём ты е́здишь?, Том е́здит на
+              авто́бусе., авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "Я на рабо́те."
+            es: "En el trabajo o al trabajo"
+            en: "At work or to work"
+            foco: >-
+              Где? pide una ubicación: на рабо́те. Куда́? pide un destino:
+              на рабо́ту. Practica el mismo lugar en dos momentos. Palabras:
+              Я на рабо́те., Я е́ду на рабо́ту., Мы в це́нтре., авто́бус,
+              трамва́й, пе́шком.
+          - tipo: repaso
+            ru: "Тра́нспорт"
+            es: >-
+              Repaso: el transporte
+            en: >-
+              Review: transport
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Тра́нспорт"
+            es: "Dos rutas al trabajo"
+            en: "Two routes to work"
+            foco: >-
+              — На чём ты е́здишь на рабо́ту? — Я ча́сто е́зжу на авто́бусе.
+              А ты? — Я е́зжу на велосипе́де. — А сего́дня? — Сего́дня я
+              е́ду на метро́. Lee otra vez en voz alta y reordena tus notas
+              antes de responder.
+          - tipo: leccion
+            ru: "Том на ста́нции."
+            es: "En la estación o hacia la estación"
+            en: "At the station or heading there"
+            foco: >-
+              Compara на ста́нции para ubicación y на ста́нцию para destino.
+              Mantén separado el medio de transporte: на авто́бусе.
+              Palabras: Том на ста́нции., Том е́дет на ста́нцию., Том е́дет
+              на авто́бусе., авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "Шко́ла ря́дом."
+            es: "Cerca, lejos y a pie"
+            en: "Near, far and on foot"
+            foco: >-
+              Describe una ruta con ря́дом o далеко́ y elige después пе́шком
+              o un medio. Estas palabras dicen cómo o dónde sin cambiar con
+              la persona. Palabras: Шко́ла ря́дом., Вокза́л далеко́., Я иду́
+              пе́шком., авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "На метро́, на авто́бусе и на трамва́е."
+            es: "Una lista de transportes"
+            en: "Listing transport options"
+            foco: >-
+              En una lista, deja un pequeño ascenso al final de los grupos
+              que continúan y baja en el último. Ensaya la continuidad de
+              ИК-3 con tres medios. Palabras: На метро́, на авто́бусе и на
+              трамва́е., Пе́шком и́ли на метро́?, Я е́ду на метро́.,
+              авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "На метро́ бы́стро."
+            es: "Un medio cómodo"
+            en: "A convenient way to travel"
+            foco: >-
+              Usa удо́бно y бы́стро para valorar el trayecto. Después da tu
+              elección con е́зжу si describes una costumbre. Palabras: На
+              метро́ бы́стро., На трамва́е удо́бно., Я е́зжу на метро́.,
+              авто́бус, трамва́й, пе́шком.
+          - tipo: leccion
+            ru: "Я е́ду в це́нтр на метро́."
+            es: "Planificar mi trayecto"
+            en: "Planning my route"
+            foco: >-
+              Organiza cada descripción en destino, medio y frecuencia. Si
+              cuentas el viaje de ahora, usa е́ду; si es una costumbre,
+              е́зжу. Palabras: Я е́ду в це́нтр на метро́., Я ча́сто е́зжу на
+              рабо́ту на авто́бусе., Сейча́с я иду́ пе́шком., авто́бус,
+              трамва́й, пе́шком.
+          - tipo: prueba
+            ru: "Тра́нспорт"
+            es: >-
+              Prueba de la unidad 20: el transporte
+            en: >-
+              Unit 20 test: transport
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "На метро́ и́ли на авто́бусе?"
+            es: >-
+              Episodio 20: На метро́ и́ли на авто́бусе?
+            en: >-
+              Episode 20: На метро́ и́ли на авто́бусе?
+            foco: >-
+              Том: Как я е́ду на рабо́ту? На метро́ и́ли на авто́бусе?
+              Ки́ра: На метро́ бы́стро. Ками́ла: На трамва́е удо́бно. Я
+              ча́сто е́зжу на велосипе́де. Том: Сего́дня я е́ду на метро́.
+              Ки́ра: А за́втра? Том: За́втра на трамва́е. Lee otra vez en
+              voz alta y reordena tus
 
       - numero: 21
         ru: Пого́да и пла́ны
@@ -857,6 +2894,134 @@ niveles:
         lexico: el tiempo; los meses; vacaciones y viajes de trabajo; planes del año
         fonetica: repaso de la reducción
         episodio: {ru: "Пла́ны на зи́му", es: "Planes para el invierno", en: "Plans for the winter", sinopsis: "Se acercan las vacaciones de invierno. Tom quiere ir a San Petersburgo; Camila, a Kazán, a casa de la madre de Kira. Qué tiempo hace allí en enero."}
+        dias:
+          - tipo: leccion
+            ru: "Сего́дня хо́лодно."
+            es: "Qué tiempo hace"
+            en: "What's the weather like?"
+            foco: >-
+              Usa хо́лодно, тепло́ y жа́рко para describir el tiempo sin
+              sujeto. Sitúa la frase con сего́дня si hablas de hoy.
+              Palabras: Сего́дня хо́лодно., Там тепло́., Здесь жа́рко.,
+              пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Идёт дождь."
+            es: "Llueve y nieva"
+            en: "Rain and snow"
+            foco: >-
+              Aprende идёт дождь e идёт снег como frases. Con sol, usa
+              све́тит со́лнце. Aquí идёт describe un fenómeno y no un
+              trayecto. Palabras: Идёт дождь., Идёт снег., Све́тит со́лнце.,
+              пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Вчера́ бы́ло хо́лодно."
+            es: "El tiempo ayer y mañana"
+            en: "Weather yesterday and tomorrow"
+            foco: >-
+              Usa бы́ло con una condición pasada y бу́дет con una futura.
+              Mantén la palabra que describe el tiempo. Palabras: Вчера́
+              бы́ло хо́лодно., За́втра бу́дет тепло́., Сего́дня жа́рко.,
+              пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "В январе́ хо́лодно."
+            es: "En enero, en marzo y en julio"
+            en: "In January, March and July"
+            foco: >-
+              Para decir en qué mes ocurre algo usa в январе́, в ма́рте y в
+              ию́ле como bloques. Aprende cada par con el nombre del mes.
+              Palabras: В январе́ хо́лодно., В ма́рте я рабо́таю., В ию́ле я
+              е́ду в о́тпуск., пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Зимо́й я бу́ду рабо́тать."
+            es: "Un plan para otra estación"
+            en: "A plan for another season"
+            foco: >-
+              Recupera зимо́й y ле́том. Con бу́ду y un infinitivo conocido
+              puedes decir qué harás. Usa я хочу́ para distinguir un deseo
+              de un plan. Palabras: Зимо́й я бу́ду рабо́тать., Ле́том я
+              бу́ду отдыха́ть., Я хочу́ путеше́ствовать., пого́да, снег,
+              за́втра.
+          - tipo: repaso
+            ru: "Пого́да"
+            es: >-
+              Repaso: el tiempo
+            en: >-
+              Review: weather
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Пого́да"
+            es: "Una postal de viaje"
+            en: "A postcard from a trip"
+            foco: >-
+              Приве́т, Том! Я в Ита́лии. Сего́дня тепло́, све́тит со́лнце.
+              За́втра я бу́ду отдыха́ть. Как у тебя́ дела́? Ками́ла. Lee
+              otra vez en voz alta y reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Отку́да ты е́дешь?"
+            es: "De dónde vienes"
+            en: "Where you're coming from"
+            foco: >-
+              Отку́да? pregunta por origen. En estas parejas, в corresponde
+              a из y на a с. Memoriza из це́нтра y с рабо́ты. Palabras:
+              Отку́да ты е́дешь?, Я е́ду из це́нтра., Я иду́ с рабо́ты.,
+              пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Я в це́нтре."
+            es: "Dónde, adónde y de dónde"
+            en: "Where, where to and where from"
+            foco: >-
+              Clasifica cada respuesta según ubicación, destino u origen.
+              Con el centro, compara в це́нтре, в це́нтр e из це́нтра.
+              Palabras: Я в це́нтре., Я е́ду в це́нтр., Я е́ду из це́нтра.,
+              пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Я е́ду в о́тпуск."
+            es: "De vacaciones o por trabajo"
+            en: "On holiday or for work"
+            foco: >-
+              Aprende в о́тпуск y в командиро́вку como bloques de destino.
+              Decide si cuentas vacaciones o un desplazamiento de trabajo.
+              Palabras: Я е́ду в о́тпуск., Том е́дет в командиро́вку.,
+              За́втра я е́ду в це́нтр., пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Пого́да."
+            es: "Vocales fuertes y débiles"
+            en: "Strong and weak vowels"
+            foco: >-
+              Marca la sílaba tónica antes de leer пого́да y молоко́. Evita
+              dar a las vocales átonas el mismo peso que a las tónicas.
+              Palabras: Пого́да., Я пью чай с молоко́м., Сего́дня тепло́.,
+              пого́да, снег, за́втра.
+          - tipo: leccion
+            ru: "Приве́т! Я в це́нтре."
+            es: "Un mensaje con planes y tiempo"
+            en: "A message with plans and weather"
+            foco: >-
+              En un mensaje breve, saluda, di dónde estás y cuenta tu plan.
+              Elige la forma presente, pasada o futura del tiempo según el
+              día. Palabras: Приве́т! Я в це́нтре., Сего́дня идёт снег.,
+              За́втра я бу́ду отдыха́ть., пого́да, снег, за́втра.
+          - tipo: prueba
+            ru: "Пого́да"
+            es: >-
+              Prueba de la unidad 21: tiempo y planes
+            en: >-
+              Unit 21 test: weather and plans
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Пла́ны на зи́му"
+            es: >-
+              Episodio 21: Пла́ны на зи́му
+            en: >-
+              Episode 21: Пла́ны на зи́му
+            foco: >-
+              Том: Зимо́й я е́ду в Санкт-Петербу́рг. Ками́ла: А я е́ду в
+              Каза́нь. Ки́ра: В Каза́ни в январе́ бу́дет хо́лодно. Том: А в
+              Санкт-Петербу́рге? Ки́ра: Там то́же хо́лодно. Ками́ла: Я
+              возьму́ пальто́. Lee otra vez en voz alta y reordena tus notas
+              antes de responder.
 
       - numero: 22
         ru: Пра́здники
@@ -867,6 +3032,138 @@ niveles:
         lexico: emociones; fechas; fiestas; Како́е сего́дня число́? Како́го числа́?
         fonetica: щ
         episodio: {ru: "С Но́вым го́дом!", es: "¡Feliz Año Nuevo!", en: "Happy New Year!", sinopsis: "Nochevieja en casa de Kira: la ensalada de siempre, las doce campanadas, los regalos debajo del árbol. A quién se regala qué."}
+        dias:
+          - tipo: leccion
+            ru: "Я даю́ ма́ме пода́рок."
+            es: "¿A quién le das el regalo?"
+            en: "Who are you giving the gift to?"
+            foco: >-
+              En los ejemplos con даю́, el regalo es la cosa entregada y el
+              dativo identifica al destinatario. Aprende ма́ме, бра́ту y
+              дру́гу como pares con sus nombres. Palabras: Я даю́ ма́ме
+              пода́рок., Я даю́ бра́ту письмо́., Кому́ ты даёшь пода́рок?,
+              пода́рок, пра́здник, число́.
+          - tipo: leccion
+            ru: "Я иду́ к ма́ме."
+            es: "Ir a ver a alguien"
+            en: "Going to see someone"
+            foco: >-
+              Para un destino que es una persona usa к: к ма́ме, к дру́гу.
+              Pregunta К кому́?, con la preposición. Compara con Кому́?
+              cuando das un objeto. Palabras: Я иду́ к ма́ме., Том идёт к
+              дру́гу., К кому́ ты идёшь?, пода́рок, пра́здник, число́.
+          - tipo: leccion
+            ru: "Она́ даёт мне письмо́."
+            es: "Para mí, para ti, para ellos"
+            en: "For me, for you, for them"
+            foco: >-
+              Practica мне, тебе́ y им como formas de destinatario. Alterna
+              con ему́ y ей cuando hablas de otra persona. El objeto
+              entregado no depende del pronombre. Palabras: Она́ даёт мне
+              письмо́., Я даю́ тебе́ пода́рок., Том даёт им ключи́.,
+              пода́рок, пра́здник, число́.
+          - tipo: leccion
+            ru: "Мне хо́лодно."
+            es: "Tengo frío y estoy a gusto"
+            en: "Feeling cold and comfortable"
+            foco: >-
+              En estas expresiones, мне, тебе́ y ей identifican a quien
+              siente algo. Usa хо́лодно, тепло́ o ве́село según la
+              situación. Palabras: Мне хо́лодно., Тебе́ тепло́?, Ей
+              ве́село., пода́рок, пра́здник, число́.
+          - tipo: leccion
+            ru: "Мне на́до рабо́тать."
+            es: "Necesito hacer algo"
+            en: "I need to do something"
+            foco: >-
+              Usa мне на́до o мне ну́жно con un infinitivo para decir qué
+              necesitas hacer. Practica el cambio a тебе́ y нам. Palabras:
+              Мне на́до рабо́тать., Тебе́ ну́жно отдыха́ть., Нам на́до
+              купи́ть пода́рок., пода́рок, пра́здник, число́.
+          - tipo: repaso
+            ru: "Пра́здники"
+            es: >-
+              Repaso: los destinatarios
+            en: >-
+              Review: recipients
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Пра́здники"
+            es: "Una invitación con fecha"
+            en: "An invitation with a date"
+            foco: >-
+              Сего́дня пра́здник. Я даю́ ма́ме пода́рок. Том даёт бра́ту
+              кни́гу. Кому́ ещё пода́рок? Ей то́же ну́жно купи́ть пода́рок.
+              Lee otra vez en voz alta y reordena tus notas antes de
+              responder.
+          - tipo: leccion
+            ru: "Пе́рвый день."
+            es: "El primero, el segundo y el tercero"
+            en: "First, second and third"
+            foco: >-
+              Los ordinales se comportan como adjetivos. Aprende пе́рвый,
+              второ́й y тре́тий con день. Para nombrar la fecha del día, usa
+              las formas neutras del modelo. Palabras: Пе́рвый день.,
+              Сего́дня второ́е ма́я., За́втра тре́тье ма́я., пода́рок,
+              пра́здник, число́.
+          - tipo: leccion
+            ru: "Како́е сего́дня число́?"
+            es: "¿Qué fecha es hoy?"
+            en: "What's today's date?"
+            foco: >-
+              Pregunta Како́е сего́дня число́? Responde con un ordinal
+              neutro y ма́я o января́. Aprende los nombres de mes de estos
+              modelos como bloques. Palabras: Како́е сего́дня число́?,
+              Сего́дня пе́рвое января́., Сего́дня пя́тое ма́я., пода́рок,
+              пра́здник, число́.
+          - tipo: leccion
+            ru: "Како́го числа́ пра́здник?"
+            es: "¿En qué fecha es la fiesta?"
+            en: "On what date is the party?"
+            foco: >-
+              Како́го числа́? pregunta por la fecha de un evento. Para
+              responder usa los bloques пе́рвого января́ y пя́того ма́я;
+              compáralos con las fechas de ayer. Palabras: Како́го числа́
+              пра́здник?, Пра́здник пя́того ма́я., Пе́рвого января́ я
+              отдыха́ю., пода́рок, пра́здник, число́.
+          - tipo: leccion
+            ru: "Ещё чай?"
+            es: "La щ en frases de regalo"
+            en: "The sound щ in gift phrases"
+            foco: >-
+              Mantén la fricción suave de щ en ещё y вещь. No hagas el
+              cierre breve de ч. Compara en frases cortas antes de volver a
+              hablar de regalos. Palabras: Ещё чай?, Э́то вещь., Кому́ ещё
+              пода́рок?, пода́рок, пра́здник, число́.
+          - tipo: leccion
+            ru: "Пра́здник пя́того ма́я."
+            es: "Regalos y destinatarios"
+            en: "Gifts and recipients"
+            foco: >-
+              Antes de dar un regalo, comprueba la fecha y a quién se lo
+              das. Distingue la pregunta Како́го числа́? de Кому́? en un
+              mismo diálogo. Palabras: Пра́здник пя́того ма́я., Я даю́
+              пода́рок ма́ме., Ей ве́село., пода́рок, пра́здник, число́.
+          - tipo: prueba
+            ru: "Пра́здники"
+            es: >-
+              Prueba de la unidad 22: las fiestas
+            en: >-
+              Unit 22 test: celebrations
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "С Но́вым го́дом!"
+            es: >-
+              Episodio 22: С Но́вым го́дом!
+            en: >-
+              Episode 22: С Но́вым го́дом!
+            foco: >-
+              Ки́ра: С Но́вым го́дом! Ками́ла: С Но́вым го́дом! Вот
+              пода́рок. Ми́ша: Кому́ пода́рок? Ками́ла: Тебе́! Том: А я даю́
+              Ки́ре кни́гу. Ки́ра: Спаси́бо! Нам ве́село! Lee otra vez en
+              voz alta y reordena tus notas antes de responder.
 
       - numero: 23
         ru: С днём рожде́ния!
@@ -877,6 +3174,140 @@ niveles:
         lexico: cumpleaños, regalos; orientarse en la ciudad
         fonetica: ИК-2 en el imperativo
         episodio: {ru: "Пода́рок для Ми́ши", es: "Un regalo para Misha", en: "A present for Misha", sinopsis: "Misha cumple diez años. Camila y Tom no saben qué regalarle ni cómo llegar a la fiesta: Kira les da las instrucciones por teléfono, una tras otra."}
+        dias:
+          - tipo: leccion
+            ru: "С днём рожде́ния!"
+            es: "Felicitar por el cumpleaños"
+            en: "Wishing someone a happy birthday"
+            foco: >-
+              Aprende С днём рожде́ния! como saludo completo. Puedes
+              responder Спаси́бо! y decir de quién es el cumpleaños con el
+              ejemplo de la ficha. Palabras: С днём рожде́ния!, У Ми́ши день
+              рожде́ния., Спаси́бо за пода́рок!, день рожде́ния, пода́рок,
+              пря́мо.
+          - tipo: leccion
+            ru: "Пода́рок для Ми́ши."
+            es: "Un regalo para Misha"
+            en: "A gift for Misha"
+            foco: >-
+              Даю́ Ми́ше identifica al destinatario. Для Ми́ши describe para
+              quién es el regalo. Aprende el contraste como dos bloques con
+              un nombre familiar. Palabras: Пода́рок для Ми́ши., Я даю́
+              Ми́ше кни́гу., Что ты даёшь Ми́ше?, день рожде́ния, пода́рок,
+              пря́мо.
+          - tipo: leccion
+            ru: "Приходи́ в суббо́ту!"
+            es: "Ven y mira"
+            en: "Come and look"
+            foco: >-
+              Practica las órdenes de tú приходи́ y посмотри́ como fórmulas.
+              Úsalas solo en una situación de confianza. Palabras: Приходи́
+              в суббо́ту!, Посмотри́ на стол., Откро́й пода́рок., день
+              рожде́ния, пода́рок, пря́мо.
+          - tipo: leccion
+            ru: "Приходи́те в суббо́ту."
+            es: "Indicaciones con cortesía"
+            en: "Polite instructions"
+            foco: >-
+              Para tratar de usted usa приходи́те, посмотри́те y повтори́те.
+              Compáralas con las órdenes familiares de ayer. Palabras:
+              Приходи́те в суббо́ту., Посмотри́те, пожа́луйста., Повтори́те,
+              пожа́луйста., день рожде́ния, пода́рок, пря́мо.
+          - tipo: leccion
+            ru: "Иди́те пря́мо."
+            es: "Siga recto y gire"
+            en: "Go straight and turn"
+            foco: >-
+              Para guiar a alguien, aprende иди́те пря́мо, поверни́те
+              напра́во y поверни́те нале́во. Las formas de hoy se dirigen a
+              usted o a varias personas. Palabras: Иди́те пря́мо.,
+              Поверни́те напра́во., Поверни́те нале́во., день рожде́ния,
+              пода́рок, пря́мо.
+          - tipo: repaso
+            ru: "День рожде́ния"
+            es: >-
+              Repaso: invitaciones e indicaciones
+            en: >-
+              Review: invitations and directions
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "День рожде́ния"
+            es: "Preparar un cumpleaños"
+            en: "Planning a birthday"
+            foco: >-
+              Приве́т, Том! Приходи́ в суббо́ту, в пять часо́в. Иди́ пря́мо.
+              Пото́м напра́во. До встре́чи! Ками́ла. Lee otra vez en voz
+              alta y reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Алло́! Где вы?"
+            es: "Instrucciones por teléfono"
+            en: "Directions over the phone"
+            foco: >-
+              Abre la llamada con Алло́. Escucha o pide que repitan un paso.
+              Si citas varios pasos, haz una pausa corta entre ellos para
+              poder seguir el camino. Palabras: Алло́! Где вы?, Иди́те
+              пря́мо. Пото́м напра́во., Ме́дленнее, пожа́луйста., день
+              рожде́ния, пода́рок, пря́мо.
+          - tipo: leccion
+            ru: "Мо́жешь принести́ чай?"
+            es: "¿Puedes traerlo?"
+            en: "Can you bring it?"
+            foco: >-
+              Para una petición amable, usa Мо́жешь o Мо́жете con el
+              infinitivo принести́ como bloque. Contrasta con un imperativo
+              directo. Palabras: Мо́жешь принести́ чай?, Мо́жете принести́
+              во́ду?, Принеси́ чай, пожа́луйста., день рожде́ния, пода́рок,
+              пря́мо.
+          - tipo: leccion
+            ru: "Иди́те пря́мо."
+            es: "La voz en una instrucción"
+            en: "Pitch in an instruction"
+            foco: >-
+              Para la orden neutral de hoy, haz prominente la sílaba tónica
+              del verbo y deja bajar el tono después. Practica el modelo de
+              ИК-2 sin convertir cada paso en pregunta. Palabras: Иди́те
+              пря́мо., Поверни́те нале́во., Повтори́те, пожа́луйста., день
+              рожде́ния, пода́рок, пря́мо.
+          - tipo: leccion
+            ru: "Я даю́ Ми́ше кни́гу."
+            es: "Entregar el regalo"
+            en: "Giving the present"
+            foco: >-
+              Identifica el regalo, indica a quién se lo das y felicita. Usa
+              ей o ему́ solo cuando ya se entienda quién recibe el regalo.
+              Palabras: Я даю́ Ми́ше кни́гу., Я даю́ ему́ пода́рок., С днём
+              рожде́ния, Ми́ша!, день рожде́ния, пода́рок, пря́мо.
+          - tipo: leccion
+            ru: "Приходи́ в суббо́ту!"
+            es: "De la invitación a la fiesta"
+            en: "From invitation to party"
+            foco: >-
+              Organiza un encuentro en tres momentos: invitación, ruta y
+              saludo. Mantén el trato de tú o el de usted durante la misma
+              conversación. Palabras: Приходи́ в суббо́ту!, Иди́ пря́мо и
+              пото́м нале́во., С днём рожде́ния!, день рожде́ния, пода́рок,
+              пря́мо.
+          - tipo: prueba
+            ru: "День рожде́ния"
+            es: >-
+              Prueba de la unidad 23: cumpleaños
+            en: >-
+              Unit 23 test: birthdays
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Пода́рок для Ми́ши"
+            es: >-
+              Episodio 23: Пода́рок для Ми́ши
+            en: >-
+              Episode 23: Пода́рок для Ми́ши
+            foco: >-
+              Ками́ла: Алло́, Ки́ра! Где вы? Ки́ра: Иди́те пря́мо, пото́м
+              нале́во. Том: Нале́во? Ки́ра: Да, нале́во. Вот мы! Ками́ла: С
+              днём рожде́ния, Ми́ша! Я даю́ тебе́ кни́гу. Ми́ша: Спаси́бо за
+              пода́рок! Lee otra vez en voz alta y reordena tus notas antes
+              de responder.
 
       - numero: 24
         ru: Всё вме́сте
@@ -887,6 +3318,134 @@ niveles:
         lexico: quedar con alguien; repaso
         fonetica: las cinco entonaciones
         episodio: {ru: "Всё по-ру́сски", es: "Todo en ruso", en: "Everything in Russian", sinopsis: "Un día entero en que Camila lo hace todo en ruso: el mercado, el metro, una llamada, una cita. Por la noche se lo cuenta a Kira, y Kira le dice algo que no esperaba."}
+        dias:
+          - tipo: leccion
+            ru: "Э́то моя́ ла́мпа."
+            es: "Repasar el nominativo"
+            en: "Reviewing the nominative"
+            foco: >-
+              Recupera las formas de diccionario para identificar personas y
+              cosas. Revisa que el posesivo o adjetivo concuerde cuando
+              nombras un objeto. Palabras: Э́то моя́ ла́мпа., Э́то врач.,
+              Но́вые столы́ здесь., встре́ча, вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Я чита́ю газе́ту."
+            es: "Repasar el acusativo"
+            en: "Reviewing the accusative"
+            foco: >-
+              Separa objeto directo y destino. En los ejemplos femeninos que
+              ya conoces, cambia la forma del nombre según la expresión.
+              Palabras: Я чита́ю газе́ту., Я хочу́ холо́дную во́ду., Я е́ду
+              на рабо́ту., встре́ча, вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Я на рабо́те."
+            es: "Repasar el preposicional"
+            en: "Reviewing the prepositional"
+            foco: >-
+              Responde a Где? con tus bloques de ubicación. Contrasta -е con
+              formas de lugar en -у y con los países en -ии. Palabras: Я на
+              рабо́те., Су́мка в шкафу́., Она́ живёт в Росси́и., встре́ча,
+              вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Я е́ду из це́нтра."
+            es: "Repasar el genitivo"
+            en: "Reviewing the genitive"
+            foco: >-
+              Recupera tres contextos: origen con из, ausencia con нет y
+              tiempo con по́сле. Aprende los pares con las expresiones
+              completas. Palabras: Я е́ду из це́нтра., У нас нет ла́мпы., Я
+              чита́ю по́сле за́втрака., встре́ча, вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Я даю́ ма́ме пода́рок."
+            es: "Repasar el dativo"
+            en: "Reviewing the dative"
+            foco: >-
+              Recupera el destinatario con даю́, la experiencia con мне y el
+              destino de persona con к. Identifica el papel antes de elegir
+              la forma. Palabras: Я даю́ ма́ме пода́рок., Мне хо́лодно., Я
+              иду́ к дру́гу., встре́ча, вме́сте, вре́мя.
+          - tipo: repaso
+            ru: "Встре́ча"
+            es: >-
+              Repaso: elegir el caso
+            en: >-
+              Review: choosing the case
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Встре́ча"
+            es: "Quedar a una hora"
+            en: "Making an appointment"
+            foco: >-
+              — Дава́й встре́тимся в суббо́ту. — В суббо́ту я не могу́. А в
+              воскресе́нье? — Да, дава́й. Во ско́лько? — В пять часо́в, в
+              кафе́. — Хорошо́, до встре́чи! Lee otra vez en voz alta y
+              reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Чай с молоко́м."
+            es: "Repasar el instrumental"
+            en: "Reviewing the instrumental"
+            foco: >-
+              Recupera acompañamientos con с y profesiones tras рабо́тать.
+              En estos dos usos, conserva los bloques ya aprendidos.
+              Palabras: Чай с молоко́м., Я рабо́таю врачо́м., Она́ рабо́тает
+              по́варом., встре́ча, вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Дава́й встре́тимся в суббо́ту."
+            es: "Proponer una cita"
+            en: "Suggesting a meeting"
+            foco: >-
+              Propón una cita con Дава́й встре́тимся como bloque. Añade el
+              día, la hora y el lugar sin volver a abrir todos los casos.
+              Palabras: Дава́й встре́тимся в суббо́ту., Во ско́лько?, В пять
+              часо́в, в кафе́., встре́ча, вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Да, дава́й."
+            es: "Aceptar o proponer otra hora"
+            en: "Accepting or suggesting another time"
+            foco: >-
+              Usa Да, дава́й para aceptar en un intercambio informal. Para
+              rechazar, di Не могу́ y ofrece otro momento con un bloque que
+              ya conoces. Palabras: Да, дава́й., В суббо́ту не могу́., А в
+              воскресе́нье?, встре́ча, вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Где метро́?"
+            es: "Cinco patrones de voz"
+            en: "Five pitch patterns"
+            foco: >-
+              Recuerda los contrastes trabajados: afirmación, pregunta con
+              interrogativo, sí o no, pregunta de eco y exclamación.
+              Practica cómo cambia el tono sin forzar el volumen. Palabras:
+              Где метро́?, У вас есть ключи́?, Как краси́во!, встре́ча,
+              вме́сте, вре́мя.
+          - tipo: leccion
+            ru: "Ско́лько сто́ит ку́ртка?"
+            es: "Un día en ruso"
+            en: "A day in Russian"
+            foco: >-
+              Reúne acciones conocidas en tres escenas: comprar, desplazarte
+              y quedar. Contesta en cada caso con la frase más breve que
+              comunique lo necesario. Palabras: Ско́лько сто́ит ку́ртка?, Я
+              е́ду на метро́., Встре́тимся в пять часо́в., встре́ча,
+              вме́сте, вре́мя.
+          - tipo: prueba
+            ru: "Встре́ча"
+            es: "Prueba integradora del A1"
+            en: "A1 cumulative test"
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Всё по-ру́сски"
+            es: >-
+              Episodio 24: Всё по-ру́сски
+            en: >-
+              Episode 24: Всё по-ру́сски
+            foco: >-
+              Ками́ла: Вчера́ я была́ на ры́нке. Я спроси́ла: «Ско́лько
+              сто́ит?» Ки́ра: А пото́м? Ками́ла: Пото́м я е́хала на метро́.
+              Ки́ра: А ве́чером? Ками́ла: Я сказа́ла То́му: «Встре́тимся в
+              пять часо́в». Ки́ра: Ками́ла, ты уже́ говори́шь по-ру́сски!
+              Lee otra vez en voz
 
     fase_final:
       examen: ТЭУ
@@ -902,13 +3461,860 @@ niveles:
       (unidad 4). El sistema de casos completo y el plural de «Дорога в
       Россию 2»; la escritura de «Я пишу по-русски A2».
     unidades:
-      - {numero: 1, ru: "Расскажи́те о себе́", es: "Habla de ti", en: "Tell me about yourself", fuente: "Tochka Ru A2 1.1; Дорога в Россию 2, урок 1", gramatica: "preposicional completo (adjetivos, pronombres, ordinales); в, на, о/об/обо; -у (в лесу́)"}
-      - {numero: 2, ru: "Проце́сс и результа́т", es: "Proceso y resultado", en: "Process and result", fuente: "Tochka Ru A2 1.2", gramatica: "el aspecto (НСВ/СВ); чтобы + infinitivo; идти́ — пойти́ — прийти́, е́хать — пое́хать — прие́хать"}
-      - {numero: 3, ru: "Биогра́фия", es: "Una biografía", en: "A life story", fuente: "Tochka Ru A2 1.3", gramatica: "el aspecto en pasado y futuro; fechas y años (в 1990 году́, пя́того ма́я)"}
-      - {numero: 4, ru: "Знамени́тые лю́ди", es: "Gente famosa", en: "Famous people", fuente: "Tochka Ru A2 1.4; Дорога в Россию 2, урок 5", gramatica: "instrumental completo (adjetivos, pronombres, ordinales); свой"}
-      - {numero: 5, ru: "По телефо́ну", es: "Al teléfono", en: "On the phone", fuente: "Tochka Ru A2, Русский на каждый день 1", gramatica: "funciones: proponer, aceptar, rechazar, reaccionar a una noticia"}
-      - {numero: 6, ru: "Изуча́ть языки́", es: "Aprender idiomas", en: "Learning languages", fuente: "Tochka Ru A2 2.1; Дорога в Россию 2, урок 2", gramatica: "acusativo animado e inanimado; учи́ть / изуча́ть / учи́ться; любо́й, весь, друго́й, ка́ждый"}
-      - {numero: 7, ru: "Образова́ние", es: "La educación", en: "Education", fuente: "Tochka Ru A2 2.2; Дорога в Россию 2, урок 3", gramatica: "genitivo singular completo; уме́ть / знать"}
+      - numero: 1
+        ru: "Расскажи́те о себе́"
+        es: "Habla de ti"
+        en: "Tell me about yourself"
+        fuente: "Tochka Ru A2 1.1; Дорога в Россию 2, урок 1"
+        gramatica: "preposicional completo (adjetivos, pronombres, ordinales); в, на, о/об/обо; -у (в лесу́)"
+        lexico: "райо́н, эта́ж, тема́тика"
+        dias:
+          - tipo: leccion
+            ru: "Я из Перу́, но живу́ в Росси́и."
+            es: "Presentarse con más detalle"
+            en: "Introducing yourself in more detail"
+            foco: >-
+              Recupera отку́да y где para separar origen y residencia.
+              Responde con dos lugares distintos. Añade una frase sobre lo
+              que haces, sin mezclar я из con я живу́. Palabras: Я из Перу́,
+              но живу́ в Росси́и., Где вы живёте сейча́с?, В Москве́ я
+              рабо́таю по́варом., райо́н, эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Я живу́ в но́вом райо́не."
+            es: "En un barrio nuevo"
+            en: "In a new neighbourhood"
+            foco: >-
+              En un lugar masculino, el adjetivo en preposicional suele
+              terminar en -ом o -ем. Aprende в но́вом райо́не junto a в
+              ста́ром до́ме. Palabras: Я живу́ в но́вом райо́не., Она́ живёт
+              в ста́ром до́ме., Мы рабо́таем в сосе́днем о́фисе., райо́н,
+              эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Мы сиди́м в све́тлой ко́мнате."
+            es: "En mi habitación luminosa"
+            en: "In my bright room"
+            foco: >-
+              Con un nombre femenino, compara в све́тлой ко́мнате y в мое́й
+              кварти́ре. El posesivo también cambia; el sustantivo sigue su
+              propio patrón. Palabras: Мы сиди́м в све́тлой ко́мнате.,
+              Кни́ги в мое́й кварти́ре., Он живёт на ти́хой у́лице., райо́н,
+              эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Они́ живу́т в ра́зных райо́нах."
+            es: "En dos barrios distintos"
+            en: "In two different neighbourhoods"
+            foco: >-
+              En el preposicional plural, los adjetivos de hoy terminan en
+              -ых o -их y los nombres en -ах o -ях. Contrasta ésta con la
+              descripción de un solo lugar. Palabras: Они́ живу́т в ра́зных
+              райо́нах., Мы рабо́таем в сосе́дних о́фисах., Де́ти у́чатся в
+              но́вых шко́лах., райо́н, эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Я живу́ на второ́м этаже́."
+            es: "En el segundo piso"
+            en: "On the second floor"
+            foco: >-
+              El ordinal cambia como adjetivo al indicar lugar: второ́й
+              эта́ж → на второ́м этаже́. Usa la pregunta На како́м этаже́?
+              para comprobarlo. Palabras: Я живу́ на второ́м этаже́., О́фис
+              на тре́тьем этаже́., На како́м этаже́ библиоте́ка?, райо́н,
+              эта́ж, тема́тика.
+          - tipo: repaso
+            ru: "Знако́мство"
+            es: >-
+              Repaso: lugares y formas
+            en: >-
+              Review: places and forms
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Знако́мство"
+            es: "En un edificio de cursos"
+            en: "At a language school"
+            foco: >-
+              — Где уро́к? — В но́вом зда́нии, на второ́м этаже́. — А
+              библиоте́ка? — На тре́тьем. Она́ в све́тлой ко́мнате. — Я
+              рабо́таю на пе́рвом этаже́. Снача́ла я оста́влю су́мку в
+              о́фисе, а пото́м приду́ на уро́к. Lee otra vez en voz alta y
+              reordena tus notas antes de
+          - tipo: leccion
+            ru: "Мы говори́м о рабо́те."
+            es: "Hablar sobre un tema"
+            en: "Talking about a topic"
+            foco: >-
+              Con говори́ть, el tema puede ir con о. En los ejemplos con
+              palabra que empieza por vocal, usa об: об у́чёбе. Compara con
+              о рабо́те. Palabras: Мы говори́м о рабо́те., Она́ говори́т об
+              у́чёбе., О чём вы говори́те?, райо́н, эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Она́ говори́т обо мне."
+            es: "Hablar sobre alguien"
+            en: "Talking about someone"
+            foco: >-
+              Aprende обо мне, о тебе́, о нём y о ней como bloques de tema.
+              Si el contexto ya deja clara la persona, el pronombre evita
+              repetir su nombre. Palabras: Она́ говори́т обо мне., Я ду́маю
+              о тебе́., Мы говори́м о ней., райо́н, эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Мы гуля́ем в лесу́."
+            es: "En el bosque y sobre el bosque"
+            en: "In the forest and about the forest"
+            foco: >-
+              Distingue в лесу́ para el lugar y о ле́се para el tema. No
+              extiendas la terminación tónica -у a todos los nombres.
+              Palabras: Мы гуля́ем в лесу́., Мы чита́ем о ле́се., Том
+              рабо́тает в саду́., райо́н, эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Мы о́ба живём в Москве́."
+            es: "Los dos y las dos"
+            en: "Both of them"
+            foco: >-
+              Usa о́ба para dos hombres o un grupo mixto y о́бе para dos
+              mujeres en los sujetos de hoy. Después usa el verbo en plural.
+              Palabras: Мы о́ба живём в Москве́., Мы о́бе рабо́таем., О́ба
+              хо́дят на ку́рсы., райо́н, эта́ж, тема́тика.
+          - tipo: leccion
+            ru: "Я изуча́ю ру́сский язы́к."
+            es: "Vivir, estudiar y hablar"
+            en: "Living, studying and speaking"
+            foco: >-
+              Conocer o estudiar el idioma toma ру́сский язы́к. Para decir
+              cómo hablas, usa по-ру́сски. Incluye también un lugar y un
+              tema en tu presentación. Palabras: Я изуча́ю ру́сский язы́к.,
+              Мы говори́м по-ру́сски., На ку́рсах мы говори́м о рабо́те.,
+              райо́н, эта́ж, тема́тика.
+          - tipo: prueba
+            ru: "Знако́мство"
+            es: >-
+              Prueba A2: presentarse
+            en: >-
+              A2 test: introductions
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Знако́мство"
+            es: "Dos presentaciones"
+            en: "Two introductions"
+            foco: >-
+              Ками́ла: Я из Перу́, но живу́ в Москве́, в но́вом райо́не. Я
+              рабо́таю по́варом. На ку́рсах мы говори́м о рабо́те и о
+              семье́. Том: Я из Кана́ды. Сейча́с я то́же живу́ в Москве́. Я
+              преподава́тель. На ку́рсах я стара́юсь говори́ть по-ру́сски.
+              Ками́ла: Мы о́ба хо́
+      - numero: 2
+        ru: "Проце́сс и результа́т"
+        es: "Proceso y resultado"
+        en: "Process and result"
+        fuente: "Tochka Ru A2 1.2"
+        gramatica: "el aspecto (НСВ/СВ); чтобы + infinitivo; идти́ — пойти́ — прийти́, е́хать — пое́хать — прие́хать"
+        lexico: "зада́ние, результа́т, цель"
+        dias:
+          - tipo: leccion
+            ru: "Вчера́ я чита́л кни́гу."
+            es: "Leer o acabar de leer"
+            en: "Reading or finishing reading"
+            foco: >-
+              Compara чита́л con прочита́л. La primera forma puede presentar
+              la actividad; la segunda presenta la lectura como un todo
+              terminado en este contexto. Palabras: Вчера́ я чита́л кни́гу.,
+              Я прочита́л кни́гу., Она́ ещё чита́ет., зада́ние, результа́т,
+              цель.
+          - tipo: leccion
+            ru: "У́тром я де́лал зада́ние."
+            es: "Hacer o dejar hecho"
+            en: "Doing or getting it done"
+            foco: >-
+              Con де́лать y сде́лать, separa lo que ocupó un rato del
+              resultado que quedó. Usa уже́ cuando el resultado importa al
+              momento de hablar. Palabras: У́тром я де́лал зада́ние., Я уже́
+              сде́лал зада́ние., Ты сде́лал зада́ние?, зада́ние, результа́т,
+              цель.
+          - tipo: leccion
+            ru: "Обы́чно мы смо́трим сериа́л ве́чером."
+            es: "Un hábito o una película terminada"
+            en: "A habit or a finished film"
+            foco: >-
+              Обы́чно favorece la lectura habitual de смо́треть. Para una
+              película vista como un todo, practica посмотре́ть en pasado.
+              Palabras: Обы́чно мы смо́трим сериа́л ве́чером., Вчера́ мы
+              посмотре́ли фильм., Что вы посмотре́ли?, зада́ние, результа́т,
+              цель.
+          - tipo: leccion
+            ru: "Я чита́л статью́ час."
+            es: "Durante una hora o en una hora"
+            en: "For an hour or in an hour"
+            foco: >-
+              Час tras чита́л mide cuánto duró la actividad. За час en este
+              ejemplo mide lo que se tardó en acabar. No son dos formas de
+              decir lo mismo. Palabras: Я чита́л статью́ час., Я прочита́л
+              статью́ за час., Она́ сде́лала зада́ние за час., зада́ние,
+              результа́т, цель.
+          - tipo: leccion
+            ru: "Ве́чером я бу́ду чита́ть."
+            es: "Un plan de hacer o terminar"
+            en: "Planning to do or finish"
+            foco: >-
+              Бу́ду чита́ть presenta una actividad futura. Прочита́ю
+              presenta la lectura como un resultado futuro y no necesita
+              бу́ду. Palabras: Ве́чером я бу́ду чита́ть., Я прочита́ю
+              письмо́ за́втра., Я сде́лаю зада́ние до ве́чера., зада́ние,
+              результа́т, цель.
+          - tipo: repaso
+            ru: "Де́ло"
+            es: >-
+              Repaso: actividad y resultado
+            en: >-
+              Review: activity and outcome
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Де́ло"
+            es: "Un aviso de entrega"
+            en: "A delivery notice"
+            foco: >-
+              У́тром я пи́сал о́тчёт. Я писа́л его́ час. Письмо́ я уже́
+              написа́л, а о́тчёт ещё пишу́. За́втра я сде́лаю зада́ние. Не
+              звони́те до обе́да: я бу́ду рабо́тать. Lee otra vez en voz
+              alta y reordena tus notas antes de responder.
+          - tipo: leccion
+            ru: "Я сейча́с иду́ в о́фис."
+            es: "Salir a pie y llegar"
+            en: "Setting off and arriving on foot"
+            foco: >-
+              Сейча́с иду́ describe el trayecto. Пошёл señala que alguien se
+              puso en camino, y пришёл que llegó. Usa los bloques con un
+              lugar concreto. Palabras: Я сейча́с иду́ в о́фис., Том пошёл в
+              о́фис., Том пришёл в о́фис., зада́ние, результа́т, цель.
+          - tipo: leccion
+            ru: "Он пое́хал в Каза́нь."
+            es: "Salir en vehículo y llegar"
+            en: "Setting off and arriving by vehicle"
+            foco: >-
+              Usa пое́хал para la salida y прие́хал para la llegada en
+              vehículo. Compara con е́хал si describes lo que pasaba durante
+              el viaje. Palabras: Он пое́хал в Каза́нь., Он е́хал на
+              по́езде., Он прие́хал в Каза́нь., зада́ние, результа́т, цель.
+          - tipo: leccion
+            ru: "Я иду́ в магази́н, что́бы купи́ть хлеб."
+            es: "Ir para hacer algo"
+            en: "Going somewhere to do something"
+            foco: >-
+              Si el sujeto de las dos acciones es el mismo, usa что́бы con
+              infinitivo para expresar el propósito en estos ejemplos.
+              Palabras: Я иду́ в магази́н, что́бы купи́ть хлеб., Том пришёл,
+              что́бы поговори́ть., Мы е́дем в це́нтр, что́бы посмотре́ть
+              фильм., зада́ние, результа́т, цель.
+          - tipo: leccion
+            ru: "Я пришёл, что́бы учи́ться."
+            es: "Ir para estudiar o para el curso"
+            en: "Going to study or for a course"
+            foco: >-
+              Contrasta что́бы más infinitivo y для más nombre en genitivo.
+              Hoy aprende los dos ejemplos completos y comprueba qué sigue a
+              cada conector. Palabras: Я пришёл, что́бы учи́ться., Э́то
+              кни́га для ку́рса., Мы пришли́, что́бы поговори́ть., зада́ние,
+              результа́т, цель.
+          - tipo: leccion
+            ru: "Обы́чно я чита́ю ве́чером."
+            es: "Un informe de lo que quedó hecho"
+            en: "Reporting what got done"
+            foco: >-
+              Organiza el informe en tres partes: actividad habitual, hecho
+              terminado y plan futuro. Si no sabes si terminó, evita
+              afirmarlo con un perfectivo. Palabras: Обы́чно я чита́ю
+              ве́чером., Вчера́ я прочита́л статью́., За́втра я бу́ду
+              писа́ть., зада́ние, результа́т, цель.
+          - tipo: prueba
+            ru: "Де́ло"
+            es: >-
+              Prueba A2: aspecto y finalidad
+            en: >-
+              A2 test: aspect and purpose
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Результа́т"
+            es: "Lo que ya está hecho"
+            en: "What is already done"
+            foco: >-
+              Том: В де́вять я пошёл в о́фис. Я пришёл, что́бы поговори́ть с
+              колле́гой. Ками́ла: Ты уже́ прочита́л письмо́? Том: Да,
+              прочита́л. А зада́ние я ещё де́лаю. Ками́ла: Я сде́лала своё
+              зада́ние за час. Могу́ помо́чь тебе́ по́сле обе́да. Lee otra
+              vez en voz alta y r
+      - numero: 3
+        ru: "Биогра́фия"
+        es: "Una biografía"
+        en: "A life story"
+        fuente: "Tochka Ru A2 1.3"
+        gramatica: "el aspecto en pasado y futuro; fechas y años (в 1990 году́, пя́того ма́я)"
+        lexico: "биогра́фия, встре́ча, году́"
+        dias:
+          - tipo: leccion
+            ru: "Он роди́лся в Москве́."
+            es: "El primer dato de una biografía"
+            en: "The first detail in a biography"
+            foco: >-
+              Para el nacimiento de una persona, practica роди́лся o
+              родила́сь. Después añade el lugar como bloque de ubicación.
+              Palabras: Он роди́лся в Москве́., Она́ родила́сь в Каза́ни.,
+              Где вы родили́сь?, биогра́фия, встре́ча, году́.
+          - tipo: leccion
+            ru: "Она́ поступи́ла в университе́т."
+            es: "Empezar y terminar estudios"
+            en: "Starting and finishing studies"
+            foco: >-
+              Поступи́ть en estos ejemplos indica entrar en un centro.
+              Око́нчить indica terminar los estudios. Entre ambos, учи́ться
+              describe la etapa en curso. Palabras: Она́ поступи́ла в
+              университе́т., Она́ учи́лась в университе́те., Она́ око́нчила
+              университе́т., биогра́фия, встре́ча, году́.
+          - tipo: leccion
+            ru: "Ты́сяча девятьсо́т девяно́стый год."
+            es: "Años y décadas en una fecha"
+            en: "Years in a date"
+            foco: >-
+              Para nombrar un año, aprende la última parte como ordinal. Con
+              в, cambia ese último ordinal al preposicional en estos
+              ejemplos. Palabras: Ты́сяча девятьсо́т девяно́стый год., В
+              ты́сяча девятьсо́т девяно́стом году́., В две ты́сячи пе́рвом
+              году́., биогра́фия, встре́ча, году́.
+          - tipo: leccion
+            ru: "Сего́дня пя́тое ма́я."
+            es: "El día exacto de un encuentro"
+            en: "The exact date of a meeting"
+            foco: >-
+              Recupera пя́тое ма́я para nombrar la fecha y пя́того ма́я para
+              decir cuándo ocurrió un hecho. Después incorpora un lugar.
+              Palabras: Сего́дня пя́тое ма́я., Мы встре́тились пя́того
+              ма́я., Мы встре́тились в Москве́., биогра́фия, встре́ча,
+              году́.
+          - tipo: leccion
+            ru: "Тогда́ он жил в Каза́ни."
+            es: "Un hecho puntual y su contexto"
+            en: "A single event and its background"
+            foco: >-
+              En una biografía, жил o рабо́тал pueden dar el contexto.
+              Познако́мился señala un encuentro como hecho. Combina ambos
+              tipos de información. Palabras: Тогда́ он жил в Каза́ни., Он
+              рабо́тал в шко́ле., Там он познако́мился с Ки́рой.,
+              биогра́фия, встре́ча, году́.
+          - tipo: repaso
+            ru: "Да́ты"
+            es: >-
+              Repaso: fechas y biografía
+            en: >-
+              Review: dates and life stories
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Да́ты"
+            es: "Un perfil en la biblioteca"
+            en: "A library profile"
+            foco: >-
+              А́нна родила́сь в Каза́ни в две ты́сячи пе́рвом году́. Пото́м
+              она́ поступи́ла в университе́т в Москве́. Она́ око́нчила
+              университе́т пя́того ма́я. Сейча́с она́ рабо́тает в
+              библиоте́ке. А́нна ча́сто расска́зывает о го́роде, где она́
+              родила́сь. Lee otra vez en vo
+          - tipo: leccion
+            ru: "Он ча́сто посеща́л музе́й."
+            es: "Visitar una vez o con frecuencia"
+            en: "Visiting once or often"
+            foco: >-
+              Посеща́л presenta visitas repetidas en el ejemplo de hoy.
+              Посети́л presenta una visita como hecho terminado. Elige según
+              el alcance de tu relato. Palabras: Он ча́сто посеща́л музе́й.,
+              В суббо́ту он посети́л музе́й., За́втра мы посети́м музе́й.,
+              биогра́фия, встре́ча, году́.
+          - tipo: leccion
+            ru: "Снача́ла она́ око́нчила университе́т."
+            es: "Dos hechos en orden"
+            en: "Two events in order"
+            foco: >-
+              Usa снача́ла y пото́м para poner dos hechos en orden. Si el
+              primero se completó antes del segundo, usa el par que expresa
+              esa secuencia. Palabras: Снача́ла она́ око́нчила
+              университе́т., Пото́м она́ нашла́ рабо́ту., По́сле э́того она́
+              прие́хала в Москву́., биогра́фия, встре́ча, году́.
+          - tipo: leccion
+            ru: "В сентябре́ я бу́ду учи́ться."
+            es: "Planes que tienen un resultado"
+            en: "Plans with a result"
+            foco: >-
+              Combina el año o el mes con dos futuros distintos: бу́ду
+              учи́ться para la etapa y око́нчу para el momento que la
+              cierra. Palabras: В сентябре́ я бу́ду учи́ться., Я око́нчу
+              ку́рс в ма́е., Пото́м я найду́ рабо́ту., биогра́фия, встре́ча,
+              году́.
+          - tipo: leccion
+            ru: "Где вы родили́сь?"
+            es: "Entrevistar para una biografía"
+            en: "Interviewing for a biography"
+            foco: >-
+              Distingue las preguntas Где?, Когда́? y Что бы́ло пото́м?.
+              Toma notas antes de convertir las respuestas de yo a ella o
+              él. Palabras: Где вы родили́сь?, Когда́ вы око́нчили
+              университе́т?, Что бы́ло пото́м?, биогра́фия, встре́ча, году́.
+          - tipo: leccion
+            ru: "Она́ родила́сь в Каза́ни."
+            es: "Escribir una biografía breve"
+            en: "Writing a short biography"
+            foco: >-
+              Ordena nacimiento, estudios y trabajo en un párrafo. Usa dos
+              marcas de orden y revisa que cada fecha vaya con la forma que
+              corresponde. Palabras: Она́ родила́сь в Каза́ни., Пото́м она́
+              учи́лась в Москве́., Сейча́с она́ рабо́тает врачо́м.,
+              биогра́фия, встре́ча, году́.
+          - tipo: prueba
+            ru: "Да́ты"
+            es: >-
+              Prueba A2: contar una vida
+            en: >-
+              A2 test: telling a life story
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Биогра́фия"
+            es: "Tres momentos de una vida"
+            en: "Three moments in a life"
+            foco: >-
+              Ра́ньше Па́вел жил в Каза́ни и рабо́тал в шко́ле. Пя́того ма́я
+              он познако́мился с А́нной на вы́ставке. Пото́м он нашёл
+              рабо́ту в Москве́. В сентябре́ он бу́дет учи́ться на ку́рсах.
+              Он хо́чет око́нчить ку́рс в ма́е. Lee otra vez en voz alta y
+              reordena tus notas
+      - numero: 4
+        ru: "Знамени́тые лю́ди"
+        es: "Gente famosa"
+        en: "Famous people"
+        fuente: "Tochka Ru A2 1.4; Дорога в Россию 2, урок 5"
+        gramatica: "instrumental completo (adjetivos, pronombres, ordinales); свой"
+        lexico: "колле́га, профе́ссия, интере́с"
+        dias:
+          - tipo: leccion
+            ru: "Я гуля́ю с дру́гом."
+            es: "Con una amiga y con un colega"
+            en: "With a friend and a colleague"
+            foco: >-
+              Con с de compañía, los nombres de hoy toman instrumental.
+              Aprende с дру́гом, с подру́гой y с колле́гой. Describe la
+              compañía sin confundirla con el destinatario. Palabras: Я
+              гуля́ю с дру́гом., Она́ рабо́тает с подру́гой., Мы говори́м с
+              колле́гой., колле́га, профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Я рабо́таю с но́вым колле́гой."
+            es: "Con un colega nuevo"
+            en: "With a new colleague"
+            foco: >-
+              El adjetivo y el nombre cambian con с de compañía. Compara с
+              но́вым колле́гой y с но́вой подру́гой. Fíjate en que колле́га
+              puede referirse a un hombre o a una mujer. Palabras: Я
+              рабо́таю с но́вым колле́гой., Она́ гуля́ет с но́вой
+              подру́гой., Мы встре́тились со ста́рым дру́гом., колле́га,
+              профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Я рабо́таю с но́выми колле́гами."
+            es: "Con gente de mi trabajo"
+            en: "With people from my workplace"
+            foco: >-
+              En plural son frecuentes -ами o -ями y los adjetivos en -ыми o
+              -ими. Aprende с но́выми колле́гами y с друзья́ми como parejas
+              completas. Palabras: Я рабо́таю с но́выми колле́гами., Она́
+              гуля́ет с друзья́ми., Мы говори́м с мои́ми сосе́дями.,
+              колле́га, профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Ты идёшь со мной?"
+            es: "Conmigo, con ella, con ellos"
+            en: "With me, with her, with them"
+            foco: >-
+              Aprende со мной, с тобо́й, с ним, с ней y с ни́ми. Con la
+              preposición, la tercera persona empieza con н en estos
+              modelos. Palabras: Ты идёшь со мной?, Я говорю́ с ней., Мы
+              рабо́таем с ни́ми., колле́га, профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Она́ рабо́тает де́тским врачо́м."
+            es: "Trabajar como especialista"
+            en: "Working as a specialist"
+            foco: >-
+              Tras рабо́тать y стать, describe la profesión con
+              instrumental. Si añades un adjetivo, concuerda también con esa
+              forma. Palabras: Она́ рабо́тает де́тским врачо́м., Том
+              рабо́тает но́вым преподава́телем., Он стал изве́стным
+              инжене́ром., колле́га, профе́ссия, интере́с.
+          - tipo: repaso
+            ru: "Лю́ди"
+            es: >-
+              Repaso: compañía y profesión
+            en: >-
+              Review: company and profession
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "Лю́ди"
+            es: "Un equipo en una exposición"
+            en: "A team at an exhibition"
+            foco: >-
+              На вы́ставке рабо́тает но́вая кома́нда. А́нна рабо́тает с
+              но́вым колле́гой, а Том говори́т с друзья́ми. Ками́ла пришла́
+              со мной. Она́ рабо́тает по́варом. По́сле вы́ставки мы хо́тим
+              поговори́ть с ни́ми. Lee otra vez en voz alta y reordena tus
+              notas antes de res
+          - tipo: leccion
+            ru: "Я занима́юсь му́зыкой."
+            es: "Dedicarse a una actividad"
+            en: "Taking part in an activity"
+            foco: >-
+              Con занима́ться, la actividad puede ir en instrumental.
+              Aprende му́зыкой, спо́ртом y ру́сским языко́м con ejemplos
+              concretos. Palabras: Я занима́юсь му́зыкой., Он занима́ется
+              спо́ртом., Мы занима́емся ру́сским языко́м., колле́га,
+              профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Я интересу́юсь исто́рией."
+            es: "Lo que me interesa"
+            en: "What I'm interested in"
+            foco: >-
+              Интересова́ться pide instrumental en estos ejemplos. Distingue
+              интересу́юсь исто́рией de говорю́ об исто́рии: cambia el verbo
+              y cambia el caso. Palabras: Я интересу́юсь исто́рией., Она́
+              интересу́ется му́зыкой., Чем вы интересу́етесь?, колле́га,
+              профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Она́ чита́ет свою́ кни́гу."
+            es: "Su propio libro o el de otro"
+            en: "Their own book or somebody else's"
+            foco: >-
+              Свой remite al sujeto de su oración. En Она́ чита́ет свою́
+              кни́гу, el libro es de ella. Con его́, el dueño es otro hombre
+              ya mencionado. Palabras: Она́ чита́ет свою́ кни́гу., Она́
+              чита́ет его́ кни́гу., Он чита́ет свою́ статью́., колле́га,
+              профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "Он говори́т со свои́м дру́гом."
+            es: "Con tu propio equipo"
+            en: "With your own team"
+            foco: >-
+              Свой cambia de forma como posesivo. Con instrumental, compara
+              со свои́м дру́гом, со свое́й колле́гой y со свои́ми друзья́ми.
+              Palabras: Он говори́т со свои́м дру́гом., Она́ рабо́тает со
+              свое́й колле́гой., Мы гуля́ем со свои́ми друзья́ми., колле́га,
+              профе́ссия, интере́с.
+          - tipo: leccion
+            ru: "По утра́м она́ рабо́тает."
+            es: "Un perfil con hábitos e intereses"
+            en: "A profile with habits and interests"
+            foco: >-
+              По утра́м señala una costumbre de las mañanas. Combínalo con
+              la profesión y un interés en instrumental, sin convertir cada
+              sintagma en una sola frase larga. Palabras: По утра́м она́
+              рабо́тает., Она́ рабо́тает де́тским врачо́м., Ве́чером она́
+              занима́ется му́зыкой., колле́га, профе́ссия, интере́с.
+          - tipo: prueba
+            ru: "Лю́ди"
+            es: >-
+              Prueba A2: instrumental y posesión
+            en: >-
+              A2 test: instrumental and possession
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Профи́ль"
+            es: "Un perfil de trabajo creativo"
+            en: "A creative work profile"
+            foco: >-
+              А́нна занима́ется му́зыкой и интересу́ется исто́рией. По
+              утра́м она́ рабо́тает со свое́й колле́гой. Ве́чером она́
+              чита́ет свою́ кни́гу. Её колле́га чита́ет друго́й те́кст. На
+              столе́ лежа́т их пла́ны. За́втра они́ бу́дут говори́ть о
+              прое́кте. Lee otra vez en vo
+      - numero: 5
+        ru: "По телефо́ну"
+        es: "Al teléfono"
+        en: "On the phone"
+        fuente: "Tochka Ru A2, Русский на каждый день 1"
+        gramatica: "funciones: proponer, aceptar, rechazar, reaccionar a una noticia"
+        lexico: "звоно́к, вре́мя, но́вость"
+        dias:
+          - tipo: leccion
+            ru: "Алло́, э́то Том?"
+            es: "Abrir una llamada"
+            en: "Opening a call"
+            foco: >-
+              Empieza con Алло́ y verifica si habla la persona que buscas.
+              Si es una llamada formal, di también cómo te llamas. Palabras:
+              Алло́, э́то Том?, Да, э́то я., Здра́вствуйте, меня́ зову́т
+              Ками́ла., звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Позови́те То́ма, пожа́луйста."
+            es: "Pedir que pasen con alguien"
+            en: "Asking to speak to someone"
+            foco: >-
+              Pide que llamen a la persona con Позови́те, пожа́луйста. Para
+              esperar usa Мину́точку como fórmula breve. Palabras: Позови́те
+              То́ма, пожа́луйста., Мину́точку, пожа́луйста., Его́ сейча́с
+              нет., звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Мо́жете перезвони́ть ве́чером?"
+            es: "Pedir que devuelvan la llamada"
+            en: "Asking for a call back"
+            foco: >-
+              Aprende перезвони́ть como llamar de nuevo. Combina con
+              Мо́жете? o Во ско́лько? según quieras pedir una acción o
+              acordar una hora. Palabras: Мо́жете перезвони́ть ве́чером?, Во
+              ско́лько перезвони́ть?, Я перезвоню́ в семь часо́в., звоно́к,
+              вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Дава́й встре́тимся в пя́тницу."
+            es: "Proponer algo por teléfono"
+            en: "Making a suggestion over the phone"
+            foco: >-
+              Usa Дава́й встре́тимся con alguien cercano. Para una propuesta
+              formal, usa Мо́жем встре́титься? y añade un momento. Palabras:
+              Дава́й встре́тимся в пя́тницу., Мо́жем встре́титься за́втра?,
+              В пять часо́в удо́бно?, звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Да, мне подхо́дит."
+            es: "Aceptar, rechazar y cambiar la hora"
+            en: "Accepting, declining and changing the time"
+            foco: >-
+              Acepta con Да, подхо́дит. Si no puedes, di К сожале́нию, не
+              могу́ y ofrece otra opción en vez de terminar la llamada.
+              Palabras: Да, мне подхо́дит., К сожале́нию, в сре́ду не
+              могу́., А в четве́рг?, звоно́к, вре́мя, но́вость.
+          - tipo: repaso
+            ru: "По телефо́ну"
+            es: >-
+              Repaso: organizar una llamada
+            en: >-
+              Review: arranging a call
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "По телефо́ну"
+            es: "Cambiar una reunión"
+            en: "Rescheduling a meeting"
+            foco: >-
+              — Алло́, э́то Ками́ла. Мо́жем встре́титься в сре́ду? — К
+              сожале́нию, в сре́ду не могу́. А в четве́рг? — Да, мне
+              подхо́дит. В семь часо́в удо́бно? — В семь, пра́вильно? — Да.
+              До встре́чи! Lee otra vez en voz alta y reordena tus notas
+              antes de responder.
+          - tipo: leccion
+            ru: "Я нашла́ рабо́ту."
+            es: "Reaccionar a una buena noticia"
+            en: "Reacting to good news"
+            foco: >-
+              Usa Поздравля́ю! para felicitar por una noticia concreta. А
+              пра́вда? y Ка́к здо́рово! expresan sorpresa y alegría según el
+              contexto. Palabras: Я нашла́ рабо́ту., Поздравля́ю!, Ка́к
+              здо́рово!, звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Я не могу́ прие́хать."
+            es: "Cuando la noticia no es buena"
+            en: "When the news isn't good"
+            foco: >-
+              Usa Жаль para lamentar algo y Как ты? para preguntar por la
+              persona. Distingue el apoyo de una pregunta por los detalles.
+              Palabras: Я не могу́ прие́хать., Как жаль! Ты в поря́дке?,
+              Перезвони́, когда́ смо́жешь., звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Я вас пло́хо слы́шу."
+            es: "No oigo bien"
+            en: "I can't hear clearly"
+            foco: >-
+              En una llamada, puedes decir Я вас пло́хо слы́шу y pedir
+              repetir un elemento concreto. Confirma lo que sí entendiste.
+              Palabras: Я вас пло́хо слы́шу., Повтори́те вре́мя,
+              пожа́луйста., В семь, пра́вильно?, звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Э́то Ками́ла. Я звоню́ о встре́че."
+            es: "Una llamada que deja un recado"
+            en: "Leaving a message on a call"
+            foco: >-
+              Presenta primero el nombre, luego el motivo y al final lo que
+              esperas que haga la otra persona. Cierra con un agradecimiento
+              explícito. Palabras: Э́то Ками́ла. Я звоню́ о встре́че.,
+              Переда́йте, пожа́луйста, что я перезвоню́., Спаси́бо за
+              по́мощь., звоно́к, вре́мя, но́вость.
+          - tipo: leccion
+            ru: "Зна́чит, не в сре́ду, а в четве́рг."
+            es: "Confirmar lo acordado"
+            en: "Confirming the arrangement"
+            foco: >-
+              Al terminar la llamada, repite lugar y hora. Si hubo cambios,
+              contrasta lo anterior con lo nuevo y pide confirmación.
+              Palabras: Зна́чит, не в сре́ду, а в четве́рг., В семь часо́в в
+              кафе́, пра́вильно?, Да, всё ве́рно. До встре́чи!, звоно́к,
+              вре́мя, но́вость.
+          - tipo: prueba
+            ru: "По телефо́ну"
+            es: >-
+              Prueba A2: al teléfono
+            en: >-
+              A2 test: on the phone
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Звоно́к"
+            es: "Dos noticias y un recado"
+            en: "Two pieces of news and a message"
+            foco: >-
+              — Алло́, Том? Я нашла́ рабо́ту! — Поздравля́ю! А́нны сейча́с
+              нет. Вы хоти́те ей что́-то переда́ть? — Да, переда́йте,
+              пожа́луйста, что я перезвоню́ в семь. — В семь, пра́вильно? —
+              Да, всё ве́рно. Спаси́бо! Lee otra vez en voz alta y reordena
+              tus notas antes de
+      - numero: 6
+        ru: "Изуча́ть языки́"
+        es: "Aprender idiomas"
+        en: "Learning languages"
+        fuente: "Tochka Ru A2 2.1; Дорога в Россию 2, урок 2"
+        gramatica: "acusativo animado e inanimado; учи́ть / изуча́ть / учи́ться; любо́й, весь, друго́й, ка́ждый"
+        lexico: "слова́рь, у́чебник, пра́ктика"
+        dias:
+          - tipo: leccion
+            ru: "Я учу́ но́вые слова́."
+            es: "Aprender palabras o estudiar un idioma"
+            en: "Learning words or studying a language"
+            foco: >-
+              Учи́ть слова́ enfoca lo que memorizas. Изуча́ть язы́к presenta
+              el idioma como tema de estudio. Usa ambos en contextos
+              distintos. Palabras: Я учу́ но́вые слова́., Я изуча́ю ру́сский
+              язы́к., Она́ изуча́ет исто́рию., слова́рь, у́чебник,
+              пра́ктика.
+          - tipo: leccion
+            ru: "Я учу́сь в шко́ле."
+            es: "Estudiar en una escuela"
+            en: "Studying at a school"
+            foco: >-
+              Учи́ться suele nombrar lo que hace la persona que estudia.
+              Para decir dónde, añade el bloque de ubicación; para una
+              materia usa el contraste con изуча́ть. Palabras: Я учу́сь в
+              шко́ле., Она́ у́чится в университе́те., Мы изуча́ем ру́сский
+              язы́к., слова́рь, у́чебник, пра́ктика.
+          - tipo: leccion
+            ru: "Я ви́жу преподава́теля."
+            es: "Veo al profesor y veo el edificio"
+            en: "I see the teacher and the building"
+            foco: >-
+              En masculino singular, el objeto animado adquiere una forma
+              distinta en estos ejemplos. Compara преподава́тель →
+              преподава́теля frente a дом → дом. Palabras: Я ви́жу
+              преподава́теля., Я ви́жу дом., Мы ждём дру́га., слова́рь,
+              у́чебник, пра́ктика.
+          - tipo: leccion
+            ru: "Я ви́жу но́вого студе́нта."
+            es: "Un estudiante nuevo o un libro nuevo"
+            en: "A new student or a new book"
+            foco: >-
+              En los masculinos de hoy, el adjetivo cambia con objeto
+              animado: но́вого студе́нта. Con un objeto masculino inanimado,
+              se conserva но́вый como en но́вый слова́рь. Palabras: Я ви́жу
+              но́вого студе́нта., Я ви́жу но́вый слова́рь., Она́ ждёт
+              ста́рого дру́га., слова́рь, у́чебник, пра́ктика.
+          - tipo: leccion
+            ru: "Я ви́жу студе́нтов."
+            es: "A los estudiantes y los diccionarios"
+            en: "Students and dictionaries in the plural"
+            foco: >-
+              Con plurales de personas, los ejemplos de acusativo toman una
+              forma distinta del nominativo. Con diccionarios y libros, usa
+              la forma plural que ya conoces. Palabras: Я ви́жу студе́нтов.,
+              Я ви́жу словари́., Мы ждём но́вых учени́ков., слова́рь,
+              у́чебник, пра́ктика.
+          - tipo: repaso
+            ru: "У́чимся"
+            es: >-
+              Repaso: estudiar y elegir objetos
+            en: >-
+              Review: studying and choosing objects
+            foco: "Repaso de la semana. Mini-test de 15."
+          - tipo: cultura
+            ru: "У́чимся"
+            es: "Elegir un curso"
+            en: "Choosing a course"
+            foco: >-
+              На пе́рвом ку́рсе я изуча́ю исто́рию. Я чита́ю но́вую кни́гу.
+              На второ́м ку́рсе я учу́ ру́сские слова́ и испо́льзую
+              слова́рь. Сего́дня я жду но́вого преподава́теля. Он принесёт
+              у́чебник. Lee otra vez en voz alta y reordena tus notas antes
+              de responder.
+          - tipo: leccion
+            ru: "Она́ у́чится за грани́цей."
+            es: "En el extranjero o hacia allí"
+            en: "Abroad or going abroad"
+            foco: >-
+              За грани́цей responde Где? y за грани́цу responde Куда́?.
+              Combina una forma con учи́ться y la otra con е́хать. Palabras:
+              Она́ у́чится за грани́цей., Она́ е́дет за грани́цу., Он
+              рабо́тает за грани́цей., слова́рь, у́чебник, пра́ктика.
+          - tipo: leccion
+            ru: "Я чита́ю ка́ждый день."
+            es: "Cada día y toda la semana"
+            en: "Every day and the whole week"
+            foco: >-
+              Ка́ждый pone el foco en cada elemento. Весь y вся expresan el
+              conjunto completo. Aprende los bloques de tiempo ка́ждый день
+              y всю неде́лю. Palabras: Я чита́ю ка́ждый день., Я учу́ слова́
+              всю неде́лю., Мы занима́емся весь день., слова́рь, у́чебник,
+              пра́ктика.
+          - tipo: leccion
+            ru: "Подойдёт любо́й день."
+            es: "Cualquier opción u otra distinta"
+            en: "Any option or a different one"
+            foco: >-
+              Любо́й indica que sirve cualquiera de las opciones. Друго́й
+              pide una diferente. Haz concordar las formas con el sustantivo
+              que sigue. Palabras: Подойдёт любо́й день., Мне ну́жен друго́й
+              слова́рь., Я хочу́ другу́ю кни́гу., слова́рь, у́чебник,
+              пра́ктика.
+          - tipo: leccion
+            ru: "Я испо́льзую слова́рь."
+            es: "Usar un recurso y dedicar tiempo"
+            en: "Using a resource and spending time"
+            foco: >-
+              Испо́льзовать presenta el recurso que usas. Тра́тить presenta
+              lo que gastas, como вре́мя. Combina ambos en un plan de
+              estudio. Palabras: Я испо́льзую слова́рь., Мы испо́льзуем
+              но́вую кни́гу., Я тра́чу вре́мя на пра́ктику., слова́рь,
+              у́чебник, пра́ктика.
+          - tipo: leccion
+            ru: "По-мо́ему, ну́жно чита́ть ка́ждый день."
+            es: "Dar una opinión sobre el aprendizaje"
+            en: "Giving an opinion about learning"
+            foco: >-
+              Abre una opinión con По-мо́ему o Я ду́маю, что. Responde con Я
+              согла́сен o Я согла́сна si compartes la idea. Palabras: По-
+              мо́ему, ну́жно чита́ть ка́ждый день., Я ду́маю, что сло́ва
+              ва́жны., Я согла́сна, но мне ну́жна пра́ктика., слова́рь,
+              у́чебник, пра́ктика.
+          - tipo: prueba
+            ru: "У́чимся"
+            es: >-
+              Prueba A2: aprender idiomas
+            en: >-
+              A2 test: learning languages
+            foco: >-
+              Prueba de la unidad: el léxico y la gramática de las dos
+              semanas.
+          - tipo: cultura
+            ru: "Языки́"
+            es: "Dos maneras de estudiar"
+            en: "Two ways to study"
+            foco: >-
+              — Я учу́сь за грани́цей. Ка́ждый день я чита́ю по-ру́сски. — А
+              я учу́ слова́ всю неде́лю. Мне ну́жен друго́й слова́рь. — По-
+              мо́ему, лу́чше испо́льзовать слова́рь и чита́ть. — Я
+              согла́сна, но ка́ждому ну́жна пра́ктика. Lee otra vez en voz
+              alta y reordena tus no
+      - numero: 7
+        ru: "Образова́ние"
+        es: "La educación"
+        en: "Education"
+        fuente: "Tochka Ru A2 2.2; Дорога в Россию 2, урок 3"
+        gramatica: "genitivo singular completo; уме́ть / знать"
+        lexico: "дипло́м, письмо́, образова́ние"
       - {numero: 8, ru: "Ку́рсы и хо́бби", es: "Cursos y aficiones", en: "Courses and hobbies", fuente: "Tochka Ru A2 2.3", gramatica: "repaso de casos; интересова́ться, разбира́ться, занима́ться + instrumental"}
       - {numero: 9, ru: "Рабо́та и карье́ра", es: "Trabajo y carrera", en: "Work and career", fuente: "Tochka Ru A2 2.4; Дорога в Россию 2, урок 3", gramatica: "до́лжен был / бу́ду; acusativo de los pronombres; чтобы (deseo, finalidad)"}
       - {numero: 10, ru: "Пи́сьма", es: "Cartas y correos", en: "Letters and emails", fuente: "Tochka Ru A2, Русский на каждый день 2; Я пишу по-русски, уроки 1–2", gramatica: "escribir una carta personal y un correo formal"}
