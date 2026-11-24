@@ -37,6 +37,10 @@ Ya conoces **мне** por «Мне нра́вится» y «Мне … лет» 
 todo: lo que hoy se añade es la pregunta y sus dos formas, **тебе́** y
 **вам**.
 
+**Вам** ya la habías visto, sin saber qué era: en el café de la unidad 2
+oíste «Что вам?» y «А вам?» como bloques cerrados, sin desmontarlos. Hoy
+sabes por fin qué es: la misma forma que **тебе́**, pero de usted.
+
 | Palabra | Se lee | Significa |
 |---|---|---|
 | ско́лько | **SKOL'**-ka | cuántos |

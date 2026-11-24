@@ -37,6 +37,11 @@ You already know **мне** from "Мне нра́вится," and "Мне … л
 entirely new either: what's added today is the question itself and its
 two forms, **тебе́** and **вам**.
 
+**You've already seen вам, without knowing what it was**: back in the
+unit-2 café you heard "Что вам?" and "А вам?" as sealed chunks, never
+taken apart. Today you finally find out what it is: the same form as
+**тебе́**, just formal.
+
 | Word | It sounds like | It means |
 |---|---|---|
 | ско́лько | **SKOL'**-ka | how many |
