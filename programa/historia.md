@@ -94,14 +94,65 @@ su unidad; la sinopsis completa está en el calendario.
 | 23 | **Пода́рок для Ми́ши** — Misha cumple diez años |
 | 24 | **Всё по-ру́сски** — un día entero en ruso |
 
+## El A2: quedarse
+
+| Unidad | Episodio |
+|---|---|
+| 1 | **В на́шем райо́не** — Camila decide quedarse en el barrio |
+| 2 | **Я всё сде́лала** — Camila entrega sus papeles universitarios |
+| 3 | **Моя́ биогра́фия** — Camila ordena su experiencia de cocinera |
+| 4 | **Со свои́м колле́гой** — Tom habla con un colega |
+| 5 | **Звоно́к для Ками́лы** — Una llamada abre una oportunidad |
+| 6 | **Слова́рь и пра́ктика** — Camila practica antes de la cita |
+| 7 | **Письмо́ из университе́та** — La universidad escribe sobre el diploma |
+| 8 | **По́сле заня́тий** — Tom se apunta a ruso |
+| 9 | **Собесе́дование на рабо́ту** — Camila consigue trabajo en el restaurante |
+| 10 | **Письмо́ о заня́тиях** — Camila busca un horario compatible |
+| 11 | **Всё в райо́не** — Vera orienta a Camila |
+| 12 | **Где удо́бнее жить?** — Camila compara ciudad y pueblo |
+| 13 | **Са́мое краси́вое ме́сто** — Una conversación despierta ganas de viajar |
+| 14 | **Где взять вре́мя?** — Camila reorganiza su tiempo |
+| 15 | **Фо́то на бе́регу** — Una foto trae recuerdos de viaje |
+| 16 | **Пора́ е́хать** — Camila sale de viaje |
+| 17 | **По пути́** — Camila cuenta un encuentro inesperado |
+| 18 | **Дошли́ до моста́** — Camila reconstruye su excursión |
+| 19 | **Что в рюкзаке́?** — La mochila abre el relato |
+| 20 | **Мне нехорошо́** — Camila consulta por un malestar |
+| 21 | **По́сле рабо́ты** — Camila recupera la carpeta de estudios |
+| 22 | **Объявле́ния в метро́** — Tom mira otras ofertas de trabajo |
+| 23 | **С друзья́ми** — Camila mantiene sus amistades |
+| 24 | **Письмо́ домо́й** — Camila escribe que seguirá estudiando |
+
+## El B1: el examen
+
+| Unidad | Episodio |
+|---|---|
+| 1 | **Как вас зову́т?** — Camila encuentra compañía para preparar el examen |
+| 2 | **Друг дру́га** — Dos compañeras acuerdan ayudarse |
+| 3 | **Кто в полоса́том?** — Camila practica describir a alguien |
+| 4 | **Сове́т Ки́ры** — Kira aconseja a Tom sobre descanso |
+| 5 | **Всё обо мне** — Camila ensaya su presentación personal |
+| 6 | **Но́мер на двои́х** — Kira organiza una visita familiar |
+| 7 | **Ря́дом со шко́лой** — Tom compara dos opciones de vivienda |
+| 8 | **Что купи́ть?** — Camila prepara una compra compartida |
+| 9 | **Кто́-то взял бутербро́д** — Un bocadillo anima la pausa |
+| 10 | **Ко́фе с собо́й** — Las compañeras comen tras practicar |
+| 11 | **Е́сли бы я оста́лся** — Tom sopesa qué haría después |
+| 12 | **Заче́м мне экза́мен?** — Camila explica por qué quiere examinarse |
+| 13 | **Пока́ мы не встре́тились** — Las compañeras fijan el simulacro |
+| 14 | **Всё равно́ пойдём** — Camila mantiene la cita del simulacro |
+| 15 | **Несу́ кни́ги** — Camila lleva el material de práctica |
+| 16 | **Вре́мя идёт** — Se acercan el examen y la decisión |
+| 17 | **Не спеши́** — Camila repite su respuesta con calma |
+| 18 | **Что она́ сказа́ла?** — Las compañeras recuerdan preguntas e instrucciones |
+| 19 | **Кто там рабо́тает?** — Camila explora la vida universitaria |
+| 20 | **Когда́ постро́или дом?** — Camila resume un texto de práctica |
+| 21 | **Чита́я и слу́шая** — Camila hace otro simulacro de examen |
+| 22 | **Слова́ из слов** — Camila revisa familias de palabras |
+| 23 | **Письмо́ из шко́лы** — Tom acepta renovar su contrato |
+| 24 | **Гото́ва к экза́мену** — Camila y el alumno se examinan |
+
 ## Después del A1
 
-Se escribe nivel a nivel, como el calendario. La dirección:
-
-- **A2 — quedarse.** Papeles, médico, viajes, el trabajo de Tom, la cocina
-  de Camila en un restaurante.
-- **B1 — el examen.** Camila prepara el ТРКИ-1 para entrar en la
-  universidad; el alumno hace los simulacros con ella. Tom decide si
-  renueva el contrato.
 - **B2 — la vida en ruso.** La universidad, el trabajo, discutir y
   convencer. El final queda abierto hasta escribirlo.

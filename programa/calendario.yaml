@@ -3468,6 +3468,7 @@ niveles:
         fuente: "Tochka Ru A2 1.1; Дорога в Россию 2, урок 1"
         gramatica: "preposicional completo (adjetivos, pronombres, ordinales); в, на, о/об/обо; -у (в лесу́)"
         lexico: "райо́н, эта́ж, тема́тика"
+        episodio: {ru: "В на́шем райо́не", es: "En nuestro barrio", en: "In Our Neighbourhood", sinopsis: "Camila repasa lo que cuenta de sí misma y de su barrio cuando le preguntan dónde vive y estudia. Decide que quiere seguir viviendo allí mientras estudia."}
         dias:
           - tipo: leccion
             ru: "Я из Перу́, но живу́ в Росси́и."
@@ -3608,6 +3609,7 @@ niveles:
         fuente: "Tochka Ru A2 1.2"
         gramatica: "el aspecto (НСВ/СВ); чтобы + infinitivo; идти́ — пойти́ — прийти́, е́хать — пое́хать — прие́хать"
         lexico: "зада́ние, результа́т, цель"
+        episodio: {ru: "Я всё сде́лала", es: "Ya lo hice todo", en: "I Did It All", sinopsis: "Camila va a la universidad para entregar sus papeles. Al volver le cuenta a Tom qué estuvo haciendo y qué dejó ya resuelto."}
         dias:
           - tipo: leccion
             ru: "Вчера́ я чита́л кни́гу."
@@ -3749,6 +3751,7 @@ niveles:
         fuente: "Tochka Ru A2 1.3"
         gramatica: "el aspecto en pasado y futuro; fechas y años (в 1990 году́, пя́того ма́я)"
         lexico: "биогра́фия, встре́ча, году́"
+        episodio: {ru: "Моя́ биогра́фия", es: "Mi biografía", en: "My Life Story", sinopsis: "Mientras espera respuesta, Camila ordena su biografía para hablar de su experiencia en la cocina. Le cuenta a Kira qué hizo en Lima y qué quiere hacer ahora."}
         dias:
           - tipo: leccion
             ru: "Он роди́лся в Москве́."
@@ -3891,6 +3894,7 @@ niveles:
         fuente: "Tochka Ru A2 1.4; Дорога в Россию 2, урок 5"
         gramatica: "instrumental completo (adjetivos, pronombres, ordinales); свой"
         lexico: "колле́га, профе́ссия, интере́с"
+        episodio: {ru: "Со свои́м колле́гой", es: "Con mi colega", en: "With My Colleague", sinopsis: "Tom habla con un colega de la escuela sobre el interés de Camila por trabajar en una cocina. Al volver le cuenta la conversación y se ofrece a avisarla si oye de algún trabajo."}
         dias:
           - tipo: leccion
             ru: "Я гуля́ю с дру́гом."
@@ -4035,6 +4039,7 @@ niveles:
         fuente: "Tochka Ru A2, Русский на каждый день 1"
         gramatica: "funciones: proponer, aceptar, rechazar, reaccionar a una noticia"
         lexico: "звоно́к, вре́мя, но́вость"
+        episodio: {ru: "Звоно́к для Ками́лы", es: "Una llamada para Camila", en: "A Call for Camila", sinopsis: "Tom llama a Camila con una noticia de su colega: un restaurante busca cocinera. La primera hora que propone Camila no le va bien al restaurante y acuerdan otra por teléfono."}
         dias:
           - tipo: leccion
             ru: "Алло́, э́то Том?"
@@ -4172,6 +4177,7 @@ niveles:
         fuente: "Tochka Ru A2 2.1; Дорога в Россию 2, урок 2"
         gramatica: "acusativo animado e inanimado; учи́ть / изуча́ть / учи́ться; любо́й, весь, друго́й, ка́ждый"
         lexico: "слова́рь, у́чебник, пра́ктика"
+        episodio: {ru: "Слова́рь и пра́ктика", es: "Diccionario y práctica", en: "Dictionary and Practice", sinopsis: "Camila usa el diccionario y el libro para preparar la conversación sobre el trabajo. Separa lo que ya sabe decir de lo que quiere practicar antes de la cita."}
         dias:
           - tipo: leccion
             ru: "Я учу́ но́вые слова́."
@@ -4316,45 +4322,63 @@ niveles:
         gramatica: "genitivo singular completo; уме́ть / знать"
         lexico: "дипло́м, письмо́, образова́ние"
         fonetica: "Acentuación de las fechas completas"
+        episodio: {ru: "Письмо́ из университе́та", es: "Carta de la universidad", en: "A Letter from University", sinopsis: "Camila recibe una carta de la universidad sobre sus estudios. Revisa de qué diploma habla la carta antes de buscar el suyo entre los papeles que trajo de Lima."}
       - {numero: 8, ru: "Ку́рсы и хо́бби", es: "Cursos y aficiones", en: "Courses and hobbies", fuente: "Tochka Ru A2 2.3", gramatica: "repaso de casos; интересова́ться, разбира́ться, занима́ться + instrumental",
-        lexico: "cursos de idiomas, aficiones, concursos"}
+        lexico: "cursos de idiomas, aficiones, concursos",
+        episodio: {ru: "По́сле заня́тий", es: "Después de clase", en: "After Class", sinopsis: "Tom le cuenta a Camila que se ha apuntado a un curso de ruso por interés propio. Comparan lo que les gusta practicar y cuándo podrían hacerlo sin faltar al trabajo ni a clase."}}
       - {numero: 9, ru: "Рабо́та и карье́ра", es: "Trabajo y carrera", en: "Work and career", fuente: "Tochka Ru A2 2.4; Дорога в Россию 2, урок 3", gramatica: "до́лжен был / бу́ду; acusativo de los pronombres; чтобы (deseo, finalidad)",
-        lexico: "ofertas de empleo, currículum, entrevistas, horarios laborales"}
+        lexico: "ofertas de empleo, currículum, entrevistas, horarios laborales",
+        episodio: {ru: "Собесе́дование на рабо́ту", es: "Entrevista de trabajo", en: "The Job Interview", sinopsis: "Camila lleva su currículum al restaurante y explica por qué quiere trabajar allí. Le ofrecen un turno que puede compaginar con los estudios y lo acepta."}}
       - {numero: 10, ru: "Пи́сьма", es: "Cartas y correos", en: "Letters and emails", fuente: "Tochka Ru A2, Русский на каждый день 2; Я пишу по-русски, уроки 1–2", gramatica: "escribir una carta personal y un correo formal",
-        lexico: "cartas personales, consultas de matrícula, horarios y descuentos"}
+        lexico: "cartas personales, consultas de matrícula, horarios y descuentos",
+        episodio: {ru: "Письмо́ о заня́тиях", es: "Correo sobre las clases", en: "An Email About Classes", sinopsis: "Con el turno ya confirmado, Camila escribe a su centro de estudios para preguntar por otro horario. Luego le escribe a su familia para contarle que empieza a trabajar en una cocina."}}
       - {numero: 11, ru: "Го́род", es: "La ciudad", en: "The city", fuente: "Tochka Ru A2 3.1", gramatica: "genitivo plural; doble negación; números de tres y cuatro cifras",
-        lexico: "lugares de la ciudad, infraestructura, cifras de población"}
+        lexico: "lugares de la ciudad, infraestructura, cifras de población",
+        episodio: {ru: "Всё в райо́не", es: "Todo en el barrio", en: "Everything in the Neighbourhood", sinopsis: "Camila y Vera Ivánovna miran qué sitios hay cerca del restaurante para hacer recados entre el trabajo y las clases. Donde Camila creía que no había nada, Vera le señala varios lugares."}}
       - {numero: 12, ru: "Го́род и́ли дере́вня", es: "¿Ciudad o pueblo?", en: "Town or country?", fuente: "Tochka Ru A2 3.2", gramatica: "el comparativo; так же, как / тако́й же, как; э́тот / тот; смотре́ть — ви́деть, слу́шать — слы́шать",
-        lexico: "vida urbana y rural, entorno, servicios y ocio"}
+        lexico: "vida urbana y rural, entorno, servicios y ocio",
+        episodio: {ru: "Где удо́бнее жить?", es: "¿Dónde es más cómodo vivir?", en: "Where Is Life Easier?", sinopsis: "Camila y Tom comparan vivir en la ciudad o en un pueblo, pensando en las clases, el trabajo y los servicios. Camila explica por qué ahora le conviene más su barrio."}}
       - {numero: 13, ru: "Са́мый-са́мый", es: "El más de todos", en: "The very best", fuente: "Tochka Ru A2 3.3; Дорога в Россию 2, уроки 1–2", gramatica: "el superlativo; потому́ что, так как, поэ́тому; кото́рый",
         lexico: "récords geográficos, clima, lugares de interés",
-        fonetica: "Lectura en voz alta de centenas y años"}
+        fonetica: "Lectura en voz alta de centenas y años",
+        episodio: {ru: "Са́мое краси́вое ме́сто", es: "El lugar más bonito", en: "The Most Beautiful Place", sinopsis: "Kira quiere visitar a su madre en Kazán y cada vecino propone el lugar más bonito que le gustaría ver durante un viaje. Camila explica por qué elige el suyo y decide aprovechar su próximo descanso para salir de la ciudad."}}
       - {numero: 14, ru: "Сове́ты", es: "Consejos", en: "Advice", fuente: "Tochka Ru A2 3.4; Дорога в Россию 2, урок 4", gramatica: "el imperativo; ну́жно / на́до / необходи́мо; ну́жен, нужна́…; dativo singular",
         lexico: "gestión del tiempo, redes sociales, consejos",
-        fonetica: "Articulación de ы e и en la serie vocálica"}
+        fonetica: "Articulación de ы e и en la serie vocálica",
+        episodio: {ru: "Где взять вре́мя?", es: "¿De dónde saco tiempo?", en: "Where to Find Time?", sinopsis: "Con el trabajo, los estudios y los preparativos del viaje, Camila siente que no le alcanza el tiempo. Vera le aconseja qué hacer primero y Camila reserva un rato para ordenar sus papeles."}}
       - {numero: 15, ru: "Фотогра́фия", es: "Una foto", en: "A photo", fuente: "Tochka Ru A2, Русский на каждый день 3", gramatica: "describir una foto y contar su historia",
-        lexico: "paisajes de viaje, encuentros, recuerdos"}
+        lexico: "paisajes de viaje, encuentros, recuerdos",
+        episodio: {ru: "Фо́то на бе́регу", es: "Una foto en la orilla", en: "A Photo by the Water", sinopsis: "Camila encuentra una foto de otro viaje mientras prepara el suyo. Le describe a Misha el paisaje y le cuenta a quién conoció allí."}}
       - {numero: 16, ru: "Доро́га", es: "En camino", en: "On the way", fuente: "Tochka Ru A2 4.1", gramatica: "verbos de movimiento con по-, при-, у-; в — из, на — с, к — от",
-        lexico: "medios de transporte, desplazamientos cotidianos, llegadas y salidas"}
+        lexico: "medios de transporte, desplazamientos cotidianos, llegadas y salidas",
+        episodio: {ru: "Пора́ е́хать", es: "Hora de salir", en: "Time to Go", sinopsis: "Camila sale de casa hacia la estación para su descanso. Desde el transporte le avisa a Tom de dónde ha salido y adónde acaba de llegar."}}
       - {numero: 17, ru: "Путеше́ствие", es: "El viaje", en: "The journey", fuente: "Tochka Ru A2 4.2", gramatica: "verbos de movimiento con в-(во-), вы-, за-; acusativo animado",
-        lexico: "trayectos diarios, paradas de camino, anécdotas"}
+        lexico: "trayectos diarios, paradas de camino, anécdotas",
+        episodio: {ru: "По пути́", es: "De camino", en: "On the Way", sinopsis: "Al salir de la estación, Camila entra un momento en un café y se encuentra con alguien que venía en el mismo tren. Más tarde cuenta a Tom dónde se encontraron y dónde paró cada uno."}}
       - {numero: 18, ru: "О́тпуск", es: "Las vacaciones", en: "The holiday", fuente: "Tochka Ru A2 4.3", gramatica: "verbos de movimiento con до-, об-(обо-), про-",
-        lexico: "itinerarios y excursiones, arquitectura y naturaleza, formas de viajar"}
+        lexico: "itinerarios y excursiones, arquitectura y naturaleza, formas de viajar",
+        episodio: {ru: "Дошли́ до моста́", es: "Llegamos al puente", en: "We Reached the Bridge", sinopsis: "Durante una excursión, Camila y su acompañante llegan al puente, rodean un edificio y pasan por un parque. Camila reconstruye el recorrido para recomendarlo al volver."}}
       - {numero: 19, ru: "Исто́рии в доро́ге", es: "Historias de viaje", en: "Travel stories", fuente: "Tochka Ru A2 4.4", gramatica: "repaso de los verbos de movimiento con prefijo",
-        lexico: "equipaje, fauna, relatos de viaje"}
+        lexico: "equipaje, fauna, relatos de viaje",
+        episodio: {ru: "Что в рюкзаке́?", es: "¿Qué hay en la mochila?", en: "What's in the Backpack?", sinopsis: "Al volver, Camila abre la mochila en casa y le cuenta a Misha qué llevó y qué animales vio en el viaje. Misha le pregunta dónde empezó y terminó el recorrido."}}
       - {numero: 20, ru: "Чу́вства", es: "Lo que sentimos", en: "Feelings", fuente: "Дорога в Россию 2, урок 4", gramatica: "dativo completo (по + dativo; мне ску́чно); estilo indirecto (сказа́л, что…; спроси́л, …ли)",
         lexico: "estados de ánimo, sensaciones físicas, ayuda y consejo",
-        fonetica: "Acentuación de sintagmas en dativo"}
+        fonetica: "Acentuación de sintagmas en dativo",
+        episodio: {ru: "Мне нехорошо́", es: "No me siento bien", en: "I Feel Unwell", sinopsis: "De vuelta al trabajo, Camila se encuentra mal y llama a un centro médico. Después le cuenta a Kira qué le preguntaron y cómo se siente."}}
       - {numero: 21, ru: "Где и когда́", es: "Dónde y cuándo", en: "Where and when", fuente: "Дорога в Россию 2, урок 5", gramatica: "instrumental de lugar (под, над, пе́ред, за, ме́жду, ря́дом с) y de tiempo; кото́рый en todos los casos",
         lexico: "ubicación de objetos, vivienda, momentos de un acontecimiento",
-        fonetica: "Alternancia de с y со ante grupos consonánticos"}
+        fonetica: "Alternancia de с y со ante grupos consonánticos",
+        episodio: {ru: "По́сле рабо́ты", es: "Después del trabajo", en: "After Work", sinopsis: "Ya de vuelta a su rutina, Camila no encuentra en casa la carpeta que tiene que llevar antes de clase. Kira le pregunta si miró entre los libros y Camila la encuentra allí."}}
       - {numero: 22, ru: "Мно́го люде́й", es: "Mucha gente", en: "Lots of people", fuente: "Дорога в Россию 2, урок 6", gramatica: "el plural: nominativo, acusativo, genitivo y preposicional",
         lexico: "lugares de la ciudad, metro, anuncios de empleo",
-        fonetica: "Acento en formas de plural como города́ y зда́ния"}
+        fonetica: "Acento en formas de plural como города́ y зда́ния",
+        episodio: {ru: "Объявле́ния в метро́", es: "Anuncios en el metro", en: "Notices on the Metro", sinopsis: "En el metro, Tom se fija en varios anuncios de empleo de escuelas de idiomas. Se los comenta a Camila porque empieza a pensar si le conviene seguir en la suya."}}
       - {numero: 23, ru: "Мы все ра́зные", es: "Todos somos distintos", en: "We're all different", fuente: "Дорога в Россию 2, урок 6", gramatica: "el plural: dativo e instrumental; е́сли; хотя́",
-        lexico: "amistades de la escuela, vivienda, ocio urbano y transporte"}
+        lexico: "amistades de la escuela, vivienda, ocio urbano y transporte",
+        episodio: {ru: "С друзья́ми", es: "Con amigos", en: "With Friends", sinopsis: "Aunque los horarios de Camila y de sus compañeros ya no coinciden como antes, acuerdan verse fuera de clase. Si el metro les queda a mano a todos, podrán repetirlo al salir del trabajo."}}
       - {numero: 24, ru: "Пи́шем по-ру́сски", es: "Escribir en ruso", en: "Writing in Russian", fuente: "Я пишу по-русски A2; Дорога в Россию 2, урок 7 (forma del examen)", gramatica: "el изложе́ние y la carta; repaso del A2",
-        lexico: "correspondencia personal, historia urbana, léxico del examen"}
+        lexico: "correspondencia personal, historia urbana, léxico del examen",
+        episodio: {ru: "Письмо́ домо́й", es: "Una carta a casa", en: "A Letter Home", sinopsis: "Camila resume un texto breve sobre la ciudad como práctica de escritura y luego escribe a su familia. Les cuenta que ya ha presentado el diploma, compagina la cocina con los estudios y quiere preparar el examen para entrar en la universidad."}}
     fase_final:
       examen: ТБУ
 
@@ -4371,56 +4395,80 @@ niveles:
       Exercises». [VERIFICAR contra el estándar oficial del ТРКИ-1.]
     unidades:
       - {numero: 1, ru: "Знако́мство", es: "Conocerse", en: "Getting to know people", fuente: "Tochka Ru B1 1.1", gramatica: "repaso de todos los casos; кото́рый en todos los casos",
-        lexico: "nombres y apellidos, fiestas, conversación de cortesía"}
+        lexico: "nombres y apellidos, fiestas, conversación de cortesía",
+        episodio: {ru: "Как вас зову́т?", es: "¿Cómo se llama?", en: "What's Your Name?", sinopsis: "En una reunión del curso preparatorio, Camila se presenta con su nombre completo y conoce a otra persona que también se prepara para el ТРКИ-1. Acuerdan seguir en contacto para practicar."}}
       - {numero: 2, ru: "Друзья́ и семья́", es: "Amigos y familia", en: "Friends and family", fuente: "Tochka Ru B1 1.2", gramatica: "dativo; друг дру́га; хотя́ / благодаря́",
-        lexico: "amistades, parentesco, carácter"}
+        lexico: "amistades, parentesco, carácter",
+        episodio: {ru: "Друг дру́га", es: "El uno al otro", en: "Each Other", sinopsis: "Camila y su compañera hablan de su familia y de las personas que las ayudan a estudiar. Aunque tienen formas distintas de organizarse, acuerdan ayudarse mutuamente."}}
       - {numero: 3, ru: "Вне́шность", es: "El aspecto físico", en: "Appearance", fuente: "Tochka Ru B1 1.3", gramatica: "comparativo y superlativo; чем…, тем…; estilo directo e indirecto; ли",
-        lexico: "partes del cuerpo, rasgos físicos, ropa y estampados"}
+        lexico: "partes del cuerpo, rasgos físicos, ropa y estampados",
+        episodio: {ru: "Кто в полоса́том?", es: "¿Quién lleva rayas?", en: "Who's Wearing Stripes?", sinopsis: "Como práctica oral, Camila describe a una persona que vio al llegar a clase. Su compañera pregunta si llevaba una prenda de rayas y luego cuenta cómo la describió Camila."}}
       - {numero: 4, ru: "Здоро́вье", es: "La salud", en: "Health", fuente: "Tochka Ru B1 1.4", gramatica: "el imperativo y su aspecto; verbos reflexivos",
-        lexico: "síntomas, medicamentos, especialistas, hábitos saludables"}
+        lexico: "síntomas, medicamentos, especialistas, hábitos saludables",
+        episodio: {ru: "Сове́т Ки́ры", es: "El consejo de Kira", en: "Kira's Advice", sinopsis: "Tom lleva días durmiendo mal y le cuenta sus síntomas a Kira. Ella, como vecina y médica, le aconseja cambiar un hábito que pueda mantener incluso los días de trabajo."}}
       - {numero: 5, ru: "Моя́ исто́рия", es: "Mi historia", en: "My story", fuente: "Tochka Ru B1, Русский на каждый день 1", gramatica: "presentarse a fondo",
-        lexico: "familia y amistades, compañeros de trabajo y estudios, favores"}
+        lexico: "familia y amistades, compañeros de trabajo y estudios, favores",
+        episodio: {ru: "Всё обо мне", es: "Todo sobre mí", en: "All About Me", sinopsis: "Camila prepara una presentación personal para practicar la prueba oral. Le pide a una compañera que la escuche y decide contar cómo pasó de cocinar en Lima a trabajar y estudiar allí."}}
       - {numero: 6, ru: "Гости́ница", es: "El hotel", en: "The hotel", fuente: "Tochka Ru B1 2.1", gramatica: "с… до…, с… по…, от… до…",
-        lexico: "reservas, tipos de habitación, servicios del hotel"}
+        lexico: "reservas, tipos de habitación, servicios del hotel",
+        episodio: {ru: "Но́мер на двои́х", es: "Habitación para dos", en: "A Room for Two", sinopsis: "La madre de Kira viene de visita y Kira busca una habitación para ella y Misha cerca de la estación la noche de llegada. Camila la ayuda a comparar los horarios de entrada y los servicios de dos hoteles."}}
       - {numero: 7, ru: "Кварти́ра", es: "El piso", en: "The flat", fuente: "Tochka Ru B1 2.2", gramatica: "preposiciones de lugar; dativo del adjetivo; из-за / благодаря́",
-        lexico: "alquiler, tipos de vivienda, mobiliario, mascotas"}
+        lexico: "alquiler, tipos de vivienda, mobiliario, mascotas",
+        episodio: {ru: "Ря́дом со шко́лой", es: "Cerca de la escuela", en: "Near the School", sinopsis: "Tom mira un piso cerca de su escuela y compara la distribución y el alquiler con los de su vivienda. La visita le ayuda a pensar si le gustaría seguir viviendo en el barrio cuando acabe el contrato."}}
       - {numero: 8, ru: "Еда́ и поку́пки", es: "Comida y compras", en: "Food and shopping", fuente: "Tochka Ru B1 2.3", gramatica: "genitivo singular y plural del sustantivo y del adjetivo",
-        lexico: "alimentos y sabores, hábitos alimentarios, envases y porciones"}
+        lexico: "alimentos y sabores, hábitos alimentarios, envases y porciones",
+        episodio: {ru: "Что купи́ть?", es: "¿Qué compramos?", en: "What Should We Buy?", sinopsis: "Camila y su compañera hacen la lista de la compra antes de estudiar juntas. Al decidir qué alimentos llevar y en qué porciones, Camila practica el genitivo en una conversación cotidiana."}}
       - {numero: 9, ru: "За столо́м", es: "A la mesa", en: "At the table", fuente: "Tochka Ru B1 2.4", gramatica: "-нибудь, -то, кое-",
-        lexico: "bocadillos, preparación de recetas, bebidas, brindis"}
+        lexico: "bocadillos, preparación de recetas, bebidas, brindis",
+        episodio: {ru: "Кто́-то взял бутербро́д", es: "Alguien cogió un bocadillo", en: "Someone Took a Sandwich", sinopsis: "En la pausa de estudio falta un bocadillo y nadie sabe quién lo tomó. Camila propone preparar otro y explica cómo lo hizo mientras brindan con sus bebidas."}}
       - {numero: 10, ru: "В кафе́", es: "En el café", en: "At the café", fuente: "Tochka Ru B1, Русский на каждый день 2", gramatica: "funciones en el restaurante",
-        lexico: "reservas, carta y pedidos, café para llevar, cuenta"}
+        lexico: "reservas, carta y pedidos, café para llevar, cuenta",
+        episodio: {ru: "Ко́фе с собо́й", es: "Café para llevar", en: "Coffee to Go", sinopsis: "Camila y su compañera reservan una mesa para comer después de una práctica oral. Al pagar, su compañera pide café para llevar mientras Camila comprueba la cuenta."}}
       - {numero: 11, ru: "Е́сли бы…", es: "Si yo…", en: "If only…", fuente: "complemento (ТРКИ-1)", gramatica: "el condicional: бы, е́сли бы",
-        lexico: "deseos y planes hipotéticos, viajes, servicios de barrio"}
+        lexico: "deseos y planes hipotéticos, viajes, servicios de barrio",
+        episodio: {ru: "Е́сли бы я оста́лся", es: "Si yo me quedara", en: "If I Stayed", sinopsis: "Tom le cuenta a Camila qué haría si cambiara de trabajo y qué haría si siguiera en la escuela. Al decirlo en voz alta descubre qué parte de su vida allí querría conservar."}}
       - {numero: 12, ru: "Заче́м и почему́", es: "Para qué y por qué", en: "Why and what for", fuente: "complemento (ТРКИ-1)", gramatica: "finalidad y causa: что́бы / что; для того́ что́бы; из-за, благодаря́, от, с",
         lexico: "peticiones y consejos, motivos y consecuencias, objetivos",
-        fonetica: "Pronunciación de чт como [шт] en что́ y что́бы"}
+        fonetica: "Pronunciación de чт como [шт] en что́ y что́бы",
+        episodio: {ru: "Заче́м мне экза́мен?", es: "¿Para qué necesito examinarme?", en: "Why Take the Exam?", sinopsis: "Camila explica a su compañera para qué necesita el ТРКИ-1 y por qué quiere entrar en la universidad. La compañera le pide que aclare un motivo, y Camila vuelve a formularlo."}}
       - {numero: 13, ru: "Когда́?", es: "¿Cuándo?", en: "When?", fuente: "complemento; Russian in Exercises (oración compuesta)", gramatica: "subordinadas de tiempo: когда́, пока́, пока́ не, по́сле того́ как, до того́ как, как то́лько",
-        lexico: "secuencia de acciones, citas y actividades, fechas y visitas"}
+        lexico: "secuencia de acciones, citas y actividades, fechas y visitas",
+        episodio: {ru: "Пока́ мы не встре́тились", es: "Antes de vernos", en: "Before We Meet", sinopsis: "Camila y su compañera ordenan sus próximas citas de práctica: qué harán antes de verse y qué harán en cuanto terminen. Así encuentran un momento para un simulacro sin que Camila falte a su turno."}}
       - {numero: 14, ru: "Несмотря́ ни на что", es: "A pesar de todo", en: "Despite everything", fuente: "complemento (ТРКИ-1)", gramatica: "la concesión: хотя́, несмотря́ на, всё равно́",
-        lexico: "contratiempos y planes, desplazamientos, ocio urbano"}
+        lexico: "contratiempos y planes, desplazamientos, ocio urbano",
+        episodio: {ru: "Всё равно́ пойдём", es: "Iremos de todos modos", en: "We'll Go Anyway", sinopsis: "Aunque se complica el trayecto, Camila y su compañera mantienen la cita para el simulacro y deciden cómo llegar. El alumno hace el simulacro al mismo tiempo que Camila."}}
       - {numero: 15, ru: "Несём, везём, ведём", es: "Llevar, transportar, guiar", en: "Carry, drive, lead", fuente: "complemento (ТРКИ-1)", gramatica: "verbos de movimiento transitivos (нести́/носи́ть, везти́/вози́ть, вести́/води́ть)",
-        lexico: "objetos que se llevan, transporte, destinos urbanos"}
+        lexico: "objetos que se llevan, transporte, destinos urbanos",
+        episodio: {ru: "Несу́ кни́ги", es: "Llevo los libros", en: "I'm Carrying the Books", sinopsis: "Camila lleva los libros de práctica y Tom se ofrece a llevarla en coche. Al llegar, ella guía a su compañera hasta el lugar donde se reúnen."}}
       - {numero: 16, ru: "Вре́мя идёт", es: "El tiempo pasa", en: "Time flies", fuente: "complemento (ТРКИ-1)", gramatica: "los verbos de movimiento en sentido figurado",
-        lexico: "paso del tiempo, ropa que favorece, desarrollo de eventos, tiempo atmosférico"}
+        lexico: "paso del tiempo, ropa que favorece, desarrollo de eventos, tiempo atmosférico",
+        episodio: {ru: "Вре́мя идёт", es: "El tiempo pasa", en: "Time Goes By", sinopsis: "Camila comenta cómo pasó el tiempo desde el primer simulacro y cómo fue la última práctica. Tom se da cuenta de que también se acerca el momento de decidir sobre su contrato."}}
       - {numero: 17, ru: "Не на́до!", es: "¡No hace falta!", en: "Don't!", fuente: "complemento (ТРКИ-1)", gramatica: "el aspecto en el infinitivo y el imperativo con negación",
         lexico: "[VERIFICAR]",
-        fonetica: "[VERIFICAR]"}
+        fonetica: "[VERIFICAR]",
+        episodio: {ru: "Не спеши́", es: "No te apresures", en: "Don't Rush", sinopsis: "Camila quiere acabar deprisa al repasar una respuesta oral. Su compañera le pide que no se apresure y Camila vuelve a intentarlo con las palabras que ya usó."}}
       - {numero: 18, ru: "Он сказа́л, что…", es: "Dijo que…", en: "He said that…", fuente: "Russian in Exercises (estilo directo e indirecto)", gramatica: "estilo indirecto completo: preguntas y órdenes (что́бы + pasado)",
-        lexico: "verbos para relatar lo dicho, recados, citas y encargos"}
+        lexico: "verbos para relatar lo dicho, recados, citas y encargos",
+        episodio: {ru: "Что она́ сказа́ла?", es: "¿Qué dijo ella?", en: "What Did She Say?", sinopsis: "La compañera le cuenta a Camila qué le preguntaron durante una práctica oral y qué le pidieron que hiciera. Camila usa el relato para repasar cómo transmitir preguntas e instrucciones."}}
       - {numero: 19, ru: "Челове́к, кото́рый…", es: "La persona que…", en: "The person who…", fuente: "Russian in Exercises (participios)", gramatica: "participios activos: reconocerlos y usarlos",
-        lexico: "personas de la ciencia y la cultura, investigación, actividades universitarias"}
+        lexico: "personas de la ciencia y la cultura, investigación, actividades universitarias",
+        episodio: {ru: "Кто там рабо́тает?", es: "¿Quién trabaja allí?", en: "Who Works There?", sinopsis: "Camila y su compañera leen perfiles breves de personas que investigan o enseñan en la universidad. Camila explica de quién le interesaría saber más y qué hace esa persona."}}
       - {numero: 20, ru: "Сде́лано в Росси́и", es: "Hecho en Rusia", en: "Made in Russia", fuente: "Russian in Exercises (participios)", gramatica: "participios pasivos y la forma corta (постро́ен)",
-        lexico: "construcción y fundación, descubrimientos, obras y publicaciones"}
+        lexico: "construcción y fundación, descubrimientos, obras y publicaciones",
+        episodio: {ru: "Когда́ постро́или дом?", es: "¿Cuándo construyeron el edificio?", en: "When Was It Built?", sinopsis: "Camila practica con un texto sobre edificios y obras de la ciudad. Al resumirlo, distingue lo que se construyó de lo que se publicó sobre esas obras."}}
       - {numero: 21, ru: "Чита́я и слу́шая", es: "Leyendo y escuchando", en: "Reading and listening", fuente: "Russian in Exercises (gerundios)", gramatica: "los gerundios (дееприча́стия)",
-        lexico: "lectura y conversación, desplazamientos, actividades de ocio"}
+        lexico: "lectura y conversación, desplazamientos, actividades de ocio",
+        episodio: {ru: "Чита́я и слу́шая", es: "Leyendo y escuchando", en: "Reading and Listening", sinopsis: "Camila y su compañera hacen otra práctica de examen con lectura y audición. Después hablan de lo que hicieron mientras leían o escuchaban; el alumno hace ese simulacro con ellas."}}
       - {numero: 22, ru: "Из чего́ сде́ланы слова́", es: "De qué están hechas las palabras", en: "What words are made of", fuente: "complemento (ТРКИ-1)", gramatica: "formación de palabras: prefijos, sufijos, pares aspectuales",
-        lexico: "familias de palabras, sustantivos derivados de verbos, pares aspectuales"}
+        lexico: "familias de palabras, sustantivos derivados de verbos, pares aspectuales",
+        episodio: {ru: "Слова́ из слов", es: "Palabras hechas de palabras", en: "Words Made from Words", sinopsis: "Al revisar los simulacros, Camila agrupa palabras de la misma familia y relaciona sustantivos derivados con los verbos que conoce. Su compañera le pide que explique cómo reconoció una de ellas."}}
       - {numero: 23, ru: "Но́вости и объявле́ния", es: "Noticias y anuncios", en: "News and notices", fuente: "complemento (ТРКИ-1)", gramatica: "leer noticias, anuncios y cartas oficiales; los números en todos los casos",
-        lexico: "noticias de obras urbanas, ofertas de empleo, correspondencia formal"}
+        lexico: "noticias de obras urbanas, ofertas de empleo, correspondencia formal",
+        episodio: {ru: "Письмо́ из шко́лы", es: "Carta de la escuela", en: "A Letter from School", sinopsis: "La escuela le envía a Tom una propuesta de renovación. Después de comparar las ofertas de empleo y pensar en su vida en el barrio, contesta por escrito que acepta seguir en la escuela."}}
       - {numero: 24, ru: "Гото́вимся к экза́мену", es: "Preparando el examen", en: "Exam preparation", fuente: "complemento (ТРКИ-1)", gramatica: "repaso del B1; estrategias de escritura y expresión oral",
         lexico: "[VERIFICAR]",
-        fonetica: "[VERIFICAR]"}
+        fonetica: "[VERIFICAR]",
+        episodio: {ru: "Гото́ва к экза́мену", es: "Lista para el examen", en: "Ready for the Exam", sinopsis: "Camila y su compañera ensayan el tramo escrito y el oral del último simulacro, junto con el alumno. En la fase final, Camila se presenta al ТРКИ-1 a la vez que el alumno hace el examen del curso."}}
     fase_final:
       examen: ТРКИ-1
 
