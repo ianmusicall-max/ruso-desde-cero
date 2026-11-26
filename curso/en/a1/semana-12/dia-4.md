@@ -33,9 +33,7 @@ doesn't soften.
 
 ## 3. New (8–18 min)
 
-You already know **мне** from "Мне нра́вится," and "Мне … лет" isn't
-entirely new either: what's added today is the question itself and its
-two forms, **тебе́** and **вам**.
+You already know **мне** from the café in unit 2 ("Мне …, пожа́луйста"), and "Мне … лет" isn't entirely new either: what's added today is the question itself and its two forms, **тебе́** and **вам**.
 
 **You've already seen вам, without knowing what it was**: back in the
 unit-2 café you heard "Что вам?" and "А вам?" as sealed chunks, never

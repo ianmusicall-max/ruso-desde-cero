@@ -33,9 +33,7 @@ ablanda.
 
 ## 3. Nuevo (8–18 min)
 
-Ya conoces **мне** por «Мне нра́вится» y «Мне … лет» no es nuevo del
-todo: lo que hoy se añade es la pregunta y sus dos formas, **тебе́** y
-**вам**.
+Ya conoces **мне** del café de la unidad 2 («Мне …, пожа́луйста»), y «Мне … лет» no es nuevo del todo: lo que hoy se añade es la pregunta y sus dos formas, **тебе́** y **вам**.
 
 **Вам** ya la habías visto, sin saber qué era: en el café de la unidad 2
 oíste «Что вам?» y «А вам?» como bloques cerrados, sin desmontarlos. Hoy
